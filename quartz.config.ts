@@ -1,95 +1,110 @@
-import { QuartzConfig } from "./quartz/cfg"
+// quartz.config.ts
+import type { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    // Link to your Obsidian folder via symlink
+    // ln -s "/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/🌞 My Website" ~/Sites/quartz-content
+    contentDir: "/Users/andrewtsao/Sites/quartz-content",
+
+    pageTitle: "Andrew Tsao",
     pageTitleSuffix: "",
+    baseUrl: "localhost",
+    locale: "en-US",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    analytics: { provider: "plausible" },
+
+    ignorePatterns: [
+      "**/.obsidian/**",
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/.DS_Store",
+      "**/Archive/**",
+      "**/Templates/**",
+      "**/template/**",
+      "**/Private/**",
+      "**/private/**",
+      "**/Trash/**",
+      "**/*.trash/**",
+      "**/Untitled/**",
+      "**/Attachments/**",
+      "**/assets/**",
+    ],
+
     defaultDateType: "modified",
+
+    // Theme — system fonts + “van” palette
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "system",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header:
+          "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif",
+        body:
+          "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif",
+        code:
+          "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#f7f8fa",
+          lightgray: "#f2f3f5",
+          gray: "#c8c9cc",
+          darkgray: "#646566",
+          dark: "#323233",
+          secondary: "#1989fa",
+          tertiary: "#07c160",
+          highlight: "rgba(25, 137, 250, 0.08)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          light: "#151515",
+          lightgray: "#2a2a2b",
+          gray: "#5f6062",
           darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          dark: "#ececec",
+          secondary: "#5aa7ff",
+          tertiary: "#35d07f",
+          highlight: "rgba(90, 167, 255, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },
     },
   },
+
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
-      }),
-      Plugin.SyntaxHighlighting({
-        theme: {
-          light: "github-light",
-          dark: "github-dark",
-        },
-        keepBackground: false,
+        priority: ["git", "filesystem", "frontmatter"],
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.TableOfContents(),
+      Plugin.TableOfContents({ maxDepth: 3 }),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+      Plugin.SyntaxHighlighting({
+        theme: { light: "github-light", dark: "github-dark" },
+        keepBackground: false,
+      }),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+
+    // Require `publish: true` in frontmatter
+    filters: [],
+
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
-      }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
     ],
   },
 }

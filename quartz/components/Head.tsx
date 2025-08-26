@@ -86,7 +86,10 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
+        <link rel="stylesheet" href={joinSegments(baseDir, "static/overrides.css")} />
+
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
+        <link rel="stylesheet" href={joinSegments(baseDir, "static/overrides.css")} />
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}

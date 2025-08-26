@@ -1,0 +1,1 @@
+/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/index.md

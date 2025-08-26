@@ -1,3 +1,1123 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// === VARIABLES ===
+$fontSize: 1.2rem;
+$lineHeight: 1.6;
+$h1: 2.8rem;
+$h2: 2.2rem;
+$h3: 1.8rem;
+$h4: 1.5rem;
+$h5: 1.3rem;
+$h6: 1.2rem;
+$sidebarWidth: 420px;
+$mobileBreakpoint: 800px;
+$tabletBreakpoint: 1200px;
+
+// === COLORS AND THEMES ===
+:root, :root[saved-theme="light"] {
+  --light: #f0f0f2;
+  --lightgray: #d8d8da;
+  --gray: #868889;
+  --darkgray: #202225;
+  --dark: #202225;
+  --secondary: #027b1f;
+  --tertiary: #185ecd;
+  --highlight: rgba(143,159,169,.15);
+  --textHighlight: rgba(255,242,54,.53);
+  --left-sidebar-width: 420px;
+  
+  transition: 
+    --light 1.5s cubic-bezier(0.4, 0.0, 0.2, 1),
+    --lightgray 1.5s cubic-bezier(0.4, 0.0, 0.2, 1),
+    --secondary 1.5s cubic-bezier(0.4, 0.0, 0.2, 1),
+    --tertiary 1.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+:root[saved-theme="dark"] {
+  --light: #151515; 
+  --lightgray: #2a2a2b; 
+  --gray: #5f6062;
+  --darkgray: #d4d4d4; 
+  --dark: #ececec;
+  --secondary: #2aa14e; 
+  --tertiary: #6b8ce6;
+  --highlight: rgba(143,159,169,.20); 
+  --textHighlight: rgba(255,242,54,.45);
+}
+
+// === BASE STYLES ===
+html {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
+  height: auto !important;
+  min-height: 100vh !important;
+  transition: all 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+body {
+  line-height: $lineHeight;
+  letter-spacing: 0.01em;
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow-x: hidden;
+  transition: background-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+// === TYPOGRAPHY ===
+h1, .page-title { font-size: $h1; line-height: 1.1; }
+h2 { font-size: $h2; }
+h3 { font-size: $h3; }
+h4 { font-size: $h4; }
+h5 { font-size: $h5; }
+h6 { font-size: $h6; }
+
+// === HIDE FOOTER ===
+footer { display: none !important; }
+
+// === PAGE TITLE WITH NAME ROTATION ===
+.page-title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  
+  a {
+    color: transparent;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    
+    &::after {
+      content: "Andrew Tsao";
+      color: var(--darkgray);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      animation: nameRotation 9s infinite;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    
+    &:hover::after { 
+      color: var(--secondary); 
+    }
+  }
+}
+
+@keyframes nameRotation {
+  0%, 32% {
+    content: "Andrew Tsao";
+    font-weight: 600;
+  }
+  33%, 65% {
+    content: "Atsao";
+    font-weight: 600;
+  }
+  66%, 100% {
+    content: "曹明鑫";
+    font-weight: 400;
+  }
+}
+
+// === DESKTOP LAYOUT (ABOVE 800PX) ===
+@media (min-width: 801px) {
+  .page {
+    display: grid !important;
+    grid-template-columns: 420px 1fr !important;
+    grid-template-areas: "left center" !important;
+    grid-template-rows: minmax(100vh, auto) !important;
+    gap: 0 !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .page > #quartz-body {
+    display: contents !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .page > #quartz-body .sidebar.left {
+    grid-area: left !important;
+    width: 420px !important;
+    min-width: 420px !important;
+    max-width: 420px !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    background: var(--light) !important;
+    border-right: 1px solid var(--lightgray) !important;
+    padding: 3rem 2rem !important;
+    margin: 0 !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.03);
+    font-size: 1.05rem;
+    position: sticky;
+    top: 0;
+    
+    transition: 
+      background-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1), 
+      border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+      
+    .flex {
+      margin-bottom: 1.5rem;
+      display: flex !important;
+      
+      > *:first-child { 
+        flex-grow: 1;
+      }
+    }
+    
+    input[type="search"],
+    input[type="text"] {
+      width: 100%; 
+      height: 52px;
+      border: 1px solid var(--lightgray);
+      border-radius: 10px; 
+      padding: 0 1.25rem; 
+      background: #ffffff; 
+      outline: none;
+      color: var(--darkgray);
+      transition: all 0.3s ease, 
+        border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1),
+        background-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      
+      &:focus { 
+        border-color: var(--tertiary);
+        box-shadow: 0 4px 12px rgba(24, 94, 205, 0.15), 0 0 0 3px rgba(24, 94, 205, 0.08);
+        transform: translateY(-1px);
+      }
+      
+      &::placeholder {
+        color: var(--gray);
+        opacity: 0.6;
+        font-style: italic;
+      }
+    }
+    
+    .darkmode {
+      margin-left: 0.75rem;
+      
+      button {
+        padding: 0.75rem;
+        border: 1px solid var(--lightgray);
+        border-radius: 8px;
+        background: var(--light);
+        color: var(--darkgray);
+        cursor: pointer;
+        transition: all 0.2s ease,
+          border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1),
+          background-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        
+        &:hover {
+          border-color: var(--tertiary);
+          background: rgba(24, 94, 205, 0.05);
+        }
+      }
+    }
+    
+    .recent-notes {
+      & > h3 {
+        display: none !important;
+      }
+      
+      ul.recent-ul {
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        
+        li {
+          margin: 0 !important;
+          padding: 0 !important;
+          list-style: none !important;
+          background: none !important;
+          
+          &::before {
+            display: none !important;
+          }
+          
+          .section {
+            background: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            
+            .desc h3 a {
+              display: block !important;
+              padding: 0.7rem 0.75rem !important;
+              border-radius: 10px !important;
+              text-decoration: none !important;
+              color: var(--darkgray) !important;
+              transition: all 0.2s ease !important;
+              margin-bottom: 2px !important;
+              font-weight: 400 !important;
+              background: none !important;
+              font-size: 1rem !important;
+              line-height: 1.5 !important;
+              text-transform: lowercase !important;
+              
+              &::before,
+              &::after {
+                display: none !important;
+              }
+              
+              &:hover { 
+                background: rgba(24, 94, 205, 0.06) !important;
+                color: var(--tertiary) !important;
+                transform: translateX(2px) !important;
+                text-transform: lowercase !important;
+              }
+            }
+            
+            .meta {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page > #quartz-body .center {
+    grid-area: center !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 2rem !important;
+    box-sizing: border-box !important;
+    
+    main {
+      padding: 0rem 1rem 1rem 1rem !important;
+      box-sizing: border-box !important;
+      margin-top: 0 !important;
+      
+      article {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+    }
+    
+    &::-webkit-scrollbar {
+      width: 0px !important;
+      background: transparent !important;
+    }
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+}
+
+// === MOBILE LAYOUT (800PX AND BELOW) ===
+@media (max-width: 800px) {
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .page {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .page > #quartz-body {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .page > #quartz-body .sidebar.left {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    position: static !important;
+    
+    .page-title {
+      display: block !important;
+      margin: 1rem 0 0.5rem 0 !important;
+      padding: 0 1.5rem !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow: visible !important;
+      text-align: left !important;
+      box-sizing: border-box !important;
+      
+      a {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: visible !important;
+        text-align: left !important;
+        
+        &::after {
+          font-size: 3.5rem !important;
+          line-height: 1.1 !important;
+          position: static !important;
+          display: block !important;
+          width: 100% !important;
+          text-align: left !important;
+        }
+      }
+    }
+    
+    .flex,
+    .recent-notes,
+    ul.recent-ul,
+    .darkmode,
+    input,
+    .search,
+    nav,
+    .navigation {
+      display: none !important;
+    }
+  }
+  
+  .page > #quartz-body .center {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1.5rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    
+    main {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0.5rem 0 !important;
+      margin: 0 !important;
+      box-sizing: border-box !important;
+      overflow: visible !important;
+      
+      article {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        
+        h1, h2, h3, h4, h5, h6 {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 1.5rem !important;
+          line-height: 1.3 !important;
+          margin: 1rem 0 0.5rem 0 !important;
+          padding: 0 !important;
+          word-wrap: break-word !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        p, div, span, li {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 1rem !important;
+          line-height: 1.5 !important;
+          margin: 0.5rem 0 !important;
+          padding: 0 !important;
+          word-wrap: break-word !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        a, code, pre {
+          word-break: break-all !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        img, video, iframe {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        
+        ul, ol {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-left: 1.5rem !important;
+          margin: 0.5rem 0 !important;
+        }
+      }
+    }
+  }
+}
+
+// === CONTENT STYLES ===
+main article {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 72ch;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+h1.article-title {
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--darkgray);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.content-meta {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  
+  p {
+    margin: 0.25rem 0;
+    color: var(--gray);
+  }
+}
+
+.tag-container {
+  margin: 1rem 0;
+  
+  .tag {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    background: rgba(24, 94, 205, 0.1);
+    color: var(--tertiary);
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 0.25rem 0.25rem 0;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: rgba(24, 94, 205, 0.2);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+article a {
+  color: var(--tertiary);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 94, 205, 0.3);
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    text-decoration-color: var(--tertiary);
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--tertiary) 60%, #fff0);
+  color: var(--darkgray);
+}
+
+// === HIDE HOME PAGE ELEMENTS ===
+body[data-slug=""],
+body[data-slug="index"],
+.content[data-slug=""],
+.content[data-slug="index"],
+.page[data-slug=""],
+.page[data-slug="index"] {
+  h1.article-title {
+    display: none !important;
+  }
+  
+  .content-meta {
+    display: none !important;
+  }
+}
+
+// === DARK MODE ADJUSTMENTS ===
+:root[saved-theme="dark"] {
+  .page > #quartz-body .sidebar.left {
+    border-right-color: var(--gray) !important;
+  }
+  
+  .content-meta {
+    border-bottom-color: var(--gray);
+  }
+}
+
+// === DESKTOP LAYOUT REFINEMENTS ===
+@media (min-width: 801px) {
+  .page > #quartz-body .center main,
+  #quartz-body .center main,
+  .center main,
+  main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  body:not([data-slug=""]):not([data-slug="index"]) .center .breadcrumb-container,
+  body:not([data-slug=""]):not([data-slug="index"]) .center nav.breadcrumb-container,
+  body:not([data-slug=""]):not([data-slug="index"]) #quartz-body .center .breadcrumb-container {
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  body:not([data-slug=""]):not([data-slug="index"]) .center .page-header,
+  body:not([data-slug=""]):not([data-slug="index"]) #quartz-body .center .page-header {
+    margin-top: 1rem !important;
+    padding: 0 !important;
+  }
+  
+  body[data-slug=""] .page-header,
+  body[data-slug="index"] .page-header,
+  body[data-slug=""] .center .page-header,
+  body[data-slug="index"] .center .page-header,
+  body[data-slug=""] #quartz-body .center .page-header,
+  body[data-slug="index"] #quartz-body .center .page-header {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .sidebar.left .page-header {
+    margin-top: 0 !important;
+  }
+  
+  body:not([data-slug=""]):not([data-slug="index"]) .center .spacer,
+  body:not([data-slug=""]):not([data-slug="index"]) #quartz-body .center .spacer {
+    height: 0rem !important;
+    margin: 1rem !important;
+    display: block !important;
+  }
+  
+  body[data-slug=""] .spacer,
+  body[data-slug="index"] .spacer,
+  body[data-slug=""] .center .spacer,
+  body[data-slug="index"] .center .spacer {
+    height: 0 !important;
+    margin: 0 !important;
+    display: none !important;
+  }
+  
+  .sidebar .spacer {
+    height: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .page > #quartz-body .center main article,
+  #quartz-body .center main article,
+  .center main article,
+  main article {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .page > #quartz-body .center main .content,
+  .page > #quartz-body .center article,
+  .page > #quartz-body .center h1.article-title,
+  .page > #quartz-body .center .content-meta,
+  .page > #quartz-body .center nav.breadcrumb-container,
+  .page > #quartz-body .center .breadcrumbs,
+  h1.article-title,
+  .content-meta,
+  .breadcrumbs,
+  nav.breadcrumb-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .page > #quartz-body .center main > *:first-child,
+  .center main > *:first-child,
+  main > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .page > #quartz-body .sidebar.left a:not(.page-title a),
+  #quartz-body .sidebar.left a:not(.page-title a),
+  .sidebar.left a:not(.page-title a),
+  .recent-notes a,
+  .sidebar a:not(.page-title a) {
+    text-transform: lowercase !important;
+  }
+  
+  .page > #quartz-body .sidebar.left .recent-notes ul.recent-ul li .section .desc h3 a,
+  .sidebar.left .recent-notes ul.recent-ul li .section .desc h3 a,
+  .recent-notes ul.recent-ul li .section .desc h3 a,
+  .recent-notes a {
+    text-transform: lowercase !important;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      text-transform: lowercase !important;
+    }
+  }
+  
+  .page-title,
+  .page-title a,
+  .page-title a::after {
+    text-transform: none !important;
+  }
+  
+  .page-title,
+  .sidebar.left .page-title,
+  .page > #quartz-body .sidebar.left .page-title {
+    font-size: 3rem !important;
+    
+    a::after {
+      font-size: 3rem !important;
+      line-height: 1.1 !important;
+    }
+  }
+}
+// Add this to your existing CSS file
+
+// === GRAPH IN CENTER SECTION ===
+.graph-container {
+  width: 100% !important;
+  height: 600px !important; // Set a good height for the graph
+  margin: 2rem 0 !important;
+  border: 1px solid var(--lightgray) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+  
+  // Make sure the graph canvas fills the container
+  canvas, svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+// Make the graph page full width
+body[data-slug="graph"] .center {
+  max-width: none !important;
+  
+  main {
+    max-width: none !important;
+    padding: 2rem !important;
+    
+    article {
+      max-width: none !important;
+    }
+  }
+}
+
+// Dark mode adjustments for graph
+:root[saved-theme="dark"] {
+  .graph-container {
+    border-color: var(--gray) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+}
+
+// Mobile responsiveness for graph
+@media (max-width: 800px) {
+  .graph-container {
+    height: 400px !important;
+    margin: 1rem 0 !important;
+  }
+  
+  body[data-slug="graph"] .center main {
+    padding: 1rem !important;
+  }
+}
+
+// === HIDE TAGS ONLY IN FOLDER LISTINGS (NOT INDIVIDUAL PAGES) ===
+// Target folder index pages specifically, not individual content pages
+body[data-slug="my-playlist"] {
+  // Only hide tags on the folder index page
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist,
+  .folder-content .tag-container,
+  .recent-notes .tag-container {
+    display: none !important;
+  }
+}
+
+// Also hide tags in any folder listing components
+.folder-listing,
+.recent-notes,
+.folder-content {
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist {
+    display: none !important;
+  }
+}
+
+// Keep tags visible on individual pages (NOT folder listings)
+body[data-slug^="my-playlist/"]:not([data-slug="my-playlist"]) {
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist {
+    display: block !important; // Show tags on individual playlist pages
+  }
+}
+
+// === MORE AGGRESSIVE LINE BREAK FIX ===
+// Target all content areas with multiple approaches
+main article,
+.center main article,
+.page-content,
+.content,
+article {
+  
+  // Force line break preservation in ALL text elements
+  p,
+  div,
+  span,
+  blockquote,
+  li,
+  td,
+  th {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  // Special blockquote handling (for your Slowdive quote)
+  blockquote {
+    white-space: pre-wrap !important;
+    
+    p {
+      white-space: pre-wrap !important;
+      margin: 0.3rem 0 !important;
+      line-height: 1.5 !important;
+    }
+    
+    // Ensure line breaks work even in nested elements
+    * {
+      white-space: pre-wrap !important;
+    }
+  }
+}
+
+// === FORCE LINE BREAKS IN MARKDOWN PROCESSING ===
+// Target Quartz's markdown output specifically
+.markdown-content,
+.quartz-content,
+[data-content] {
+  
+  p, div, blockquote, li {
+    white-space: pre-wrap !important;
+  }
+  
+  // Force preservation of markdown line breaks
+  br {
+    display: block !important;
+    content: "" !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+// === ALTERNATIVE: CSS-ONLY LINE BREAK INSERTION ===
+// If markdown isn't generating <br> tags, force them with CSS
+.center main article p,
+.page-content p,
+article p {
+  // This will respect \n characters in the HTML
+  white-space: pre-line !important;
+}
+
+// Add this to your existing Quartz CSS file (the same one with your other styles)
+
+// === IMAGE ALIGNMENT BASED ON ALT TEXT ===
+// This mirrors your Obsidian CSS snippet functionality
+
+// Center aligned images
+img[alt*="center"] {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+// Right aligned images  
+img[alt*="right"] {
+  float: right !important;
+  clear: right !important;
+  margin-left: 1rem !important;
+  margin-bottom: 2px !important;
+  margin-top: 2px !important;
+  max-width: 50% !important; // Prevent right-floated images from being too large
+  height: auto !important;
+}
+
+// Left aligned images (optional - you can add this too)
+img[alt*="left"] {
+  float: left !important;
+  clear: left !important;
+  margin-right: 1rem !important;
+  margin-bottom: 2px !important;
+  margin-top: 2px !important;
+  max-width: 50% !important;
+  height: auto !important;
+}
+
+// Ensure images in articles respect these alignments
+main article img,
+.center main img,
+.content img {
+  // Default image styling
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transition: all 0.3s ease !important;
+  
+  // The alt-based alignments will override these defaults
+  &[alt*="center"] {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important; // Override any existing float
+  }
+  
+  &[alt*="right"] {
+    float: right !important;
+    clear: right !important;
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    max-width: 50% !important;
+  }
+  
+  &[alt*="left"] {
+    float: left !important;
+    clear: left !important;
+    margin-right: 1rem !important;
+    margin-left: 0 !important;
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    max-width: 50% !important;
+  }
+}
+
+// Mobile responsiveness for aligned images
+@media (max-width: 800px) {
+  img[alt*="right"],
+  img[alt*="left"] {
+    float: none !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+// Dark mode adjustments
+:root[saved-theme="dark"] {
+  main article img,
+  .center main img,
+  .content img {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+}
+
+// === FULLY VERTICAL STACKED LAYOUT FOR MY ART AND MY PLAYLISTS ===
+
+body[data-slug="my-playlist"],
+body[data-slug^="my-playlist/"],
+body[data-slug="my-art"], 
+body[data-slug^="my-art/"] {
+  
+  .page-listing {
+    
+    .section-li {
+      // Force everything to stack vertically
+      display: block !important;
+      width: 100% !important;
+      margin: 2rem 0 !important;
+      padding: 1.5rem 0 !important;
+      border-bottom: 1px solid var(--lightgray) !important;
+      
+      // Title section - gets its own space
+      .desc {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 1.5rem !important;
+        
+        h3 {
+          display: block !important;
+          width: 100% !important;
+          font-size: 1.5rem !important;
+          line-height: 1.3 !important;
+          margin: 0 0 1rem 0 !important;
+          
+          a {
+            display: block !important;
+            text-decoration: none !important;
+            color: var(--darkgray) !important;
+          }
+        }
+        
+        p {
+          display: block !important;
+          width: 100% !important;
+          font-size: 1.1rem !important;
+          line-height: 1.6 !important;
+          margin: 0.5rem 0 !important;
+        }
+      }
+      
+      // Date gets its own line
+      .meta {
+        display: block !important;
+        width: 100% !important;
+        margin: 1rem 0 !important;
+        
+        time {
+          display: block !important;
+          width: 100% !important;
+          font-size: 1rem !important;
+          color: var(--gray) !important;
+          margin-bottom: 1rem !important;
+          padding: 0.5rem 0 !important;
+        }
+      }
+      
+      // Tags get vertical stacking too
+      .tags {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 1rem !important;
+        
+        .tag {
+          display: block !important;
+          width: 100% !important;
+          max-width: none !important;
+          margin: 0.4rem 0 !important;
+          padding: 0.6rem !important;
+          font-size: 1rem !important;
+          text-align: left !important;
+          background: rgba(24, 94, 205, 0.1) !important;
+          border-radius: 6px !important;
+          text-decoration: none !important;
+          
+          &:hover {
+            background: rgba(24, 94, 205, 0.2) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// === MOBILE SPECIFIC - EVEN MORE VERTICAL SPACE ===
+@media (max-width: 800px) {
+  body[data-slug="my-playlist"],
+  body[data-slug^="my-playlist/"],
+  body[data-slug="my-art"], 
+  body[data-slug^="my-art/"] {
+    
+    .page-listing {
+      
+      .section-li {
+        margin: 3rem 0 !important;
+        padding: 2rem 0 !important;
+        
+        .desc {
+          margin-bottom: 2rem !important;
+          
+          h3 {
+            font-size: 1.6rem !important;
+            margin-bottom: 1.5rem !important;
+          }
+          
+          p {
+            font-size: 1.2rem !important;
+            line-height: 1.7 !important;
+            margin: 1rem 0 !important;
+          }
+        }
+        
+        .meta {
+          margin: 1.5rem 0 !important;
+          
+          time {
+            font-size: 1.1rem !important;
+            padding: 0.8rem 0 !important;
+            margin-bottom: 1.5rem !important;
+          }
+        }
+        
+        .tags {
+          margin-top: 1.5rem !important;
+          
+          .tag {
+            margin: 0.6rem 0 !important;
+            padding: 0.8rem !important;
+            font-size: 1.1rem !important;
+            line-height: 1.4 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// === REMOVE ANY FLEX OR GRID LAYOUTS THAT MIGHT BE CAUSING HORIZONTAL BUNCHING ===
+body[data-slug="my-playlist"],
+body[data-slug^="my-playlist/"],
+body[data-slug="my-art"], 
+body[data-slug^="my-art/"] {
+  
+  .page-listing {
+    display: block !important;
+    
+    .section-ul {
+      display: block !important;
+      
+      .section-li {
+        display: block !important;
+        float: none !important;
+        flex: none !important;
+        
+        * {
+          display: block !important;
+          float: none !important;
+          flex: none !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        
+        .desc,
+        .meta,
+        .tags {
+          display: block !important;
+          flex: none !important;
+          float: none !important;
+        }
+      }
+    }
+  }
+}

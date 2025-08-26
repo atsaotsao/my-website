@@ -1,0 +1,39 @@
+---
+title: ""
+cssclasses: []
+publish: true
+modified: 2025-08-19 17:08:48
+---
+
+
+![forest](Attachments/Untitled%20design%20(65).png)
+# Welcome to My Digital Garden
+
+This is where ideas grow, connections form, and thoughts evolve. A space for exploration, creativity, and continuous learning.
+
+## What You'll Find Here
+
+**🌱 [My Lighthouse](my-lighthouse)** - Personal insights, reflections, and life philosophies that guide my journey
+
+**🎨 [Art](art)** - Creative expressions, visual experiments, and artistic explorations  
+
+**🌿 [Coaching](coaching)** - Thoughts on growth, mindfulness, and helping others reach their potential
+
+**☀️ [My Website](my-website)** - Projects, updates, and digital experiments
+
+---
+
+## Recent Thoughts
+
+*This space is constantly evolving - like a garden that grows with each season. Feel free to explore, and thank you for visiting.*
+
+> "The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb
+
+---
+
+<div class="wander-button-container"> <a href="/graph" class="wander-button">🗺️ Wander</a> </div>
+
+[graph](graph.md)
+<div class="graph-center-container" id="graph-container"></div>
+
+*Last updated: 2024-08-14*

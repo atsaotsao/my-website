@@ -20,38 +20,74 @@ const defaultOptions: TagContentOptions = {
 
 export default ((opts?: Partial<TagContentOptions>) => {
   const options: TagContentOptions = { ...defaultOptions, ...opts }
-
+  
   const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
     const { tree, fileData, allFiles, cfg } = props
     const slug = fileData.slug
-
+    
     if (!(slug?.startsWith("tags/") || slug === "tags")) {
       throw new Error(`Component "TagContent" tried to render a non-tag page: ${slug}`)
     }
-
+    
     const tag = simplifySlug(slug.slice("tags/".length) as FullSlug)
-    const allPagesWithTag = (tag: string) =>
-      allFiles.filter((file) =>
-        (file.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes).includes(tag),
-      )
-
+    
+    // FIXED: Create a function that filters pages for a given tag, excluding main pages
+    const allPagesWithTag = (targetTag: string): QuartzPluginData[] => {
+      return allFiles.filter((file) => {
+        const tags = file.frontmatter?.tags ?? []
+        const hasTag = tags.flat().includes(targetTag)
+        
+        if (!hasTag) return false
+        
+        // EXCLUDE MAIN PAGES
+        const excludedSlugs = [
+          'index',
+          'my-art/index', 
+          'my-writing/index',
+          'coaching',
+          'now', 
+          'principles',
+          'my-art',
+          'my-writing'
+        ]
+        
+        // Check if this is a main page to exclude
+        if (excludedSlugs.includes(file.slug!)) {
+          console.log(`🚫 Excluded from tag "${targetTag}": ${file.slug}`);
+          return false
+        }
+        
+        // Check frontmatter exclusion
+        if (file.frontmatter?.exclude_from_backlinks || file.frontmatter?.no_backlink) {
+          console.log(`🚫 Excluded from tag "${targetTag}" by frontmatter: ${file.slug}`);
+          return false
+        }
+        
+        return true
+      })
+    }
+    
     const content = (
       (tree as Root).children.length === 0
         ? fileData.description
         : htmlToJsx(fileData.filePath!, tree)
     ) as ComponentChildren
+    
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = cssClasses.join(" ")
+    
     if (tag === "/") {
       const tags = [
         ...new Set(
           allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
         ),
       ].sort((a, b) => a.localeCompare(b))
+      
       const tagItemMap: Map<string, QuartzPluginData[]> = new Map()
       for (const tag of tags) {
         tagItemMap.set(tag, allPagesWithTag(tag))
       }
+      
       return (
         <div class="popover-hint">
           <article class={classes}>
@@ -65,18 +101,14 @@ export default ((opts?: Partial<TagContentOptions>) => {
                 ...props,
                 allFiles: pages,
               }
-
               const contentPage = allFiles.filter((file) => file.slug === `tags/${tag}`).at(0)
-
               const root = contentPage?.htmlAst
               const content =
                 !root || root?.children.length === 0
                   ? contentPage?.description
                   : htmlToJsx(contentPage.filePath!, root)
-
               const tagListingPage = `/tags/${tag}` as FullSlug
               const href = resolveRelative(fileData.slug!, tagListingPage)
-
               return (
                 <div>
                   <h2>
@@ -113,7 +145,6 @@ export default ((opts?: Partial<TagContentOptions>) => {
         ...props,
         allFiles: pages,
       }
-
       return (
         <div class="popover-hint">
           <article class={classes}>{content}</article>
@@ -127,7 +158,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
       )
     }
   }
-
+  
   TagContent.css = concatenateResources(style, PageList.css)
   return TagContent
 }) satisfies QuartzComponentConstructor

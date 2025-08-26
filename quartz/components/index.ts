@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import Sunlit from "./Sunlit"  // ← Add this import
 
 export {
   ArticleTitle,
@@ -50,4 +51,7 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  Sunlit,  // ← Add this export
 }
+
+export { default as CustomNav } from "./CustomNav"

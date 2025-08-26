@@ -1,0 +1,196 @@
+// quartz.config.ts - Updated configuration with proper image handling
+import type { QuartzConfig } from "./quartz/cfg"
+import * as Plugin from "./quartz/plugins"
+
+const config: QuartzConfig = {
+  configuration: {
+    contentDir: "/Users/andrewtsao/Sites/quartz-content",
+    pageTitle: "Andrew Tsao",
+    pageTitleSuffix: "",
+    baseUrl: "localhost", // Change this to your actual domain when deploying
+    locale: "en-US",
+    enableSPA: true,
+    enablePopovers: true,
+    analytics: { provider: "plausible" },
+    ignorePatterns: [
+  "**/.obsidian/**",
+  "**/.git/**", 
+  "**/node_modules/**",
+  "**/.DS_Store",
+  "**/Archive/**",
+  "**/Templates/**", 
+  "**/template/**",
+  "**/Private/**",
+  "**/private/**",
+  "**/Trash/**",
+  "**/*.trash/**",
+  "**/Untitled/**",
+  "**/Journal/**",        // ← Add this
+  "**/Daily/**",          // ← Add this  
+  "**/journal/**",        // ← Add this
+  "**/daily/**",          // ← Add this
+  "**/_*",               // ← Files starting with underscore
+  "**/draft*",           // ← Draft files
+],
+    defaultDateType: "modified",
+    
+    // Add the name rotation script to head
+    head: [
+      {
+        tag: "script",
+        props: { type: "text/javascript" },
+        children: `
+console.log('🔄 Name rotation starting');
+
+function initNameRotation() {
+    console.log('🚀 Initializing name rotation...');
+    
+    const titleElement = document.querySelector('.page-title a') || document.querySelector('.page-title');
+    console.log('📍 Title element found:', titleElement);
+    
+    if (titleElement) {
+        const currentText = titleElement.textContent.trim();
+        console.log('📝 Current title text:', currentText);
+        
+        if (currentText.includes('Andrew') || currentText.includes('Tsao')) {
+            console.log('✅ Setting up name rotation');
+            
+            titleElement.innerHTML = \`
+                <span class="name-full active">Andrew Tsao</span>
+                <span class="name-nick">Atsao</span>
+                <span class="name-zh">曹明鑫</span>
+            \`;
+            
+            let currentName = 0;
+            const names = ['name-full', 'name-nick', 'name-zh'];
+            const displayNames = ['Andrew Tsao', 'Atsao', '曹明鑫'];
+            
+            console.log('🎬 Starting rotation');
+            
+            if (window.nameRotationInterval) {
+                clearInterval(window.nameRotationInterval);
+            }
+            
+            window.nameRotationInterval = setInterval(() => {
+                const currentElement = titleElement.querySelector(\`.\${names[currentName]}\`);
+                if (currentElement) {
+                    currentElement.classList.remove('active');
+                }
+                
+                currentName = (currentName + 1) % 3;
+                
+                const nextElement = titleElement.querySelector(\`.\${names[currentName]}\`);
+                if (nextElement) {
+                    nextElement.classList.add('active');
+                    console.log(\`🔄 Rotated to: \${displayNames[currentName]}\`);
+                }
+            }, 3000);
+            
+            console.log('✅ Name rotation setup complete');
+        } else {
+            console.log('❌ Title text does not match. Found:', currentText);
+        }
+    } else {
+        console.log('❌ No title element found');
+    }
+}
+
+// Multiple tries
+setTimeout(initNameRotation, 100);
+setTimeout(initNameRotation, 500);
+setTimeout(initNameRotation, 1000);
+setTimeout(initNameRotation, 2000);
+
+document.addEventListener('DOMContentLoaded', initNameRotation);
+document.addEventListener('nav', () => {
+    if (window.nameRotationInterval) clearInterval(window.nameRotationInterval);
+    setTimeout(initNameRotation, 200);
+});
+        `
+      }
+    ],
+    
+    theme: {
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        header: "EB Garamond",
+        body: "EB Garamond", 
+        code: "JetBrains Mono",
+      },
+      colors: {
+        lightMode: {
+          light: "#f0f0f2",
+          lightgray: "#d8d8da",
+          gray: "#868889",
+          darkgray: "#202225",
+          dark: "#202225",
+          secondary: "#027b1f",
+          tertiary: "#185ecd",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "rgba(255, 242, 54, 0.53)",
+        },
+        darkMode: {
+          light: "#151515",
+          lightgray: "#2a2a2b",
+          gray: "#5f6062",
+          darkgray: "#d4d4d4",
+          dark: "#ececec",
+          secondary: "#2aa14e",
+          tertiary: "#6b8ce6",
+          highlight: "rgba(143, 159, 169, 0.20)",
+          textHighlight: "rgba(255, 242, 54, 0.45)",
+        },
+      },
+    },
+  },
+      plugins: {
+    transformers: [
+      Plugin.FrontMatter(),
+      Plugin.CreatedModifiedDate({
+        priority: ["frontmatter", "filesystem", "git"],
+      }),
+      Plugin.ObsidianFlavoredMarkdown({
+        comments: true,
+        highlight: true,
+        wikilinks: true,
+        callouts: true,
+        mermaid: true,
+        parseTags: true,
+        parseArrows: true,
+        parseBlockReferences: true,
+        enableInHtmlEmbed: false, // Keep false for security
+        enableYouTubeEmbed: true,
+      }),
+      Plugin.GitHubFlavoredMarkdown(),
+      Plugin.TableOfContents({ maxDepth: 3 }),
+      Plugin.CrawlLinks({
+        markdownLinkResolution: "shortest", // Match Obsidian settings
+        prettyLinks: true,
+        lazyLoad: false, // lazyLoad is not a CrawlLinks option
+      }),
+      Plugin.Description(),
+      Plugin.SyntaxHighlighting({
+        theme: { light: "github-light", dark: "github-dark" },
+        keepBackground: false,
+      }),
+      Plugin.Latex({ renderEngine: "katex" }),
+    ],
+    filters: [],
+    emitters: [
+      Plugin.AliasRedirects(),
+      Plugin.ComponentResources(),
+      Plugin.ContentPage(),
+      Plugin.FolderPage(),
+      Plugin.TagPage(),
+      Plugin.ContentIndex(),
+      // Assets plugin handles images - make sure it's properly configured
+      Plugin.Assets(),
+      Plugin.Static(),
+      Plugin.Favicon(),
+      Plugin.NotFoundPage(),
+    ],
+  },
+}
+
+export default config

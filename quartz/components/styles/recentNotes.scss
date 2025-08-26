@@ -1,23 +1,36 @@
-.recent-notes {
+// === CUSTOMIZE RECENT NOTES NAVIGATION ===
+.sidebar.left .recent-notes {
+  // Hide the section title completely if it's empty
   & > h3 {
-    margin: 0.5rem 0 0 0;
-    font-size: 1rem;
+    display: none !important;
   }
-
+  
   & > ul.recent-ul {
-    list-style: none;
-    margin-top: 1rem;
-    padding-left: 0;
-
+    margin-top: 0 !important; // Remove top margin since no title
+    
     & > li {
-      margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
-      }
-
+      margin: 0.5rem 0 !important; // Reduce spacing to match explorer
+      
       .section > .meta {
-        margin: 0 0 0.5rem 0;
-        opacity: 0.6;
+        display: none !important; // Hide dates completely
+      }
+      
+      // Style links to match explorer style
+      .section > .desc > h3 > a {
+        padding: 0.7rem 0.75rem !important;
+        border-radius: 10px !important;
+        text-decoration: none !important;
+        color: var(--darkgray) !important;
+        transition: all 0.2s ease !important;
+        margin-bottom: 2px !important;
+        display: block !important;
+        font-weight: 400 !important;
+        
+        &:hover { 
+          background: rgba(24, 94, 205, 0.06) !important;
+          color: var(--tertiary) !important;
+          transform: translateX(2px) !important;
+        }
       }
     }
   }

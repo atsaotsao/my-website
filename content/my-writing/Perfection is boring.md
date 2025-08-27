@@ -1,12 +1,16 @@
 ---
 title:
-publish:
+publish: true
 type: 🌳
-pubDate:
 creation date: 2025-08-11 14:38
-modified: 2025-08-11 12:55:17
-status: not processed
+modified: 2025-08-27 00:27:15
+status: completed
+published: 2025-08-27
 ---
+# This is a test
 
+## LEt's do this
+
+### It'll be pretty cool if this worked
 
 

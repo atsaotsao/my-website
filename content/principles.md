@@ -1,12 +1,23 @@
 ---
 publish: true
-modified: 2025-08-26 00:19:29
+modified: 2025-08-26 21:51:30
 published: 2025-08-19
 ---
+### love is the central work.
 
-This is space to list out clearly what I represent.
 
-==CURRENTLY IN PROGRESS== 
-come back in a few days 😉
+### practice relational wholeness
 
-*updated 2025-08-26 00:19*
+
+### prioritize creativity
+
+
+### speak truth to power
+
+
+### listen to earth and the body
+
+
+### honor rest
+
+*updated 2025-08-26 21:51*

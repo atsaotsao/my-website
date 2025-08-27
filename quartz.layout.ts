@@ -32,7 +32,7 @@ const sharedSidebar = [
       { name: "coaching", url: "/coaching" },
       { name: "my writing", url: "/my-writing" },
       { name: "my art", url: "/my-art" },
-      { name: "my playlists", url: "/my-playlist" }, // ← New playlist section
+      { name: "my playlists", url: "/my-playlists" }, // Changed from "/my-playlist"
     ]
   }),
 ];
@@ -56,6 +56,8 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [],
 }
 
+// In your quartz.layout.ts file, update your defaultListPageLayout:
+
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(), 
@@ -64,5 +66,10 @@ export const defaultListPageLayout: PageLayout = {
   ],
   left: sharedSidebar,
   right: [],
-  afterBody: [],
+  afterBody: [
+    Component.FolderContent({
+      showFolderCount: false, // ← ADD THIS LINE - hides "X items under this folder"
+      showSubfolders: false,   // ← Optional: keep subfolders visible
+    }),
+  ],
 }

@@ -16,6 +16,9 @@ Over the course of 90 months, I've handpicked and put together 90 playlists and 
 
 ![center](../attachments/25on25%20logo.gif)
 
+
+![center](../attachments/25on25%20logo.gif)
+
 Here was the original copy from the 25 on 25 website: 
 
 A monthly newsletter that includes:

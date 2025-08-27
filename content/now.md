@@ -26,3 +26,4 @@ I am interested in creating and being part of spaces, projects, and movements th
 
 *(updated 2025-08-25 21:24)*
 
+![myart image](attachments/myart stiching (2).png)

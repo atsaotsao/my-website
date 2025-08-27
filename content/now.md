@@ -25,3 +25,4 @@ I am interested in creating and being part of spaces, projects, and movements th
 - **How can we finally see our multitudes, our woven quality of artistry, and harness it to help create a new reimagined world?**
 
 *(updated 2025-08-25 21:24)*
+

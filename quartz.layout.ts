@@ -67,9 +67,5 @@ export const defaultListPageLayout: PageLayout = {
   left: sharedSidebar,
   right: [],
   afterBody: [
-    Component.FolderContent({
-      showFolderCount: false, // ← ADD THIS LINE - hides "X items under this folder"
-      showSubfolders: false,   // ← Optional: keep subfolders visible
-    }),
   ],
 }

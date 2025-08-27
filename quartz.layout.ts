@@ -61,11 +61,14 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(), 
-    Component.Spacer(),
-    Component.ArticleTitle(), 
+    Component.ArticleTitle(),
   ],
   left: sharedSidebar,
   right: [],
   afterBody: [
+    Component.FolderContent({
+      showFolderCount: false,
+      showSubfolders: false,
+    }),
   ],
 }

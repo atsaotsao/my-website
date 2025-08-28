@@ -2,14 +2,13 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-08-27 23:10:50
+modified: 2025-08-27 23:36:16
 ---
 ![](attachments/CleanShot%202025-08-21%20at%2022.19.27@2x.png)
 
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-![](attachments/5904.EX8968_21-access.jpg)
 
-<span style="font-family:'Rock Salt','Patrick Hand','Caveat Brush',cursive; font-size:clamp(48px,12vw,30px);">welcome</span>
+
+![](attachments/5904.EX8968_21-access.jpg)
 
 I'm Andrew, and this is my internet home. 
 

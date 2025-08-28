@@ -2,13 +2,9 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-08-27 23:36:16
+modified: 2025-08-27 23:46:27
 ---
-![](attachments/CleanShot%202025-08-21%20at%2022.19.27@2x.png)
-
-
-
-![](attachments/5904.EX8968_21-access.jpg)
+##### Welcome 
 
 I'm Andrew, and this is my internet home. 
 

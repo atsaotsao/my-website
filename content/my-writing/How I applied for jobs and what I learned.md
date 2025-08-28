@@ -77,7 +77,7 @@ This is an entire list of things I end up doing:
 - After each interview, I would collect all the behavior, technical, or estimation questions in one document so that I have a go-to list of questions that I can reference back to and practice with.
 
 
-![interview calendar.png](attachments/interview calendar.png)
+![interview calendar.png](interview calendar.png)
 
 
 #### And as a result I...

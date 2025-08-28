@@ -363,7 +363,7 @@ import("https://cdn.skypack.dev/@floating-ui/dom").then(({ computePosition, flip
           modified: ["modified", "lastmod", "updated"]
         }
       }),
-      Plugin.ObsidianFlavoredMarkdown({
+     Plugin.ObsidianFlavoredMarkdown({
   comments: true,
   highlight: true,
   wikilinks: true,
@@ -372,12 +372,11 @@ import("https://cdn.skypack.dev/@floating-ui/dom").then(({ computePosition, flip
   parseTags: true,
   parseArrows: true,
   parseBlockReferences: true,
-  enableInHtmlEmbed: false,
+  enableInHtmlEmbed: true,  // ← Change this to true
   enableYouTubeEmbed: true,
-  // Add these to fix paragraph handling
-  breaks: true,        // Convert line breaks to <br>
-  linkify: true,       // Auto-convert URLs
-  typographer: false,  // Don't auto-replace quotes
+  breaks: true,
+  linkify: true,
+  typographer: false,
 }),
       Plugin.GitHubFlavoredMarkdown({
   enableSmartyPants: true,  // This might affect paragraph handling

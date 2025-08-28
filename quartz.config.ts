@@ -7,7 +7,7 @@ const config: QuartzConfig = {
     contentDir: "/Users/andrewtsao/new-quartz/content",
     pageTitle: "Andrew Tsao",
     pageTitleSuffix: "",
-    baseUrl: "localhost", // Change this to your actual domain when deploying
+    baseUrl: "andrew-tsao.com", // Change this to your actual domain when deploying
     locale: "en-US",
     enableSPA: true,
     enablePopovers: true, // ✅ Disable all popovers globally
@@ -377,11 +377,6 @@ import("https://cdn.skypack.dev/@floating-ui/dom").then(({ computePosition, flip
   breaks: true,
   linkify: true,
   typographer: false,
-}),
-      Plugin.GitHubFlavoredMarkdown({
-  enableSmartyPants: true,  // This might affect paragraph handling
-  linkHeadings: true,
-  breaks: true,
 }),
       Plugin.TableOfContents({ maxDepth: 3 }),
       Plugin.CrawlLinks({

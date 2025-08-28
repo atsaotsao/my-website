@@ -2,9 +2,9 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-08-26 00:14:55
+modified: 2025-08-27 11:05:43
 ---
-![forest](attachments/CleanShot%202025-08-21%20at%2022.19.27@2x.png)
+![](attachments/CleanShot%202025-08-21%20at%2022.19.27@2x.png)
 
 <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
@@ -40,6 +40,3 @@ If you want to see more of me you can always come say hi on [Instagram](https://
 
 
 *Last updated: 2025-08-26 00:02*
-
-
-![screenshot](attachments/CleanShot 2025-08-21 at 22.19.27@2x.png)

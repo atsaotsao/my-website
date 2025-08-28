@@ -1,10 +1,10 @@
 ---
-modified: 2025-08-26 21:54:21
+modified: 2025-08-27 11:09:48
 publish: true
 published: 2025-08-19
 ---
 ![](attachments/myart%20stiching%20(2).png)
-
+![](attachments/myart%20stiching%20(2)%201.png)
 - Running a group coaching container that combines lessons around ancestry, artistry, and earth-based practices to help anyone navigate crisis and build resilience  (*IN PROGRESS* [email me](mailto:andrew@codelesscoach.com) if you want a sneak peek.)
 - Doing 1-on-1 [coaching](coaching.md) for fellow soul-led professionals deep feelers, artists, and creative entrepreneurs
 - Hosting [The Art of Your Life](https://theartofyourlife.transistor.fm/) podcast show (planning on getting this up and running again soon, so stay tuned!)
@@ -25,5 +25,3 @@ I am interested in creating and being part of spaces, projects, and movements th
 - **How can we finally see our multitudes, our woven quality of artistry, and harness it to help create a new reimagined world?**
 
 *(updated 2025-08-25 21:24)*
-
-![myart image](attachments/myart stiching (2).png)

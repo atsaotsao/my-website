@@ -7,6 +7,8 @@ published: 2025-08-19
 
 # wuuuuut
 
+super super
+
 ![](attachments/myart%20stiching%20(2)%202.png)
 - Running a group coaching container that combines lessons around ancestry, artistry, and earth-based practices to help anyone navigate crisis and build resilience  (*IN PROGRESS* [email me](mailto:andrew@codelesscoach.com) if you want a sneak peek.)
 - Doing 1-on-1 [coaching](coaching.md) for fellow soul-led professionals deep feelers, artists, and creative entrepreneurs

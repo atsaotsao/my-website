@@ -1,9 +1,9 @@
 ---
-modified: 2025-08-28 00:18:10
+modified: 2025-08-29 13:45:18
 publish: true
 published: 2025-08-19
 ---
-![](attachments/myart%20stiching%20(2)%203.png)
+![](/attachments/myart%20stiching%20(2)%203.png)
 
 # wuuuuut
 

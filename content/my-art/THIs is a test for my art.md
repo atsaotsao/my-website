@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-29 13:37:43
+modified: 2025-08-29 14:08:09
 published: 2025-08-28
 publish: true
 ---
@@ -8,6 +8,8 @@ publish: true
 ![](static/images/myart-stiching-2-3.png)
 
 ![](./static/images/myart-stiching-2-3.png)
+
+
 
 
 <img src="./static/images/myart-stiching-2-3.png" alt="test image">

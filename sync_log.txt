@@ -1,0 +1,1961 @@
++ set -e
++ echo 'Starting quick Obsidian to Quartz deployment...'
+Starting quick Obsidian to Quartz deployment...
++ cd /Users/andrewtsao/new-quartz
++ export NVM_DIR=/Users/andrewtsao/.nvm
++ NVM_DIR=/Users/andrewtsao/.nvm
++ '[' -s /Users/andrewtsao/.nvm/nvm.sh ']'
++ source /Users/andrewtsao/.nvm/nvm.sh
+++ NVM_SCRIPT_SOURCE=']'
+++ '[' -z '' ']'
+++ export NVM_CD_FLAGS=
+++ NVM_CD_FLAGS=
+++ nvm_is_zsh
+++ '[' -n '' ']'
+++ '[' -z /Users/andrewtsao/.nvm ']'
+++ case $NVM_DIR in
+++ unset NVM_SCRIPT_SOURCE
+++ nvm_process_parameters
+++ local NVM_AUTO_MODE
+++ NVM_AUTO_MODE=use
+++ '[' 0 -ne 0 ']'
+++ nvm_auto use
+++ local NVM_MODE
+++ NVM_MODE=use
+++ local VERSION
+++ local NVM_CURRENT
+++ '[' _use = _install ']'
+++ '[' _use = _use ']'
++++ nvm_ls_current
++++ local NVM_LS_CURRENT_NODE_PATH
+++++ command which node
++++ NVM_LS_CURRENT_NODE_PATH=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
+++++ nvm_version_dir iojs
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=iojs
+++++ '[' -z iojs ']'
+++++ '[' iojs = new ']'
+++++ '[' _iojs = _iojs ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/io.js
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/io.js
++++ nvm_tree_contains_path /Users/andrewtsao/.nvm/versions/io.js /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ local tree
++++ tree=/Users/andrewtsao/.nvm/versions/io.js
++++ local node_path
++++ node_path=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ '[' @/Users/andrewtsao/.nvm/versions/io.js@ = @@ ']'
++++ '[' @/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node@ = @@ ']'
++++ local previous_pathdir
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ local pathdir
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++++ pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ pathdir=/Users/andrewtsao/.nvm/versions/node
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0 ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node
+++++ dirname /Users/andrewtsao/.nvm/versions/node
++++ pathdir=/Users/andrewtsao/.nvm/versions
++++ '[' /Users/andrewtsao/.nvm/versions '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' /Users/andrewtsao/.nvm/versions/node ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions
+++++ dirname /Users/andrewtsao/.nvm/versions
++++ pathdir=/Users/andrewtsao/.nvm
++++ '[' /Users/andrewtsao/.nvm '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao/.nvm '!=' /Users/andrewtsao/.nvm/versions ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm
+++++ dirname /Users/andrewtsao/.nvm
++++ pathdir=/Users/andrewtsao
++++ '[' /Users/andrewtsao '!=' '' ']'
++++ '[' /Users/andrewtsao '!=' . ']'
++++ '[' /Users/andrewtsao '!=' / ']'
++++ '[' /Users/andrewtsao '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users/andrewtsao '!=' /Users/andrewtsao/.nvm ']'
++++ previous_pathdir=/Users/andrewtsao
+++++ dirname /Users/andrewtsao
++++ pathdir=/Users
++++ '[' /Users '!=' '' ']'
++++ '[' /Users '!=' . ']'
++++ '[' /Users '!=' / ']'
++++ '[' /Users '!=' /Users/andrewtsao/.nvm/versions/io.js ']'
++++ '[' /Users '!=' /Users/andrewtsao ']'
++++ previous_pathdir=/Users
+++++ dirname /Users
++++ pathdir=/
++++ '[' / '!=' '' ']'
++++ '[' / '!=' . ']'
++++ '[' / '!=' / ']'
++++ '[' / = /Users/andrewtsao/.nvm/versions/io.js ']'
++++ nvm_tree_contains_path /Users/andrewtsao/.nvm /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ local tree
++++ tree=/Users/andrewtsao/.nvm
++++ local node_path
++++ node_path=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ '[' @/Users/andrewtsao/.nvm@ = @@ ']'
++++ '[' @/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node@ = @@ ']'
++++ local previous_pathdir
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ local pathdir
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node
++++ pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' /Users/andrewtsao/.nvm ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++++ pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' /Users/andrewtsao/.nvm ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node/v22.18.0 '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node/v22.18.0
+++++ dirname /Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ pathdir=/Users/andrewtsao/.nvm/versions/node
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' /Users/andrewtsao/.nvm ']'
++++ '[' /Users/andrewtsao/.nvm/versions/node '!=' /Users/andrewtsao/.nvm/versions/node/v22.18.0 ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions/node
+++++ dirname /Users/andrewtsao/.nvm/versions/node
++++ pathdir=/Users/andrewtsao/.nvm/versions
++++ '[' /Users/andrewtsao/.nvm/versions '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' /Users/andrewtsao/.nvm ']'
++++ '[' /Users/andrewtsao/.nvm/versions '!=' /Users/andrewtsao/.nvm/versions/node ']'
++++ previous_pathdir=/Users/andrewtsao/.nvm/versions
+++++ dirname /Users/andrewtsao/.nvm/versions
++++ pathdir=/Users/andrewtsao/.nvm
++++ '[' /Users/andrewtsao/.nvm '!=' '' ']'
++++ '[' /Users/andrewtsao/.nvm '!=' . ']'
++++ '[' /Users/andrewtsao/.nvm '!=' / ']'
++++ '[' /Users/andrewtsao/.nvm '!=' /Users/andrewtsao/.nvm ']'
++++ '[' /Users/andrewtsao/.nvm = /Users/andrewtsao/.nvm ']'
++++ local VERSION
+++++ node --version
++++ VERSION=v22.18.0
++++ '[' v22.18.0 = v0.6.21-pre ']'
++++ nvm_echo v22.18.0
++++ command printf '%s\n' v22.18.0
+++ NVM_CURRENT=v22.18.0
+++ '[' _v22.18.0 = _none ']'
+++ '[' _v22.18.0 = _system ']'
+++ nvm use --silent v22.18.0
+++ '[' 3 -lt 1 ']'
+++ local DEFAULT_IFS
++++ nvm_echo t
++++ command printf '%s\n' t
++++ command tr t '\t'
++++ tr t '\t'
+++ DEFAULT_IFS=' 	
+'
+++ '[' hxB '!=' ehxB ']'
+++ set +e
+++ local EXIT_CODE
+++ IFS=' 	
+'
+++ nvm use --silent v22.18.0
+++ '[' 3 -lt 1 ']'
+++ local DEFAULT_IFS
++++ nvm_echo t
++++ command printf '%s\n' t
++++ command tr t '\t'
++++ tr t '\t'
+++ DEFAULT_IFS=' 	
+'
+++ '[' hxB '!=' hxB ']'
+++ '[' hxB '!=' hxB ']'
+++ '[' -n /bin/bash ']'
+++ '[' hxB '!=' hxB ']'
+++ '[' ' 	
+' '!=' ' 	
+' ']'
+++ local i
+++ for i in '"$@"'
+++ case $i in
+++ for i in '"$@"'
+++ case $i in
+++ for i in '"$@"'
+++ case $i in
+++ local COMMAND
+++ COMMAND=use
+++ shift
+++ local VERSION
+++ local ADDITIONAL_PARAMETERS
+++ case $COMMAND in
+++ local PROVIDED_VERSION
+++ local NVM_SILENT
+++ local NVM_SILENT_ARG
+++ local NVM_DELETE_PREFIX
+++ NVM_DELETE_PREFIX=0
+++ local NVM_LTS
+++ local IS_VERSION_FROM_NVMRC
+++ IS_VERSION_FROM_NVMRC=0
+++ '[' 2 -ne 0 ']'
+++ case "$1" in
+++ NVM_SILENT=1
+++ NVM_SILENT_ARG=--silent
+++ shift
+++ '[' 1 -ne 0 ']'
+++ case "$1" in
+++ '[' -n v22.18.0 ']'
+++ PROVIDED_VERSION=v22.18.0
+++ shift
+++ '[' 0 -ne 0 ']'
+++ '[' -n '' ']'
+++ '[' -z v22.18.0 ']'
++++ nvm_match_version v22.18.0
++++ local NVM_IOJS_PREFIX
+++++ nvm_iojs_prefix
+++++ nvm_echo iojs
+++++ command printf '%s\n' iojs
++++ NVM_IOJS_PREFIX=iojs
++++ local PROVIDED_VERSION
++++ PROVIDED_VERSION=v22.18.0
++++ case "_${PROVIDED_VERSION}" in
++++ nvm_version v22.18.0
++++ local PATTERN
++++ PATTERN=v22.18.0
++++ local VERSION
++++ '[' -z v22.18.0 ']'
++++ '[' v22.18.0 = current ']'
++++ local NVM_NODE_PREFIX
+++++ nvm_node_prefix
+++++ nvm_echo node
+++++ command printf '%s\n' node
++++ NVM_NODE_PREFIX=node
++++ case "_${PATTERN}" in
+++++ nvm_ls v22.18.0
+++++ local PATTERN
+++++ PATTERN=v22.18.0
+++++ local VERSIONS
+++++ command tail -1
+++++ VERSIONS=
+++++ '[' v22.18.0 = current ']'
+++++ tail -1
+++++ local NVM_IOJS_PREFIX
++++++ nvm_iojs_prefix
++++++ nvm_echo iojs
++++++ command printf '%s\n' iojs
+++++ NVM_IOJS_PREFIX=iojs
+++++ local NVM_NODE_PREFIX
++++++ nvm_node_prefix
++++++ nvm_echo node
++++++ command printf '%s\n' node
+++++ NVM_NODE_PREFIX=node
+++++ local NVM_VERSION_DIR_IOJS
++++++ nvm_version_dir iojs
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=iojs
++++++ '[' -z iojs ']'
++++++ '[' iojs = new ']'
++++++ '[' _iojs = _iojs ']'
++++++ nvm_echo /Users/andrewtsao/.nvm/versions/io.js
++++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/io.js
+++++ NVM_VERSION_DIR_IOJS=/Users/andrewtsao/.nvm/versions/io.js
+++++ local NVM_VERSION_DIR_NEW
++++++ nvm_version_dir new
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=new
++++++ '[' -z new ']'
++++++ '[' new = new ']'
++++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
++++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
+++++ NVM_VERSION_DIR_NEW=/Users/andrewtsao/.nvm/versions/node
+++++ local NVM_VERSION_DIR_OLD
++++++ nvm_version_dir old
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=old
++++++ '[' -z old ']'
++++++ '[' old = new ']'
++++++ '[' _old = _iojs ']'
++++++ '[' _old = _old ']'
++++++ nvm_echo /Users/andrewtsao/.nvm
++++++ command printf '%s\n' /Users/andrewtsao/.nvm
+++++ NVM_VERSION_DIR_OLD=/Users/andrewtsao/.nvm
+++++ case "${PATTERN}" in
+++++ nvm_resolve_local_alias v22.18.0
+++++ '[' -z v22.18.0 ']'
+++++ local VERSION
+++++ local EXIT_CODE
++++++ nvm_resolve_alias v22.18.0
++++++ '[' -z v22.18.0 ']'
++++++ local PATTERN
++++++ PATTERN=v22.18.0
++++++ local ALIAS
++++++ ALIAS=v22.18.0
++++++ local ALIAS_TEMP
++++++ local SEEN_ALIASES
++++++ SEEN_ALIASES=v22.18.0
++++++ local NVM_ALIAS_INDEX
++++++ NVM_ALIAS_INDEX=1
++++++ true
+++++++ nvm_alias v22.18.0
+++++++ command head -n 1
+++++++ head -n 1
+++++++ command tail -n 1
+++++++ tail -n 1
++++++ ALIAS_TEMP=
++++++ '[' -z '' ']'
++++++ break
++++++ '[' -n v22.18.0 ']'
++++++ '[' _v22.18.0 '!=' _v22.18.0 ']'
++++++ nvm_validate_implicit_alias v22.18.0
++++++ return 2
+++++ VERSION=
+++++ EXIT_CODE=2
+++++ '[' -z '' ']'
+++++ return 2
++++++ nvm_ensure_version_prefix v22.18.0
++++++ local NVM_VERSION
+++++++ nvm_strip_iojs_prefix v22.18.0
+++++++ local NVM_IOJS_PREFIX
+++++++ command sed -e 's/^\([0-9]\)/v\1/g'
+++++++ sed -e 's/^\([0-9]\)/v\1/g'
++++++++ nvm_iojs_prefix
++++++++ nvm_echo iojs
++++++++ command printf '%s\n' iojs
+++++++ NVM_IOJS_PREFIX=iojs
+++++++ '[' v22.18.0 = iojs ']'
+++++++ nvm_echo v22.18.0
+++++++ command printf '%s\n' v22.18.0
++++++ NVM_VERSION=v22.18.0
++++++ nvm_is_iojs_version v22.18.0
++++++ case "${1-}" in
++++++ return 1
++++++ nvm_echo v22.18.0
++++++ command printf '%s\n' v22.18.0
+++++ PATTERN=v22.18.0
+++++ '[' v22.18.0 = N/A ']'
+++++ local NVM_PATTERN_STARTS_WITH_V
+++++ case $PATTERN in
+++++ NVM_PATTERN_STARTS_WITH_V=true
+++++ '[' true = true ']'
++++++ nvm_num_version_groups v22.18.0
++++++ local VERSION
++++++ VERSION=v22.18.0
++++++ VERSION=22.18.0
++++++ VERSION=22.18.0
++++++ '[' -z 22.18.0 ']'
++++++ local NVM_NUM_DOTS
+++++++ nvm_echo 22.18.0
+++++++ command printf '%s\n' 22.18.0
+++++++ command sed -e 's/[^\.]//g'
+++++++ sed -e 's/[^\.]//g'
++++++ NVM_NUM_DOTS=..
++++++ local NVM_NUM_GROUPS
++++++ NVM_NUM_GROUPS=...
++++++ nvm_echo 3
++++++ command printf '%s\n' 3
+++++ '[' _3 = _3 ']'
+++++ nvm_is_version_installed v22.18.0
+++++ '[' -z v22.18.0 ']'
+++++ local NVM_NODE_BINARY
+++++ NVM_NODE_BINARY=node
++++++ nvm_get_os
++++++ local NVM_UNAME
+++++++ command uname -a
+++++++ uname -a
++++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
++++++ local NVM_OS
++++++ case "${NVM_UNAME}" in
++++++ NVM_OS=darwin
++++++ nvm_echo darwin
++++++ command printf '%s\n' darwin
+++++ '[' _darwin = _win ']'
++++++ nvm_version_path v22.18.0
+++++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
+++++ return 0
+++++ VERSIONS=v22.18.0
+++++ '[' '' = true ']'
+++++ '[' -z v22.18.0 ']'
+++++ nvm_echo v22.18.0
+++++ command printf '%s\n' v22.18.0
++++ VERSION=v22.18.0
++++ '[' -z v22.18.0 ']'
++++ '[' _v22.18.0 = _N/A ']'
++++ nvm_echo v22.18.0
++++ command printf '%s\n' v22.18.0
+++ VERSION=v22.18.0
+++ '[' -z v22.18.0 ']'
+++ '[' _v22.18.0 = _system ']'
+++ '[' _v22.18.0 = $'_�\210\236' ']'
+++ '[' v22.18.0 = N/A ']'
+++ nvm_ensure_version_installed v22.18.0 0
+++ local PROVIDED_VERSION
+++ PROVIDED_VERSION=v22.18.0
+++ local IS_VERSION_FROM_NVMRC
+++ IS_VERSION_FROM_NVMRC=0
+++ '[' v22.18.0 = system ']'
+++ local LOCAL_VERSION
+++ local EXIT_CODE
++++ nvm_version v22.18.0
++++ local PATTERN
++++ PATTERN=v22.18.0
++++ local VERSION
++++ '[' -z v22.18.0 ']'
++++ '[' v22.18.0 = current ']'
++++ local NVM_NODE_PREFIX
+++++ nvm_node_prefix
+++++ nvm_echo node
+++++ command printf '%s\n' node
++++ NVM_NODE_PREFIX=node
++++ case "_${PATTERN}" in
+++++ nvm_ls v22.18.0
+++++ command tail -1
+++++ local PATTERN
+++++ tail -1
+++++ PATTERN=v22.18.0
+++++ local VERSIONS
+++++ VERSIONS=
+++++ '[' v22.18.0 = current ']'
+++++ local NVM_IOJS_PREFIX
++++++ nvm_iojs_prefix
++++++ nvm_echo iojs
++++++ command printf '%s\n' iojs
+++++ NVM_IOJS_PREFIX=iojs
+++++ local NVM_NODE_PREFIX
++++++ nvm_node_prefix
++++++ nvm_echo node
++++++ command printf '%s\n' node
+++++ NVM_NODE_PREFIX=node
+++++ local NVM_VERSION_DIR_IOJS
++++++ nvm_version_dir iojs
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=iojs
++++++ '[' -z iojs ']'
++++++ '[' iojs = new ']'
++++++ '[' _iojs = _iojs ']'
++++++ nvm_echo /Users/andrewtsao/.nvm/versions/io.js
++++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/io.js
+++++ NVM_VERSION_DIR_IOJS=/Users/andrewtsao/.nvm/versions/io.js
+++++ local NVM_VERSION_DIR_NEW
++++++ nvm_version_dir new
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=new
++++++ '[' -z new ']'
++++++ '[' new = new ']'
++++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
++++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
+++++ NVM_VERSION_DIR_NEW=/Users/andrewtsao/.nvm/versions/node
+++++ local NVM_VERSION_DIR_OLD
++++++ nvm_version_dir old
++++++ local NVM_WHICH_DIR
++++++ NVM_WHICH_DIR=old
++++++ '[' -z old ']'
++++++ '[' old = new ']'
++++++ '[' _old = _iojs ']'
++++++ '[' _old = _old ']'
++++++ nvm_echo /Users/andrewtsao/.nvm
++++++ command printf '%s\n' /Users/andrewtsao/.nvm
+++++ NVM_VERSION_DIR_OLD=/Users/andrewtsao/.nvm
+++++ case "${PATTERN}" in
+++++ nvm_resolve_local_alias v22.18.0
+++++ '[' -z v22.18.0 ']'
+++++ local VERSION
+++++ local EXIT_CODE
++++++ nvm_resolve_alias v22.18.0
++++++ '[' -z v22.18.0 ']'
++++++ local PATTERN
++++++ PATTERN=v22.18.0
++++++ local ALIAS
++++++ ALIAS=v22.18.0
++++++ local ALIAS_TEMP
++++++ local SEEN_ALIASES
++++++ SEEN_ALIASES=v22.18.0
++++++ local NVM_ALIAS_INDEX
++++++ NVM_ALIAS_INDEX=1
++++++ true
+++++++ nvm_alias v22.18.0
+++++++ command head -n 1
+++++++ head -n 1
+++++++ command tail -n 1
+++++++ tail -n 1
++++++ ALIAS_TEMP=
++++++ '[' -z '' ']'
++++++ break
++++++ '[' -n v22.18.0 ']'
++++++ '[' _v22.18.0 '!=' _v22.18.0 ']'
++++++ nvm_validate_implicit_alias v22.18.0
++++++ return 2
+++++ VERSION=
+++++ EXIT_CODE=2
+++++ '[' -z '' ']'
+++++ return 2
++++++ nvm_ensure_version_prefix v22.18.0
++++++ local NVM_VERSION
+++++++ nvm_strip_iojs_prefix v22.18.0
+++++++ local NVM_IOJS_PREFIX
+++++++ command sed -e 's/^\([0-9]\)/v\1/g'
+++++++ sed -e 's/^\([0-9]\)/v\1/g'
++++++++ nvm_iojs_prefix
++++++++ nvm_echo iojs
++++++++ command printf '%s\n' iojs
+++++++ NVM_IOJS_PREFIX=iojs
+++++++ '[' v22.18.0 = iojs ']'
+++++++ nvm_echo v22.18.0
+++++++ command printf '%s\n' v22.18.0
++++++ NVM_VERSION=v22.18.0
++++++ nvm_is_iojs_version v22.18.0
++++++ case "${1-}" in
++++++ return 1
++++++ nvm_echo v22.18.0
++++++ command printf '%s\n' v22.18.0
+++++ PATTERN=v22.18.0
+++++ '[' v22.18.0 = N/A ']'
+++++ local NVM_PATTERN_STARTS_WITH_V
+++++ case $PATTERN in
+++++ NVM_PATTERN_STARTS_WITH_V=true
+++++ '[' true = true ']'
++++++ nvm_num_version_groups v22.18.0
++++++ local VERSION
++++++ VERSION=v22.18.0
++++++ VERSION=22.18.0
++++++ VERSION=22.18.0
++++++ '[' -z 22.18.0 ']'
++++++ local NVM_NUM_DOTS
+++++++ nvm_echo 22.18.0
+++++++ command printf '%s\n' 22.18.0
+++++++ command sed -e 's/[^\.]//g'
+++++++ sed -e 's/[^\.]//g'
++++++ NVM_NUM_DOTS=..
++++++ local NVM_NUM_GROUPS
++++++ NVM_NUM_GROUPS=...
++++++ nvm_echo 3
++++++ command printf '%s\n' 3
+++++ '[' _3 = _3 ']'
+++++ nvm_is_version_installed v22.18.0
+++++ '[' -z v22.18.0 ']'
+++++ local NVM_NODE_BINARY
+++++ NVM_NODE_BINARY=node
++++++ nvm_get_os
++++++ local NVM_UNAME
+++++++ command uname -a
+++++++ uname -a
++++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
++++++ local NVM_OS
++++++ case "${NVM_UNAME}" in
++++++ NVM_OS=darwin
++++++ nvm_echo darwin
++++++ command printf '%s\n' darwin
+++++ '[' _darwin = _win ']'
++++++ nvm_version_path v22.18.0
+++++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
+++++ return 0
+++++ VERSIONS=v22.18.0
+++++ '[' '' = true ']'
+++++ '[' -z v22.18.0 ']'
+++++ nvm_echo v22.18.0
+++++ command printf '%s\n' v22.18.0
++++ VERSION=v22.18.0
++++ '[' -z v22.18.0 ']'
++++ '[' _v22.18.0 = _N/A ']'
++++ nvm_echo v22.18.0
++++ command printf '%s\n' v22.18.0
+++ LOCAL_VERSION=v22.18.0
+++ EXIT_CODE=0
+++ local NVM_VERSION_DIR
+++ '[' 0 '!=' 0 ']'
+++ nvm_is_version_installed v22.18.0
+++ '[' -z v22.18.0 ']'
+++ local NVM_NODE_BINARY
+++ NVM_NODE_BINARY=node
++++ nvm_get_os
++++ local NVM_UNAME
+++++ command uname -a
+++++ uname -a
++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
++++ local NVM_OS
++++ case "${NVM_UNAME}" in
++++ NVM_OS=darwin
++++ nvm_echo darwin
++++ command printf '%s\n' darwin
+++ '[' _darwin = _win ']'
++++ nvm_version_path v22.18.0
+++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
+++ return 0
+++ local NVM_VERSION_DIR
++++ nvm_version_path v22.18.0
++++ local VERSION
++++ VERSION=v22.18.0
++++ '[' -z v22.18.0 ']'
++++ nvm_is_iojs_version v22.18.0
++++ case "${1-}" in
++++ return 1
++++ nvm_version_greater 0.12.0 v22.18.0
++++ command awk 'BEGIN {
+    if (ARGV[1] == "" || ARGV[2] == "") exit(1)
+    split(ARGV[1], a, /\./);
+    split(ARGV[2], b, /\./);
+    for (i=1; i<=3; i++) {
+      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);
+      if (b[i] && b[i] !~ /^[0-9]+$/) { exit(0); }
+      if (a[i] < b[i]) exit(3);
+      else if (a[i] > b[i]) exit(0);
+    }
+    exit(4)
+  }' 0.12.0 22.18.0
++++ awk 'BEGIN {
+    if (ARGV[1] == "" || ARGV[2] == "") exit(1)
+    split(ARGV[1], a, /\./);
+    split(ARGV[2], b, /\./);
+    for (i=1; i<=3; i++) {
+      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);
+      if (b[i] && b[i] !~ /^[0-9]+$/) { exit(0); }
+      if (a[i] < b[i]) exit(3);
+      else if (a[i] > b[i]) exit(0);
+    }
+    exit(4)
+  }' 0.12.0 22.18.0
+++++ nvm_version_dir new
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=new
+++++ '[' -z new ']'
+++++ '[' new = new ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ NVM_VERSION_DIR=/Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ nvm_change_path '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' /bin /Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ '[' -z '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' ']'
++++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
++++ GREP_OPTIONS=
++++ command grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
++++ grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
++++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ GREP_OPTIONS=
++++ command grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
++++ GREP_OPTIONS=
++++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
++++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
++++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ GREP_OPTIONS=
++++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
++++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
++++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
+++ PATH='/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_has manpath
+++ type manpath
+++ '[' -z '' ']'
+++ local MANPATH
++++ manpath
+++ MANPATH=/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ nvm_change_path /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man /share/man /Users/andrewtsao/.nvm/versions/node/v22.18.0
++++ '[' -z /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man ']'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ GREP_OPTIONS=
++++ command grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ GREP_OPTIONS=
++++ command grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ GREP_OPTIONS=
++++ command grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ GREP_OPTIONS=
++++ command grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#'
++++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#'
+++ MANPATH=/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ export MANPATH
+++ export PATH
+++ hash -r
+++ export NVM_BIN=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
+++ NVM_BIN=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
+++ export NVM_INC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/include/node
+++ NVM_INC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/include/node
+++ '[' '' = true ']'
+++ local NVM_USE_OUTPUT
+++ NVM_USE_OUTPUT=
+++ '[' 1 -ne 1 ']'
+++ '[' _v22.18.0 '!=' _system ']'
+++ local NVM_USE_CMD
+++ NVM_USE_CMD='nvm use --delete-prefix'
+++ '[' -n v22.18.0 ']'
+++ NVM_USE_CMD='nvm use --delete-prefix v22.18.0'
+++ '[' 1 -eq 1 ']'
+++ NVM_USE_CMD='nvm use --delete-prefix v22.18.0 --silent'
+++ nvm_die_on_prefix 0 'nvm use --delete-prefix v22.18.0 --silent' /Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ local NVM_DELETE_PREFIX
+++ NVM_DELETE_PREFIX=0
+++ case "${NVM_DELETE_PREFIX}" in
+++ local NVM_COMMAND
+++ NVM_COMMAND='nvm use --delete-prefix v22.18.0 --silent'
+++ local NVM_VERSION_DIR
+++ NVM_VERSION_DIR=/Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ '[' -z 'nvm use --delete-prefix v22.18.0 --silent' ']'
+++ '[' -z /Users/andrewtsao/.nvm/versions/node/v22.18.0 ']'
+++ '[' -n '' ']'
+++ local NVM_OS
++++ nvm_get_os
++++ local NVM_UNAME
+++++ command uname -a
+++++ uname -a
++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
++++ local NVM_OS
++++ case "${NVM_UNAME}" in
++++ NVM_OS=darwin
++++ nvm_echo darwin
++++ command printf '%s\n' darwin
+++ NVM_OS=darwin
+++ local NVM_NPM_CONFIG_x_PREFIX_ENV
++++ command awk 'BEGIN { for (name in ENVIRON) if (toupper(name) == "NPM_CONFIG_PREFIX") { print name; break } }'
++++ awk 'BEGIN { for (name in ENVIRON) if (toupper(name) == "NPM_CONFIG_PREFIX") { print name; break } }'
+++ NVM_NPM_CONFIG_x_PREFIX_ENV=
+++ '[' -n '' ']'
+++ local NVM_NPM_BUILTIN_NPMRC
+++ NVM_NPM_BUILTIN_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+++ local NVM_NPMRC
+++ NVM_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
+++ '[' -n /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc ']'
+++ '[' -f /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc ']'
+++ return 1
+++ local NVM_NPM_GLOBAL_NPMRC
+++ NVM_NPM_GLOBAL_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
+++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
+++ local NVM_NPMRC
+++ NVM_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
+++ '[' -n /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc ']'
+++ '[' -f /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc ']'
+++ return 1
+++ local NVM_NPM_USER_NPMRC
+++ NVM_NPM_USER_NPMRC=/Users/andrewtsao/.npmrc
+++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.npmrc
+++ local NVM_NPMRC
+++ NVM_NPMRC=/Users/andrewtsao/.npmrc
+++ '[' -n /Users/andrewtsao/.npmrc ']'
+++ '[' -f /Users/andrewtsao/.npmrc ']'
+++ return 1
+++ local NVM_NPM_PROJECT_NPMRC
++++ nvm_find_project_dir
++++ local path_
++++ path_=/Users/andrewtsao/new-quartz
++++ '[' /Users/andrewtsao/new-quartz '!=' '' ']'
++++ '[' /Users/andrewtsao/new-quartz '!=' . ']'
++++ '[' '!' -f /Users/andrewtsao/new-quartz/package.json ']'
++++ nvm_echo /Users/andrewtsao/new-quartz
++++ command printf '%s\n' /Users/andrewtsao/new-quartz
+++ NVM_NPM_PROJECT_NPMRC=/Users/andrewtsao/new-quartz/.npmrc
+++ nvm_npmrc_bad_news_bears /Users/andrewtsao/new-quartz/.npmrc
+++ local NVM_NPMRC
+++ NVM_NPMRC=/Users/andrewtsao/new-quartz/.npmrc
+++ '[' -n /Users/andrewtsao/new-quartz/.npmrc ']'
+++ '[' -f /Users/andrewtsao/new-quartz/.npmrc ']'
+++ nvm_grep -Ee '^(prefix|globalconfig) *='
+++ GREP_OPTIONS=
+++ command grep -Ee '^(prefix|globalconfig) *='
+++ grep -Ee '^(prefix|globalconfig) *='
+++ return 1
+++ '[' -n '' ']'
+++ EXIT_CODE=0
+++ set -e
+++ return 0
++ nvm use 22.18.0
++ '[' 2 -lt 1 ']'
++ local DEFAULT_IFS
+++ nvm_echo t
+++ command printf '%s\n' t
+++ command tr t '\t'
+++ tr t '\t'
++ DEFAULT_IFS=' 	
+'
++ '[' hxB '!=' ehxB ']'
++ set +e
++ local EXIT_CODE
++ IFS=' 	
+'
++ nvm use 22.18.0
++ '[' 2 -lt 1 ']'
++ local DEFAULT_IFS
+++ nvm_echo t
+++ command printf '%s\n' t
+++ command tr t '\t'
+++ tr t '\t'
++ DEFAULT_IFS=' 	
+'
++ '[' hxB '!=' hxB ']'
++ '[' hxB '!=' hxB ']'
++ '[' -n /bin/bash ']'
++ '[' hxB '!=' hxB ']'
++ '[' ' 	
+' '!=' ' 	
+' ']'
++ local i
++ for i in '"$@"'
++ case $i in
++ for i in '"$@"'
++ case $i in
++ local COMMAND
++ COMMAND=use
++ shift
++ local VERSION
++ local ADDITIONAL_PARAMETERS
++ case $COMMAND in
++ local PROVIDED_VERSION
++ local NVM_SILENT
++ local NVM_SILENT_ARG
++ local NVM_DELETE_PREFIX
++ NVM_DELETE_PREFIX=0
++ local NVM_LTS
++ local IS_VERSION_FROM_NVMRC
++ IS_VERSION_FROM_NVMRC=0
++ '[' 1 -ne 0 ']'
++ case "$1" in
++ '[' -n 22.18.0 ']'
++ PROVIDED_VERSION=22.18.0
++ shift
++ '[' 0 -ne 0 ']'
++ '[' -n '' ']'
++ '[' -z 22.18.0 ']'
+++ nvm_match_version 22.18.0
+++ local NVM_IOJS_PREFIX
++++ nvm_iojs_prefix
++++ nvm_echo iojs
++++ command printf '%s\n' iojs
+++ NVM_IOJS_PREFIX=iojs
+++ local PROVIDED_VERSION
+++ PROVIDED_VERSION=22.18.0
+++ case "_${PROVIDED_VERSION}" in
+++ nvm_version 22.18.0
+++ local PATTERN
+++ PATTERN=22.18.0
+++ local VERSION
+++ '[' -z 22.18.0 ']'
+++ '[' 22.18.0 = current ']'
+++ local NVM_NODE_PREFIX
++++ nvm_node_prefix
++++ nvm_echo node
++++ command printf '%s\n' node
+++ NVM_NODE_PREFIX=node
+++ case "_${PATTERN}" in
++++ nvm_ls 22.18.0
++++ local PATTERN
++++ PATTERN=22.18.0
++++ local VERSIONS
++++ command tail -1
++++ VERSIONS=
++++ '[' 22.18.0 = current ']'
++++ local NVM_IOJS_PREFIX
++++ tail -1
+++++ nvm_iojs_prefix
+++++ nvm_echo iojs
+++++ command printf '%s\n' iojs
++++ NVM_IOJS_PREFIX=iojs
++++ local NVM_NODE_PREFIX
+++++ nvm_node_prefix
+++++ nvm_echo node
+++++ command printf '%s\n' node
++++ NVM_NODE_PREFIX=node
++++ local NVM_VERSION_DIR_IOJS
+++++ nvm_version_dir iojs
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=iojs
+++++ '[' -z iojs ']'
+++++ '[' iojs = new ']'
+++++ '[' _iojs = _iojs ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/io.js
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/io.js
++++ NVM_VERSION_DIR_IOJS=/Users/andrewtsao/.nvm/versions/io.js
++++ local NVM_VERSION_DIR_NEW
+++++ nvm_version_dir new
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=new
+++++ '[' -z new ']'
+++++ '[' new = new ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
++++ NVM_VERSION_DIR_NEW=/Users/andrewtsao/.nvm/versions/node
++++ local NVM_VERSION_DIR_OLD
+++++ nvm_version_dir old
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=old
+++++ '[' -z old ']'
+++++ '[' old = new ']'
+++++ '[' _old = _iojs ']'
+++++ '[' _old = _old ']'
+++++ nvm_echo /Users/andrewtsao/.nvm
+++++ command printf '%s\n' /Users/andrewtsao/.nvm
++++ NVM_VERSION_DIR_OLD=/Users/andrewtsao/.nvm
++++ case "${PATTERN}" in
++++ nvm_resolve_local_alias 22.18.0
++++ '[' -z 22.18.0 ']'
++++ local VERSION
++++ local EXIT_CODE
+++++ nvm_resolve_alias 22.18.0
+++++ '[' -z 22.18.0 ']'
+++++ local PATTERN
+++++ PATTERN=22.18.0
+++++ local ALIAS
+++++ ALIAS=22.18.0
+++++ local ALIAS_TEMP
+++++ local SEEN_ALIASES
+++++ SEEN_ALIASES=22.18.0
+++++ local NVM_ALIAS_INDEX
+++++ NVM_ALIAS_INDEX=1
+++++ true
++++++ nvm_alias 22.18.0
++++++ command head -n 1
++++++ head -n 1
++++++ command tail -n 1
++++++ tail -n 1
+++++ ALIAS_TEMP=
+++++ '[' -z '' ']'
+++++ break
+++++ '[' -n 22.18.0 ']'
+++++ '[' _22.18.0 '!=' _22.18.0 ']'
+++++ nvm_validate_implicit_alias 22.18.0
+++++ return 2
++++ VERSION=
++++ EXIT_CODE=2
++++ '[' -z '' ']'
++++ return 2
+++++ nvm_ensure_version_prefix 22.18.0
+++++ local NVM_VERSION
++++++ nvm_strip_iojs_prefix 22.18.0
++++++ local NVM_IOJS_PREFIX
++++++ command sed -e 's/^\([0-9]\)/v\1/g'
++++++ sed -e 's/^\([0-9]\)/v\1/g'
+++++++ nvm_iojs_prefix
+++++++ nvm_echo iojs
+++++++ command printf '%s\n' iojs
++++++ NVM_IOJS_PREFIX=iojs
++++++ '[' 22.18.0 = iojs ']'
++++++ nvm_echo 22.18.0
++++++ command printf '%s\n' 22.18.0
+++++ NVM_VERSION=v22.18.0
+++++ nvm_is_iojs_version 22.18.0
+++++ case "${1-}" in
+++++ return 1
+++++ nvm_echo v22.18.0
+++++ command printf '%s\n' v22.18.0
++++ PATTERN=v22.18.0
++++ '[' v22.18.0 = N/A ']'
++++ local NVM_PATTERN_STARTS_WITH_V
++++ case $PATTERN in
++++ NVM_PATTERN_STARTS_WITH_V=true
++++ '[' true = true ']'
+++++ nvm_num_version_groups v22.18.0
+++++ local VERSION
+++++ VERSION=v22.18.0
+++++ VERSION=22.18.0
+++++ VERSION=22.18.0
+++++ '[' -z 22.18.0 ']'
+++++ local NVM_NUM_DOTS
++++++ nvm_echo 22.18.0
++++++ command printf '%s\n' 22.18.0
++++++ command sed -e 's/[^\.]//g'
++++++ sed -e 's/[^\.]//g'
+++++ NVM_NUM_DOTS=..
+++++ local NVM_NUM_GROUPS
+++++ NVM_NUM_GROUPS=...
+++++ nvm_echo 3
+++++ command printf '%s\n' 3
++++ '[' _3 = _3 ']'
++++ nvm_is_version_installed v22.18.0
++++ '[' -z v22.18.0 ']'
++++ local NVM_NODE_BINARY
++++ NVM_NODE_BINARY=node
+++++ nvm_get_os
+++++ local NVM_UNAME
++++++ command uname -a
++++++ uname -a
+++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
+++++ local NVM_OS
+++++ case "${NVM_UNAME}" in
+++++ NVM_OS=darwin
+++++ nvm_echo darwin
+++++ command printf '%s\n' darwin
++++ '[' _darwin = _win ']'
+++++ nvm_version_path v22.18.0
++++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
++++ return 0
++++ VERSIONS=v22.18.0
++++ '[' '' = true ']'
++++ '[' -z v22.18.0 ']'
++++ nvm_echo v22.18.0
++++ command printf '%s\n' v22.18.0
+++ VERSION=v22.18.0
+++ '[' -z v22.18.0 ']'
+++ '[' _v22.18.0 = _N/A ']'
+++ nvm_echo v22.18.0
+++ command printf '%s\n' v22.18.0
++ VERSION=v22.18.0
++ '[' -z v22.18.0 ']'
++ '[' _v22.18.0 = _system ']'
++ '[' _v22.18.0 = $'_�\210\236' ']'
++ '[' v22.18.0 = N/A ']'
++ nvm_ensure_version_installed v22.18.0 0
++ local PROVIDED_VERSION
++ PROVIDED_VERSION=v22.18.0
++ local IS_VERSION_FROM_NVMRC
++ IS_VERSION_FROM_NVMRC=0
++ '[' v22.18.0 = system ']'
++ local LOCAL_VERSION
++ local EXIT_CODE
+++ nvm_version v22.18.0
+++ local PATTERN
+++ PATTERN=v22.18.0
+++ local VERSION
+++ '[' -z v22.18.0 ']'
+++ '[' v22.18.0 = current ']'
+++ local NVM_NODE_PREFIX
++++ nvm_node_prefix
++++ nvm_echo node
++++ command printf '%s\n' node
+++ NVM_NODE_PREFIX=node
+++ case "_${PATTERN}" in
++++ nvm_ls v22.18.0
++++ local PATTERN
++++ PATTERN=v22.18.0
++++ command tail -1
++++ local VERSIONS
++++ VERSIONS=
++++ tail -1
++++ '[' v22.18.0 = current ']'
++++ local NVM_IOJS_PREFIX
+++++ nvm_iojs_prefix
+++++ nvm_echo iojs
+++++ command printf '%s\n' iojs
++++ NVM_IOJS_PREFIX=iojs
++++ local NVM_NODE_PREFIX
+++++ nvm_node_prefix
+++++ nvm_echo node
+++++ command printf '%s\n' node
++++ NVM_NODE_PREFIX=node
++++ local NVM_VERSION_DIR_IOJS
+++++ nvm_version_dir iojs
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=iojs
+++++ '[' -z iojs ']'
+++++ '[' iojs = new ']'
+++++ '[' _iojs = _iojs ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/io.js
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/io.js
++++ NVM_VERSION_DIR_IOJS=/Users/andrewtsao/.nvm/versions/io.js
++++ local NVM_VERSION_DIR_NEW
+++++ nvm_version_dir new
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=new
+++++ '[' -z new ']'
+++++ '[' new = new ']'
+++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
+++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
++++ NVM_VERSION_DIR_NEW=/Users/andrewtsao/.nvm/versions/node
++++ local NVM_VERSION_DIR_OLD
+++++ nvm_version_dir old
+++++ local NVM_WHICH_DIR
+++++ NVM_WHICH_DIR=old
+++++ '[' -z old ']'
+++++ '[' old = new ']'
+++++ '[' _old = _iojs ']'
+++++ '[' _old = _old ']'
+++++ nvm_echo /Users/andrewtsao/.nvm
+++++ command printf '%s\n' /Users/andrewtsao/.nvm
++++ NVM_VERSION_DIR_OLD=/Users/andrewtsao/.nvm
++++ case "${PATTERN}" in
++++ nvm_resolve_local_alias v22.18.0
++++ '[' -z v22.18.0 ']'
++++ local VERSION
++++ local EXIT_CODE
+++++ nvm_resolve_alias v22.18.0
+++++ '[' -z v22.18.0 ']'
+++++ local PATTERN
+++++ PATTERN=v22.18.0
+++++ local ALIAS
+++++ ALIAS=v22.18.0
+++++ local ALIAS_TEMP
+++++ local SEEN_ALIASES
+++++ SEEN_ALIASES=v22.18.0
+++++ local NVM_ALIAS_INDEX
+++++ NVM_ALIAS_INDEX=1
+++++ true
++++++ nvm_alias v22.18.0
++++++ command head -n 1
++++++ head -n 1
++++++ command tail -n 1
++++++ tail -n 1
+++++ ALIAS_TEMP=
+++++ '[' -z '' ']'
+++++ break
+++++ '[' -n v22.18.0 ']'
+++++ '[' _v22.18.0 '!=' _v22.18.0 ']'
+++++ nvm_validate_implicit_alias v22.18.0
+++++ return 2
++++ VERSION=
++++ EXIT_CODE=2
++++ '[' -z '' ']'
++++ return 2
+++++ nvm_ensure_version_prefix v22.18.0
+++++ local NVM_VERSION
++++++ nvm_strip_iojs_prefix v22.18.0
++++++ local NVM_IOJS_PREFIX
++++++ command sed -e 's/^\([0-9]\)/v\1/g'
++++++ sed -e 's/^\([0-9]\)/v\1/g'
+++++++ nvm_iojs_prefix
+++++++ nvm_echo iojs
+++++++ command printf '%s\n' iojs
++++++ NVM_IOJS_PREFIX=iojs
++++++ '[' v22.18.0 = iojs ']'
++++++ nvm_echo v22.18.0
++++++ command printf '%s\n' v22.18.0
+++++ NVM_VERSION=v22.18.0
+++++ nvm_is_iojs_version v22.18.0
+++++ case "${1-}" in
+++++ return 1
+++++ nvm_echo v22.18.0
+++++ command printf '%s\n' v22.18.0
++++ PATTERN=v22.18.0
++++ '[' v22.18.0 = N/A ']'
++++ local NVM_PATTERN_STARTS_WITH_V
++++ case $PATTERN in
++++ NVM_PATTERN_STARTS_WITH_V=true
++++ '[' true = true ']'
+++++ nvm_num_version_groups v22.18.0
+++++ local VERSION
+++++ VERSION=v22.18.0
+++++ VERSION=22.18.0
+++++ VERSION=22.18.0
+++++ '[' -z 22.18.0 ']'
+++++ local NVM_NUM_DOTS
++++++ nvm_echo 22.18.0
++++++ command printf '%s\n' 22.18.0
++++++ command sed -e 's/[^\.]//g'
++++++ sed -e 's/[^\.]//g'
+++++ NVM_NUM_DOTS=..
+++++ local NVM_NUM_GROUPS
+++++ NVM_NUM_GROUPS=...
+++++ nvm_echo 3
+++++ command printf '%s\n' 3
++++ '[' _3 = _3 ']'
++++ nvm_is_version_installed v22.18.0
++++ '[' -z v22.18.0 ']'
++++ local NVM_NODE_BINARY
++++ NVM_NODE_BINARY=node
+++++ nvm_get_os
+++++ local NVM_UNAME
++++++ command uname -a
++++++ uname -a
+++++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
+++++ local NVM_OS
+++++ case "${NVM_UNAME}" in
+++++ NVM_OS=darwin
+++++ nvm_echo darwin
+++++ command printf '%s\n' darwin
++++ '[' _darwin = _win ']'
+++++ nvm_version_path v22.18.0
++++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
++++ return 0
++++ VERSIONS=v22.18.0
++++ '[' '' = true ']'
++++ '[' -z v22.18.0 ']'
++++ nvm_echo v22.18.0
++++ command printf '%s\n' v22.18.0
+++ VERSION=v22.18.0
+++ '[' -z v22.18.0 ']'
+++ '[' _v22.18.0 = _N/A ']'
+++ nvm_echo v22.18.0
+++ command printf '%s\n' v22.18.0
++ LOCAL_VERSION=v22.18.0
++ EXIT_CODE=0
++ local NVM_VERSION_DIR
++ '[' 0 '!=' 0 ']'
++ nvm_is_version_installed v22.18.0
++ '[' -z v22.18.0 ']'
++ local NVM_NODE_BINARY
++ NVM_NODE_BINARY=node
+++ nvm_get_os
+++ local NVM_UNAME
++++ command uname -a
++++ uname -a
+++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
+++ local NVM_OS
+++ case "${NVM_UNAME}" in
+++ NVM_OS=darwin
+++ nvm_echo darwin
+++ command printf '%s\n' darwin
++ '[' _darwin = _win ']'
+++ nvm_version_path v22.18.0
++ '[' -x /Users/andrewtsao/.nvm/versions/node/v22.18.0/bin/node ']'
++ return 0
++ local NVM_VERSION_DIR
+++ nvm_version_path v22.18.0
+++ local VERSION
+++ VERSION=v22.18.0
+++ '[' -z v22.18.0 ']'
+++ nvm_is_iojs_version v22.18.0
+++ case "${1-}" in
+++ return 1
+++ nvm_version_greater 0.12.0 v22.18.0
+++ command awk 'BEGIN {
+    if (ARGV[1] == "" || ARGV[2] == "") exit(1)
+    split(ARGV[1], a, /\./);
+    split(ARGV[2], b, /\./);
+    for (i=1; i<=3; i++) {
+      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);
+      if (b[i] && b[i] !~ /^[0-9]+$/) { exit(0); }
+      if (a[i] < b[i]) exit(3);
+      else if (a[i] > b[i]) exit(0);
+    }
+    exit(4)
+  }' 0.12.0 22.18.0
+++ awk 'BEGIN {
+    if (ARGV[1] == "" || ARGV[2] == "") exit(1)
+    split(ARGV[1], a, /\./);
+    split(ARGV[2], b, /\./);
+    for (i=1; i<=3; i++) {
+      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);
+      if (b[i] && b[i] !~ /^[0-9]+$/) { exit(0); }
+      if (a[i] < b[i]) exit(3);
+      else if (a[i] > b[i]) exit(0);
+    }
+    exit(4)
+  }' 0.12.0 22.18.0
++++ nvm_version_dir new
++++ local NVM_WHICH_DIR
++++ NVM_WHICH_DIR=new
++++ '[' -z new ']'
++++ '[' new = new ']'
++++ nvm_echo /Users/andrewtsao/.nvm/versions/node
++++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0
++ NVM_VERSION_DIR=/Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ nvm_change_path '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' /bin /Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ '[' -z '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' ']'
+++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ GREP_OPTIONS=
+++ command grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
+++ grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
+++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ GREP_OPTIONS=
+++ command grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
+++ GREP_OPTIONS=
+++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
+++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/[^/]*/bin'
+++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ GREP_OPTIONS=
+++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
+++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
+++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
++ PATH='/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
++ nvm_has manpath
++ type manpath
++ '[' -z '' ']'
++ local MANPATH
+++ manpath
++ MANPATH=/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ nvm_change_path /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man /share/man /Users/andrewtsao/.nvm/versions/node/v22.18.0
+++ '[' -z /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man ']'
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ GREP_OPTIONS=
+++ command grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ grep -q '/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ GREP_OPTIONS=
+++ command grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ GREP_OPTIONS=
+++ command grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/[^/]*/share/man'
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ nvm_grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ GREP_OPTIONS=
+++ command grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ grep -Eq '(^|:)(/usr(/local)?)?/share/man:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man'
+++ nvm_echo /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command printf '%s\n' /Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
+++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#'
+++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/share/man[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man#'
++ MANPATH=/Users/andrewtsao/.nvm/versions/node/v22.18.0/share/man:/Library/Frameworks/Python.framework/Versions/3.11/share/man:/Users/andrewtsao/opt/anaconda2/share/man:/Users/andrewtsao/opt/anaconda2/man:/usr/local/share/man:/System/Cryptexes/App/usr/share/man:/usr/share/man:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Apple/usr/share/man
++ export MANPATH
++ export PATH
++ hash -r
++ export NVM_BIN=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++ NVM_BIN=/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin
++ export NVM_INC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/include/node
++ NVM_INC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/include/node
++ '[' '' = true ']'
++ local NVM_USE_OUTPUT
++ NVM_USE_OUTPUT=
++ '[' 0 -ne 1 ']'
++ nvm_is_iojs_version v22.18.0
++ case "${1-}" in
++ return 1
+++ nvm_print_npm_version
+++ nvm_has npm
+++ type npm
+++ local NPM_VERSION
++++ npm --version
+++ NPM_VERSION=11.5.2
+++ '[' -n 11.5.2 ']'
+++ command printf ' (npm v11.5.2)'
+++ printf ' (npm v11.5.2)'
++ NVM_USE_OUTPUT='Now using node v22.18.0 (npm v11.5.2)'
++ '[' _v22.18.0 '!=' _system ']'
++ local NVM_USE_CMD
++ NVM_USE_CMD='nvm use --delete-prefix'
++ '[' -n 22.18.0 ']'
++ NVM_USE_CMD='nvm use --delete-prefix v22.18.0'
++ '[' 0 -eq 1 ']'
++ nvm_die_on_prefix 0 'nvm use --delete-prefix v22.18.0' /Users/andrewtsao/.nvm/versions/node/v22.18.0
++ local NVM_DELETE_PREFIX
++ NVM_DELETE_PREFIX=0
++ case "${NVM_DELETE_PREFIX}" in
++ local NVM_COMMAND
++ NVM_COMMAND='nvm use --delete-prefix v22.18.0'
++ local NVM_VERSION_DIR
++ NVM_VERSION_DIR=/Users/andrewtsao/.nvm/versions/node/v22.18.0
++ '[' -z 'nvm use --delete-prefix v22.18.0' ']'
++ '[' -z /Users/andrewtsao/.nvm/versions/node/v22.18.0 ']'
++ '[' -n '' ']'
++ local NVM_OS
+++ nvm_get_os
+++ local NVM_UNAME
++++ command uname -a
++++ uname -a
+++ NVM_UNAME='Darwin Andrews-MBP-2.lan 22.6.0 Darwin Kernel Version 22.6.0: Tue Jul 15 08:22:28 PDT 2025; root:xnu-8796.141.3.713.2~2/RELEASE_X86_64 x86_64'
+++ local NVM_OS
+++ case "${NVM_UNAME}" in
+++ NVM_OS=darwin
+++ nvm_echo darwin
+++ command printf '%s\n' darwin
++ NVM_OS=darwin
++ local NVM_NPM_CONFIG_x_PREFIX_ENV
+++ command awk 'BEGIN { for (name in ENVIRON) if (toupper(name) == "NPM_CONFIG_PREFIX") { print name; break } }'
+++ awk 'BEGIN { for (name in ENVIRON) if (toupper(name) == "NPM_CONFIG_PREFIX") { print name; break } }'
++ NVM_NPM_CONFIG_x_PREFIX_ENV=
++ '[' -n '' ']'
++ local NVM_NPM_BUILTIN_NPMRC
++ NVM_NPM_BUILTIN_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
++ local NVM_NPMRC
++ NVM_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc
++ '[' -n /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc ']'
++ '[' -f /Users/andrewtsao/.nvm/versions/node/v22.18.0/lib/node_modules/npm/npmrc ']'
++ return 1
++ local NVM_NPM_GLOBAL_NPMRC
++ NVM_NPM_GLOBAL_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
++ local NVM_NPMRC
++ NVM_NPMRC=/Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc
++ '[' -n /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc ']'
++ '[' -f /Users/andrewtsao/.nvm/versions/node/v22.18.0/etc/npmrc ']'
++ return 1
++ local NVM_NPM_USER_NPMRC
++ NVM_NPM_USER_NPMRC=/Users/andrewtsao/.npmrc
++ nvm_npmrc_bad_news_bears /Users/andrewtsao/.npmrc
++ local NVM_NPMRC
++ NVM_NPMRC=/Users/andrewtsao/.npmrc
++ '[' -n /Users/andrewtsao/.npmrc ']'
++ '[' -f /Users/andrewtsao/.npmrc ']'
++ return 1
++ local NVM_NPM_PROJECT_NPMRC
+++ nvm_find_project_dir
+++ local path_
+++ path_=/Users/andrewtsao/new-quartz
+++ '[' /Users/andrewtsao/new-quartz '!=' '' ']'
+++ '[' /Users/andrewtsao/new-quartz '!=' . ']'
+++ '[' '!' -f /Users/andrewtsao/new-quartz/package.json ']'
+++ nvm_echo /Users/andrewtsao/new-quartz
+++ command printf '%s\n' /Users/andrewtsao/new-quartz
++ NVM_NPM_PROJECT_NPMRC=/Users/andrewtsao/new-quartz/.npmrc
++ nvm_npmrc_bad_news_bears /Users/andrewtsao/new-quartz/.npmrc
++ local NVM_NPMRC
++ NVM_NPMRC=/Users/andrewtsao/new-quartz/.npmrc
++ '[' -n /Users/andrewtsao/new-quartz/.npmrc ']'
++ '[' -f /Users/andrewtsao/new-quartz/.npmrc ']'
++ nvm_grep -Ee '^(prefix|globalconfig) *='
++ GREP_OPTIONS=
++ command grep -Ee '^(prefix|globalconfig) *='
++ grep -Ee '^(prefix|globalconfig) *='
++ return 1
++ '[' -n 'Now using node v22.18.0 (npm v11.5.2)' ']'
++ '[' 0 -ne 1 ']'
++ nvm_echo 'Now using node v22.18.0 (npm v11.5.2)'
++ command printf '%s\n' 'Now using node v22.18.0 (npm v11.5.2)'
+Now using node v22.18.0 (npm v11.5.2)
++ EXIT_CODE=0
++ set -e
++ return 0
++ OBSIDIAN_PATH='/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro'
++ OBSIDIAN_ATTACHMENTS='/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments'
++ QUARTZ_ATTACHMENTS=content/attachments
++ echo 'Syncing individual files...'
+Syncing individual files...
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/index.md' content/
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/coaching.md' content/
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/now.md' content/
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/principles.md' content/
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/graph.md' content/
++ echo 'Syncing directory content (recent files only)...'
+Syncing directory content (recent files only)...
++ mkdir -p content/my-writing content/my-art content/my-playlists
++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing' -name '*.md' -mtime -3 -type f
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md'
++ filename='what I learned from cults.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md' 'content/my-writing/what I learned from cults.md'
++ echo 'Updated: what I learned from cults.md'
+Updated: what I learned from cults.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md'
++ filename='Perfection is boring.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md' 'content/my-writing/Perfection is boring.md'
++ echo 'Updated: Perfection is boring.md'
+Updated: Perfection is boring.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md'
++ filename='this is a test for my writing.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md' 'content/my-writing/this is a test for my writing.md'
++ echo 'Updated: this is a test for my writing.md'
+Updated: this is a test for my writing.md
++ read -r file
++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art' -name '*.md' -mtime -3 -type f
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/Break Free.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/Break Free.md'
++ filename='Break Free.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/Break Free.md' 'content/my-art/Break Free.md'
++ echo 'Updated: Break Free.md'
+Updated: Break Free.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md'
++ filename='THIs is a test for my art.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md' 'content/my-art/THIs is a test for my art.md'
++ echo 'Updated: THIs is a test for my art.md'
+Updated: THIs is a test for my art.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/for my nephew.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/for my nephew.md'
++ filename='for my nephew.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/for my nephew.md' 'content/my-art/for my nephew.md'
++ echo 'Updated: for my nephew.md'
+Updated: for my nephew.md
++ read -r file
++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists' -name '*.md' -mtime -3 -type f
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md'
++ filename='pool tunes, bro.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md' 'content/my-playlists/pool tunes, bro.md'
++ echo 'Updated: pool tunes, bro.md'
+Updated: pool tunes, bro.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md'
++ filename='mellow from the other side.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md' 'content/my-playlists/mellow from the other side.md'
++ echo 'Updated: mellow from the other side.md'
+Updated: mellow from the other side.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
++ filename='brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md' 'content/my-playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
++ echo 'Updated: brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
+Updated: brt babe, i'm only two galaxies away- a man's journey home from space no.A113.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/index.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/index.md'
++ filename=index.md
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/index.md' content/my-playlists/index.md
++ echo 'Updated: index.md'
+Updated: index.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md'
++ filename='in the moog for love.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md' 'content/my-playlists/in the moog for love.md'
++ echo 'Updated: in the moog for love.md'
+Updated: in the moog for love.md
++ read -r file
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing' -name '*.md' -type f
+++ head -1
++ newest_writing='/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Why you shouldn'\''t judge your circumstance.md'
++ '[' -n '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Why you shouldn'\''t judge your circumstance.md' ']'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Why you shouldn'\''t judge your circumstance.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Why you shouldn'\''t judge your circumstance.md'
++ filename='Why you shouldn'\''t judge your circumstance.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Why you shouldn'\''t judge your circumstance.md' 'content/my-writing/Why you shouldn'\''t judge your circumstance.md'
++ echo 'Synced latest: Why you shouldn'\''t judge your circumstance.md'
+Synced latest: Why you shouldn't judge your circumstance.md
++ echo 'Syncing referenced images to attachments folder...'
+Syncing referenced images to attachments folder...
++ mkdir -p content/attachments
++ echo 'Copying recent images to attachments folder...'
+Copying recent images to attachments folder...
++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f '(' -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' -o -name '*.webp' ')' -mtime -30
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
++ file_size=948494
++ '[' 948494 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
++ img_name=img20250824_22171236.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' content/attachments/
++ chmod 644 content/attachments/img20250824_22171236.jpg
++ xattr -c content/attachments/img20250824_22171236.jpg
++ echo 'Copied to attachments: img20250824_22171236.jpg'
+Copied to attachments: img20250824_22171236.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
++ file_size=2521496
++ '[' 2521496 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
++ img_name='C3 #2 Group Photo v1.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' content/attachments/
++ chmod 644 'content/attachments/C3 #2 Group Photo v1.jpg'
++ xattr -c 'content/attachments/C3 #2 Group Photo v1.jpg'
++ echo 'Copied to attachments: C3 #2 Group Photo v1.jpg'
+Copied to attachments: C3 #2 Group Photo v1.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png'
++ file_size=1357179
++ '[' 1357179 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png'
++ img_name='for ez 1 (smaller dimensions).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png' content/attachments/
++ chmod 644 'content/attachments/for ez 1 (smaller dimensions).png'
++ xattr -c 'content/attachments/for ez 1 (smaller dimensions).png'
++ echo 'Copied to attachments: for ez 1 (smaller dimensions).png'
+Copied to attachments: for ez 1 (smaller dimensions).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
++ img_name=img20250821_19302688.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' content/attachments/
++ chmod 644 content/attachments/img20250821_19302688.jpg
++ xattr -c content/attachments/img20250821_19302688.jpg
++ echo 'Copied to attachments: img20250821_19302688.jpg'
+Copied to attachments: img20250821_19302688.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png'
++ file_size=3189137
++ '[' 3189137 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png'
++ img_name='myart stiching (2).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png' content/attachments/
++ chmod 644 'content/attachments/myart stiching (2).png'
++ xattr -c 'content/attachments/myart stiching (2).png'
++ echo 'Copied to attachments: myart stiching (2).png'
+Copied to attachments: myart stiching (2).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
++ file_size=1222756
++ '[' 1222756 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
++ img_name=5904.EX8968_21-access.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' content/attachments/
++ chmod 644 content/attachments/5904.EX8968_21-access.jpg
++ xattr -c content/attachments/5904.EX8968_21-access.jpg
++ echo 'Copied to attachments: 5904.EX8968_21-access.jpg'
+Copied to attachments: 5904.EX8968_21-access.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
++ img_name='img20250808_22413962 2.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' content/attachments/
++ chmod 644 'content/attachments/img20250808_22413962 2.jpg'
++ xattr -c 'content/attachments/img20250808_22413962 2.jpg'
++ echo 'Copied to attachments: img20250808_22413962 2.jpg'
+Copied to attachments: img20250808_22413962 2.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
++ img_name='img20250808_22413962 1.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' content/attachments/
++ chmod 644 'content/attachments/img20250808_22413962 1.jpg'
++ xattr -c 'content/attachments/img20250808_22413962 1.jpg'
++ echo 'Copied to attachments: img20250808_22413962 1.jpg'
+Copied to attachments: img20250808_22413962 1.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
++ file_size=107446
++ '[' 107446 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
++ img_name='img20250821_19292587 1.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' content/attachments/
++ chmod 644 'content/attachments/img20250821_19292587 1.jpg'
++ xattr -c 'content/attachments/img20250821_19292587 1.jpg'
++ echo 'Copied to attachments: img20250821_19292587 1.jpg'
+Copied to attachments: img20250821_19292587 1.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png'
++ file_size=111246
++ '[' 111246 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png'
++ img_name='Untitled (Instagram Post) (16).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png' content/attachments/
++ chmod 644 'content/attachments/Untitled (Instagram Post) (16).png'
++ xattr -c 'content/attachments/Untitled (Instagram Post) (16).png'
++ echo 'Copied to attachments: Untitled (Instagram Post) (16).png'
+Copied to attachments: Untitled (Instagram Post) (16).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png'
++ file_size=5765959
++ '[' 5765959 -lt 5242880 ']'
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png'
++ file_size=29605
++ '[' 29605 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png'
++ img_name='Mainlander Master (8).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png' content/attachments/
++ chmod 644 'content/attachments/Mainlander Master (8).png'
++ xattr -c 'content/attachments/Mainlander Master (8).png'
++ echo 'Copied to attachments: Mainlander Master (8).png'
+Copied to attachments: Mainlander Master (8).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
++ file_size=398959
++ '[' 398959 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
++ img_name='CleanShot 2025-07-31 at 10.23.45@2x.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' content/attachments/
++ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
++ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
++ echo 'Copied to attachments: CleanShot 2025-07-31 at 10.23.45@2x.png'
+Copied to attachments: CleanShot 2025-07-31 at 10.23.45@2x.png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png'
++ file_size=818398
++ '[' 818398 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png'
++ img_name='Untitled design (48).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png' content/attachments/
++ chmod 644 'content/attachments/Untitled design (48).png'
++ xattr -c 'content/attachments/Untitled design (48).png'
++ echo 'Copied to attachments: Untitled design (48).png'
+Copied to attachments: Untitled design (48).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
++ file_size=2521496
++ '[' 2521496 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
++ img_name='C3 #2 Group Photo v1 1.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' content/attachments/
++ chmod 644 'content/attachments/C3 #2 Group Photo v1 1.jpg'
++ xattr -c 'content/attachments/C3 #2 Group Photo v1 1.jpg'
++ echo 'Copied to attachments: C3 #2 Group Photo v1 1.jpg'
+Copied to attachments: C3 #2 Group Photo v1 1.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png'
++ file_size=1565710
++ '[' 1565710 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png'
++ img_name='for ez 2 (smaller dimensions).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png' content/attachments/
++ chmod 644 'content/attachments/for ez 2 (smaller dimensions).png'
++ xattr -c 'content/attachments/for ez 2 (smaller dimensions).png'
++ echo 'Copied to attachments: for ez 2 (smaller dimensions).png'
+Copied to attachments: for ez 2 (smaller dimensions).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png'
++ file_size=1524087
++ '[' 1524087 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png'
++ img_name=$'�\210�親�\200快�\202.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png' content/attachments/
++ chmod 644 $'content/attachments/�\210�親�\200快�\202.png'
++ xattr -c $'content/attachments/�\210�親�\200快�\202.png'
++ echo 'Copied to attachments: 父親節快樂.png'
+Copied to attachments: 父親節快樂.png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
++ img_name='img20250821_19302688 2.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' content/attachments/
++ chmod 644 'content/attachments/img20250821_19302688 2.jpg'
++ xattr -c 'content/attachments/img20250821_19302688 2.jpg'
++ echo 'Copied to attachments: img20250821_19302688 2.jpg'
+Copied to attachments: img20250821_19302688 2.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
++ file_size=107446
++ '[' 107446 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
++ img_name=img20250821_19292587.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' content/attachments/
++ chmod 644 content/attachments/img20250821_19292587.jpg
++ xattr -c content/attachments/img20250821_19292587.jpg
++ echo 'Copied to attachments: img20250821_19292587.jpg'
+Copied to attachments: img20250821_19292587.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png'
++ file_size=714620
++ '[' 714620 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png'
++ img_name='Untitled design (65).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png' content/attachments/
++ chmod 644 'content/attachments/Untitled design (65).png'
++ xattr -c 'content/attachments/Untitled design (65).png'
++ echo 'Copied to attachments: Untitled design (65).png'
+Copied to attachments: Untitled design (65).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
++ file_size=117911
++ '[' 117911 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
++ img_name=img20250821_19310752.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' content/attachments/
++ chmod 644 content/attachments/img20250821_19310752.jpg
++ xattr -c content/attachments/img20250821_19310752.jpg
++ echo 'Copied to attachments: img20250821_19310752.jpg'
+Copied to attachments: img20250821_19310752.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
++ img_name='img20250821_19302688 1.jpg'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' content/attachments/
++ chmod 644 'content/attachments/img20250821_19302688 1.jpg'
++ xattr -c 'content/attachments/img20250821_19302688 1.jpg'
++ echo 'Copied to attachments: img20250821_19302688 1.jpg'
+Copied to attachments: img20250821_19302688 1.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
++ file_size=479256
++ '[' 479256 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
++ img_name='CleanShot 2025-07-31 at 10.24.37@2x.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' content/attachments/
++ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
++ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
++ echo 'Copied to attachments: CleanShot 2025-07-31 at 10.24.37@2x.png'
+Copied to attachments: CleanShot 2025-07-31 at 10.24.37@2x.png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png'
++ file_size=818398
++ '[' 818398 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png'
++ img_name='Untitled design (15).png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png' content/attachments/
++ chmod 644 'content/attachments/Untitled design (15).png'
++ xattr -c 'content/attachments/Untitled design (15).png'
++ echo 'Copied to attachments: Untitled design (15).png'
+Copied to attachments: Untitled design (15).png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
++ file_size=441399
++ '[' 441399 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
++ img_name='CleanShot 2025-07-31 at 10.22.52@2x.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' content/attachments/
++ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
++ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
++ echo 'Copied to attachments: CleanShot 2025-07-31 at 10.22.52@2x.png'
+Copied to attachments: CleanShot 2025-07-31 at 10.22.52@2x.png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 01.07.47@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 01.07.47@2x.png'
++ file_size=6863603
++ '[' 6863603 -lt 5242880 ']'
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
++ img_name=img20250808_22413962.jpg
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' content/attachments/
++ chmod 644 content/attachments/img20250808_22413962.jpg
++ xattr -c content/attachments/img20250808_22413962.jpg
++ echo 'Copied to attachments: img20250808_22413962.jpg'
+Copied to attachments: img20250808_22413962.jpg
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png'
++ file_size=1524087
++ '[' 1524087 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png'
++ img_name='父親節快樂 1.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png' content/attachments/
++ chmod 644 'content/attachments/父親節快樂 1.png'
++ xattr -c 'content/attachments/父親節快樂 1.png'
++ echo 'Copied to attachments: 父親節快樂 1.png'
+Copied to attachments: 父親節快樂 1.png
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
++ file_size=1814966
++ '[' 1814966 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
++ img_name='25on25 logo.gif'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' content/attachments/
++ chmod 644 'content/attachments/25on25 logo.gif'
++ xattr -c 'content/attachments/25on25 logo.gif'
++ echo 'Copied to attachments: 25on25 logo.gif'
+Copied to attachments: 25on25 logo.gif
++ read -r img_file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
++ file_size=3326004
++ '[' 3326004 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
++ img_name='CleanShot 2025-08-24 at 22.40.40@2x.png'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' content/attachments/
++ chmod 644 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
++ xattr -c 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
++ echo 'Copied to attachments: CleanShot 2025-08-24 at 22.40.40@2x.png'
+Copied to attachments: CleanShot 2025-08-24 at 22.40.40@2x.png
++ read -r img_file
++ echo 'Adding attachments to git...'
+Adding attachments to git...
++ git add content/attachments/ --force
++ git add quartz/static/ --force
++ echo 'Building Quartz...'
+Building Quartz...
++ npx quartz build
+
+ Quartz v4.5.1  
+
+Cleaned output directory `public` in 71ms
+Found 288 input files from `content` in 29ms
+Parsing input files using 2 threads
+
+Warning: found invalid date "null" in `my-playlists/in the moog for love.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
+
+Warning: found invalid date "null" in `my-writing/Perfection is boring.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
+
+Warning: found invalid date "null" in `my-writing/the art of your life.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
+
+Warning: found invalid date "false" in `my-writing/what I learned from cults.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
+
+Warning: found invalid date "null" in `my-writing/我寫的字很亂但我有很多話要說.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
+Parsed 288 Markdown files in 3s
+Filtered out 141 files in 309μs
+Emitting files
+🚫 Excluded from tag "thought": my-writing/index
+🚫 Excluded from tag "poem": my-writing/index
+🚫 Excluded from tag "motivation": my-writing/index
+🚫 Excluded from tag "gratitude": my-writing/index
+🚫 Excluded from tag "essay": my-writing/index
+🚫 Excluded from tag "essay": my-writing/index
+🚫 Excluded from tag "gratitude": my-writing/index
+🚫 Excluded from tag "motivation": my-writing/index
+🚫 Excluded from tag "poem": my-writing/index
+🚫 Excluded from tag "thought": my-writing/index
+Emitted 335 files to `public` in 870ms
+Done processing 288 files in 4s
++ '[' 0 -ne 0 ']'
++ echo 'Checking for changes...'
+Checking for changes...
++ git diff --quiet
++ echo 'Deploying to Cloudflare...'
+Deploying to Cloudflare...
++ git add .

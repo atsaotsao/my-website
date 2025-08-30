@@ -257,11 +257,11 @@ Starting quick Obsidian to Quartz deployment...
 ++++ local PATTERN
 ++++ PATTERN=v22.18.0
 ++++ local VERSIONS
-++++ command tail -1
 ++++ VERSIONS=
 ++++ '[' v22.18.0 = current ']'
-++++ tail -1
 ++++ local NVM_IOJS_PREFIX
+++++ command tail -1
+++++ tail -1
 +++++ nvm_iojs_prefix
 +++++ nvm_echo iojs
 +++++ command printf '%s\n' iojs
@@ -430,14 +430,14 @@ Starting quick Obsidian to Quartz deployment...
 +++ NVM_NODE_PREFIX=node
 +++ case "_${PATTERN}" in
 ++++ nvm_ls v22.18.0
-++++ command tail -1
 ++++ local PATTERN
-++++ tail -1
 ++++ PATTERN=v22.18.0
 ++++ local VERSIONS
 ++++ VERSIONS=
 ++++ '[' v22.18.0 = current ']'
 ++++ local NVM_IOJS_PREFIX
+++++ command tail -1
+++++ tail -1
 +++++ nvm_iojs_prefix
 +++++ nvm_echo iojs
 +++++ command printf '%s\n' iojs
@@ -672,9 +672,9 @@ Starting quick Obsidian to Quartz deployment...
 +++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 +++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 +++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
-+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 +++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
 +++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
++++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 ++ PATH='/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 ++ nvm_has manpath
 ++ type manpath
@@ -887,13 +887,13 @@ Starting quick Obsidian to Quartz deployment...
 ++ case "_${PATTERN}" in
 +++ nvm_ls 22.18.0
 +++ local PATTERN
++++ command tail -1
++++ tail -1
 +++ PATTERN=22.18.0
 +++ local VERSIONS
-+++ command tail -1
 +++ VERSIONS=
 +++ '[' 22.18.0 = current ']'
 +++ local NVM_IOJS_PREFIX
-+++ tail -1
 ++++ nvm_iojs_prefix
 ++++ nvm_echo iojs
 ++++ command printf '%s\n' iojs
@@ -969,8 +969,8 @@ Starting quick Obsidian to Quartz deployment...
 ++++ nvm_ensure_version_prefix 22.18.0
 ++++ local NVM_VERSION
 +++++ nvm_strip_iojs_prefix 22.18.0
-+++++ local NVM_IOJS_PREFIX
 +++++ command sed -e 's/^\([0-9]\)/v\1/g'
++++++ local NVM_IOJS_PREFIX
 +++++ sed -e 's/^\([0-9]\)/v\1/g'
 ++++++ nvm_iojs_prefix
 ++++++ nvm_echo iojs
@@ -999,8 +999,8 @@ Starting quick Obsidian to Quartz deployment...
 ++++ '[' -z 22.18.0 ']'
 ++++ local NVM_NUM_DOTS
 +++++ nvm_echo 22.18.0
-+++++ command printf '%s\n' 22.18.0
 +++++ command sed -e 's/[^\.]//g'
++++++ command printf '%s\n' 22.18.0
 +++++ sed -e 's/[^\.]//g'
 ++++ NVM_NUM_DOTS=..
 ++++ local NVM_NUM_GROUPS
@@ -1064,12 +1064,12 @@ Starting quick Obsidian to Quartz deployment...
 +++ nvm_ls v22.18.0
 +++ local PATTERN
 +++ PATTERN=v22.18.0
-+++ command tail -1
 +++ local VERSIONS
 +++ VERSIONS=
-+++ tail -1
 +++ '[' v22.18.0 = current ']'
 +++ local NVM_IOJS_PREFIX
++++ command tail -1
++++ tail -1
 ++++ nvm_iojs_prefix
 ++++ nvm_echo iojs
 ++++ command printf '%s\n' iojs
@@ -1280,14 +1280,14 @@ Starting quick Obsidian to Quartz deployment...
 ++ nvm_change_path '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' /bin /Users/andrewtsao/.nvm/versions/node/v22.18.0
 ++ '[' -z '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin' ']'
 ++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
-++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
 ++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
 ++ GREP_OPTIONS=
 ++ command grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
 ++ grep -q '/Users/andrewtsao/.nvm/[^/]*/bin'
 ++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
-++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 ++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
+++ nvm_grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 ++ GREP_OPTIONS=
 ++ command grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 ++ grep -q '/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
@@ -1304,8 +1304,8 @@ Starting quick Obsidian to Quartz deployment...
 ++ command grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 ++ grep -Eq '(^|:)(/usr(/local)?)?/bin:.*/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin'
 ++ nvm_echo '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
-++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 ++ command sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
+++ command printf '%s\n' '/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 ++ sed -e 's#/Users/andrewtsao/.nvm/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#' -e 's#/Users/andrewtsao/.nvm/versions/[^/]*/[^/]*/bin[^:]*#/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin#'
 + PATH='/Users/andrewtsao/.nvm/versions/node/v22.18.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/andrewtsao/opt/anaconda2/bin:/Users/andrewtsao/opt/anaconda2/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin'
 + nvm_has manpath
@@ -1470,26 +1470,12 @@ Syncing directory content (recent files only)...
 + mkdir -p content/my-writing content/my-art content/my-playlists
 + find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing' -name '*.md' -mtime -3 -type f
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md'
-+ filename='what I learned from cults.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/what I learned from cults.md' 'content/my-writing/what I learned from cults.md'
-+ echo 'Updated: what I learned from cults.md'
-Updated: what I learned from cults.md
-+ read -r file
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md' ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md'
 + filename='Perfection is boring.md'
 + cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/Perfection is boring.md' 'content/my-writing/Perfection is boring.md'
 + echo 'Updated: Perfection is boring.md'
 Updated: Perfection is boring.md
-+ read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md'
-+ filename='this is a test for my writing.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing/this is a test for my writing.md' 'content/my-writing/this is a test for my writing.md'
-+ echo 'Updated: this is a test for my writing.md'
-Updated: this is a test for my writing.md
 + read -r file
 + find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art' -name '*.md' -mtime -3 -type f
 + read -r file
@@ -1500,12 +1486,12 @@ Updated: this is a test for my writing.md
 + echo 'Updated: Break Free.md'
 Updated: Break Free.md
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md'
-+ filename='THIs is a test for my art.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/THIs is a test for my art.md' 'content/my-art/THIs is a test for my art.md'
-+ echo 'Updated: THIs is a test for my art.md'
-Updated: THIs is a test for my art.md
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/knot in my chest.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/knot in my chest.md'
++ filename='knot in my chest.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/knot in my chest.md' 'content/my-art/knot in my chest.md'
++ echo 'Updated: knot in my chest.md'
+Updated: knot in my chest.md
 + read -r file
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/for my nephew.md' ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/for my nephew.md'
@@ -1514,28 +1500,42 @@ Updated: THIs is a test for my art.md
 + echo 'Updated: for my nephew.md'
 Updated: for my nephew.md
 + read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/index.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/index.md'
++ filename=index.md
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my art/index.md' content/my-art/index.md
++ echo 'Updated: index.md'
+Updated: index.md
++ read -r file
 + find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists' -name '*.md' -mtime -3 -type f
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md'
-+ filename='pool tunes, bro.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/pool tunes, bro.md' 'content/my-playlists/pool tunes, bro.md'
-+ echo 'Updated: pool tunes, bro.md'
-Updated: pool tunes, bro.md
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/I had a dream that asian musicians took over coachella.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/I had a dream that asian musicians took over coachella.md'
++ filename='I had a dream that asian musicians took over coachella.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/I had a dream that asian musicians took over coachella.md' 'content/my-playlists/I had a dream that asian musicians took over coachella.md'
++ echo 'Updated: I had a dream that asian musicians took over coachella.md'
+Updated: I had a dream that asian musicians took over coachella.md
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md'
-+ filename='mellow from the other side.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/mellow from the other side.md' 'content/my-playlists/mellow from the other side.md'
-+ echo 'Updated: mellow from the other side.md'
-Updated: mellow from the other side.md
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/morning commute to the sun.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/morning commute to the sun.md'
++ filename='morning commute to the sun.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/morning commute to the sun.md' 'content/my-playlists/morning commute to the sun.md'
++ echo 'Updated: morning commute to the sun.md'
+Updated: morning commute to the sun.md
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
-+ filename='brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md' 'content/my-playlists/brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
-+ echo 'Updated: brt babe, i'\''m only two galaxies away- a man'\''s journey home from space no.A113.md'
-Updated: brt babe, i'm only two galaxies away- a man's journey home from space no.A113.md
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/there’s a hell of a indie-verse next door, let’s go.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/there’s a hell of a indie-verse next door, let’s go.md'
++ filename='there’s a hell of a indie-verse next door, let’s go.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/there’s a hell of a indie-verse next door, let’s go.md' 'content/my-playlists/there’s a hell of a indie-verse next door, let’s go.md'
++ echo 'Updated: there’s a hell of a indie-verse next door, let’s go.md'
+Updated: there’s a hell of a indie-verse next door, let’s go.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/sun things to dance to.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/sun things to dance to.md'
++ filename='sun things to dance to.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/sun things to dance to.md' 'content/my-playlists/sun things to dance to.md'
++ echo 'Updated: sun things to dance to.md'
+Updated: sun things to dance to.md
 + read -r file
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/index.md' ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/index.md'
@@ -1544,12 +1544,26 @@ Updated: brt babe, i'm only two galaxies away- a man's journey home from space n
 + echo 'Updated: index.md'
 Updated: index.md
 + read -r file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md' ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md'
-+ filename='in the moog for love.md'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/in the moog for love.md' 'content/my-playlists/in the moog for love.md'
-+ echo 'Updated: in the moog for love.md'
-Updated: in the moog for love.md
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/dancing down 5 ave like a queen.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/dancing down 5 ave like a queen.md'
++ filename='dancing down 5 ave like a queen.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/dancing down 5 ave like a queen.md' 'content/my-playlists/dancing down 5 ave like a queen.md'
++ echo 'Updated: dancing down 5 ave like a queen.md'
+Updated: dancing down 5 ave like a queen.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/warming up.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/warming up.md'
++ filename='warming up.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/warming up.md' 'content/my-playlists/warming up.md'
++ echo 'Updated: warming up.md'
+Updated: warming up.md
++ read -r file
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/ending the year in the most beautiful way I know how pt. 1.md' ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/ending the year in the most beautiful way I know how pt. 1.md'
++ filename='ending the year in the most beautiful way I know how pt. 1.md'
++ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my playlists/ending the year in the most beautiful way I know how pt. 1.md' 'content/my-playlists/ending the year in the most beautiful way I know how pt. 1.md'
++ echo 'Updated: ending the year in the most beautiful way I know how pt. 1.md'
+Updated: ending the year in the most beautiful way I know how pt. 1.md
 + read -r file
 ++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/my writing' -name '*.md' -type f
 ++ head -1
@@ -1563,369 +1577,443 @@ Updated: in the moog for love.md
 Synced latest: Why you shouldn't judge your circumstance.md
 + echo 'Syncing referenced images to attachments folder...'
 Syncing referenced images to attachments folder...
++ '[' -d content/Attachments ']'
++ echo 'Removing capitalized Attachments folder to avoid conflicts...'
+Removing capitalized Attachments folder to avoid conflicts...
++ rm -rf content/Attachments
 + mkdir -p content/attachments
 + echo 'Copying recent images to attachments folder...'
 Copying recent images to attachments folder...
-+ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f '(' -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' -o -name '*.webp' ')' -mtime -30
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
-+ file_size=948494
-+ '[' 948494 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
-+ img_name=img20250824_22171236.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' content/attachments/
-+ chmod 644 content/attachments/img20250824_22171236.jpg
-+ xattr -c content/attachments/img20250824_22171236.jpg
-+ echo 'Copied to attachments: img20250824_22171236.jpg'
-Copied to attachments: img20250824_22171236.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
-+ file_size=2521496
-+ '[' 2521496 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
-+ img_name='C3 #2 Group Photo v1.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' content/attachments/
-+ chmod 644 'content/attachments/C3 #2 Group Photo v1.jpg'
-+ xattr -c 'content/attachments/C3 #2 Group Photo v1.jpg'
-+ echo 'Copied to attachments: C3 #2 Group Photo v1.jpg'
-Copied to attachments: C3 #2 Group Photo v1.jpg
-+ read -r img_file
++ IFS='
+'
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f -name '*.png' -mtime -30
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f -name '*.jpg' -mtime -30
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f -name '*.jpeg' -mtime -30
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f -name '*.gif' -mtime -30
+++ find '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments' -type f -name '*.webp' -mtime -30
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/IMG_3979 2.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/IMG_3979 2.png'
++ file_size=13363369
++ '[' 13363369 -lt 5242880 ']'
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png'
 + file_size=1357179
 + '[' 1357179 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png'
 + img_name='for ez 1 (smaller dimensions).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png' content/attachments/
-+ chmod 644 'content/attachments/for ez 1 (smaller dimensions).png'
-+ xattr -c 'content/attachments/for ez 1 (smaller dimensions).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 1 (smaller dimensions).png' 'content/attachments/for ez 1 (smaller dimensions).png'
 + echo 'Copied to attachments: for ez 1 (smaller dimensions).png'
 Copied to attachments: for ez 1 (smaller dimensions).png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
-+ file_size=106481
-+ '[' 106481 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
-+ img_name=img20250821_19302688.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' content/attachments/
-+ chmod 644 content/attachments/img20250821_19302688.jpg
-+ xattr -c content/attachments/img20250821_19302688.jpg
-+ echo 'Copied to attachments: img20250821_19302688.jpg'
-Copied to attachments: img20250821_19302688.jpg
-+ read -r img_file
++ git add 'content/attachments/for ez 1 (smaller dimensions).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png'
 + file_size=3189137
 + '[' 3189137 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png'
 + img_name='myart stiching (2).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png' content/attachments/
-+ chmod 644 'content/attachments/myart stiching (2).png'
-+ xattr -c 'content/attachments/myart stiching (2).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2).png' 'content/attachments/myart stiching (2).png'
 + echo 'Copied to attachments: myart stiching (2).png'
 Copied to attachments: myart stiching (2).png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
-+ file_size=1222756
-+ '[' 1222756 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
-+ img_name=5904.EX8968_21-access.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' content/attachments/
-+ chmod 644 content/attachments/5904.EX8968_21-access.jpg
-+ xattr -c content/attachments/5904.EX8968_21-access.jpg
-+ echo 'Copied to attachments: 5904.EX8968_21-access.jpg'
-Copied to attachments: 5904.EX8968_21-access.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
-+ file_size=127606
-+ '[' 127606 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
-+ img_name='img20250808_22413962 2.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' content/attachments/
-+ chmod 644 'content/attachments/img20250808_22413962 2.jpg'
-+ xattr -c 'content/attachments/img20250808_22413962 2.jpg'
-+ echo 'Copied to attachments: img20250808_22413962 2.jpg'
-Copied to attachments: img20250808_22413962 2.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
-+ file_size=127606
-+ '[' 127606 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
-+ img_name='img20250808_22413962 1.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' content/attachments/
-+ chmod 644 'content/attachments/img20250808_22413962 1.jpg'
-+ xattr -c 'content/attachments/img20250808_22413962 1.jpg'
-+ echo 'Copied to attachments: img20250808_22413962 1.jpg'
-Copied to attachments: img20250808_22413962 1.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
-+ file_size=107446
-+ '[' 107446 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
-+ img_name='img20250821_19292587 1.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' content/attachments/
-+ chmod 644 'content/attachments/img20250821_19292587 1.jpg'
-+ xattr -c 'content/attachments/img20250821_19292587 1.jpg'
-+ echo 'Copied to attachments: img20250821_19292587 1.jpg'
-Copied to attachments: img20250821_19292587 1.jpg
-+ read -r img_file
++ git add 'content/attachments/myart stiching (2).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png'
 + file_size=111246
 + '[' 111246 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png'
 + img_name='Untitled (Instagram Post) (16).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png' content/attachments/
-+ chmod 644 'content/attachments/Untitled (Instagram Post) (16).png'
-+ xattr -c 'content/attachments/Untitled (Instagram Post) (16).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled (Instagram Post) (16).png' 'content/attachments/Untitled (Instagram Post) (16).png'
 + echo 'Copied to attachments: Untitled (Instagram Post) (16).png'
 Copied to attachments: Untitled (Instagram Post) (16).png
-+ read -r img_file
++ git add 'content/attachments/Untitled (Instagram Post) (16).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png'
 + file_size=5765959
 + '[' 5765959 -lt 5242880 ']'
-+ read -r img_file
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png'
 + file_size=29605
 + '[' 29605 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png'
 + img_name='Mainlander Master (8).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png' content/attachments/
-+ chmod 644 'content/attachments/Mainlander Master (8).png'
-+ xattr -c 'content/attachments/Mainlander Master (8).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Mainlander Master (8).png' 'content/attachments/Mainlander Master (8).png'
 + echo 'Copied to attachments: Mainlander Master (8).png'
 Copied to attachments: Mainlander Master (8).png
-+ read -r img_file
++ git add 'content/attachments/Mainlander Master (8).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
 + file_size=398959
 + '[' 398959 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
 + img_name='CleanShot 2025-07-31 at 10.23.45@2x.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' content/attachments/
-+ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
-+ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png'
 + echo 'Copied to attachments: CleanShot 2025-07-31 at 10.23.45@2x.png'
 Copied to attachments: CleanShot 2025-07-31 at 10.23.45@2x.png
-+ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png'
 + file_size=818398
 + '[' 818398 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png'
 + img_name='Untitled design (48).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png' content/attachments/
-+ chmod 644 'content/attachments/Untitled design (48).png'
-+ xattr -c 'content/attachments/Untitled design (48).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (48).png' 'content/attachments/Untitled design (48).png'
 + echo 'Copied to attachments: Untitled design (48).png'
 Copied to attachments: Untitled design (48).png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
-+ file_size=2521496
-+ '[' 2521496 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
-+ img_name='C3 #2 Group Photo v1 1.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' content/attachments/
-+ chmod 644 'content/attachments/C3 #2 Group Photo v1 1.jpg'
-+ xattr -c 'content/attachments/C3 #2 Group Photo v1 1.jpg'
-+ echo 'Copied to attachments: C3 #2 Group Photo v1 1.jpg'
-Copied to attachments: C3 #2 Group Photo v1 1.jpg
-+ read -r img_file
++ git add 'content/attachments/Untitled design (48).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart-stiching-2-1.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart-stiching-2-1.png'
++ file_size=3189137
++ '[' 3189137 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart-stiching-2-1.png'
++ img_name=myart-stiching-2-1.png
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart-stiching-2-1.png' content/attachments/myart-stiching-2-1.png
++ echo 'Copied to attachments: myart-stiching-2-1.png'
+Copied to attachments: myart-stiching-2-1.png
++ git add content/attachments/myart-stiching-2-1.png --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png'
 + file_size=1565710
 + '[' 1565710 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png'
 + img_name='for ez 2 (smaller dimensions).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png' content/attachments/
-+ chmod 644 'content/attachments/for ez 2 (smaller dimensions).png'
-+ xattr -c 'content/attachments/for ez 2 (smaller dimensions).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/for ez 2 (smaller dimensions).png' 'content/attachments/for ez 2 (smaller dimensions).png'
 + echo 'Copied to attachments: for ez 2 (smaller dimensions).png'
 Copied to attachments: for ez 2 (smaller dimensions).png
-+ read -r img_file
++ git add 'content/attachments/for ez 2 (smaller dimensions).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png'
 + file_size=1524087
 + '[' 1524087 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png'
 + img_name=$'�\210�親�\200快�\202.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png' content/attachments/
-+ chmod 644 $'content/attachments/�\210�親�\200快�\202.png'
-+ xattr -c $'content/attachments/�\210�親�\200快�\202.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂.png' $'content/attachments/�\210�親�\200快�\202.png'
 + echo 'Copied to attachments: 父親節快樂.png'
 Copied to attachments: 父親節快樂.png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
-+ file_size=106481
-+ '[' 106481 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
-+ img_name='img20250821_19302688 2.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' content/attachments/
-+ chmod 644 'content/attachments/img20250821_19302688 2.jpg'
-+ xattr -c 'content/attachments/img20250821_19302688 2.jpg'
-+ echo 'Copied to attachments: img20250821_19302688 2.jpg'
-Copied to attachments: img20250821_19302688 2.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
-+ file_size=107446
-+ '[' 107446 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
-+ img_name=img20250821_19292587.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' content/attachments/
-+ chmod 644 content/attachments/img20250821_19292587.jpg
-+ xattr -c content/attachments/img20250821_19292587.jpg
-+ echo 'Copied to attachments: img20250821_19292587.jpg'
-Copied to attachments: img20250821_19292587.jpg
-+ read -r img_file
++ git add $'content/attachments/�\210�親�\200快�\202.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png'
 + file_size=714620
 + '[' 714620 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png'
 + img_name='Untitled design (65).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png' content/attachments/
-+ chmod 644 'content/attachments/Untitled design (65).png'
-+ xattr -c 'content/attachments/Untitled design (65).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (65).png' 'content/attachments/Untitled design (65).png'
 + echo 'Copied to attachments: Untitled design (65).png'
 Copied to attachments: Untitled design (65).png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
-+ file_size=117911
-+ '[' 117911 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
-+ img_name=img20250821_19310752.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' content/attachments/
-+ chmod 644 content/attachments/img20250821_19310752.jpg
-+ xattr -c content/attachments/img20250821_19310752.jpg
-+ echo 'Copied to attachments: img20250821_19310752.jpg'
-Copied to attachments: img20250821_19310752.jpg
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
-+ file_size=106481
-+ '[' 106481 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
-+ img_name='img20250821_19302688 1.jpg'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' content/attachments/
-+ chmod 644 'content/attachments/img20250821_19302688 1.jpg'
-+ xattr -c 'content/attachments/img20250821_19302688 1.jpg'
-+ echo 'Copied to attachments: img20250821_19302688 1.jpg'
-Copied to attachments: img20250821_19302688 1.jpg
-+ read -r img_file
++ git add 'content/attachments/Untitled design (65).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
 + file_size=479256
 + '[' 479256 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
 + img_name='CleanShot 2025-07-31 at 10.24.37@2x.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' content/attachments/
-+ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
-+ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png'
 + echo 'Copied to attachments: CleanShot 2025-07-31 at 10.24.37@2x.png'
 Copied to attachments: CleanShot 2025-07-31 at 10.24.37@2x.png
-+ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png'
 + file_size=818398
 + '[' 818398 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png'
 + img_name='Untitled design (15).png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png' content/attachments/
-+ chmod 644 'content/attachments/Untitled design (15).png'
-+ xattr -c 'content/attachments/Untitled design (15).png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/Untitled design (15).png' 'content/attachments/Untitled design (15).png'
 + echo 'Copied to attachments: Untitled design (15).png'
 Copied to attachments: Untitled design (15).png
-+ read -r img_file
++ git add 'content/attachments/Untitled design (15).png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2) 1.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2) 1.png'
++ file_size=3189137
++ '[' 3189137 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2) 1.png'
++ img_name='myart stiching (2) 1.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/myart stiching (2) 1.png' 'content/attachments/myart stiching (2) 1.png'
++ echo 'Copied to attachments: myart stiching (2) 1.png'
+Copied to attachments: myart stiching (2) 1.png
++ git add 'content/attachments/myart stiching (2) 1.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
 + file_size=441399
 + '[' 441399 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
 + img_name='CleanShot 2025-07-31 at 10.22.52@2x.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' content/attachments/
-+ chmod 644 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
-+ xattr -c 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png'
 + echo 'Copied to attachments: CleanShot 2025-07-31 at 10.22.52@2x.png'
 Copied to attachments: CleanShot 2025-07-31 at 10.22.52@2x.png
-+ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 01.07.47@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 01.07.47@2x.png'
 + file_size=6863603
 + '[' 6863603 -lt 5242880 ']'
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
-+ file_size=127606
-+ '[' 127606 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
-+ img_name=img20250808_22413962.jpg
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' content/attachments/
-+ chmod 644 content/attachments/img20250808_22413962.jpg
-+ xattr -c content/attachments/img20250808_22413962.jpg
-+ echo 'Copied to attachments: img20250808_22413962.jpg'
-Copied to attachments: img20250808_22413962.jpg
-+ read -r img_file
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png'
 + file_size=1524087
 + '[' 1524087 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png'
 + img_name='父親節快樂 1.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png' content/attachments/
-+ chmod 644 'content/attachments/父親節快樂 1.png'
-+ xattr -c 'content/attachments/父親節快樂 1.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/父親節快樂 1.png' 'content/attachments/父親節快樂 1.png'
 + echo 'Copied to attachments: 父親節快樂 1.png'
 Copied to attachments: 父親節快樂 1.png
-+ read -r img_file
-+ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' ']'
-++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
-+ file_size=1814966
-+ '[' 1814966 -lt 5242880 ']'
-++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
-+ img_name='25on25 logo.gif'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' content/attachments/
-+ chmod 644 'content/attachments/25on25 logo.gif'
-+ xattr -c 'content/attachments/25on25 logo.gif'
-+ echo 'Copied to attachments: 25on25 logo.gif'
-Copied to attachments: 25on25 logo.gif
-+ read -r img_file
++ git add 'content/attachments/父親節快樂 1.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-29 at 18.08.09@2x.png' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-29 at 18.08.09@2x.png'
++ file_size=5748895
++ '[' 5748895 -lt 5242880 ']'
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
 + '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' ']'
 ++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
 + file_size=3326004
 + '[' 3326004 -lt 5242880 ']'
 ++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
 + img_name='CleanShot 2025-08-24 at 22.40.40@2x.png'
-+ cp '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' content/attachments/
-+ chmod 644 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
-+ xattr -c 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png'
 + echo 'Copied to attachments: CleanShot 2025-08-24 at 22.40.40@2x.png'
 Copied to attachments: CleanShot 2025-08-24 at 22.40.40@2x.png
-+ read -r img_file
++ git add 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
++ file_size=948494
++ '[' 948494 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg'
++ img_name=img20250824_22171236.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250824_22171236.jpg' content/attachments/img20250824_22171236.jpg
++ echo 'Copied to attachments: img20250824_22171236.jpg'
+Copied to attachments: img20250824_22171236.jpg
++ git add content/attachments/img20250824_22171236.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
++ file_size=2521496
++ '[' 2521496 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg'
++ img_name='C3 #2 Group Photo v1.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1.jpg' 'content/attachments/C3 #2 Group Photo v1.jpg'
++ echo 'Copied to attachments: C3 #2 Group Photo v1.jpg'
+Copied to attachments: C3 #2 Group Photo v1.jpg
++ git add 'content/attachments/C3 #2 Group Photo v1.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg'
++ img_name=img20250821_19302688.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688.jpg' content/attachments/img20250821_19302688.jpg
++ echo 'Copied to attachments: img20250821_19302688.jpg'
+Copied to attachments: img20250821_19302688.jpg
++ git add content/attachments/img20250821_19302688.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
++ file_size=1222756
++ '[' 1222756 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg'
++ img_name=5904.EX8968_21-access.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/5904.EX8968_21-access.jpg' content/attachments/5904.EX8968_21-access.jpg
++ echo 'Copied to attachments: 5904.EX8968_21-access.jpg'
+Copied to attachments: 5904.EX8968_21-access.jpg
++ git add content/attachments/5904.EX8968_21-access.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg'
++ img_name='img20250808_22413962 2.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 2.jpg' 'content/attachments/img20250808_22413962 2.jpg'
++ echo 'Copied to attachments: img20250808_22413962 2.jpg'
+Copied to attachments: img20250808_22413962 2.jpg
++ git add 'content/attachments/img20250808_22413962 2.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg'
++ img_name='img20250808_22413962 1.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962 1.jpg' 'content/attachments/img20250808_22413962 1.jpg'
++ echo 'Copied to attachments: img20250808_22413962 1.jpg'
+Copied to attachments: img20250808_22413962 1.jpg
++ git add 'content/attachments/img20250808_22413962 1.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
++ file_size=107446
++ '[' 107446 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg'
++ img_name='img20250821_19292587 1.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587 1.jpg' 'content/attachments/img20250821_19292587 1.jpg'
++ echo 'Copied to attachments: img20250821_19292587 1.jpg'
+Copied to attachments: img20250821_19292587 1.jpg
++ git add 'content/attachments/img20250821_19292587 1.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
++ file_size=2521496
++ '[' 2521496 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg'
++ img_name='C3 #2 Group Photo v1 1.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/C3 #2 Group Photo v1 1.jpg' 'content/attachments/C3 #2 Group Photo v1 1.jpg'
++ echo 'Copied to attachments: C3 #2 Group Photo v1 1.jpg'
+Copied to attachments: C3 #2 Group Photo v1 1.jpg
++ git add 'content/attachments/C3 #2 Group Photo v1 1.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg'
++ img_name='img20250821_19302688 2.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 2.jpg' 'content/attachments/img20250821_19302688 2.jpg'
++ echo 'Copied to attachments: img20250821_19302688 2.jpg'
+Copied to attachments: img20250821_19302688 2.jpg
++ git add 'content/attachments/img20250821_19302688 2.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
++ file_size=107446
++ '[' 107446 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg'
++ img_name=img20250821_19292587.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19292587.jpg' content/attachments/img20250821_19292587.jpg
++ echo 'Copied to attachments: img20250821_19292587.jpg'
+Copied to attachments: img20250821_19292587.jpg
++ git add content/attachments/img20250821_19292587.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
++ file_size=117911
++ '[' 117911 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg'
++ img_name=img20250821_19310752.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19310752.jpg' content/attachments/img20250821_19310752.jpg
++ echo 'Copied to attachments: img20250821_19310752.jpg'
+Copied to attachments: img20250821_19310752.jpg
++ git add content/attachments/img20250821_19310752.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
++ file_size=106481
++ '[' 106481 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg'
++ img_name='img20250821_19302688 1.jpg'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250821_19302688 1.jpg' 'content/attachments/img20250821_19302688 1.jpg'
++ echo 'Copied to attachments: img20250821_19302688 1.jpg'
+Copied to attachments: img20250821_19302688 1.jpg
++ git add 'content/attachments/img20250821_19302688 1.jpg' --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
++ file_size=127606
++ '[' 127606 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg'
++ img_name=img20250808_22413962.jpg
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/img20250808_22413962.jpg' content/attachments/img20250808_22413962.jpg
++ echo 'Copied to attachments: img20250808_22413962.jpg'
+Copied to attachments: img20250808_22413962.jpg
++ git add content/attachments/img20250808_22413962.jpg --force --verbose
++ for img_file in '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.png" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.jpeg" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.gif" -mtime -30)' '$(find "$OBSIDIAN_ATTACHMENTS" -type f -name "*.webp" -mtime -30)'
++ '[' -f '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' ']'
+++ stat -f%z '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
++ file_size=1814966
++ '[' 1814966 -lt 5242880 ']'
+++ basename '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif'
++ img_name='25on25 logo.gif'
++ install -m 644 '/Users/andrewtsao/Library/Mobile Documents/iCloud~md~obsidian/Documents/True_Bro/attachments/25on25 logo.gif' 'content/attachments/25on25 logo.gif'
++ echo 'Copied to attachments: 25on25 logo.gif'
+Copied to attachments: 25on25 logo.gif
++ git add 'content/attachments/25on25 logo.gif' --force --verbose
++ unset IFS
 + echo 'Adding attachments to git...'
 Adding attachments to git...
-+ git add content/attachments/ --force
-+ git add quartz/static/ --force
++ find content/attachments -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' -o -name '*.webp'
++ read -r img_file
++ git add content/attachments/img20250824_22171236.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/C3 #2 Group Photo v1.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/for ez 1 (smaller dimensions).png' --force --verbose
++ read -r img_file
++ git add content/attachments/img20250821_19302688.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/myart stiching (2).png' --force --verbose
++ read -r img_file
++ git add content/attachments/5904.EX8968_21-access.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/img20250808_22413962 2.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/img20250808_22413962 1.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/img20250821_19292587 1.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/Untitled (Instagram Post) (16).png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/Mainlander Master (8).png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.23.45@2x.png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/Untitled design (48).png' --force --verbose
++ read -r img_file
++ git add content/attachments/myart-stiching-2-1.png --force --verbose
++ read -r img_file
++ git add 'content/attachments/C3 #2 Group Photo v1 1.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/for ez 2 (smaller dimensions).png' --force --verbose
++ read -r img_file
++ git add $'content/attachments/�\210�親�\200快�\202.png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/img20250821_19302688 2.jpg' --force --verbose
++ read -r img_file
++ git add content/attachments/img20250821_19292587.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/Untitled design (65).png' --force --verbose
++ read -r img_file
++ git add content/attachments/img20250821_19310752.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/img20250821_19302688 1.jpg' --force --verbose
++ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.24.37@2x.png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/Untitled design (15).png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/myart stiching (2) 1.png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/CleanShot 2025-07-31 at 10.22.52@2x.png' --force --verbose
++ read -r img_file
++ git add content/attachments/img20250808_22413962.jpg --force --verbose
++ read -r img_file
++ git add 'content/attachments/父親節快樂 1.png' --force --verbose
++ read -r img_file
++ git add 'content/attachments/25on25 logo.gif' --force --verbose
++ read -r img_file
++ git add 'content/attachments/CleanShot 2025-08-24 at 22.40.40@2x.png' --force --verbose
++ read -r img_file
 + echo 'Building Quartz...'
 Building Quartz...
 + npx quartz build
 
  Quartz v4.5.1  
 
-Cleaned output directory `public` in 71ms
-Found 288 input files from `content` in 29ms
+Cleaned output directory `public` in 61ms
+Found 295 input files from `content` in 30ms
 Parsing input files using 2 threads
 
 Warning: found invalid date "null" in `my-playlists/in the moog for love.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
@@ -1937,8 +2025,8 @@ Warning: found invalid date "null" in `my-writing/the art of your life.md`. Supp
 Warning: found invalid date "false" in `my-writing/what I learned from cults.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
 
 Warning: found invalid date "null" in `my-writing/我寫的字很亂但我有很多話要說.md`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format
-Parsed 288 Markdown files in 3s
-Filtered out 141 files in 309μs
+Parsed 295 Markdown files in 3s
+Filtered out 144 files in 283μs
 Emitting files
 🚫 Excluded from tag "thought": my-writing/index
 🚫 Excluded from tag "poem": my-writing/index
@@ -1950,8 +2038,8 @@ Emitting files
 🚫 Excluded from tag "motivation": my-writing/index
 🚫 Excluded from tag "poem": my-writing/index
 🚫 Excluded from tag "thought": my-writing/index
-Emitted 335 files to `public` in 870ms
-Done processing 288 files in 4s
+Emitted 313 files to `public` in 1s
+Done processing 295 files in 4s
 + '[' 0 -ne 0 ']'
 + echo 'Checking for changes...'
 Checking for changes...
@@ -1959,38 +2047,3 @@ Checking for changes...
 + echo 'Deploying to Cloudflare...'
 Deploying to Cloudflare...
 + git add .
-+ git add content/attachments/ -f
-++ date '+%Y-%m-%d %H:%M'
-+ git commit -m 'Quick sync from Obsidian - 2025-08-29 17:36'
-[main f143c16] Quick sync from Obsidian - 2025-08-29 17:36
- 12 files changed, 1963 insertions(+), 3 deletions(-)
- delete mode 100644 content/Attachments/CleanShot 2023-10-06 at 14.26.54@2x.png
- delete mode 100644 content/Attachments/CleanShot 2023-10-06 at 17.14.11@2x.png
- delete mode 100644 content/Attachments/CleanShot 2025-04-25 at 23.54.55@2x.png
- delete mode 100644 content/Attachments/myart stiching (1).png
- delete mode 100644 content/Attachments/myart stiching (2) 1.png
- delete mode 100644 content/Attachments/myart stiching (2) 2.png
- delete mode 100644 content/Attachments/myart stiching (2) 3.png
- delete mode 100644 content/Attachments/myart stiching (2) 5.png
- delete mode 100644 content/Attachments/myart-stiching-2-4.png
- create mode 100644 content/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png
- create mode 100644 sync_log.txt
-+ git push origin main
-To https://github.com/atsaotsao/my-website.git
-   0de010e..f143c16  main -> main
-+ echo ''
-
-+ echo 'Deployment complete!'
-Deployment complete!
-+ echo '- Files synced: Recent changes + latest writing'
-- Files synced: Recent changes + latest writing
-+ echo '- Images synced: Smart matching for all variations'
-- Images synced: Smart matching for all variations
-+ echo '- Build: Successful'
-- Build: Successful
-+ echo '- Deploy: Pushed to Cloudflare'
-- Deploy: Pushed to Cloudflare
-+ echo ''
-
-+ echo 'Your site will update in a few minutes.'
-Your site will update in a few minutes.

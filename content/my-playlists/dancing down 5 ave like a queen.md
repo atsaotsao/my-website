@@ -1,0 +1,23 @@
+---
+modified: 2025-08-29 20:48:34
+publish: true
+published: 2019-02-25
+tags:
+  - alternative-rb
+  - art-pop
+  - australian-pop
+  - dance-pop
+  - electropop
+  - indie-pop
+  - indie-poptimism
+  - indietronica
+  - nyc-pop
+  - pop
+  - shimmer-pop
+  - swedish-electropop
+  - swedish-pop
+  - vapor-soul
+---
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1jknQSDHqdRizAarbSlTbR?utm_source=generator" width="100%" height="1000" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+

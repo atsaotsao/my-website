@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-26 22:40:27
+modified: 2025-08-30 03:42:22
 published: 2024-09-08
 publish: true
 tags:
@@ -23,7 +23,7 @@ I thought about Palestine, especially the children living in Gaza strip.
 I thought about war, of death, and about all the things in life that are out of my control.
 I thought about my younger self.
 And I thought about my future self.
-
+![](../attachments/5904.EX8968_21-access%201.jpg)
 And with this door, this painting, this art, I decided to create something for all of my selves, for all my thoughts, and for everyone and everything I have or will care for. 
 
 With this piece "Break Free", I hope to create a door, a sign, a lighthouse, a permission slip, and a portal for anyone looking at it to find the courage to break free.

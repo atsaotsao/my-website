@@ -1,9 +1,9 @@
 ---
-modified: 2025-08-27 23:47:58
+modified: 2025-08-29 23:44:48
 publish: true
 published: 2025-08-24
 ---
 
-![](../attachments/myart%20stiching%20(1).png)
+![center](../attachments/myart%20stiching%20(4).png)
 
-![](../attachments/img20250824_22171236.jpg)
+![center](../attachments/img20250824_22171236.jpg)

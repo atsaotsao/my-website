@@ -1,6 +1,7 @@
 ---
-modified: 2025-08-29 22:01:45
+modified: 2025-08-29 22:10:20
 published: 2024-06-27
+publish: true
 ---
 ![painting](../attachments/IMG_3979%202.png)
 

@@ -1959,3 +1959,38 @@ Checking for changes...
 + echo 'Deploying to Cloudflare...'
 Deploying to Cloudflare...
 + git add .
++ git add content/attachments/ -f
+++ date '+%Y-%m-%d %H:%M'
++ git commit -m 'Quick sync from Obsidian - 2025-08-29 17:36'
+[main f143c16] Quick sync from Obsidian - 2025-08-29 17:36
+ 12 files changed, 1963 insertions(+), 3 deletions(-)
+ delete mode 100644 content/Attachments/CleanShot 2023-10-06 at 14.26.54@2x.png
+ delete mode 100644 content/Attachments/CleanShot 2023-10-06 at 17.14.11@2x.png
+ delete mode 100644 content/Attachments/CleanShot 2025-04-25 at 23.54.55@2x.png
+ delete mode 100644 content/Attachments/myart stiching (1).png
+ delete mode 100644 content/Attachments/myart stiching (2) 1.png
+ delete mode 100644 content/Attachments/myart stiching (2) 2.png
+ delete mode 100644 content/Attachments/myart stiching (2) 3.png
+ delete mode 100644 content/Attachments/myart stiching (2) 5.png
+ delete mode 100644 content/Attachments/myart-stiching-2-4.png
+ create mode 100644 content/attachments/CleanShot 2025-08-21 at 22.19.27@2x.png
+ create mode 100644 sync_log.txt
++ git push origin main
+To https://github.com/atsaotsao/my-website.git
+   0de010e..f143c16  main -> main
++ echo ''
+
++ echo 'Deployment complete!'
+Deployment complete!
++ echo '- Files synced: Recent changes + latest writing'
+- Files synced: Recent changes + latest writing
++ echo '- Images synced: Smart matching for all variations'
+- Images synced: Smart matching for all variations
++ echo '- Build: Successful'
+- Build: Successful
++ echo '- Deploy: Pushed to Cloudflare'
+- Deploy: Pushed to Cloudflare
++ echo ''
+
++ echo 'Your site will update in a few minutes.'
+Your site will update in a few minutes.

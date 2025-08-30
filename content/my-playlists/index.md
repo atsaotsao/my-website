@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-27 00:54:07
+modified: 2025-08-29 18:01:02
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -13,9 +13,6 @@ And it was one very particular way for me to export all the gooey warmth and lov
 Over the course of 90 months, I've handpicked and put together 90 playlists and sent 55 issues of the newsletter. Even though the project has ended, I've decided to create a new home for all that labor of love. 
 
 ----
-
-![center](../attachments/25on25%20logo.gif)
-
 
 ![center](../attachments/25on25%20logo.gif)
 

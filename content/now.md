@@ -1,10 +1,8 @@
 ---
-modified: 2025-08-29 17:57:20
+modified: 2025-08-29 18:00:48
 publish: true
 published: 2025-08-19
 ---
-![bobby](static/images/attachments/myart-stiching-2-1.png)
-
 ![alt](../attachments/myart%20stiching%20(2).png)!
 
 - Running a group coaching container that combines lessons around ancestry, artistry, and earth-based practices to help anyone navigate crisis and build resilience  (*IN PROGRESS* [email me](mailto:andrew@codelesscoach.com) if you want a sneak peek.)

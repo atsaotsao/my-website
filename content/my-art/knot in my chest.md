@@ -1,7 +1,9 @@
 ---
-modified: 2025-08-24 01:29:29
+modified: 2025-08-29 22:01:45
 published: 2024-06-27
 ---
+![painting](../attachments/IMG_3979%202.png)
+
 06/27/2024
 The knot in my chest is so heavy & deep.
 I've creid.

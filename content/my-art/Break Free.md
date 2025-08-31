@@ -11,7 +11,6 @@ I've been using the downtime I have this month to pause, breathe, think, and be.
 While being here in Southern California, I made sure I started all of my days out in the backyard, meditating while facing the warm glow of the sun. Then I'll walk around and enjoy the grass on my feet, the sights, sounds, and scents of the two beautiful orange trees, the extravagant bold pink of the two crape myrtle trees, that one avocado tree that I've never seen bear fruit, and all the different animals and insects that live or visit them. 
 
 It made me think about the incredible amount of gratitude and love I am feeling. 
-![](../attachments/myart%20stiching%20(4)%202.png)
 I thought about my past year of being an entrepreneur.
 I thought about my partner and now fiancé.
 I thought about my family, living here, there, and everywhere.

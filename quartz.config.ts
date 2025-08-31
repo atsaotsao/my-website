@@ -1,4 +1,4 @@
-// quartz.config.ts - Complete configuration with sidebar popover fix
+// quartz.config.ts - Complete configuration with syntax fixes
 import type { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
@@ -7,7 +7,7 @@ const config: QuartzConfig = {
     contentDir: "/Users/andrewtsao/new-quartz/content",
     pageTitle: "Andrew Tsao",
     pageTitleSuffix: "",
-    baseUrl: "andrew-tsao.com", // Change this to your actual domain when deploying
+    baseUrl: "localhost", // Change this to your actual domain when deploying
     locale: "en-US",
     enableSPA: true,
     enablePopovers: true, // ✅ Disable all popovers globally
@@ -363,21 +363,26 @@ import("https://cdn.skypack.dev/@floating-ui/dom").then(({ computePosition, flip
           modified: ["modified", "lastmod", "updated"]
         }
       }),
-     Plugin.ObsidianFlavoredMarkdown({
-  comments: true,
-  highlight: true,
-  wikilinks: true,
-  callouts: true,
-  mermaid: true,
-  parseTags: true,
-  parseArrows: true,
-  parseBlockReferences: true,
-  enableInHtmlEmbed: true,  // ← Change this to true
-  enableYouTubeEmbed: true,
-  breaks: true,
-  linkify: true,
-  typographer: false,
-}),
+      Plugin.ObsidianFlavoredMarkdown({
+        comments: true,
+        highlight: true,
+        wikilinks: true,
+        callouts: true,
+        mermaid: true,
+        parseTags: true,
+        parseArrows: true,
+        parseBlockReferences: true,
+        enableInHtmlEmbed: true,
+        enableYouTubeEmbed: true,
+        breaks: true,
+        linkify: true,
+        typographer: false,
+      }),
+      Plugin.GitHubFlavoredMarkdown({
+        enableSmartyPants: true,
+        linkHeadings: true,
+        breaks: true,
+      }),
       Plugin.TableOfContents({ maxDepth: 3 }),
       Plugin.CrawlLinks({
         markdownLinkResolution: "shortest",
@@ -396,62 +401,57 @@ import("https://cdn.skypack.dev/@floating-ui/dom").then(({ computePosition, flip
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      // In your quartz.config.ts, update the FolderPage plugin:
-
-Plugin.FolderPage({
-  sort: (f1, f2) => {
-    const getDate = (f) => {
-      const dateFields = [
-        f.frontmatter?.published,
-        f.frontmatter?.pubDate, 
-        f.frontmatter?.date,
-        f.frontmatter?.created,
-        f.frontmatter?.['creation date'],
-        f.frontmatter?.['modified'],
-        f.frontmatter?.lastmod,
-        f.dates?.published,
-        f.dates?.created,
-        f.dates?.modified
-      ];
-      
-      for (const dateField of dateFields) {
-        if (dateField && dateField !== 'false' && dateField !== false) {
-          const parsed = new Date(dateField);
-          if (!isNaN(parsed.getTime())) {
-            return parsed;
+      Plugin.FolderPage({
+        sort: (f1, f2) => {
+          const getDate = (f) => {
+            const dateFields = [
+              f.frontmatter?.published,
+              f.frontmatter?.pubDate, 
+              f.frontmatter?.date,
+              f.frontmatter?.created,
+              f.frontmatter?.['creation date'],
+              f.frontmatter?.['modified'],
+              f.frontmatter?.lastmod,
+              f.dates?.published,
+              f.dates?.created,
+              f.dates?.modified
+            ];
+            
+            for (const dateField of dateFields) {
+              if (dateField && dateField !== 'false' && dateField !== false) {
+                const parsed = new Date(dateField);
+                if (!isNaN(parsed.getTime())) {
+                  return parsed;
+                }
+              }
+            }
+            
+            return f.dates?.created || f.dates?.modified || new Date(0);
+          };
+          
+          const date1 = getDate(f1);
+          const date2 = getDate(f2);
+          
+          return date2.getTime() - date1.getTime();
+        },
+        filter: (f) => {
+          const excludedSlugs = [
+            'index',
+            'my-art/index', 
+            'my-writing/index',
+            'my-playlist/index',
+            'coaching',
+            'now', 
+            'principles'
+          ];
+          
+          if (f.frontmatter?.exclude_from_backlinks || f.frontmatter?.no_backlink) {
+            return false;
           }
+          
+          return !excludedSlugs.includes(f.slug);
         }
-      }
-      
-      return f.dates?.created || f.dates?.modified || new Date(0);
-    };
-    
-    const date1 = getDate(f1);
-    const date2 = getDate(f2);
-    
-    return date2.getTime() - date1.getTime();
-  },
-  // Add filter to exclude main pages
-  // In your existing quartz.config.ts, just update this part:
-
-filter: (f) => {
-  const excludedSlugs = [
-    'index',
-    'my-art/index', 
-    'my-writing/index',
-    'my-playlist/index', // ← ADD ONLY THIS LINE
-    'coaching',
-    'now', 
-    'principles'
-  ];
-  
-  if (f.frontmatter?.exclude_from_backlinks || f.frontmatter?.no_backlink) {
-    return false;
-  }
-  
-  return !excludedSlugs.includes(f.slug);
-}
-}),
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex(),
       Plugin.Assets(),

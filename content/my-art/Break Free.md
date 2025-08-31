@@ -1,11 +1,11 @@
 ---
-modified: 2025-08-30 03:42:22
+modified: 2025-08-30 12:30:31
 published: 2024-09-08
 publish: true
 tags:
 ---
 The month of December has recently been my favorite time of the year. 
-
+![](../attachments/ChatGPT%20Image%20Apr%207,%202025,%2002_53_41%20PM.png)
 I used the opportunity of having some down time while traveling my brother and his wife in California to enjoy a bit of sun, grass, and art. 
 
 I've been using the downtime I have this month to pause, breathe, think, and be.

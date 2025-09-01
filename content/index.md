@@ -2,10 +2,10 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-09-01 15:31:46
+modified: 2025-09-01 15:35:26
 ---
 
-![](attachments/myart%20stiching%20(6).png)
+![center](attachments/myart%20stiching%20(7).png)
 ##### Welcome 
 
 I'm Andrew, and this is my internet home. 
@@ -32,4 +32,4 @@ If you want to see more of me you can always come say hi on [Instagram](https://
 <div class="graph-center-container" id="graph-container"></div>
 
 
-*Last updated: 2025-08-26 00:02*
+*Last updated: 2025-09-01 15:32*

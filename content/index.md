@@ -28,11 +28,6 @@ If you want to see more of me you can always come say hi on [Instagram](https://
 
 
 ---
-
-
-<div class="wander-button-container"> <a href="/graph" class="wander-button">🗺️ Wander</a> </div>
-
-[graph](graph.md)
 <div class="graph-center-container" id="graph-container"></div>
 
 

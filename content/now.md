@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-29 18:16:36
+modified: 2025-08-31 14:51:50
 publish: true
 published: 2025-08-19
 ---
@@ -24,6 +24,4 @@ I am interested in creating and being part of spaces, projects, and movements th
 - **How do we create relationships, communities, and entire ecosystems that thrives on reciprocity?**
 - **How can we finally see our multitudes, our woven quality of artistry, and harness it to help create a new reimagined world?**
 
-*(updated 2025-08-25 21:24)*
-
-![](../attachments/Font%20option%20F1%201.png)
+*(updated 2025-08-31 14:51)*

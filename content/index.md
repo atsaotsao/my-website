@@ -2,9 +2,10 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-09-01 15:54:47
+modified: 2025-09-02 02:33:25
 ---
-![](attachments/myart%20stiching%20(11).png)
+![](../attachments/myart%20stiching%20(5).png)
+![](../attachments/myart%20stiching%20(13).png)
 ## Welcome
 
 I'm Andrew, and this is my internet home. 

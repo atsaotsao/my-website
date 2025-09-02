@@ -1121,3 +1121,219 @@ body[data-slug^="my-art/"] {
     }
   }
 }
+
+// === FORCE LARGER HEADER IMAGE ON MOBILE ===
+@media (max-width: 800px) {
+  // Cast a wider net with multiple selectors
+  img[src*="myart-stiching"],
+  img[src*="attachments/myart"],
+  article img:first-of-type,
+  .popover-hint img,
+  .page-header img,
+  main img:first-child,
+  p img:first-of-type {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    object-fit: cover !important;
+    margin-left: -1.5rem !important; // Break out of container padding
+    margin-right: -1.5rem !important;
+    border-radius: 0 !important; // Remove border radius to see if it's working
+    box-shadow: none !important; // Remove effects to isolate the size issue
+  }
+}
+
+// === FORCE LARGER HEADER IMAGE ON MOBILE ===
+@media (max-width: 800px) {
+  // Cast a wider net with multiple selectors
+  img[src*="myart-stiching"],
+  img[src*="attachments/myart"],
+  article img:first-of-type,
+  .popover-hint img,
+  .page-header img,
+  main img:first-child,
+  p img:first-of-type {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    object-fit: cover !important;
+    margin-left: -1.5rem !important; // Break out of container padding
+    margin-right: -1.5rem !important;
+    border-radius: 0 !important; // Remove border radius to see if it's working
+    box-shadow: none !important; // Remove effects to isolate the size issue
+  }
+}
+
+@media (max-width: 800px) {
+  // Keep your centered name
+  .page-title {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    position: relative;
+  }
+  
+  // Floating dark mode toggle in top right
+  .mobile-controls {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    gap: 0.5rem;
+    
+    .darkmode button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--lightgray);
+      background: var(--light);
+      color: var(--darkgray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+    }
+    
+    // Hamburger menu button
+    .menu-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--lightgray);
+      background: var(--light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      
+      span {
+        width: 16px;
+        height: 2px;
+        background: var(--darkgray);
+        border-radius: 1px;
+        transition: all 0.2s ease;
+      }
+      
+      &:hover span {
+        background: var(--tertiary);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  // Clean header bar
+  .mobile-header {
+    position: sticky;
+    top: 0;
+    background: var(--light);
+    border-bottom: 1px solid var(--lightgray);
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    .header-controls {
+      display: flex;
+      gap: 0.75rem;
+      
+      button {
+        padding: 0.5rem;
+        border: none;
+        background: transparent;
+        color: var(--darkgray);
+        font-size: 1.1rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background: var(--highlight);
+          color: var(--tertiary);
+        }
+      }
+    }
+  }
+  
+  // Centered name below header
+  .page-title {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  // Keep name centered at top
+  .page-title {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+  }
+  
+  // Clean bottom navigation bar
+  .mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--light);
+    border-top: 1px solid var(--lightgray);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1000;
+    
+    button {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--lightgray);
+      background: var(--light);
+      color: var(--darkgray);
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        border-color: var(--tertiary);
+        color: var(--tertiary);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  // Make the existing darkmode button visible and position it nicely
+  .page > #quartz-body .sidebar.left .darkmode {
+    display: block !important;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    margin: 0;
+    
+    button {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--lightgray);
+      background: var(--light);
+      color: var(--darkgray);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1337,3 +1337,63 @@ body[data-slug^="my-art/"] {
     }
   }
 }
+
+/* === SIMPLE, WORKING IMAGE THEME SWITCHING === */
+/* This accepts a small margin difference but gives you working theme switching */
+
+/* Basic image swapping - this part works */
+body[data-slug=""] img:first-of-type,
+body[data-slug="index"] img:first-of-type {
+  display: block !important;
+}
+
+body[data-slug=""] img:nth-of-type(2),
+body[data-slug="index"] img:nth-of-type(2) {
+  display: none !important;
+}
+
+:root[saved-theme="dark"] {
+  body[data-slug=""] img:first-of-type,
+  body[data-slug="index"] img:first-of-type {
+    display: none !important;
+  }
+  
+  body[data-slug=""] img:nth-of-type(2),
+  body[data-slug="index"] img:nth-of-type(2) {
+    display: block !important;
+  }
+}
+
+/* Minimize the margin difference as much as possible */
+body[data-slug=""] img,
+body[data-slug="index"] img {
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important;
+  width: 100% !important; /* Controls width - you can change this */
+  height: auto !important; /* Controls height - you can change this */
+  max-width: 600px !important; /* Optional: set maximum width */
+  border-radius: 0 !important; /* Remove rounded corners */
+  box-shadow: none !important; /* Remove shadow/border effects */
+  border: none !important; /* Remove any borders */
+}
+
+/* Alternative height/width options you can use: */
+/*
+  width: 600px !important;           // Fixed width in pixels
+  width: 80% !important;             // Percentage of container width
+  max-width: 700px !important;       // Maximum width limit
+  
+  height: 300px !important;          // Fixed height in pixels
+  height: auto !important;           // Maintains aspect ratio (recommended)
+  max-height: 400px !important;      // Maximum height limit
+  
+  object-fit: cover !important;      // Crops image to fit dimensions
+  object-fit: contain !important;    // Fits entire image within dimensions
+*/
+
+:root[saved-theme="dark"] {
+  body[data-slug=""] img,
+  body[data-slug="index"] img {
+    box-shadow: none !important; /* Keep no shadow in dark mode too */
+  }
+}

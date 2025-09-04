@@ -2,10 +2,10 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-09-02 02:39:53
+modified: 2025-09-03 14:14:45
 ---
-![center](attachments/homepage%20tree%20(light%20mode).png)
-![center](attachments/homepage%20tree%20(dark%20mode).png)
+![center|500](../attachments/homepage%20tree%20(light%20mode).png)
+![center|500](../attachments/homepage%20tree%20(dark%20mode).png)
 ## Welcome
 
 I'm Andrew, and this is my internet home. 

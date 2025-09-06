@@ -2,9 +2,9 @@
 title: ""
 cssclasses: []
 publish: true
-modified: 2025-09-06 14:51:53
+modified: 2025-09-06 15:05:16
 ---
-![center|500](../attachments/homepage%20tree%20(light%20mode).png)
+![tree](../attachments/homepage%20tree%20(light%20mode).png)
 ## Welcome
 
 Welcome. I’m Andrew, and this is the little corner of the internet I call home.
@@ -23,11 +23,10 @@ Here are some places you may want to start:
 - Visit my [art](my%20art/index.md), or put on one of my [playlists](my%20playlists/index.md).
 
 
-And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/).](https://www.linkedin.com/in/andrew-tsao/)
-
+And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/).
 
 ---
 <div class="graph-center-container" id="graph-container"></div>
 
 
-*Last updated: 2025-09-01 15:52*
+*Last updated: 2025-09-06 15:05*

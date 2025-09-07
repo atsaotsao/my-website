@@ -20,7 +20,7 @@ const defaultOptions: FolderContentOptions = {
   showSubfolders: false,
 }
 
-// Custom Art Gallery Component
+// Custom Art Gallery Component with Date Sorting
 const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: QuartzComponentProps) => {
   const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
   const folder = trie.findNode(fileData.slug!.split("/"))
@@ -34,6 +34,19 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
       .map((node) => node.data)
       .filter((page) => page !== undefined) ?? []
   
+  // Sort by published date (newest first), then by created date, then alphabetically
+  const sortedPages = allPagesInFolder.sort((a, b) => {
+    if (a.dates?.published && b.dates?.published) {
+      return b.dates.published.getTime() - a.dates.published.getTime()
+    }
+    if (a.dates?.created && b.dates?.created) {
+      return b.dates.created.getTime() - a.dates.created.getTime()
+    }
+    const aTitle = a.frontmatter?.title ?? ""
+    const bTitle = b.frontmatter?.title ?? ""
+    return aTitle.localeCompare(bTitle)
+  })
+  
   const content = (
     (tree as Root).children.length === 0
       ? fileData.description
@@ -44,7 +57,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
     <div class="popover-hint">
       <article>{content}</article>
       <div class="art-gallery">
-        {allPagesInFolder.map((file) => {
+        {sortedPages.map((file) => {
           const title = file.frontmatter?.title ?? "Untitled"
           const socialImage = file.frontmatter?.socialImage
           const description = file.description || ""

@@ -1,7 +1,7 @@
-// quartz.layout.ts - Updated with "my playlist" navigation
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+// components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
@@ -32,10 +32,10 @@ const sharedSidebar = [
       { name: "coaching", url: "/coaching" },
       { name: "my writing", url: "/my-writing" },
       { name: "my art", url: "/my-art" },
-      { name: "my playlists", url: "/my-playlists" }, // Changed from "/my-playlist"
+      { name: "my playlists", url: "/my-playlists" },
     ]
   }),
-];
+]
 
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -56,16 +56,14 @@ export const defaultContentPageLayout: PageLayout = {
   afterBody: [],
 }
 
-// In your quartz.layout.ts file, update your defaultListPageLayout:
-
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(), 
+    Component.Breadcrumbs(),
     Component.Spacer(),
-    Component.ArticleTitle(), 
+    Component.ArticleTitle(),
   ],
   left: sharedSidebar,
   right: [],
-  afterBody: [
-  ],
+  afterBody: [],
+  pageBody: Component.ArtGallery()
 }

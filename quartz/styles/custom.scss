@@ -1211,3 +1211,20 @@ body[data-slug="index"] img:first-of-type {
   transition: filter 0.3s ease !important;
   margin: 0 0 0.25rem 0 !important; /* Even smaller gap */
 }
+
+// Custom styles for my-art folder
+.folder-container[data-slug*="my-art"] {
+  .folder-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .folder-li {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+}

@@ -1,35 +1,30 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
+// Debug version to help troubleshoot
 const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponentProps) => {
   const slug = fileData.slug!
+  
   console.log("=== ArtGallery Debug ===")
   console.log("Current slug:", slug)
-  console.log("Total files:", allFiles.length)
-  
-  // Show all files that start with "my-art"
-  const artFiles = allFiles.filter(f => f.slug?.includes("my-art"))
-  console.log("Files containing 'my-art':", artFiles.map(f => f.slug))
   
   const allPagesInFolder = allFiles.filter((file) => {
     const fileSlug = file.slug ?? ""
     const prefixed = fileSlug.startsWith(slug) && fileSlug !== slug
     const folderPart = fileSlug.slice(slug.length + 1)
-    const result = prefixed && !folderPart.includes("/")
-    
-    if (fileSlug.includes("my-art")) {
-      console.log(`Testing: ${fileSlug}`)
-      console.log(`  starts with '${slug}':`, fileSlug.startsWith(slug))
-      console.log(`  not equal to '${slug}':`, fileSlug !== slug)
-      console.log(`  folder part: '${folderPart}'`)
-      console.log(`  no slash in folder part:`, !folderPart.includes("/"))
-      console.log(`  final result:`, result)
-    }
-    
-    return result
+    return prefixed && !folderPart.includes("/")
   })
   
-  console.log("Final pages in folder:", allPagesInFolder.length)
-  console.log("=== End Debug ===")
+  console.log("Pages in folder:", allPagesInFolder.length)
+  
+  // Debug each file's frontmatter
+  allPagesInFolder.forEach((file, index) => {
+    console.log(`File ${index + 1}:`, {
+      slug: file.slug,
+      title: file.frontmatter?.title,
+      socialImage: file.frontmatter?.socialImage,
+      frontmatter: file.frontmatter
+    })
+  })
   
   const content = fileData.description?.trim() || "No folder description"
   
@@ -38,16 +33,101 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
       <article>
         <p>{content}</p>
       </article>
+      
+      {/* Debug info panel */}
+      <div className="debug-panel" style={{ 
+        background: '#f0f0f0', 
+        padding: '1rem', 
+        margin: '1rem 0', 
+        borderRadius: '8px',
+        fontFamily: 'monospace',
+        fontSize: '0.8rem'
+      }}>
+        <strong>Debug Info:</strong><br/>
+        Current slug: {slug}<br/>
+        Files found: {allPagesInFolder.length}<br/>
+        {allPagesInFolder.map((file, i) => (
+          <div key={i}>
+            File {i + 1}: {file.slug}<br/>
+            - Title: {file.frontmatter?.title || 'No title'}<br/>
+            - socialImage: {file.frontmatter?.socialImage || 'No socialImage'}<br/>
+            - Raw frontmatter socialImage: {JSON.stringify(file.frontmatter?.socialImage)}<br/>
+          </div>
+        ))}
+      </div>
+      
       <div className="art-gallery">
         {allPagesInFolder.map((file) => {
           const title = file.frontmatter?.title ?? "Untitled"
           const socialImage = file.frontmatter?.socialImage
+          const description = file.description || ""
+          
+          // Debug image path resolution
+          let imageSrc = null
+          let debugPath = "No socialImage"
+          
+          if (socialImage) {
+            // Remove any extra quotes that might be in the frontmatter
+            const cleanImage = socialImage.replace(/^["']|["']$/g, '')
+            
+            debugPath = `Original: ${socialImage}, Cleaned: ${cleanImage}`
+            
+            if (cleanImage.startsWith('http')) {
+              imageSrc = cleanImage
+            } else if (cleanImage.startsWith('attachments/')) {
+              imageSrc = `/${cleanImage}`
+            } else if (!cleanImage.startsWith('/')) {
+              // For filenames with spaces, we need to URL encode them properly
+              const encodedFilename = encodeURIComponent(cleanImage)
+              imageSrc = `/attachments/${encodedFilename}`
+              
+              // Also try the original filename as-is (in case the server handles spaces)
+              if (!imageSrc.includes('%20')) {
+                debugPath += `, Also trying: /attachments/${cleanImage}`
+              }
+            } else {
+              imageSrc = cleanImage
+            }
+            
+            debugPath += `, Final: ${imageSrc}`
+          }
           
           return (
             <div key={file.slug} className="art-item">
-              {socialImage && (
+              {/* Debug info for each item */}
+              <div className="item-debug" style={{
+                background: '#e0e0e0',
+                padding: '0.5rem',
+                fontSize: '0.7rem',
+                fontFamily: 'monospace'
+              }}>
+                <strong>Debug:</strong><br/>
+                {debugPath}<br/>
+                Image exists check: <img 
+                  src={imageSrc || ''} 
+                  alt="test" 
+                  style={{width: '20px', height: '20px', display: 'inline'}}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.border = '1px solid red'
+                    console.log('Image failed to load:', imageSrc)
+                  }}
+                  onLoad={() => console.log('Image loaded successfully:', imageSrc)}
+                />
+              </div>
+              
+              {imageSrc && (
                 <div className="art-preview">
-                  <img src={socialImage} alt={title} />
+                  <a href={`/${file.slug}`} className="internal">
+                    <img 
+                      src={imageSrc} 
+                      alt={title} 
+                      loading="lazy"
+                      onError={(e) => {
+                        console.log('Preview image failed to load:', imageSrc)
+                        ;(e.target as HTMLElement).style.display = 'none'
+                      }}
+                    />
+                  </a>
                 </div>
               )}
               <div className="art-details">
@@ -56,6 +136,9 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
                     {title}
                   </a>
                 </h3>
+                {description && (
+                  <p className="art-description">{description}</p>
+                )}
               </div>
             </div>
           )
@@ -65,40 +148,191 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
   )
 }
 
-ArtGallery.css = `
+// Default folder listing component
+const DefaultFolderContent: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponentProps) => {
+  const slug = fileData.slug!
+  
+  const allPagesInFolder = allFiles.filter((file) => {
+    const fileSlug = file.slug ?? ""
+    const prefixed = fileSlug.startsWith(slug) && fileSlug !== slug
+    const folderPart = fileSlug.slice(slug.length + 1)
+    return prefixed && !folderPart.includes("/")
+  })
+  
+  const content = fileData.description?.trim() || "No folder description"
+  
+  return (
+    <div className="folder-container">
+      <article>
+        <p>{content}</p>
+      </article>
+      <div className="folder-list">
+        {allPagesInFolder.map((file) => {
+          const title = file.frontmatter?.title ?? "Untitled"
+          const description = file.description || ""
+          
+          return (
+            <div key={file.slug} className="folder-item">
+              <h3>
+                <a href={`/${file.slug}`} className="internal">
+                  {title}
+                </a>
+              </h3>
+              {description && <p>{description}</p>}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// Main conditional component  
+const FolderContent: QuartzComponent = (props: QuartzComponentProps) => {
+  const { fileData } = props
+  const slug = fileData.slug!
+  
+  // Use ArtGallery for my-art folder, default for others
+  if (slug === "my-art" || slug.startsWith("my-art/")) {
+    return <ArtGallery {...props} />
+  }
+  
+  return <DefaultFolderContent {...props} />
+}
+
+FolderContent.css = `
+.folder-container {
+  max-width: 100%;
+}
+
 .art-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
+
 .art-item {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  background: var(--bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .art-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-color: var(--secondary);
 }
+
 .art-preview {
   width: 100%;
-  height: 200px;
+  height: 220px;
   overflow: hidden;
+  position: relative;
 }
+
+.art-preview a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
 .art-preview img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
+
+.art-item:hover .art-preview img {
+  transform: scale(1.05);
+}
+
 .art-details {
-  padding: 1rem;
+  padding: 1.25rem;
 }
+
 .art-details h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.art-details h3 a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.art-details h3 a:hover {
+  color: var(--secondary);
+}
+
+.art-description {
+  margin: 0;
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Default Folder List Styles */
+.folder-list {
+  margin-top: 1.5rem;
+}
+
+.folder-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.folder-item:last-child {
+  border-bottom: none;
+}
+
+.folder-item h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+}
+
+.folder-item h3 a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.folder-item h3 a:hover {
+  color: var(--secondary);
+}
+
+.folder-item p {
+  margin: 0;
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .art-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .art-preview {
+    height: 200px;
+  }
+  
+  .art-details {
+    padding: 1rem;
+  }
 }
 `
 
-export default (() => ArtGallery) satisfies QuartzComponentConstructor
+export default (() => FolderContent) satisfies QuartzComponentConstructor

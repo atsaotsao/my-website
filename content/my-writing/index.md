@@ -1,6 +1,6 @@
 ---
 title: my writing
-modified: 2025-09-01 15:54:03
+modified: 2025-09-06 15:52:24
 publish: true
 no_backlink: true
 exclude_from_backlink: true
@@ -14,10 +14,10 @@ I write to breath, to think, to dance, to move through complex gnarly emotions, 
 
 What lives here are my rawest parts of my words. Less manicured, polished, and conventional than anything I would share on a social media platform or share via a newsletter. 
 
-They come in a form a #thought with the intention of turning them into a #essay (still working on writing long-form).
+They often come in a form a #thought with the intention of turning them into a #essay (still working on developing the muscles and courage of writing long-form).
 
 Or through more abstraction in a #poem.
 
-Writing is one of the vehicles for #gratitude practice for me, and channeling the #motivation with myslef and others to move through hard days. 
+Writing is one of the vehicles for #gratitude practice for me, and channeling the #motivation with myself and others to move through hard days. 
 
 I hope you can find some inspiration, solace, or resonance in anything I share below:

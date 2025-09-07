@@ -1,7 +1,7 @@
 ---
 title: my art
 publish: true
-modified: 2025-09-06 15:16:31
+modified: 2025-09-06 15:38:13
 published: 2025-08-19
 exclude_from_backlink: true
 no_backlink: true

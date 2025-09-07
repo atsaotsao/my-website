@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-07 13:53:12
+modified: 2025-09-07 14:03:26
 publish: true
 published: 2025-08-19
 ---
@@ -7,7 +7,7 @@ published: 2025-08-19
 
 - **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people navigate crisis and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
 - **Coaching** 1-on-1 with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
-- **Reawakaing** [_The Art of Your Life_](https://theartofyourlife.transistor.fm/) podcast—breathing fresh life into it soon.
+- **Reawakening** [_The Art of Your Life_](https://theartofyourlife.transistor.fm/) podcast—breathing fresh life into it soon.
 - **Mentoring** as a part-time assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
 - **Building** websites slowly, patiently, inclusively, for aligned collaborators—like [this one](https://www.mainlanderstl.com/) for a chef in St. Louis.
 - **Tending** a [neighborhood garden](https://maplestreetcommunitygarden.org/).

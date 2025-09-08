@@ -1,11 +1,11 @@
 ---
-modified: 2025-09-08 14:54:58
+modified: 2025-09-08 14:57:15
 published: 2024-09-08
 publish: true
 tags:
 socialImage: breakfree_main.png
 ---
-![center | 500](../attachments/breakfree_main.png)
+![](../attachments/breakfree_main.png)
 
 The month of December has recently been my favorite time of the year. 
 I used the opportunity of having some down time while traveling my brother and his wife in California to enjoy a bit of sun, grass, and art. 

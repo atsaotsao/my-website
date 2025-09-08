@@ -1,10 +1,10 @@
 ---
-modified: 2025-09-07 14:03:26
+modified: 2025-09-08 14:37:04
 publish: true
 published: 2025-08-19
+socialImage: now-header.png
 ---
-![alt](../attachments/myart%20stiching%20(2).png)
-
+![](attachments/now-header.png)
 - **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people navigate crisis and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
 - **Coaching** 1-on-1 with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Reawakening** [_The Art of Your Life_](https://theartofyourlife.transistor.fm/) podcast—breathing fresh life into it soon.

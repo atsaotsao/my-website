@@ -1,9 +1,12 @@
 ---
-modified: 2025-08-31 14:27:36
+modified: 2025-09-08 14:54:58
 published: 2024-09-08
 publish: true
 tags:
+socialImage: breakfree_main.png
 ---
+![center | 500](../attachments/breakfree_main.png)
+
 The month of December has recently been my favorite time of the year. 
 I used the opportunity of having some down time while traveling my brother and his wife in California to enjoy a bit of sun, grass, and art. 
 I've been using the downtime I have this month to pause, breathe, think, and be.
@@ -21,6 +24,8 @@ I thought about war, of death, and about all the things in life that are out of 
 I thought about my younger self.
 And I thought about my future self.
 And with this door, this painting, this art, I decided to create something for all of my selves, for all my thoughts, and for everyone and everything I have or will care for. 
+
+![](../attachments/breakfree_banner.png)
 
 With this piece "Break Free", I hope to create a door, a sign, a lighthouse, a permission slip, and a portal for anyone looking at it to find the courage to break free.
 

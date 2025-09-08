@@ -1,9 +1,10 @@
 ---
-modified: 2025-09-07 13:54:47
+modified: 2025-09-08 14:46:00
 published: 2025-06-27
 publish: true
+socialImage: theknotinmychest.png
 ---
-![painting](../attachments/IMG_3979%202.png)
+![center | 500](../attachments/theknotinmychest.png)
 
 06/27/2024
 The knot in my chest is so heavy & deep.

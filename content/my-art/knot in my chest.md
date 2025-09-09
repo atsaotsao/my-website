@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-08 14:57:39
+modified: 2025-09-08 17:25:24
 published: 2025-06-27
 publish: true
-socialImage: theknotinmychest.png
+socialImage:
 ---
 ![](../attachments/theknotinmychest.png)
 

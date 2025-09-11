@@ -2,7 +2,7 @@
 title: Andrew Tsao- Home
 cssclasses: []
 publish: true
-modified: 2025-09-07 13:45:49
+modified: 2025-09-11 05:07:18
 ---
 ![tree](../attachments/homepage%20tree%20(light%20mode).png)
 ## Welcome
@@ -11,7 +11,7 @@ Welcome. I’m Andrew, and this is the little corner of the internet I call home
 
 I built it as a nest for all the treasures, artifacts, and unruly multitudes of myself; especially things that often feel too raw, too unpolished, or too odd to share anywhere else. 
 
-It mirrors the spaces I’ve been intentionally seeking lately: ones that feel cozy, warm, and a contains a palpable aliveness. I hope it invites you to linger, maybe with tea in hand, to wander, to peruse, and take something with you—an insight, a gift, or anything that helps you in exactly where you are in this beautiful journey of life.
+It mirrors the spaces I’ve been intentionally seeking lately: ones that feel cozy, warm, and a contains a palpable aliveness. I hope it invites you to linger, to roam, to wander, to peruse, and take something with you—an insight, a gift, or anything that helps you in exactly where you are in this beautiful journey of life.
 
 This is a space that is constantly evolving because I am constantly evolving. 
 

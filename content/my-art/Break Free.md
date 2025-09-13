@@ -1,9 +1,9 @@
 ---
-modified: 2025-09-08 17:26:55
+modified: 2025-09-12 22:45:56
 published: 2024-09-08
 publish: true
 tags:
-socialImage:
+socialImage: breakfree_main.png
 ---
 ![](../attachments/breakfree_main.png)
 The month of December has recently been my favorite time of the year. 

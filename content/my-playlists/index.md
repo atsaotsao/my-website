@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-12 23:20:34
+modified: 2025-09-12 23:33:40
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -15,6 +15,8 @@ Over the course of 90 months, I've handpicked and put together 90 playlists and 
 ----
 
 ![center|350](../attachments/25on25%20logo.gif)
+
+<img src="../attachments/25on25%20logo.gif" alt="25on25 logo" class="center-img">
 
 Here was the original copy from the 25 on 25 website: 
 

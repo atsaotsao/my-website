@@ -1,7 +1,7 @@
 ---
 title: my art
 publish: true
-modified: 2025-09-07 15:26:09
+modified: 2025-09-15 08:37:25
 published: 2025-08-19
 exclude_from_backlink: true
 no_backlink: true
@@ -10,6 +10,10 @@ aliases:
   - abstract art
   - abstract works
 ---
-Enjoy a few selections of my artwork! 
+Welcome to the small gallery of a few collections of my artwork! 
 
-*updated 2025-09-07 15:25
+Some originals are now for sale if you feel intrigued or compelled to take a piece of my journey into yours.
+
+Here also other ways to sustain and support this work.
+
+*updated 2025-09-07 15:25*

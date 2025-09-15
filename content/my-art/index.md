@@ -1,7 +1,7 @@
 ---
 title: my art
 publish: true
-modified: 2025-09-15 08:37:25
+modified: 2025-09-15 08:52:43
 published: 2025-08-19
 exclude_from_backlink: true
 no_backlink: true
@@ -9,6 +9,7 @@ aliases:
   - my art
   - abstract art
   - abstract works
+  - abstracting
 ---
 Welcome to the small gallery of a few collections of my artwork! 
 

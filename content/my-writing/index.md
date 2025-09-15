@@ -1,13 +1,12 @@
 ---
 title: my writing
-modified: 2025-09-06 15:52:24
+modified: 2025-09-15 00:24:09
 publish: true
 no_backlink: true
 exclude_from_backlink: true
 status: completed
 aliases:
   - my writing
-  - thoughts
 ---
 
 I write to breath, to think, to dance, to move through complex gnarly emotions, and transmit my inner world.

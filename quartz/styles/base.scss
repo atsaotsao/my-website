@@ -641,5 +641,12 @@ iframe.pdf {
   transition: width 0.2s ease;
   z-index: 9999;
 }
-
+/* Container-relative sizing */
+.center-image,
+.center-img {
+  display: block !important;
+  margin: 0 auto !important;
+  width: clamp(200px, 50vw, 350px) !important;
+  height: auto !important;
+}
 

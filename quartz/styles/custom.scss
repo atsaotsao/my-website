@@ -1228,3 +1228,79 @@ body[data-slug="index"] img:first-of-type {
     padding: 1rem;
   }
 }
+
+/* Add this to your quartz/styles/custom.scss or base.scss */
+
+/* Obsidian Image Formatting */
+.obsidian-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Alignment classes */
+.align-center {
+  margin: 0 auto;
+  display: block;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile responsiveness for Obsidian images */
+@media (max-width: 768px) {
+  .obsidian-image {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .align-left,
+  .align-right {
+    float: none;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  
+  /* Specific handling for images with width constraints */
+  .obsidian-image[style*="max-width"] {
+    max-width: min(100%, 400px) !important;
+  }
+}
+
+/* Container clearfix for floated images */
+.obsidian-image + * {
+  clear: both;
+}
+
+/* Special handling for your 25on25 logo case */
+.obsidian-image[src*="25on25"] {
+  max-width: 300px;
+}
+
+@media (max-width: 480px) {
+  .obsidian-image[src*="25on25"] {
+    max-width: 200px;
+  }
+}
+
+// Mobile image fixes
+@media (max-width: 768px) {
+  article img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+  }
+  
+  img[src*="25on25"] {
+    max-width: 200px !important;
+  }
+}

@@ -9,7 +9,6 @@ aliases:
   - my art
   - abstract art
   - abstract works
-  - abstracting
 ---
 Welcome to the small gallery of a few collections of my artwork! 
 

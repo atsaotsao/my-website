@@ -2,7 +2,7 @@
 title: Andrew Tsao- Home
 cssclasses: []
 publish: true
-modified: 2025-09-11 05:07:18
+modified: 2025-09-15 07:28:59
 ---
 ![tree](../attachments/homepage%20tree%20(light%20mode).png)
 ## Welcome
@@ -20,10 +20,10 @@ I hope you find what you need here.
 Here are some places you may want to start: 
 - Peek into what I’m up to [now](now.md), or browse my guiding [principles](principles.md).
 - Read about my [[coaching]] work or wander through my latest [writing](my%20writing/index.md).
-- Visit my [art](my%20art/index.md), or put on one of my [playlists](my%20playlists/index.md).
+- Indulge in my [art](my%20art/index.md), or jam to one of my [playlists](my%20playlists/index.md).
 
 
-And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/).
+And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/) (most active), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/). 
 
 ---
 <div class="graph-center-container" id="graph-container"></div>

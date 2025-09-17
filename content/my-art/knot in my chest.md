@@ -1,10 +1,10 @@
 ---
-modified: 2025-09-15 08:37:43
+modified: 2025-09-17 03:06:45
 published: 2025-06-27
 publish: true
 socialImage: theknotinmychest.png
 tags:
-  - for-sale
+  - sold
 ---
 ![](../attachments/theknotinmychest.png)
 

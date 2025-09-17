@@ -20,7 +20,7 @@ const defaultOptions: FolderContentOptions = {
   showSubfolders: false,
 }
 
-// Custom Art Gallery Component with Date Sorting
+// Custom Art Gallery Component with Date Sorting and For-Sale Functionality
 const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: QuartzComponentProps) => {
   const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
   const folder = trie.findNode(fileData.slug!.split("/"))
@@ -62,6 +62,10 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           const socialImage = file.frontmatter?.socialImage
           const description = file.description || ""
           
+          // Check if item is for sale
+          const isForSale = file.frontmatter?.tags?.includes('for-sale')
+          const price = file.frontmatter?.price
+          
           let imageSrc = null
           if (socialImage) {
             const cleanImage = socialImage.replace(/^["']|["']$/g, '')
@@ -78,11 +82,16 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           }
           
           return (
-            <div key={file.slug} className="art-item">
+            <div key={file.slug} className={`art-item ${isForSale ? 'for-sale' : ''}`}>
               {imageSrc && (
                 <div className="art-preview">
                   <a href={`/${file.slug}`} className="internal">
                     <img src={imageSrc} alt={title} loading="lazy" />
+                    {isForSale && (
+                      <div className="sale-badge">
+                        {price ? `$${price}` : 'For Sale'}
+                      </div>
+                    )}
                   </a>
                 </div>
               )}
@@ -94,6 +103,12 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
                 </h3>
                 {description && (
                   <p className="art-description">{description}</p>
+                )}
+                {isForSale && (
+                  <div className="sale-info">
+                    {price && <span className="price">${price}</span>}
+                    <span className="availability">Available</span>
+                  </div>
                 )}
               </div>
             </div>
@@ -215,12 +230,34 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       transition: all 0.3s ease;
       background: var(--bg);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
     }
     
     .art-item:hover {
       transform: translateY(-4px);
       box-shadow: 0 8px 25px rgba(0,0,0,0.15);
       border-color: var(--secondary);
+    }
+    
+    .art-item.for-sale {
+      border-color: #2563eb;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+    }
+    
+    .art-item.for-sale:hover {
+      border-color: #1d4ed8;
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+    }
+    
+    .art-item.sold {
+      border-color: #6b7280;
+      box-shadow: 0 2px 8px rgba(107, 114, 128, 0.2);
+      opacity: 0.8;
+    }
+    
+    .art-item.sold:hover {
+      border-color: #4b5563;
+      box-shadow: 0 8px 25px rgba(107, 114, 128, 0.3);
     }
     
     .art-preview {
@@ -248,6 +285,24 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       transform: scale(1.05);
     }
     
+    .sale-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #2563eb;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .sold-badge {
+      background: #6b7280 !important;
+      color: white;
+    }
+    
     .art-details {
       padding: 1.25rem;
     }
@@ -269,7 +324,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     }
     
     .art-description {
-      margin: 0;
+      margin: 0 0 0.75rem 0;
       color: var(--gray);
       font-size: 0.9rem;
       line-height: 1.4;
@@ -277,6 +332,42 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+    }
+    
+    .sale-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    
+    .price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2563eb;
+    }
+    
+    .availability {
+      font-size: 0.8rem;
+      color: #059669;
+      font-weight: 500;
+      background: rgba(5, 150, 105, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    
+    .sold-status {
+      font-size: 0.8rem;
+      color: #6b7280;
+      font-weight: 500;
+      background: rgba(107, 114, 128, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    
+    .sold-price {
+      color: #6b7280 !important;
     }
     
     @media (max-width: 600px) {

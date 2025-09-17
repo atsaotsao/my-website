@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-// Debug version to help troubleshoot
+// Debug version with for-sale functionality
 const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponentProps) => {
   const slug = fileData.slug!
   
@@ -22,6 +22,8 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
       slug: file.slug,
       title: file.frontmatter?.title,
       socialImage: file.frontmatter?.socialImage,
+      tags: file.frontmatter?.tags,
+      price: file.frontmatter?.price,
       frontmatter: file.frontmatter
     })
   })
@@ -51,7 +53,8 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
             File {i + 1}: {file.slug}<br/>
             - Title: {file.frontmatter?.title || 'No title'}<br/>
             - socialImage: {file.frontmatter?.socialImage || 'No socialImage'}<br/>
-            - Raw frontmatter socialImage: {JSON.stringify(file.frontmatter?.socialImage)}<br/>
+            - Tags: {JSON.stringify(file.frontmatter?.tags)}<br/>
+            - Price: {file.frontmatter?.price || 'No price'}<br/>
           </div>
         ))}
       </div>
@@ -61,6 +64,10 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
           const title = file.frontmatter?.title ?? "Untitled"
           const socialImage = file.frontmatter?.socialImage
           const description = file.description || ""
+          
+          // Check if item is for sale
+          const isForSale = file.frontmatter?.tags?.includes('for-sale')
+          const price = file.frontmatter?.price
           
           // Debug image path resolution
           let imageSrc = null
@@ -93,7 +100,7 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
           }
           
           return (
-            <div key={file.slug} className="art-item">
+            <div key={file.slug} className={`art-item ${isForSale ? 'for-sale' : ''}`}>
               {/* Debug info for each item */}
               <div className="item-debug" style={{
                 background: '#e0e0e0',
@@ -103,6 +110,8 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
               }}>
                 <strong>Debug:</strong><br/>
                 {debugPath}<br/>
+                For Sale: {isForSale ? 'YES' : 'NO'}<br/>
+                Price: {price || 'N/A'}<br/>
                 Image exists check: <img 
                   src={imageSrc || ''} 
                   alt="test" 
@@ -127,6 +136,11 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
                         ;(e.target as HTMLElement).style.display = 'none'
                       }}
                     />
+                    {isForSale && (
+                      <div className="sale-badge">
+                        {price ? `$${price}` : 'For Sale'}
+                      </div>
+                    )}
                   </a>
                 </div>
               )}
@@ -138,6 +152,12 @@ const ArtGallery: QuartzComponent = ({ allFiles, fileData, cfg }: QuartzComponen
                 </h3>
                 {description && (
                   <p className="art-description">{description}</p>
+                )}
+                {isForSale && (
+                  <div className="sale-info">
+                    {price && <span className="price">${price}</span>}
+                    <span className="availability">Available</span>
+                  </div>
                 )}
               </div>
             </div>
@@ -219,12 +239,23 @@ FolderContent.css = `
   transition: all 0.3s ease;
   background: var(--bg);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .art-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   border-color: var(--secondary);
+}
+
+.art-item.for-sale {
+  border-color: #2563eb;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.art-item.for-sale:hover {
+  border-color: #1d4ed8;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 }
 
 .art-preview {
@@ -252,6 +283,19 @@ FolderContent.css = `
   transform: scale(1.05);
 }
 
+.sale-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
 .art-details {
   padding: 1.25rem;
 }
@@ -273,7 +317,7 @@ FolderContent.css = `
 }
 
 .art-description {
-  margin: 0;
+  margin: 0 0 0.75rem 0;
   color: var(--gray);
   font-size: 0.9rem;
   line-height: 1.4;
@@ -281,6 +325,29 @@ FolderContent.css = `
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.sale-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.availability {
+  font-size: 0.8rem;
+  color: #059669;
+  font-weight: 500;
+  background: rgba(5, 150, 105, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 /* Default Folder List Styles */

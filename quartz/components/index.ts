@@ -55,4 +55,3 @@ export {
 }
 
 export { default as CustomNav } from "./CustomNav"
-export { default as ArtGallery } from "./ArtGallery"

@@ -65,5 +65,5 @@ export const defaultListPageLayout: PageLayout = {
   left: sharedSidebar,
   right: [],
   afterBody: [],
-  pageBody: Component.ArtGallery()
+  pageBody: Component.FolderContent(),
 }

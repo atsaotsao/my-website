@@ -20,7 +20,27 @@ const defaultOptions: FolderContentOptions = {
   showSubfolders: false,
 }
 
-// Custom Art Gallery Component with Date Sorting and For-Sale Functionality
+// Helper function to safely extract and normalize tags
+const getTagsArray = (frontmatter: any): string[] => {
+  const tags = frontmatter?.tags;
+  
+  if (!tags) return [];
+  
+  // Handle different tag formats
+  if (typeof tags === 'string') {
+    // Handle comma-separated string or single tag
+    return tags.split(',').map(tag => tag.trim().toLowerCase());
+  }
+  
+  if (Array.isArray(tags)) {
+    // Handle array of tags
+    return tags.map(tag => String(tag).trim().toLowerCase()).filter(tag => tag.length > 0);
+  }
+  
+  return [];
+}
+
+// Custom Art Gallery Component with Date Sorting, For-Sale, and Sold Functionality
 const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: QuartzComponentProps) => {
   const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
   const folder = trie.findNode(fileData.slug!.split("/"))
@@ -33,6 +53,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
     folder.children
       .map((node) => node.data)
       .filter((page) => page !== undefined) ?? []
+
   
   // Sort by published date (newest first), then by created date, then alphabetically
   const sortedPages = allPagesInFolder.sort((a, b) => {
@@ -57,13 +78,17 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
     <div class="popover-hint">
       <article>{content}</article>
       <div class="art-gallery">
-        {sortedPages.map((file) => {
+        {sortedPages.map((file, index) => {
           const title = file.frontmatter?.title ?? "Untitled"
           const socialImage = file.frontmatter?.socialImage
           const description = file.description || ""
           
-          // Check if item is for sale
-          const isForSale = file.frontmatter?.tags?.includes('for-sale')
+          // Use robust tag checking
+          const tagsArray = getTagsArray(file.frontmatter)
+          
+          // Check for sale status with case-insensitive matching
+          const isForSale = tagsArray.includes('for-sale') || tagsArray.includes('forsale')
+          const isSold = tagsArray.includes('sold')
           const price = file.frontmatter?.price
           
           let imageSrc = null
@@ -82,12 +107,17 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           }
           
           return (
-            <div key={file.slug} className={`art-item ${isForSale ? 'for-sale' : ''}`}>
+            <div key={file.slug} className={`art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''}`}>
               {imageSrc && (
                 <div className="art-preview">
                   <a href={`/${file.slug}`} className="internal">
                     <img src={imageSrc} alt={title} loading="lazy" />
-                    {isForSale && (
+                    {isSold && (
+                      <div className="sale-badge sold-badge">
+                        Sold
+                      </div>
+                    )}
+                    {isForSale && !isSold && (
                       <div className="sale-badge">
                         {price ? `$${price}` : 'For Sale'}
                       </div>
@@ -104,12 +134,19 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
                 {description && (
                   <p className="art-description">{description}</p>
                 )}
-                {isForSale && (
+                {isSold && (
+                  <div className="sale-info">
+                    {price && <span className="price sold-price">Sold for ${price}</span>}
+                    <span className="sold-status">Sold</span>
+                  </div>
+                )}
+                {isForSale && !isSold && (
                   <div className="sale-info">
                     {price && <span className="price">${price}</span>}
                     <span className="availability">Available</span>
                   </div>
                 )}
+
               </div>
             </div>
           )
@@ -296,6 +333,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       font-size: 0.8rem;
       font-weight: 600;
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 10;
     }
     
     .sold-badge {

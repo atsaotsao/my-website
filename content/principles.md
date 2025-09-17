@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-15 07:23:07
+modified: 2025-09-17 03:43:46
 published: 2025-08-19
 ---
 ### love is the central work.

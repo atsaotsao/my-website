@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-08 14:37:04
+modified: 2025-09-18 11:41:14
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -8,7 +8,7 @@ socialImage: now-header.png
 - **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people navigate crisis and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
 - **Coaching** 1-on-1 with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Reawakening** [_The Art of Your Life_](https://theartofyourlife.transistor.fm/) podcast—breathing fresh life into it soon.
-- **Mentoring** as a part-time assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
+- **Mentoring** as a part-time internship assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
 - **Building** websites slowly, patiently, inclusively, for aligned collaborators—like [this one](https://www.mainlanderstl.com/) for a chef in St. Louis.
 - **Tending** a [neighborhood garden](https://maplestreetcommunitygarden.org/).
 - **Painting** [abstract works](my%20art/index.md) as a liberatory practice.
@@ -24,4 +24,19 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - *How can our relationships, communities, and ecosystems thrive on reciprocity?*
 - *How do we honor our multitudes, our woven artistry, and harness them to reimagine the world?*
 
-*(updated 2025-09-07 13:53)*
+📚 Reading:
+- Kindred Creation: Parables and Paradigms for Freedom - Aida Mariam Davis
+- We Need Your Art - Aime McNee
+- The Wretched of the Earth - Franz Fanon
+
+🎧 Listening to: 
+- Star Line - Chance the Rapper
+- Precipice - Indigo De Souza
+- Joy Paradox - Cephas Azariah
+- choke enough - Oklou
+
+✨ MISC:
+- Playing Hades on Switch
+- Watching the last season of The Bear
+
+*(updated 2025-09-18 11:41)*

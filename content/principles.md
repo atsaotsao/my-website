@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-19 23:20:06
+modified: 2025-09-20 00:21:52
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -31,7 +31,7 @@ And hardest of all, to believe and even contribute to building new worlds where 
 
 ### prioritize creativity
 
-I played musical instruments almost my entire life, have been to plenty of art workshops and classes growing up. Yet, I couldn't really embrace my creativity's true textures and colors until I turned 30. Only then did I begin to see its richness. 
+I played musical instruments for more than half of my life, have been to plenty of art workshops and classes growing up. Yet, I couldn't really embrace my creativity's true textures and colors until I turned 30. Only then did I begin to see its richness. 
 
 I've met so many others who feel similarly.
 And it's not entirely our fault because that's the prevailing message a lot of us received our entire lives, all the way into adulthood.  
@@ -48,13 +48,12 @@ To embrace creativity is to slowly remember that we, too, are part of and condui
 
 ### listen to earth and the body
 
+It took 
 
 ### root into your ancestry
 
 One of the most
 
-
-### listen to earth and the body
 
 
 *updated 2025-09-19 23:18

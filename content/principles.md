@@ -1,27 +1,52 @@
 ---
 publish: true
-modified: 2025-09-18 09:41:41
+modified: 2025-09-19 21:09:51
 published: 2025-08-19
 ---
 ### love is the central work.
 
-If there’s one thing I’ve learned from years of studying, falling, failing, crying, healing, practicing, and integrating it’s that love is the work. It's the core work that I come back to time and time again; one that makes my heart ache when I think of the ways I have experienced the extreme ups and downs, the joys and pains of loving and being loved. It's the metaphysical, mystical, and all-consuming driving force behind all the most powerful, radical, and liberatory transformation that I've experienced and even had the privilege of facilitating, coaching, and witnessing in my life.
+If there’s one thing I’ve learned from years of studying, falling, failing, crying, healing, practicing, and integrating: it’s that love is the work. 
+It's the ache in my chest, the wild joy and deep grief. 
+The metaphysical, mystical, all-consuming force.
+The one that remakes me time and time again.
 
-Bell hooks wrote: _“We do not have to love. We choose to love.”_  And more than anything, I choose to love and choose to be with people who also choose to love. I know that it's a choice that requires courage: to stop bypassing, face ourselves honestly, and be accountable in truth with ourselves and others. I believe most of the world’s pain stems from cycles of lovelessness on a personal and collective level, and at the core of my work, it's about helping myself, and those I walk with, come home to love; to create from and with love. 
+Bell hooks wrote: _“We do not have to love. We choose to love.”_  
+And more than anything, I choose to love. I choose it even and especially when it hurts.
+And I choose to be with people who also choose to love even when the world turns away from it. 
+
+At the core of my work is this: to help myself, and those I walk with, come home to love. To create from and with love.
 
 ### practice relational wholeness
 
-We are beautiful whole beings that have all these dimensions and multitudes that needs to be accepted, loved, and expressed. But one of the most painful realities of existing in a post-colonial, late-capitalistic world and systems is realizing and accepting that the majority of spaces and relationships we find ourselves in do not reward or even encourage us to show up with our whole selves; especially including the parts of us that we have shamed, neglected, or even exiled in order to survive within the family systems, relationship dynamics, and power structures we found ourselves in. 
+We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't want my wholeness.
 
-A huge part of self work is learning to discern who, where, and what still perpetuates those narratives, unlearning and learning to build inner love and trust to reclaim and embody these new multitudes, and harness the power the comes with it. Finally and most difficultly the bulk of the work lies in remaining whole while beings in relation to others and believing in building and creating new reimagined worlds and spaces that we can coexist, collaborate, and be as our whole selves.
+They even reward our fragments, our masks, and our survival selves. 
+They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to control.
+
+The work is to develop the scared skill of discernment of who, where, and what still perpetuates those old narratives. 
+To build enough deep inner trust and compassion to bring back all the parts we've pushed away, shamed, or even exiled.
+To stay whole even while in relationship with others.
+
+And hardest of all, to believe and even contribute to building new worlds where our wholeness is not just allowed, but celebrated.
 
 ### prioritize creativity
 
-Creativity is the source of our aliveness. It's what gives us the unique mixes of colors, textures, and shapes that makes us, well, us. In my work, I often see that its very commonly the the untapped well of energy and intuition that can bring us the most amount of abundance, joy, and even success in our lives. And I am a big believer that it's one of the most important qualities that can lead to more bridging, understanding, and connecting in time of history that feels like there is a lot more disconnection, polarizing political narratives, blaming, and violence. 
+I played musical instruments almost my entire life, have been in tons of art workshops and classes growing up.
+Yet, I couldn't really embrace my creativity's true textures and colors until I turned 30. Only then did I begin to see it's richness. 
 
-Prioritizing creativity is a privilege, but it's a privilege a lot of us have we just ignore it. And that's not entirely our fault because that's the prevailing message a lot of us received our entire lives even all the way into adulthood. Creativity isn't just a bullet point we can put under our resume— it's a source of wisdom that informs a way of being that allows approach life with more openness, resilience, and courage to surrender. Embracing our deeply creative core can allow us to the artwork that is our lives, and see how we are connected the source of all things, and allowing us to flow through it and even become conduits of it.
+I've met so so many others who feel this way too.
+And it's not entirely our fault because that's the prevailing message a lot of us received our entire lives even all the way into adulthood.  That creativity is a hobby, a distraction, or even at best a bullet point you can put in your under your resume if you can expand upon it during your interview.
 
+This painful disconnection to our inner child and the creativity that comes with it is at the root of so much unfulfillment in our personal and professional lives.
+
+The practice is listening to our intuition, even if it sometimes feels impractical or irrational.
+Coloring outside the scripts, boxes, and fences were handed.
+And daring to treat our lives as ever-winding, ever-evolving art.
+
+To embrace creativity is to slowly remember that we, too, are part of and conduits of the source.
 ### root into your ancestry
+
+I spend that past month spending hours 
 
 ### speak truth to power
 

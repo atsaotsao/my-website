@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-17 19:01:54
+modified: 2025-09-20 00:56:59
 published: 2025-06-27
 publish: true
 socialImage: theknotinmychest.png
@@ -17,7 +17,6 @@ surface: Mixed media paper
 ---
 ![](../attachments/theknotinmychest.png)
 
-#### Description:
 > An explosive floral burst rendered in vibrant watercolors and ink with dynamic gestural marks radiating outward like energy waves coming out of the center of the chest. The two hand prints are meant to symbolize safety and support through navigating one's shadows.
 
 What I wrote in after painting this: 

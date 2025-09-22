@@ -53,7 +53,9 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: sharedSidebar,
   right: [],
-  afterBody: [],
+  afterBody: [
+    Component.ArtworkDetails(), // Add this line
+  ],
 }
 
 export const defaultListPageLayout: PageLayout = {

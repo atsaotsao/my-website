@@ -3,6 +3,7 @@ import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import NotFound from "./pages/404"
 import ArticleTitle from "./ArticleTitle"
+import ArtworkDetails from "./ArtworkDetails"
 import Darkmode from "./Darkmode"
 import ReaderMode from "./ReaderMode"
 import Head from "./Head"
@@ -23,10 +24,11 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
-import Sunlit from "./Sunlit"  // ← Add this import
+import Sunlit from "./Sunlit"
 
 export {
   ArticleTitle,
+  ArtworkDetails,
   Content,
   TagContent,
   FolderContent,
@@ -51,7 +53,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
-  Sunlit,  // ← Add this export
+  Sunlit,
 }
-
 export { default as CustomNav } from "./CustomNav"

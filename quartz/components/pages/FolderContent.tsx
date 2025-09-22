@@ -89,7 +89,6 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           // Check for sale status with case-insensitive matching
           const isForSale = tagsArray.includes('for-sale') || tagsArray.includes('forsale')
           const isSold = tagsArray.includes('sold')
-          const price = file.frontmatter?.price
           
           let imageSrc = null
           if (socialImage) {
@@ -119,7 +118,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
                     )}
                     {isForSale && !isSold && (
                       <div className="sale-badge">
-                        {price ? `$${price}` : 'For Sale'}
+                        For Sale
                       </div>
                     )}
                   </a>
@@ -136,17 +135,14 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
                 )}
                 {isSold && (
                   <div className="sale-info">
-                    {price && <span className="price sold-price">Sold for ${price}</span>}
                     <span className="sold-status">Sold</span>
                   </div>
                 )}
                 {isForSale && !isSold && (
                   <div className="sale-info">
-                    {price && <span className="price">${price}</span>}
                     <span className="availability">Available</span>
                   </div>
                 )}
-
               </div>
             </div>
           )

@@ -1,19 +1,20 @@
 ---
-modified: 2025-09-20 00:56:59
+modified: 2025-09-20 03:09:24
 published: 2025-06-27
 publish: true
 socialImage: theknotinmychest.png
 tags:
   - for-sale
 medium: Mixed media on paper
-dimensions: 18\" x 24\"
+dimensions: 18" x 24"
 year: 2025
-price: 200 USD
+price: "200"
 "soldDate:":
 "location:": studio
 "exhibitions:":
 isCommission:
 surface: Mixed media paper
+buylink:
 ---
 ![](../attachments/theknotinmychest.png)
 

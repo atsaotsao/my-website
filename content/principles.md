@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-22 07:34:30
+modified: 2025-09-22 07:46:57
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -11,8 +11,7 @@ Bell hooks wrote: _“We do not have to love. We choose to love.”_ And more th
 
 ### practice relational wholeness
 
-We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't actually want my wholeness. They even reward our fragments, our masks, and our survival selves. 
-They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulattion, control, and exploitation.
+We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't actually want mine and your wholeness. They even reward our fragments, our masks, and our survival selves. They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulation, control, and exploitation.
 
 The work is to develop the scared skill of discernment of who, where, and what still perpetuates those old narratives. To build enough deep inner trust and compassion to bring back all the parts we've pushed away, shamed, or even exiled. To stay whole even while in relationship with others. And hardest of all, to believe and even contribute to building new reimagined worlds and spaces that we can coexist, collaborate, and be as our whole selves
 
@@ -20,7 +19,7 @@ The work is to develop the scared skill of discernment of who, where, and what s
 
 I played musical instruments for more than half of my life, have been to plenty of art classes growing up. Yet, I couldn't really embrace my creativity's true textures and colors until I turned 30. It always pains me to realized how long I've neglected the powers of  creativity, and I've met so many others who feel similarly. And it's not entirely our fault because that's the prevailing message a lot of us received our entire lives, all the way into adulthood.  That creativity is a hobby, a distraction, or even at best a bullet point on a resume if you can spin it in an interview. This painful disconnection to our inner child and the creativity that comes with it is at the root of so much unfulfillment in our personal and professional lives.
 
-The practice is retracing our steps to that inner voice, intuition, and ember, even if it sometimes feels impractical or irrational. It's about coloring outside the scripts, boxes, and fences we were handed. It's about playing, dancing, and rebelling in ways we can finally give ourselves permission to. And ultimately. daring to treat our lives as ever-winding, ever-evolving art. To embrace creativity is to slowly remember that we, too, are part of and conduits of the source of all things beautiful, loving, and abundant.
+The practice is retracing our steps to that inner voice, intuition, and ember, even if it sometimes feels impractical or irrational. It's about coloring outside the scripts, boxes, and fences we were handed. It's about playing, dancing, and rebelling in ways we can finally give ourselves permission to. And ultimately. daring to treat our lives as ever-winding, ever-evolving art. To embrace creativity is to slowly remember that we, too, are part of and conduits of the source.
 
 ### listen to earth and the body
 

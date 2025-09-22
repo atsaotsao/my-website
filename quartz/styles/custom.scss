@@ -13,6 +13,15 @@ $sidebarWidth: 420px;
 $mobileBreakpoint: 800px;
 $tabletBreakpoint: 1200px;
 
+// Temporary override to test gallery images
+.art-gallery img {
+  max-width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  width: 100% !important;
+}
+
 // === COLORS AND THEMES ===
 :root, :root[saved-theme="light"] {
   --light: #f0f0f2;

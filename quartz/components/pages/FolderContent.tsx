@@ -53,7 +53,6 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
     folder.children
       .map((node) => node.data)
       .filter((page) => page !== undefined) ?? []
-
   
   // Sort by published date (newest first), then by created date, then alphabetically
   const sortedPages = allPagesInFolder.sort((a, b) => {
@@ -77,7 +76,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
   return (
     <div class="popover-hint">
       <article>{content}</article>
-      <div class="art-gallery">
+      <div class="art-gallery-container">
         {sortedPages.map((file, index) => {
           const title = file.frontmatter?.title ?? "Untitled"
           const socialImage = file.frontmatter?.socialImage
@@ -106,41 +105,41 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           }
           
           return (
-            <div key={file.slug} className={`art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''}`}>
+            <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''}`}>
               {imageSrc && (
-                <div className="art-preview">
+                <div className="gallery-art-preview">
                   <a href={`/${file.slug}`} className="internal">
-                    <img src={imageSrc} alt={title} loading="lazy" />
+                    <img src={imageSrc} alt={title} loading="lazy" className="gallery-artwork-image" />
                     {isSold && (
-                      <div className="sale-badge sold-badge">
+                      <div className="gallery-sale-badge gallery-sold-badge">
                         Sold
                       </div>
                     )}
                     {isForSale && !isSold && (
-                      <div className="sale-badge">
+                      <div className="gallery-sale-badge">
                         For Sale
                       </div>
                     )}
                   </a>
                 </div>
               )}
-              <div className="art-details">
+              <div className="gallery-art-details">
                 <h3>
                   <a href={`/${file.slug}`} className="internal">
                     {title}
                   </a>
                 </h3>
                 {description && (
-                  <p className="art-description">{description}</p>
+                  <p className="gallery-art-description">{description}</p>
                 )}
                 {isSold && (
-                  <div className="sale-info">
-                    <span className="sold-status">Sold</span>
+                  <div className="gallery-sale-info">
+                    <span className="gallery-sold-status">Sold</span>
                   </div>
                 )}
                 {isForSale && !isSold && (
-                  <div className="sale-info">
-                    <span className="availability">Available</span>
+                  <div className="gallery-sale-info">
+                    <span className="gallery-availability">Available</span>
                   </div>
                 )}
               </div>
@@ -249,76 +248,97 @@ export default ((opts?: Partial<FolderContentOptions>) => {
   }
   
   const artGalleryStyles = `
-    .art-gallery {
+    /* High specificity fixes for deployment CSS conflicts */
+    .popover-hint .art-gallery-container .gallery-artwork-image,
+    .art-gallery-container .gallery-artwork-image,
+    .gallery-artwork-image {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      max-width: none !important;
+      max-height: none !important;
+      border: none !important;
+      transition: transform 0.3s ease !important;
+    }
+    
+    .art-gallery-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
     
-    .art-item {
-      border: 1px solid var(--border);
+    .gallery-art-item {
+      border: 1px solid #d8d8da;
       border-radius: 12px;
       overflow: hidden;
       transition: all 0.3s ease;
-      background: var(--bg);
+      background: #ffffff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       position: relative;
     }
     
-    .art-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-      border-color: var(--secondary);
+    /* Dark mode styles */
+    :root[saved-theme="dark"] .gallery-art-item {
+      border-color: #2a2a2b;
+      background: #151515;
     }
     
-    .art-item.for-sale {
+    .gallery-art-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      border-color: #185ecd;
+    }
+    
+    :root[saved-theme="dark"] .gallery-art-item:hover {
+      border-color: #6b8ce6;
+    }
+    
+    .gallery-art-item.for-sale {
       border-color: #2563eb;
       box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
     }
     
-    .art-item.for-sale:hover {
+    .gallery-art-item.for-sale:hover {
       border-color: #1d4ed8;
       box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
     }
     
-    .art-item.sold {
+    .gallery-art-item.sold {
       border-color: #6b7280;
       box-shadow: 0 2px 8px rgba(107, 114, 128, 0.2);
       opacity: 0.8;
     }
     
-    .art-item.sold:hover {
+    .gallery-art-item.sold:hover {
       border-color: #4b5563;
       box-shadow: 0 8px 25px rgba(107, 114, 128, 0.3);
     }
     
-    .art-preview {
+    .gallery-art-preview {
       width: 100%;
       height: 220px;
       overflow: hidden;
       position: relative;
     }
     
-    .art-preview a {
+    .gallery-art-preview a {
       display: block;
       width: 100%;
       height: 100%;
       text-decoration: none;
     }
     
-    .art-preview img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+    .gallery-art-item:hover .gallery-artwork-image {
+      transform: scale(1.05) !important;
     }
     
-    .art-item:hover .art-preview img {
-      transform: scale(1.05);
-    }
-    
-    .sale-badge {
+    .gallery-sale-badge {
       position: absolute;
       top: 8px;
       right: 8px;
@@ -332,34 +352,42 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       z-index: 10;
     }
     
-    .sold-badge {
+    .gallery-sold-badge {
       background: #6b7280 !important;
       color: white;
     }
     
-    .art-details {
+    .gallery-art-details {
       padding: 1.25rem;
     }
     
-    .art-details h3 {
+    .gallery-art-details h3 {
       margin: 0 0 0.75rem 0;
       font-size: 1.2rem;
       line-height: 1.3;
     }
     
-    .art-details h3 a {
-      color: var(--dark);
+    .gallery-art-details h3 a {
+      color: #202225;
       text-decoration: none;
       transition: color 0.2s ease;
     }
     
-    .art-details h3 a:hover {
-      color: var(--secondary);
+    :root[saved-theme="dark"] .gallery-art-details h3 a {
+      color: #ececec;
     }
     
-    .art-description {
+    .gallery-art-details h3 a:hover {
+      color: #185ecd;
+    }
+    
+    :root[saved-theme="dark"] .gallery-art-details h3 a:hover {
+      color: #6b8ce6;
+    }
+    
+    .gallery-art-description {
       margin: 0 0 0.75rem 0;
-      color: var(--gray);
+      color: #868889;
       font-size: 0.9rem;
       line-height: 1.4;
       display: -webkit-box;
@@ -368,21 +396,23 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       overflow: hidden;
     }
     
-    .sale-info {
+    :root[saved-theme="dark"] .gallery-art-description {
+      color: #5f6062;
+    }
+    
+    .gallery-sale-info {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-top: 0.5rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid #d8d8da;
     }
     
-    .price {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #2563eb;
+    :root[saved-theme="dark"] .gallery-sale-info {
+      border-top-color: #2a2a2b;
     }
     
-    .availability {
+    .gallery-availability {
       font-size: 0.8rem;
       color: #059669;
       font-weight: 500;
@@ -391,7 +421,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       border-radius: 4px;
     }
     
-    .sold-status {
+    .gallery-sold-status {
       font-size: 0.8rem;
       color: #6b7280;
       font-weight: 500;
@@ -400,22 +430,18 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       border-radius: 4px;
     }
     
-    .sold-price {
-      color: #6b7280 !important;
-    }
-    
     @media (max-width: 600px) {
-      .art-gallery {
+      .art-gallery-container {
         grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 1.5rem;
       }
       
-      .art-preview {
+      .gallery-art-preview {
         height: 200px;
       }
       
-      .art-details {
+      .gallery-art-details {
         padding: 1rem;
       }
     }

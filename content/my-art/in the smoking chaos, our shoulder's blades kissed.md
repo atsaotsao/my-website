@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-22 06:24:13
+modified: 2025-09-22 07:39:37
 published: 2021-09-22
 publish: true
-socialImage:
+socialImage: img_0852.jpeg
 tags:
   - for-sale
 medium: Mixed media on paper

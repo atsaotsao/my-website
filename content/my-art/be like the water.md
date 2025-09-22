@@ -1,12 +1,12 @@
 ---
-modified: 2025-09-20 00:55:47
+modified: 2025-09-22 05:20:17
 published: 2025-09-20
 publish: true
-socialImage: IMG_4954%202.jpeg
+socialImage: img_4954.jpeg
 tags:
   - gift
 medium:
-dimensions: 18\" x 24\"
+dimensions: 18" x 24"
 year: 2025
 price:
 "soldDate:":
@@ -16,7 +16,7 @@ isCommission:
 surface:
 ---
 
-![](../attachments/IMG_4954%202.jpeg)
+![](../attachments/IMG_4954.jpeg)
 I created this piece as a housewarming gift to friends who enjoy surfing the warm California waters. 
 
 I always love seeing how imperfectly ink flows across a page, for me illustrating the inexplicable, unpredictable yet magical tendency that life likes to flow; whether we like it or not. The biggest lessons I have learned so far is the art of flowing with it, and not against it.

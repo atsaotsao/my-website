@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-20 00:21:52
+modified: 2025-09-22 06:59:20
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -21,7 +21,7 @@ At the core of my work is this: to help myself, and those I walk with, come home
 We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't actually want my wholeness.
 
 They even reward our fragments, our masks, and our survival selves. 
-They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulate, control, and exploit.
+They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulattion, control, and exploitation.
 
 The work is to develop the scared skill of discernment of who, where, and what still perpetuates those old narratives. 
 To build enough deep inner trust and compassion to bring back all the parts we've pushed away, shamed, or even exiled.
@@ -56,4 +56,4 @@ One of the most
 
 
 
-*updated 2025-09-19 23:18
+*updated 2025-09-19 23:18*

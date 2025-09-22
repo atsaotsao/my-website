@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-22 07:25:39
+modified: 2025-09-22 07:27:58
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -24,7 +24,7 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 
 ### listen to earth and the body
 
-It took 
+It took chronic pain in my upper back for me to hear the cries of my body. And it took the pandemic and a genocide in Gaza for me to finally start hearing the weeping of the land. 
 
 ### root into your ancestry
 

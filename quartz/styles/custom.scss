@@ -13,15 +13,6 @@ $sidebarWidth: 420px;
 $mobileBreakpoint: 800px;
 $tabletBreakpoint: 1200px;
 
-// Temporary override to test gallery images
-.art-gallery img {
-  max-width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  width: 100% !important;
-}
-
 // === COLORS AND THEMES ===
 :root, :root[saved-theme="light"] {
   --light: #f0f0f2;
@@ -462,7 +453,10 @@ footer { display: none !important; }
           overflow-wrap: break-word !important;
         }
         
-        img, video, iframe {
+        // EXCLUDE GALLERY IMAGES FROM MOBILE OVERRIDES
+        img:not(.gallery-artwork-image), 
+        video, 
+        iframe {
           max-width: 100% !important;
           height: auto !important;
         }
@@ -860,8 +854,8 @@ article p {
   white-space: pre-line !important;
 }
 
-// === IMAGE ALIGNMENT BASED ON ALT TEXT ===
-img[alt*="center"] {
+// === IMAGE ALIGNMENT BASED ON ALT TEXT (EXCLUDE GALLERY) ===
+img[alt*="center"]:not(.gallery-artwork-image) {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -869,7 +863,7 @@ img[alt*="center"] {
   height: auto !important;
 }
 
-img[alt*="right"] {
+img[alt*="right"]:not(.gallery-artwork-image) {
   float: right !important;
   clear: right !important;
   margin-left: 1rem !important;
@@ -879,7 +873,7 @@ img[alt*="right"] {
   height: auto !important;
 }
 
-img[alt*="left"] {
+img[alt*="left"]:not(.gallery-artwork-image) {
   float: left !important;
   clear: left !important;
   margin-right: 1rem !important;
@@ -889,9 +883,10 @@ img[alt*="left"] {
   height: auto !important;
 }
 
-main article img,
-.center main img,
-.content img {
+// MAIN IMAGE STYLES - EXCLUDE GALLERY IMAGES
+main article img:not(.gallery-artwork-image),
+.center main img:not(.gallery-artwork-image),
+.content img:not(.gallery-artwork-image) {
   max-width: 100% !important;
   height: auto !important;
   border-radius: 8px !important;
@@ -927,8 +922,8 @@ main article img,
 }
 
 @media (max-width: 800px) {
-  img[alt*="right"],
-  img[alt*="left"] {
+  img[alt*="right"]:not(.gallery-artwork-image),
+  img[alt*="left"]:not(.gallery-artwork-image) {
     float: none !important;
     display: block !important;
     margin-left: auto !important;
@@ -938,9 +933,9 @@ main article img,
 }
 
 :root[saved-theme="dark"] {
-  main article img,
-  .center main img,
-  .content img {
+  main article img:not(.gallery-artwork-image),
+  .center main img:not(.gallery-artwork-image),
+  .content img:not(.gallery-artwork-image) {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
   }
 }
@@ -1117,14 +1112,15 @@ body[data-slug^="my-art/"] {
   }
 }
 
+// MOBILE IMAGE OVERRIDES - EXCLUDE GALLERY IMAGES  
 @media (max-width: 800px) {
-  img[src*="myart-stiching"],
-  img[src*="attachments/myart"],
-  article img:first-of-type,
-  .popover-hint img,
-  .page-header img,
-  main img:first-child,
-  p img:first-of-type {
+  img[src*="myart-stiching"]:not(.gallery-artwork-image),
+  img[src*="attachments/myart"]:not(.gallery-artwork-image),
+  article img:first-of-type:not(.gallery-artwork-image),
+  .popover-hint img:not(.gallery-artwork-image):not(.gallery-art-preview img),
+  .page-header img:not(.gallery-artwork-image),
+  main img:first-child:not(.gallery-artwork-image),
+  p img:first-of-type:not(.gallery-artwork-image) {
     width: 100vw !important;
     max-width: 100vw !important;
     height: 350px !important;
@@ -1139,7 +1135,6 @@ body[data-slug^="my-art/"] {
 
 /* === SINGLE IMAGE WITH CSS FILTER APPROACH === */
 /* This approach uses only the light image and applies CSS filters for dark mode */
-
 /* First, hide the second image completely since we only need one */
 body[data-slug=""] img:nth-of-type(2),
 body[data-slug="index"] img:nth-of-type(2) {
@@ -1157,13 +1152,6 @@ body[data-slug="index"] img:first-of-type {
   width: 100% !important;        /* Full width of container */
   max-width: 600px !important;   /* Maximum width limit */
   height: auto !important;       /* Maintains aspect ratio */
-  /* 
-  Alternative size options:
-  width: 600px !important;       Fixed width in pixels
-  width: 80% !important;         Percentage of container
-  height: 400px !important;      Fixed height (will distort aspect ratio)
-  max-height: 500px !important;  Maximum height limit
-  */
   
   /* VISUAL STYLING - Clean, no borders/shadows */
   border: none !important;
@@ -1184,33 +1172,6 @@ body[data-slug="index"] img:first-of-type {
   /* Keep clean styling in dark mode too */
   box-shadow: none !important;
 }
-
-/* Optional: Center the image if using fixed width */
-/*
-body[data-slug=""] img:first-of-type,
-body[data-slug="index"] img:first-of-type {
-  margin: 0 auto 1rem auto !important;  // Centers the image
-}
-*/
-
-/* Alternative filter combinations you can try: */
-/*
-:root[saved-theme="dark"] body[data-slug=""] img:first-of-type,
-:root[saved-theme="dark"] body[data-slug="index"] img:first-of-type {
-  
-  // More refined invert
-  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(1.1) !important;
-  
-  // Just darken without full invert
-  filter: brightness(0.3) contrast(1.2) !important;
-  
-  // Grayscale + darken
-  filter: grayscale(1) brightness(0.4) contrast(1.3) !important;
-  
-  // High contrast dark
-  filter: invert(1) contrast(1.5) brightness(0.8) !important;
-}
-*/
 
 /* Override the general image styles for homepage images specifically */
 body[data-slug=""] img:first-of-type,
@@ -1238,78 +1199,76 @@ body[data-slug="index"] img:first-of-type {
   }
 }
 
-/* Add this to your quartz/styles/custom.scss or base.scss */
-
-/* Obsidian Image Formatting */
-.obsidian-image {
+/* Obsidian Image Formatting - EXCLUDE GALLERY IMAGES */
+.obsidian-image:not(.gallery-artwork-image) {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-/* Alignment classes */
-.align-center {
+/* Alignment classes - EXCLUDE GALLERY IMAGES */
+.align-center:not(.gallery-artwork-image) {
   margin: 0 auto;
   display: block;
 }
 
-.align-left {
+.align-left:not(.gallery-artwork-image) {
   float: left;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.align-right {
+.align-right:not(.gallery-artwork-image) {
   float: right;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-/* Mobile responsiveness for Obsidian images */
+/* Mobile responsiveness for Obsidian images - EXCLUDE GALLERY IMAGES */
 @media (max-width: 768px) {
-  .obsidian-image {
+  .obsidian-image:not(.gallery-artwork-image) {
     max-width: 100% !important;
     width: 100% !important;
   }
   
-  .align-left,
-  .align-right {
+  .align-left:not(.gallery-artwork-image),
+  .align-right:not(.gallery-artwork-image) {
     float: none;
     margin: 0 auto 1rem auto;
     display: block;
   }
   
   /* Specific handling for images with width constraints */
-  .obsidian-image[style*="max-width"] {
+  .obsidian-image[style*="max-width"]:not(.gallery-artwork-image) {
     max-width: min(100%, 400px) !important;
   }
 }
 
 /* Container clearfix for floated images */
-.obsidian-image + * {
+.obsidian-image:not(.gallery-artwork-image) + * {
   clear: both;
 }
 
 /* Special handling for your 25on25 logo case */
-.obsidian-image[src*="25on25"] {
+.obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
   max-width: 300px;
 }
 
 @media (max-width: 480px) {
-  .obsidian-image[src*="25on25"] {
+  .obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
     max-width: 200px;
   }
 }
 
-// Mobile image fixes
+// Mobile image fixes - EXCLUDE GALLERY IMAGES
 @media (max-width: 768px) {
-  article img {
+  article img:not(.gallery-artwork-image) {
     max-width: 100% !important;
     height: auto !important;
     width: auto !important;
   }
   
-  img[src*="25on25"] {
+  img[src*="25on25"]:not(.gallery-artwork-image) {
     max-width: 200px !important;
   }
 }

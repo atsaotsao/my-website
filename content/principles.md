@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-22 07:46:57
+modified: 2025-09-22 09:35:32
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -23,7 +23,7 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 
 ### listen to earth and the body
 
-It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the  and a genocide in Gaza for me to finally start hearing the weeping of the earth. 
+It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, and within the world I exist in that I have been so scared to face. And it humbled me in terms of what 
 
 ### root into your ancestry
 

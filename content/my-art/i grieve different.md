@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-23 17:20:53
+modified: 2025-09-23 17:44:31
 published: 2025-06-27
 publish: true
-socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.heic
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
 tags:
   - for-sale
 medium: Mixed media on paper

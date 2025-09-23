@@ -90,19 +90,13 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           const isSold = tagsArray.includes('sold')
           
           let imageSrc = null
-          if (socialImage) {
-            const cleanImage = socialImage.replace(/^["']|["']$/g, '')
-            
-            if (cleanImage.startsWith('http')) {
-              imageSrc = cleanImage
-            } else if (cleanImage.startsWith('attachments/')) {
-              imageSrc = `/${cleanImage}`
-            } else if (!cleanImage.startsWith('/')) {
-              imageSrc = `/attachments/${cleanImage}`
-            } else {
-              imageSrc = cleanImage
-            }
-          }
+if (socialImage) {
+  if (socialImage.startsWith('http')) {
+    imageSrc = socialImage  // Direct URL - works for Cloudinary
+  } else {
+    imageSrc = `/attachments/${socialImage}`  // Local fallback
+  }
+}
           
           return (
             <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''}`}>

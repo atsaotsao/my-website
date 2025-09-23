@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-22 05:20:17
+modified: 2025-09-23 17:11:17
 published: 2025-09-20
 publish: true
-socialImage: img_4954.jpeg
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661588/IMG_4954_1_gtwijn.jpg
 tags:
   - gift
 medium:

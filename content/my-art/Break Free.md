@@ -1,9 +1,9 @@
 ---
-modified: 2025-09-12 22:45:56
+modified: 2025-09-23 17:11:07
 published: 2024-09-08
 publish: true
 tags:
-socialImage: breakfree_main.png
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661677/IMG_2650_qoqzqj.heic
 ---
 ![](../attachments/breakfree_main.png)
 The month of December has recently been my favorite time of the year. 

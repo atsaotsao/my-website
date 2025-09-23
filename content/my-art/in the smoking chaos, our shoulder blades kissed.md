@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-22 07:39:37
+modified: 2025-09-23 17:21:06
 published: 2021-09-22
 publish: true
-socialImage: img_0852.jpeg
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661588/IMG_0852_fniglj.jpg
 tags:
   - for-sale
 medium: Mixed media on paper

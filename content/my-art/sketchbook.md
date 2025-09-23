@@ -1,11 +1,10 @@
 ---
-modified: 2025-09-20 01:27:50
+modified: 2025-09-23 17:22:01
 publish: true
 published: 2025-09-15
-socialImage: IMG_9791.jpeg
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758662488/IMG_1455_xf7w8t.jpg
 ---
 **Ongoing** collection of sketches from my life: 
-
 
 ![](../attachments/IMG_3763.jpeg)
 ![](../attachments/IMG_3435.jpeg)

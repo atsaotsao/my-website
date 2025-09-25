@@ -120,11 +120,6 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
             <div className="status-display available-status">
               <span className="status-label">Status</span>
               <span className="status-value available">Available for Purchase</span>
-              {price && (
-                <div className="price-display">
-                  <span className="price-amount">${price} {currency}</span>
-                </div>
-              )}
             </div>
           ) : (
             <div className="status-display display-only">
@@ -179,7 +174,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
                   <strong>Payment:</strong> Secure checkout via Ko-fi
                 </div>
                 <div className="contact-note">
-                  Questions? <a href="mailto:your-email@example.com">Contact me</a>
+                  Questions? <a href="mailto:andrew@codelesscoach.com">Contact me</a>
                 </div>
               </div>
             </div>
@@ -354,13 +349,13 @@ export default (() => {
       gap: 1.5rem;
     }
     
-    /* Ko-fi Styled Button */
+    /* Ko-fi Styled Button - Orange complementary to blue */
     .ko-fi-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.75rem;
-      background: #13C3FF;
+      background: #FF6B35;
       color: white;
       padding: 1rem 2rem;
       border-radius: 8px;
@@ -368,15 +363,15 @@ export default (() => {
       font-weight: 600;
       font-size: 1.1rem;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(19, 195, 255, 0.3);
+      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
       border: none;
       cursor: pointer;
     }
     
     .ko-fi-button:hover {
-      background: #0FA8CC;
+      background: #E55A2B;
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(19, 195, 255, 0.4);
+      box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
       color: white;
       text-decoration: none;
     }

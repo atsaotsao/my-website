@@ -13,6 +13,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
   }
   
   // Extract artwork data
+  const title = frontmatter?.title || fileData.slug
   const medium = frontmatter?.medium
   const dimensions = frontmatter?.dimensions
   const year = frontmatter?.year
@@ -39,6 +40,9 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
   if (!purchaseUrl && kofiCode) {
     purchaseUrl = `https://ko-fi.com/s/${kofiCode}`
   }
+  
+  // Create email subject
+  const emailSubject = `I'm interested in buying "${title}"`
   
   return (
     <div className="artwork-details">
@@ -155,14 +159,14 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
           <div className="purchase-actions">
             <a 
               href={purchaseUrl} 
-              className="buy-button ko-fi-button" 
+              className="buy-button purchase-button" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <svg className="ko-fi-icon" viewBox="0 0 24 24" width="20" height="20">
-                <path fill="currentColor" d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.033 11.398c.138 11.433 11.814 1.343 11.814 1.343s10.126-8.85 11.864-8.586c1.738.263 2.33-.61 2.33-.61z"/>
+              <svg className="purchase-icon" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M7 18c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-0.16 0.28-0.25 0.61-0.25 0.96 0 1.1 0.9 2 2 2h12v-2H7.42c-0.14 0-0.25-0.11-0.25-0.25l0.03-0.12L8.1 13h7.45c0.75 0 1.41-0.41 1.75-1.03L21.7 4H5.21l-0.94-2H1zM17 18c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
               </svg>
-              Buy on Ko-fi
+              Purchase Artwork
             </a>
             
             <div className="purchase-details">
@@ -174,7 +178,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
                   <strong>Payment:</strong> Secure checkout via Ko-fi
                 </div>
                 <div className="contact-note">
-                  Questions? <a href="mailto:andrew@codelesscoach.com">Contact me</a>
+                  Questions? <a href={`mailto:andrew@codelesscoach.com?subject=${encodeURIComponent(emailSubject)}`}>Contact me</a>
                 </div>
               </div>
             </div>
@@ -349,13 +353,13 @@ export default (() => {
       gap: 1.5rem;
     }
     
-    /* Ko-fi Styled Button - Orange complementary to blue */
-    .ko-fi-button {
+    /* Purchase Button - Custom teal color */
+    .purchase-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.75rem;
-      background: #FF6B35;
+      background: #5cd0ab;
       color: white;
       padding: 1rem 2rem;
       border-radius: 8px;
@@ -363,20 +367,20 @@ export default (() => {
       font-weight: 600;
       font-size: 1.1rem;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+      box-shadow: 0 4px 12px rgba(92, 208, 171, 0.3);
       border: none;
       cursor: pointer;
     }
     
-    .ko-fi-button:hover {
-      background: #E55A2B;
+    .purchase-button:hover {
+      background: #4ade80;
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+      box-shadow: 0 6px 20px rgba(92, 208, 171, 0.4);
       color: white;
       text-decoration: none;
     }
     
-    .ko-fi-icon {
+    .purchase-icon {
       width: 20px;
       height: 20px;
       fill: currentColor;

@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-23 18:05:02
+modified: 2025-09-25 14:33:03
 published: 2025-08-19
 ---
 ### love is essential work.
@@ -24,6 +24,8 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 ### listen to earth and the body
 
 It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, and within the world I exist in that I have been so scared to face. And it humbled me in terms of what 
+´
+**~ WORK IN PROGRESS ~**
 
 ### root into your ancestry
 
@@ -31,4 +33,4 @@ One of the most
 
 
 
-*updated 2025-09-19 23:18*
+*updated 2025-09-25 14:32

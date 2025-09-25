@@ -26,12 +26,19 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
   const location = frontmatter?.location
   const exhibitions = frontmatter?.exhibitions
   const soldDate = frontmatter?.soldDate
-  const buyLink = frontmatter?.buyLink
+  const buylink = frontmatter?.buylink
+  const kofiCode = frontmatter?.kofiCode // Alternative: just the Ko-fi code
   
   // Determine status
   const tags = frontmatter?.tags || []
   const isSold = tags.includes('sold') || soldDate
   const isForSale = tags.includes('for-sale') && !isSold
+  
+  // Construct Ko-fi URL if we have a code but not full link
+  let purchaseUrl = buylink
+  if (!purchaseUrl && kofiCode) {
+    purchaseUrl = `https://ko-fi.com/s/${kofiCode}`
+  }
   
   return (
     <div className="artwork-details">
@@ -125,16 +132,6 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
               <span className="status-value">Display Only</span>
             </div>
           )}
-          
-          {/* Buy Button */}
-          {isForSale && buyLink && (
-            <div className="buy-action">
-              <a href={buyLink} className="buy-button" target="_blank" rel="noopener noreferrer">
-                Purchase Artwork
-              </a>
-              <p className="purchase-note">Shipping and handling calculated at checkout</p>
-            </div>
-          )}
         </div>
         
         {/* Location */}
@@ -147,6 +144,48 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
           </div>
         )}
       </div>
+      
+      {/* Enhanced Purchase Section with Ko-fi Styling */}
+      {isForSale && purchaseUrl && (
+        <div className="purchase-section">
+          <div className="purchase-header">
+            <h3>Purchase This Artwork</h3>
+            {price && (
+              <div className="purchase-price">
+                ${price} {currency}
+              </div>
+            )}
+          </div>
+          
+          <div className="purchase-actions">
+            <a 
+              href={purchaseUrl} 
+              className="buy-button ko-fi-button" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <svg className="ko-fi-icon" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.033 11.398c.138 11.433 11.814 1.343 11.814 1.343s10.126-8.85 11.864-8.586c1.738.263 2.33-.61 2.33-.61z"/>
+              </svg>
+              Buy on Ko-fi
+            </a>
+            
+            <div className="purchase-details">
+              <div className="purchase-info">
+                <div className="shipping-note">
+                  <strong>Shipping:</strong> Calculated at checkout
+                </div>
+                <div className="payment-note">
+                  <strong>Payment:</strong> Secure checkout via Ko-fi
+                </div>
+                <div className="contact-note">
+                  Questions? <a href="mailto:your-email@example.com">Contact me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -283,42 +322,118 @@ export default (() => {
       color: #2563eb;
     }
     
-    .buy-action {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
+    /* Enhanced Purchase Section */
+    .purchase-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--lightgray);
     }
     
-    .buy-button {
-      background: #2563eb;
+    .purchase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .purchase-header h3 {
+      margin: 0;
+      color: var(--dark);
+      font-size: 1.3rem;
+    }
+    
+    .purchase-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2563eb;
+    }
+    
+    .purchase-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    /* Ko-fi Styled Button */
+    .ko-fi-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: #13C3FF;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 1rem 2rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      text-align: center;
-      transition: background 0.3s ease;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(19, 195, 255, 0.3);
+      border: none;
+      cursor: pointer;
     }
     
-    .buy-button:hover {
-      background: #1d4ed8;
+    .ko-fi-button:hover {
+      background: #0FA8CC;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(19, 195, 255, 0.4);
       color: white;
+      text-decoration: none;
     }
     
-    .purchase-note {
-      font-size: 0.8rem;
-      color: var(--gray);
-      text-align: center;
-      margin: 0;
-      font-style: italic;
+    .ko-fi-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    .purchase-details {
+      background: var(--lightgray);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    
+    .purchase-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .shipping-note,
+    .payment-note,
+    .contact-note {
+      font-size: 0.9rem;
+      color: var(--darkgray);
+    }
+    
+    .contact-note a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+    
+    .contact-note a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Dark mode adjustments */
+    :root[saved-theme="dark"] .purchase-details {
+      background: var(--gray);
     }
     
     @media (max-width: 768px) {
       .artwork-details {
         margin: 1rem 0;
         padding: 1rem;
+      }
+      
+      .purchase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .purchase-price {
+        font-size: 1.5rem;
       }
       
       .meta-item {

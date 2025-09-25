@@ -1,16 +1,21 @@
 ---
-modified: 2025-09-12 23:43:31
+modified: 2025-09-24 22:57:31
 publish: true
 published: 2025-08-25
 title: my playlists
 aliases:
   - my playlists
 ---
-I started making playlists because my friends were constantly asking me to recommend new music to them. Soon I realized that making playlist wasn't just something that was fun for me; it was a love language.  
+I started making playlists because my friends were constantly asking me to recommend new music to them. Soon I realized that making playlists wasn't just something that was fun for me; it was a love language.  
 
 And it was one very particular way for me to export all the gooey warmth and love I have in my heart and share it with world, with song curation & later paired with a newsletter through a project called 25 on 25. 
 
 Over the course of 90 months, I've handpicked and put together 90 playlists and sent 55 issues of the newsletter. Even though the project has ended, I've decided to create a new home for all that labor of love. 
+
+Now, I’m also offering to curate deeply personalized playlists for others.  
+This could be for an event, a gathering, an art show, or simply for a season of your life.  
+
+If this speaks to you, [reach out ](mailto:andrew@codelesscoach.com?subject=please%20curate%20a%20playlist%20for%20me)— I’d love to make something for you.
 
 ----
 
@@ -34,4 +39,4 @@ I'm Andrew, a maker who likes to spend his time listening to music and creating 
 
 **All my playlist are below (will upload more as I go). Enjoy!**
 
-*updated 2025-08-25 20:54*
+*updated 2025-09-24 22:57*

@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-23 17:44:31
+modified: 2025-09-24 23:20:34
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -8,13 +8,13 @@ tags:
 medium: Mixed media on paper
 dimensions: 18" x 24"
 year: 2025
-price: "200"
+price: "222"
 "soldDate:":
 "location:": studio
 "exhibitions:":
 isCommission:
 surface: Mixed media paper
-buylink:
+buylink: https://ko-fi.com/s/0da7edc7bb
 ---
 ![](../attachments/theknotinmychest.png)
 
@@ -52,6 +52,7 @@ What I wrote in after painting this:
 *O knot, O knot*
 *What do you need from me?*
 
+![](../attachments/ChatGPT%20Image%20Sep%2024,%202025,%2011_13_57%20PM.png)
 #### Song inspiration for this piece: 
 [United in Grief - Kendrick Lamar](https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL?si=842f823dfc964efa)
 

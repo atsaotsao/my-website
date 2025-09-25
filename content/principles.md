@@ -1,9 +1,9 @@
 ---
 publish: true
-modified: 2025-09-22 09:35:32
+modified: 2025-09-23 18:05:02
 published: 2025-08-19
 ---
-### love is the central work.
+### love is essential work.
 
 If there’s one thing I’ve learned from years of studying, falling, failing, crying, healing, practicing, and integrating it’s that love is the work. It's the core work that I come back to time and time again It's the ache in my chest, the wild, joy and deep grief I feel. It's the metaphysical, mystical, and all-consuming driving force behind all the most powerful, radical, and liberatory transformation that I've experienced personally and even had the privilege of facilitating, coaching, and witnessing in others in my life. 
 

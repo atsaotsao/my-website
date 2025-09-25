@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-25 01:40:56
+modified: 2025-09-24 22:32:16
 publish: true
 published: 2017-07-25
 tags:
@@ -13,8 +13,6 @@ tags:
   - pop-edm
   - tropical-house
 ---
-### Description:
-
 > Summer days far away
 > Can I make you stay?
 

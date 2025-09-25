@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-25 16:18:23
+modified: 2025-09-24 22:32:51
 publish: true
 published: 2018-05-25
 tags:
@@ -17,7 +17,6 @@ tags:
   - pop
   - vapor-soul
 ---
-### Description:
 Summer made for us is made for all the summer lovers out there. 
 
 When I first moved to New York in July 2013 from Los Angeles, I was working as a bartender at a modern Chinese restaurant and my customers would often ask me the same question "Why in the world would you move from sunny California to New York?" And my answer would always be the same: "It's all about the seasons! The cold winters will only make the summer seem that much warmer and sweeter." This playlist is all about that sentiment. We got Hippo Campus, Blossoms, The Wombats, Parcels, and courtship all bringing bouncy indie-pop tracks all meant for dancing up and downstairs of Subway stations. Chet Baker's "Summertime" and Kris Bower's "Cultural Imports" (from the Netflix show Dear White People) are jazz snacks to be enjoyed between vocal tracks. My personal ear-worm of the month is definitely joan's "Tokyo," I could not for the life of me stop singing the chorus:

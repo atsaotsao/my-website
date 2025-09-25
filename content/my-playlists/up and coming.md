@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-25 01:26:53
+modified: 2025-09-24 22:33:34
 publish: true
 published: 2017-05-25
 tags:
@@ -13,7 +13,6 @@ tags:
   - lo-fi-beats
   - vapor-soul
 ---
-### Description:
 New songs by artists I love, and new artists I like. 
 Decided to keep making these playlists because at the very least my girlfriend enjoys them.
 

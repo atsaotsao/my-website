@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-26 22:06:03
+modified: 2025-09-24 22:32:19
 publish: true
 published: 2018-08-25
 tags:
@@ -15,7 +15,6 @@ tags:
   - indietronica
   - vapor-soul
 ---
-### Description
 This month, we're taking a leap into a dream I had a few days ago. You're immediately welcomed into the dreamscape with sounds of birds chirping and insects in Washed Out's "Entrance." The in Beach House's "Dive" we start off with the hauntingly beautiful and droning vocals that crescendos as the guitar starts to build and reaches the line that reminded me of my dream:
 
 > Is it my imagination?

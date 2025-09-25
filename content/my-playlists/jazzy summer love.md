@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-25 01:44:29
+modified: 2025-09-24 22:32:11
 publish: true
 published: 2017-08-25
 tags:
@@ -17,8 +17,6 @@ tags:
   - vapor-soul
   - vapor-twitch
 ---
-### Description:
-
 This was my first love letter to my now girlfriend disguised as a playlist. The opening lyrics in the first song "your text" says it all.
 
 > Hey pretty stranger

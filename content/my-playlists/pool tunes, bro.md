@@ -1,5 +1,5 @@
 ---
-modified: 2025-08-26 21:58:51
+modified: 2025-09-24 22:32:43
 publish: true
 published: 2018-07-25
 tags:
@@ -18,7 +18,6 @@ tags:
   - vapor-soul
   - filter-house
 ---
-### Description:
 This playlist was constructed while drinking a cold brew and reading the most recent issue of New Yorker, but it's made to be played at all those outdoor rooftop parties (the kind that I rarely get invited to). This month's playlist features some new bangers from some of my favorite producers like The Knocks, Louis the Child, Disclosure, Satin Jackets, and Star Slinger. Just try listening through this entire playlist without moving once, I dare you. The new french house, wavy, and tropical vibes are meant to seduce even the most stoic person in the room. The song that stood out the most to me is Star Slinger's new track "Hottest Day in New York" which was inspired by Spike Lee's film *Do the Right Thing,* a movie about Brooklyn on the hottest day of the year. The beauty of Brooklyn during summer is how lively it gets; communities and individuals of all ages and ethnicity, blocking off an entire street block, barbecuing and water-gunning the day away. I immediately understand why Aloe Blacc sings:
 
 > You feel like Brooklyn in the summer

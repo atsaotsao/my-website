@@ -20,7 +20,7 @@ surface:
 I created this piece as a housewarming gift to friends who enjoy surfing the warm California waters. 
 
 I always love seeing how imperfectly ink flows across a page, for me illustrating the inexplicable, unpredictable yet magical tendency that life likes to flow; whether we like it or not. The biggest lessons I have learned so far is the art of flowing with it, and not against it.
-
+![](../attachments/IMG_5072.jpeg)
 This was the personal message I included alongside the painting:
 *I hope this piece brings you and O peace, courage, joy in surfing the waves of your lives together.*
 *That regardless of how choppy the conditions the water gets, you will always have each other to lean on.*

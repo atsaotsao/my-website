@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-24 23:20:34
+modified: 2025-09-26 01:38:11
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -53,6 +53,7 @@ What I wrote in after painting this:
 *What do you need from me?*
 
 ![](../attachments/ChatGPT%20Image%20Sep%2024,%202025,%2011_13_57%20PM.png)
+For transparency: Room mockups are created using AI to help you envision the artwork in different settings.
 #### Song inspiration for this piece: 
 [United in Grief - Kendrick Lamar](https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL?si=842f823dfc964efa)
 

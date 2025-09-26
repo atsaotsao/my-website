@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-26 16:39:43
+modified: 2025-09-26 16:50:15
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -25,14 +25,12 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 
 It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, that I have been so scared to face. In that avoidance, I also were disconnected to knowledge and resources that were always availabe to me to help me keep going.
 
-Today's personal development and wellness world emphasizes the narrative that you need this and *that* to get through your day, to ground, to preserve your peace, and to become "better." And they capitalize on this scarcity mindset that if you don't have it you're doomed. But when we refocus our attention on the body and earth that is avaialbe to ALL OF US, you naturally find abundance. And from that place, you find teachers, guides, coaches, and allies who serves to remind you of your connection to what you already have. 
+Today's personal development and wellness world emphasizes the narrative that you need this and *that* to get through your day, to ground, to preserve your peace, and to become "better." And they capitalize on this scarcity mindset that if you don't have it you're doomed. But when we refocus our attention on the body and earth that is averrable to ALL OF US, you naturally find abundance. And from that place, you find teachers, guides, coaches, and allies who serves to remind you of your connection to what you already have. 
 
-
-**~ WORK IN PROGRESS ~**
 
 ### root into your ancestry
 
-One of the most
+I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember." 
 
 
 

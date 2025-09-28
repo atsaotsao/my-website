@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-25 14:24:47
+modified: 2025-09-28 10:02:24
 published: 2025-09-20
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661588/IMG_4954_1_gtwijn.jpg
@@ -13,7 +13,7 @@ price:
 "location:": friend's home
 "exhibitions:":
 isCommission:
-surface:
+surface: Mixed media paper
 ---
 
 ![](../attachments/IMG_4954.jpeg)

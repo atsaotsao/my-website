@@ -1,4 +1,4 @@
-// quartz.config.ts - Complete configuration with image switching
+// quartz.config.ts - Complete configuration with CSS nuclear scroll reset
 import type { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     baseUrl: "andrew-tsao.com",
     locale: "en-US",
-    enableSPA: true,
+    enableSPA: false,  // Keep SPA disabled
     enablePopovers: true,
     analytics: { provider: "plausible" },
     ignorePatterns: [
@@ -56,6 +56,79 @@ const config: QuartzConfig = {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
         }
+      },
+      {
+        tag: "style",
+        props: {},
+        children: `
+/* Nuclear CSS scroll reset */
+html, body {
+  scroll-behavior: auto !important;
+}
+
+/* Force page to start at top with CSS */
+html {
+  scroll-padding-top: 0 !important;
+}
+
+body {
+  scroll-padding-top: 0 !important;
+}
+
+/* Trigger reflow on page changes */
+.center, main, article {
+  animation: pageReset 0.1s ease-out;
+}
+
+@keyframes pageReset {
+  0% { 
+    transform: translateY(-1px); 
+  }
+  100% { 
+    transform: translateY(0); 
+  }
+}
+        `
+      },
+      {
+        tag: "script",
+        props: { type: "text/javascript" },
+        children: `
+// Simple but aggressive scroll reset
+(function() {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  
+  function resetScroll() {
+    window.scrollTo(0, 0);
+  }
+  
+  // Reset immediately
+  resetScroll();
+  
+  // Reset on load
+  window.addEventListener('load', resetScroll);
+  
+  // Reset on any navigation
+  let isFirstLoad = true;
+  window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+  });
+  
+  // Override window.scrollTo to force top
+  const originalScrollTo = window.scrollTo;
+  window.scrollTo = function(x, y) {
+    if (isFirstLoad && (x !== 0 || y !== 0)) {
+      originalScrollTo.call(this, 0, 0);
+    } else {
+      originalScrollTo.call(this, x, y);
+    }
+  };
+  
+  setTimeout(() => { isFirstLoad = false; }, 2000);
+})();
+        `
       },
       {
         tag: "script",

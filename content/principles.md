@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-26 16:50:15
+modified: 2025-09-26 17:28:56
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -30,8 +30,8 @@ Today's personal development and wellness world emphasizes the narrative that yo
 
 ### root into your ancestry
 
-I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember." 
+I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember" and that has always stayed with me. I realized that so much of the work is about remembering—remembering our feelings, our dreams and desires, our love and zest for life, and who we are before the world told us who we should be. And as someone 
 
 
 
-*updated 2025-09-25 14:32
+*updated 2025-09-26 17:28

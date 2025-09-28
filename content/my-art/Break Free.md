@@ -1,9 +1,11 @@
 ---
-modified: 2025-09-25 23:45:05
+modified: 2025-09-28 10:02:05
 published: 2024-09-08
 publish: true
 tags:
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661677/IMG_2650_qoqzqj.jpg
+medium: Mixed media on found object
+"location:": Brother's backyard
 ---
 ![](../attachments/breakfree_main.png)
 The month of December has recently been my favorite time of the year. 

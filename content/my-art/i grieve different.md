@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-28 09:44:14
+modified: 2025-09-29 00:58:14
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -17,10 +17,14 @@ surface: Mixed media paper
 buylink: https://ko-fi.com/s/0da7edc7bb
 ---
 ![](../attachments/theknotinmychest.png)
+I drew this piece in a blind fury of intense grief and rage. There was this knot in my chest that I was trying to process and it was suffocating me. In my journal I wrote: *"It makes me want to scream punch the wall. It makes me want to launch myself at structures and people like I'm a catapult shooting rocks at walls and castles during medieval times."*
 
-> An explosive floral burst rendered in vibrant watercolors and ink with dynamic gestural marks radiating outward like energy waves coming out of the center of the chest. The two hand prints are meant to symbolize safety and support through navigating one's shadows.
+*I Grieve Different* is an attempt to capture the full intensity around the weight in the chest, the rage, the mourning, and the strange companionship of what refuses to leave. It’s lesson around not pushing grief away but letting it move through, about feeling last drop of it and through it. I want it to be reminder for anyone going through something to know that they're not alone. 
 
-What I wrote in after painting this: 
+And to keep going.
+
+
+Here is the full excerpt of what I wrote in my journal:
 *The knot in my chest is so heavy & deep.*
 *I've cried.*
 *I've wallowed.* 

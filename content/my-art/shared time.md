@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-28 09:44:51
+modified: 2025-09-29 15:23:07
 published: 2025-05-25
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759066884/IMG_2888_r41rlz.jpg
@@ -14,10 +14,13 @@ price: "111"
 "exhibitions:":
 isCommission:
 surface: canvas
-buylink:
+buylink: https://ko-fi.com/s/f709810dbb
 ---
 
 ![](../attachments/IMG_2888.jpeg)
+I'm obsessed with circles. And the thing is that circles are hard to draw perfectly so I keep a collection of circular objects to help me trace them. To me circle represents the spirit, beauty, and love that lives with each of us. 
+
+Lately, I've been thinking about not just the circles themselves, but about the spaces *in between* them. In community, in healing, and in liberation work I've learned that the point was never to focus on my own circle, but how our circles touch and overlap with others. The space where we meet each other, the relationship that form, the conflicts and repair, is where the magic is at.
 
 ![](../attachments/ChatGPT%20Image%20Sep%2026,%202025,%2001_45_32%20AM.png)
 For transparency: Room mockups are created using AI to help you envision the artwork in different settings.

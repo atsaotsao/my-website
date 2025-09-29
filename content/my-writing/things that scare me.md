@@ -3,7 +3,7 @@ modified: 2025-09-28 20:22:34
 tags:
   - poem
 publish: true
-published: 2025-08-28
+published: 2025-09-28
 ---
 
 

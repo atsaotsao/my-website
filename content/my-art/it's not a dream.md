@@ -1,8 +1,8 @@
 ---
-modified: 2025-09-28 09:56:31
+modified: 2025-09-28 10:30:47
 published: 2025-08-31
 publish: true
-socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067614/IMG_5550_nn75dz.jpg
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067730/IMG_4873_libc8l.jpg
 tags:
   - for-sale
 medium: Alcohol marker on paper

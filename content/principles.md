@@ -1,17 +1,17 @@
 ---
 publish: true
-modified: 2025-09-26 17:28:56
+modified: 2025-09-30 15:04:40
 published: 2025-08-19
 ---
 ### love is the central work.
 
-If there’s one thing I’ve learned from years of studying, falling, failing, crying, healing, practicing, and integrating it’s that love is the work. It's the core work that I come back to time and time again It's the ache in my chest, the wild, joy and deep grief I feel. It's the metaphysical, mystical, and all-consuming driving force behind all the most powerful, radical, and liberatory transformation that I've experienced personally and even had the privilege of facilitating, coaching, and witnessing in others in my life. 
+If there’s one thing I’ve learned from years of studying, falling, failing, crying, healing, practicing, and integrating it’s that love is the work. It's the core work that I come back to time and time again It's the ache in my chest, the wild joy and deep grief I feel. It's the metaphysical, mystical, and all-consuming driving force behind all the most powerful, radical, and liberatory transformation that I've experienced personally and even had the privilege of facilitating, coaching, and witnessing in others in my life. 
 
 Bell hooks wrote: _“We do not have to love. We choose to love.”_ And more than anything, I choose to love. And I choose to be with people who also choose to love. Who choose it even when things get hard, scary, and darkness creeps oh so slowly to envelop us. I know that it's a choice that requires courage: to stop bypassing, face ourselves honestly, and be accountable in truth with ourselves and others. I believe most of the world’s pain stems from cycles of lovelessness on a personal and collective level, and at the core of my work, it's about helping myself, and those I walk with, come home to love; to create from and with love. 
 
 ### practice relational wholeness
 
-We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't actually want mine and your wholeness. They even reward our fragments, our masks, and our survival selves. They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulation, control, and exploitation.
+We are beautiful whole beings. We have dimensions and multitudes. And it took me years to realize that most spaces in this late-capitalist world don't actually want mine and your wholeness. They even reward our fragments, our masks, and our survival selves. They don't care how loud our inner critics, judges, or victim parts are because the pain and insecurities that comes from operating in them makes us more susceptible to manipulation, control, and exploitation. 
 
 The work is to develop the scared skill of discernment of who, where, and what still perpetuates those old narratives. To build enough deep inner trust and compassion to bring back all the parts we've pushed away, shamed, or even exiled. To stay whole even while in relationship with others. And hardest of all, to believe and even contribute to building new reimagined worlds and spaces that we can coexist, collaborate, and be as our whole selves
 
@@ -25,13 +25,15 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 
 It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, that I have been so scared to face. In that avoidance, I also were disconnected to knowledge and resources that were always availabe to me to help me keep going.
 
-Today's personal development and wellness world emphasizes the narrative that you need this and *that* to get through your day, to ground, to preserve your peace, and to become "better." And they capitalize on this scarcity mindset that if you don't have it you're doomed. But when we refocus our attention on the body and earth that is averrable to ALL OF US, you naturally find abundance. And from that place, you find teachers, guides, coaches, and allies who serves to remind you of your connection to what you already have. 
+Today's personal development and wellness world emphasizes the narrative that you need this and *that* to get through your day, to ground, to preserve your peace, and to become "better." And they capitalize on this scarcity mindset that if you don't have it you're doomed. But when we refocus our attention on the body and earth, especially to all the juicy goodness that is already available to all of us, we naturally find abundance. And from that place, we find teachers, guides, coaches, and allies entering our lives who continue to remind us of our connection to what we already have. 
 
 
 ### root into your ancestry
 
-I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember" and that has always stayed with me. I realized that so much of the work is about remembering—remembering our feelings, our dreams and desires, our love and zest for life, and who we are before the world told us who we should be. And as someone 
+I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember" and that has always stayed with me. I realized that so much of the work is about remembering—remembering our feelings, our dreams and desires, our love and zest for life, and who we are before the world told us who we should be. And as someone who's grandparents flee from China to Taiwan during the cultural revolution, and later from Taiwan to California when the cross-strait tensions were high, I'm also still learning to remember through writing, archiving, and different ceremonies to help me remember where I came from and utilizie it to inform me where I'm going.
 
+Ancestry to me isn't about that 23andMe kit you took a few years ago. To me it's so much more than the genome passed down, 
 
+Just like in the history books we've studied growing up, what gets remembered is a function of who's doing the remembering. And in our bodies, it's often lead by the parts influenced by the dominant power structures we grew up in that significantly shaped how and what we remember. 
 
-*updated 2025-09-26 17:28
+*updated 2025-09-30 15:05

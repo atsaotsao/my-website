@@ -1,7 +1,9 @@
 ---
-modified: 2025-09-15 07:26:48
+modified: 2025-09-30 11:58:14
 publish: true
 published: 2025-08-19
+aliases:
+  - my coaching
 ---
 As of this moment, I have coached 969 hours over the span of 4 years. 
 

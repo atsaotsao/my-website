@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-28 09:48:17
+modified: 2025-09-29 20:16:11
 published: 2025-03-22
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067157/IMG_1189_ibyqrt.jpg
@@ -18,9 +18,10 @@ buylink:
 ---
 ![](../attachments/IMG_1189.jpeg)
 
-![](../attachments/myart%20stiching%20(2).png)
 
-For transparency: Room mockups are created using AI to help you envision the artwork in different settings.
+![](../attachments/lightlove%20mockup.png)
+
+Room mockups are created using AI to help you envision the artwork in different settings. Please note that colors, textures, and proportions may not be fully accurate since the mockups are generated through AI.
 #### Song inspiration for this piece: 
 
 

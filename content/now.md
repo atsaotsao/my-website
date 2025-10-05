@@ -1,11 +1,11 @@
 ---
-modified: 2025-10-04 06:15:07
+modified: 2025-10-05 18:34:25
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
 ---
 ![](attachments/now-header.png)
-- **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people navigate crisis and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
+- **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people reconnect with their creative self, navigate crisis, and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
 - **Coaching** 1-on-1 with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Reawakening** [_The Art of Your Life_](https://theartofyourlife.transistor.fm/) podcast—breathing fresh life into it soon.
 - **Mentoring** as a part-time internship assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
@@ -38,4 +38,4 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - Playing Hades on Switch
 - Watching the last season of The Bear
 
-*(updated 2025-10-04 06:14)*
+*(updated 2025-10-05 18:34)*

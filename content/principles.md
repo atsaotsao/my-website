@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-09-30 15:05:17
+modified: 2025-10-04 16:14:29
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -23,7 +23,7 @@ The practice is retracing our steps to that inner voice, intuition, and ember, e
 
 ### listen to earth and the body
 
-It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, that I have been so scared to face. In that avoidance, I also were disconnected to knowledge and resources that were always availabe to me to help me keep going.
+It took chronic pain in my upper back for me to finally hear the cries of my body. And it took the pandemic, the climate related disasters like increasingly more severe fires in California, and witnessing the genocide in Gaza (Sudan & Congo) for me to finally start hearing the weeping of the earth. And in that listening, I found so many things within me, within my family, lineage, that I have been so scared to face. In that avoidance, I also were disconnected to knowledge and resources that were always available to me to help me keep going.
 
 Today's personal development and wellness world emphasizes the narrative that you need this and *that* to get through your day, to ground, to preserve your peace, and to become "better." And they capitalize on this scarcity mindset that if you don't have it you're doomed. But when we refocus our attention on the body and earth, especially to all the juicy goodness that is already available to all of us, we naturally find abundance. And from that place, we find teachers, guides, coaches, and allies entering our lives who continue to remind us of our connection to what we already have. 
 
@@ -36,4 +36,4 @@ Ancestry to me isn't about that 23andMe kit you took a few years ago. To me it's
 
 Just like in the history books we've studied growing up, what gets remembered is a function of who's doing the remembering. And in our bodies, it's often lead by the parts influenced by the dominant power structures we grew up in that significantly shaped how and what we remember. 
 
-*updated 2025-09-30 15:05
+*updated 2025-10-04 06:15

@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-19 18:55:17
+modified: 2025-10-04 06:15:07
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -30,13 +30,12 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - The Wretched of the Earth - Franz Fanon
 
 🎧 Listening to: 
-- Star Line - Chance the Rapper
 - Precipice - Indigo De Souza
 - Joy Paradox - Cephas Azariah
-- choke enough - Oklou
+- Vespertine - Bjork
 
 ✨ MISC:
 - Playing Hades on Switch
 - Watching the last season of The Bear
 
-*(updated 2025-09-18 11:41)*
+*(updated 2025-10-04 06:14)*

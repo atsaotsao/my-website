@@ -1,6 +1,6 @@
 ---
 publish: true
-modified: 2025-10-05 18:38:12
+modified: 2025-10-05 18:48:42
 published: 2025-08-19
 ---
 ### love is the central work.
@@ -29,10 +29,8 @@ Today's personal development and wellness world emphasizes the narrative that yo
 
 ### root into your ancestry
 
-I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember" and that has always stayed with me. I realized that so much of the work is about remembering—remembering our feelings, our dreams and desires, our love and zest for life, and who we are before the world told us who we should be. And as someone who's grandparents flee from China to Taiwan during the cultural revolution, and later from Taiwan to California when the cross-strait tensions were high, I'm also still learning to remember through writing, archiving, painting, and other ceremonies to help me remember where I came from and allow it to help inform me where I'm going, and where we're all going collectively.
+I once read somewhere that in indigenous culture, the purpose of ceremonies and rituals is to "remember to remember" and that has always stayed with me. I realized that so much of the work is about remembering—remembering our feelings, our dreams and desires, our love and zest for life, our love for ourselves and the people around us, and who we are before the world told us who we should be. And as someone who's grandparents flee from China to Taiwan during the cultural revolution, and later from Taiwan to California when theE cross-strait tensions were high, I'm also still learning to remember through writing, archiving, painting, and other ceremonies to help me remember where I came from and allow it to help inform me where I'm going, and where we're all going collectively.
 
-Just like in the history books we've studied growing up, what gets remembered is a function of who's doing the remembering. And especially living during in a time where it feels like truth can so easily be distorted or altered, remembering is not longer just about 
-
-~in progress~
+Just like in the history books we've studied growing up, what gets remembered is a function of who's doing the remembering. And especially when we're living in a time where it feels like truth can so easily be distorted or altered, remembering is no longer a luxury. It's a necessity to ground and root, to arm and resource, to strengthen and empower ourselves in a way where are less likely to get lost, depressed, and disoriented by the noise of the world.E
 
 *updated 2025-10-05 18:31*

@@ -921,17 +921,6 @@ main article img:not(.gallery-artwork-image),
   }
 }
 
-@media (max-width: 800px) {
-  img[alt*="right"]:not(.gallery-artwork-image),
-  img[alt*="left"]:not(.gallery-artwork-image) {
-    float: none !important;
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 100% !important;
-  }
-}
-
 :root[saved-theme="dark"] {
   main article img:not(.gallery-artwork-image),
   .center main img:not(.gallery-artwork-image),
@@ -1249,7 +1238,7 @@ body[data-slug="index"] img:first-of-type {
   clear: both;
 }
 
-/* Special handling for your 25on25 logo case */
+// Special handling for your 25on25 logo case
 .obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
   max-width: 300px;
 }
@@ -1267,8 +1256,31 @@ body[data-slug="index"] img:first-of-type {
     height: auto !important;
     width: auto !important;
   }
+}
+
+// === 25on25 LOGO MOBILE FIX ===
+.logo-container {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
   
-  img[src*="25on25"]:not(.gallery-artwork-image) {
+  @media (max-width: 800px) {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  img {
     max-width: 200px !important;
+    width: 200px !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+    
+    @media (max-width: 800px) {
+      max-width: min(200px, calc(100vw - 4rem)) !important;
+      width: auto !important;
+    }
   }
 }

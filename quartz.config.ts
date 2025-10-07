@@ -504,6 +504,7 @@ document.addEventListener('DOMContentLoaded', setupImages);
         breaks: true,
         linkify: true,
         typographer: false,
+        unwrapImages: true,
       }),
       Plugin.GitHubFlavoredMarkdown({
         enableSmartyPants: true,

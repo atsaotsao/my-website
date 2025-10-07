@@ -20,7 +20,7 @@ I hope you find what you need here.
 Here are some places you may want to start: 
 - Peek into what I’m up to [now](now.md), or browse my guiding [principles](principles.md).
 - Read about my [[coaching]] work or wander through my latest [writing](my%20writing/index.md).
-- Indulge in my [art](my%20art/index.md), or jam to one of my [playlists](my%20playlists/index.md).
+- Experience my [art](my%20art/index.md), or groove to one of my [playlists](my%20playlists/index.md).
 
 
 And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/) (most active), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/). 
@@ -29,4 +29,4 @@ And if you want to find me in the usual channels, you’ll sometimes catch me on
 <div class="graph-center-container" id="graph-container"></div>
 
 
-*Last updated: 2025-09-06 15:05*
+*Last updated: 2025-10-07 01:54*

@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-26 01:50:20
+modified: 2025-10-07 02:48:18
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -18,6 +18,7 @@ This could be for an event, a gathering, an art show, or simply for a season of 
 If this speaks to you, [reach out ](mailto:andrew@codelesscoach.com?subject=please%20curate%20a%20playlist%20for%20me)— I’d love to make something for you.
 
 ----
+<img src="../attachments/25on25%20logo.gif" alt="25on25 logo" width="200" style="display: block; margin: 0 auto;">
 
 ![center|200](../attachments/25on25%20logo.gif)
 

@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-07 02:21:49
+modified: 2025-10-07 13:24:10
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -35,7 +35,7 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - Vespertine - Bjork
 
 ✨ MISC:
-- Playing Hades on Switch
+- Repeatedly dying in the video game Hades 
 - Watching the last season of The Bear
 
-*(updated 2025-10-05 18:34)*
+*(updated 2025-10-07 13:24)*

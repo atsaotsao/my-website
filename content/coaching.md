@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-08 17:26:40
+modified: 2025-10-08 17:31:59
 publish: true
 published: 2025-08-19
 aliases:
@@ -21,21 +21,25 @@ That’s where you and I meet.
 I help others just like you have more trust in the journey of their lives, in all its bumpiness, turns, and curve balls.  
 
 #### I do so by helping you:
-🔸 **Reclaim your relationship with yourself** 
+**Reclaim your relationship with yourself** 
 - Develop unconditional love and acceptance of your whole self
 - Work with your inner judge, critic, and protector so they no longer need to control the wheel
 - Rediscover your deepest desires and where they wants to lead you
-🔸**Reground in the body and the present**
+
+**Reground in the body and the present**
 - Cultivate awareness of your body’s wisdom and what it’s communicating
 - Restore safety within yourself even in the face of chaos and uncertainty
-🔸 **Reconnect to the creative source**
+
+**Reconnect to the creative source**
 - Explore how mind, body, and soul come together as a well of intuition
 - Embrace your multitudes, especially the parts, traits, and the woven artistry that make you so powerful
 - Root into the rhythms and rituals that connect you with your Self, ancestry, and spirit.
-🔸**Reconcile with the world that shaped you**
+
+**Reconcile with the world that shaped you**
 - Examine patterns of internalized oppression and how they mirror the systems we live within.
 - Honor who you are becoming while honoring those who came before you
-🔸**Reimagine the worlds you want to build**
+
+**Reimagine the worlds you want to build**
 - Dream new ways of living, creating, and leading that honor both your wholeness and our collective liberation
 - Practice building worlds through the everyday — in how you speak, rest, create, and tend to others.
 
@@ -64,7 +68,8 @@ I help others just like you have more trust in the journey of their lives, in al
 > **Christine, Media Executive**
 
 
-> Working with you has shifted my perspective on coaching, I thought it was only career-related and goal-focused, but during our sessions we talked deeper, more than just goals and career. I laughed, cried, looked inward and outward, it was a humbling experience that brought me closer to myself. **Pricillia, Artist**
+> Working with you has shifted my perspective on coaching, I thought it was only career-related and goal-focused, but during our sessions we talked deeper, more than just goals and career. I laughed, cried, looked inward and outward, it was a humbling experience that brought me closer to myself.
+> **Pricillia, Artist**
 
 > If you suspect there are things you don't know that you don't know (unknown unknowns) that are holding you back, Andrew is your guy. He's uniquely skilled at uncovering and transforming them. The biggest shift [for me] was the removal of shame and guilt around not being able to do everything I hoped to
 > **Sean, Brazailian Jiu-Jitsu Instructor / Gym Owner**

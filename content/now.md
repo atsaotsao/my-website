@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-07 13:24:10
+modified: 2025-10-07 17:51:50
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -10,7 +10,7 @@ socialImage: now-header.png
 - **Reawakening** [_The Art of Your Life_](https://open.spotify.com/show/5GSZxqie8yWDupBkTTMoSF?si=04653a28642642fe) podcast—breathing fresh life into it soon.
 - **Mentoring** as a part-time internship assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
 - **Building** websites slowly, patiently, inclusively, for aligned collaborators—like [this one](https://www.mainlanderstl.com/) for a chef in St. Louis.
-- **Tending** a [neighborhood garden](https://maplestreetcommunitygarden.org/).
+- **Tending** and composting in my [neighborhood garden](https://maplestreetcommunitygarden.org/).
 - **Painting** [abstract works](my%20art/index.md) as a liberatory practice.
 - **Remembering** my lineage by archiving and reweaving the artifacts of my late grandparents.
   

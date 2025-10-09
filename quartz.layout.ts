@@ -55,6 +55,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [],
   afterBody: [
     Component.ArtworkDetails(), // Add this line
+    Component.PostInteractions(),  // ← ADD THIS
   ],
 }
 

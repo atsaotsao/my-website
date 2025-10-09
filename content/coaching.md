@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-08 22:56:48
+modified: 2025-10-08 22:58:21
 publish: true
 published: 2025-08-19
 aliases:
@@ -83,7 +83,9 @@ I help others just like you have more trust in the journey of their lives, in al
 
 ### Ready to explore what this work could open for you?
 
-[Schedule a Clarity Call →](https://cal.com/codelesscoach/theartofyourlife){.clarity-call-button}
+<div>
+<a href="https://cal.com/codelesscoach/theartofyourlife" target="_blank" style="display: inline-block; padding: 1rem 2rem; background-color: #185ecd; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem;">Schedule a Clarity Call →</a>
+</div>
 
 *updated 2025-09-15 07:26
 

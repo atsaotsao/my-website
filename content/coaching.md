@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-08 17:31:59
+modified: 2025-10-08 22:54:19
 publish: true
 published: 2025-08-19
 aliases:
@@ -65,7 +65,7 @@ I help others just like you have more trust in the journey of their lives, in al
 > **Barbara, Artist**
 
 > Andrew will be your biggest champion until you learn how to be that for yourself! I think I've learned to be more kind to myself. I didn't actually realize I had a fear of failure before working with [him]. For me the biggest shift was being open minded about what "success" means, and not falling into the trap of feeling guilty about not "achieving" an external milestone. Andrew helped me uncover not only where I wanted to go but how I wanted to get there.
-> **Christine, Media Executive**
+> **Christine, General Manager**
 
 
 > Working with you has shifted my perspective on coaching, I thought it was only career-related and goal-focused, but during our sessions we talked deeper, more than just goals and career. I laughed, cried, looked inward and outward, it was a humbling experience that brought me closer to myself.
@@ -83,7 +83,7 @@ I help others just like you have more trust in the journey of their lives, in al
 
 ### Ready to explore what this work could open for you?
 
-Schedule a clarity call →
+<a href="https://cal.com/codelesscoach/theartofyourlife" target="_blank" style="display: inline-block; padding: 1rem 2rem; background-color: #185ecd; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; margin: 2rem 0; box-shadow: 0 4px 12px rgba(24, 94, 205, 0.2); transition: all 0.3s ease;">Schedule a Clarity Call →</a>
 
 *updated 2025-09-15 07:26
 

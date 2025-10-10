@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-09 22:58:36
+modified: 2025-10-09 23:09:33
 publish: true
 published: 2025-08-19
 aliases:
@@ -7,10 +7,10 @@ aliases:
 ---
 Life is wavy and unpredictable. 
 
-![short](attachments/wavyjourney.png)
+![banner](attachments/wavyjourney.png)
 ![compact](attachments/wavyjourney.png)
 
-![](attachments/wavyjourney.png)
+![short](attachments/wavyjourney.png)
 
 ![wide](attachments/wavyjourney.png)
 It’s full of suffering. 

@@ -7,7 +7,7 @@ aliases:
 ---
 Life is wavy and unpredictable. 
 
-![](attachments/wavyjourney.png | nocrop)
+![](attachments/wavyjourney.png|full)
 It’s full of suffering. 
 
 And many of us will hit these pivotal turning points in our lives where we feel like “enough is enough.” 

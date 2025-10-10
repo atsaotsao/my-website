@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-09 22:56:23
+modified: 2025-10-09 22:58:36
 publish: true
 published: 2025-08-19
 aliases:
@@ -7,8 +7,8 @@ aliases:
 ---
 Life is wavy and unpredictable. 
 
-![tall](attachments/wavyjourney.png)
-![contain](attachments/wavyjourney.png)
+![short](attachments/wavyjourney.png)
+![compact](attachments/wavyjourney.png)
 
 ![](attachments/wavyjourney.png)
 

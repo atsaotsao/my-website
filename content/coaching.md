@@ -1,9 +1,10 @@
 ---
-modified: 2025-10-09 23:34:52
+modified: 2025-10-10 00:18:02
 publish: true
 published: 2025-08-19
 aliases:
   - my coaching
+  - 1-on-1
 ---
 Life is wavy and unpredictable. 
 

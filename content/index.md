@@ -2,12 +2,12 @@
 title: Andrew Tsao- Home
 cssclasses: []
 publish: true
-modified: 2025-10-07 01:54:52
+modified: 2025-10-10 00:16:54
 ---
 ![tree](../attachments/homepage%20tree%20(light%20mode).png)
 ## Welcome
 
-Welcome. I’m Andrew, and this is the little corner of the internet I call home.
+I’m Andrew, and this is the little corner of the internet I call home.
 
 I built it as a nest for all the treasures, artifacts, and unruly multitudes of myself; especially things that often feel too raw, too unpolished, or too odd to share anywhere else. 
 
@@ -29,4 +29,4 @@ And if you want to find me in the usual channels, you’ll sometimes catch me on
 <div class="graph-center-container" id="graph-container"></div>
 
 
-*Last updated: 2025-10-07 01:54*
+*Last updated: 2025-10-10 00:16

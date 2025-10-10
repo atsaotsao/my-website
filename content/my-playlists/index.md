@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-09 23:39:09
+modified: 2025-10-09 23:40:36
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -19,9 +19,9 @@ If this speaks to you, [reach out ](mailto:andrew@codelesscoach.com?subject=plea
 
 ----
 
-![medium](../attachments/new25on25logo.gif)
+![medium | 400](../attachments/new25on25logo.gif)
 
-Here was the original copy from the 25 on 25 website: 
+Here was the original copy from the 25 on 25 website: ´
 
 A monthly newsletter that includes:
 1. A hyper-curated Spotify playlist meant to be listened to in order.  

@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-09 22:55:05
+modified: 2025-10-09 22:56:23
 publish: true
 published: 2025-08-19
 aliases:
@@ -7,11 +7,12 @@ aliases:
 ---
 Life is wavy and unpredictable. 
 
-![nocrop](attachments/wavyjourney.png)
+![tall](attachments/wavyjourney.png)
+![contain](attachments/wavyjourney.png)
 
-![[wavyjourney.png]]
+![](attachments/wavyjourney.png)
 
-![nocrop](wavyjourney.png)
+![wide](attachments/wavyjourney.png)
 It’s full of suffering. 
 
 And many of us will hit these pivotal turning points in our lives where we feel like “enough is enough.” 

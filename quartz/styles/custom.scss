@@ -1,6 +1,8 @@
 @use "./base.scss";
 
-// === VARIABLES ===
+// ===================================================================
+// VARIABLES
+// ===================================================================
 $fontSize: 1.2rem;
 $lineHeight: 1.6;
 $h1: 2.8rem;
@@ -13,7 +15,9 @@ $sidebarWidth: 420px;
 $mobileBreakpoint: 800px;
 $tabletBreakpoint: 1200px;
 
-// === COLORS AND THEMES ===
+// ===================================================================
+// COLORS AND THEMES
+// ===================================================================
 :root, :root[saved-theme="light"] {
   --light: #f0f0f2;
   --lightgray: #d8d8da;
@@ -45,7 +49,9 @@ $tabletBreakpoint: 1200px;
   --textHighlight: rgba(255,242,54,.45);
 }
 
-// === BASE STYLES ===
+// ===================================================================
+// BASE STYLES
+// ===================================================================
 html {
   font-size: $fontSize;
   line-height: $lineHeight;
@@ -66,7 +72,13 @@ body {
   transition: background-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-// === TYPOGRAPHY ===
+footer { 
+  display: none !important; 
+}
+
+// ===================================================================
+// TYPOGRAPHY
+// ===================================================================
 h1, .page-title { font-size: $h1; line-height: 1.1; }
 h2 { font-size: $h2; }
 h3 { font-size: $h3; }
@@ -74,10 +86,17 @@ h4 { font-size: $h4; }
 h5 { font-size: $h5; }
 h6 { font-size: $h6; }
 
-// === HIDE FOOTER ===
-footer { display: none !important; }
+h1.article-title {
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--darkgray);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
 
-// === PAGE TITLE WITH NAME ROTATION ===
+// ===================================================================
+// PAGE TITLE WITH NAME ROTATION
+// ===================================================================
 .page-title {
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -124,8 +143,314 @@ footer { display: none !important; }
   }
 }
 
-// === DESKTOP LAYOUT (ABOVE 800PX) ===
+// ===================================================================
+// CONTENT STYLES
+// ===================================================================
+main article {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 72ch;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+.content-meta {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  
+  p {
+    margin: 0.25rem 0;
+    color: var(--gray);
+  }
+}
+
+article a {
+  color: var(--tertiary);
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 94, 205, 0.3);
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    text-decoration-color: var(--tertiary);
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--tertiary) 60%, #fff0);
+  color: var(--darkgray);
+}
+
+// Text formatting
+main article,
+.center main article,
+.page-content,
+.content,
+article {
+  p, div, span, blockquote, li, td, th {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  blockquote {
+    white-space: pre-wrap !important;
+    
+    p {
+      white-space: pre-wrap !important;
+      margin: 0.3rem 0 !important;
+      line-height: 1.5 !important;
+    }
+    
+    * {
+      white-space: pre-wrap !important;
+    }
+  }
+}
+
+.center main article p,
+.page-content p,
+article p {
+  white-space: pre-line !important;
+}
+
+// ===================================================================
+// TAGS
+// ===================================================================
+.tag-container {
+  margin: 1rem 0;
+  
+  .tag {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    background: rgba(24, 94, 205, 0.1);
+    color: var(--tertiary);
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 0.25rem 0.25rem 0;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: rgba(24, 94, 205, 0.2);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// Hide tags in folder listings
+body[data-slug="my-playlist"] {
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist,
+  .folder-content .tag-container,
+  .recent-notes .tag-container {
+    display: none !important;
+  }
+}
+
+.folder-listing,
+.recent-notes,
+.folder-content {
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist {
+    display: none !important;
+  }
+}
+
+body[data-slug^="my-playlist/"]:not([data-slug="my-playlist"]) {
+  .tag-container,
+  .tags,
+  .tag-list,
+  ul.tags,
+  .taglist {
+    display: block !important;
+  }
+}
+
+// ===================================================================
+// HIDE HOME PAGE ELEMENTS
+// ===================================================================
+body[data-slug=""],
+body[data-slug="index"],
+.content[data-slug=""],
+.content[data-slug="index"],
+.page[data-slug=""],
+.page[data-slug="index"] {
+  h1.article-title {
+    display: none !important;
+  }
+  
+  .content-meta {
+    display: none !important;
+  }
+}
+
+// ===================================================================
+// GRAPH
+// ===================================================================
+.graph-container {
+  width: 100% !important;
+  height: 600px !important;
+  margin: 2rem 0 !important;
+  border: 1px solid var(--lightgray) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+  
+  canvas, svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+body[data-slug="graph"] .center {
+  max-width: none !important;
+  
+  main {
+    max-width: none !important;
+    padding: 2rem !important;
+    
+    article {
+      max-width: none !important;
+    }
+  }
+}
+
+// ===================================================================
+// CTA BUTTONS
+// ===================================================================
+.button-container {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.clarity-call-button,
+a.clarity-call-button {
+  display: inline-block !important;
+  padding: 1rem 2rem !important;
+  background-color: #185ecd !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  transition: all 0.3s ease !important;
+  margin: 1rem 0 !important;
+  box-shadow: 0 4px 12px rgba(24, 94, 205, 0.2) !important;
+  border: none !important;
+  
+  &:hover {
+    background-color: #1450a3 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(24, 94, 205, 0.3) !important;
+    color: white !important;
+  }
+  
+  &:active {
+    transform: translateY(0) !important;
+  }
+}
+
+.post-interactions {
+  margin: 3rem 0 2rem 0;
+  padding: 2rem;
+  background: var(--highlight);
+  border-radius: 12px;
+  
+  .interaction-prompt {
+    font-size: 1.05rem;
+    color: var(--darkgray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .email-reply {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: var(--tertiary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(24, 94, 205, 0.3);
+      color: white;
+    }
+  }
+}
+
+// ===================================================================
+// IMAGE STYLES - BASE (ALL SCREEN SIZES)
+// ===================================================================
+
+// Base image styling
+main article img:not(.gallery-artwork-image),
+.center main img:not(.gallery-artwork-image),
+.content img:not(.gallery-artwork-image) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin: 1rem auto;
+  display: block;
+}
+
+// Homepage images with filter toggle
+body[data-slug=""] img:nth-of-type(2),
+body[data-slug="index"] img:nth-of-type(2) {
+  display: none !important;
+}
+
+body[data-slug=""] img:first-of-type,
+body[data-slug="index"] img:first-of-type {
+  display: block !important;
+  margin: 0 0 0.25rem 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 600px !important;
+  height: auto !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: filter 0.3s ease !important;
+  filter: none !important;
+}
+
+:root[saved-theme="dark"] body[data-slug=""] img:first-of-type,
+:root[saved-theme="dark"] body[data-slug="index"] img:first-of-type {
+  filter: invert(1) !important;
+  box-shadow: none !important;
+}
+
+// Clearfix for floated images
+.content::after,
+article::after,
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// ===================================================================
+// DESKTOP LAYOUT (ABOVE 800PX)
+// ===================================================================
 @media (min-width: 801px) {
+  // Page grid
   .page {
     display: grid !important;
     grid-template-columns: 420px 1fr !important;
@@ -145,6 +470,7 @@ footer { display: none !important; }
     overflow: hidden !important;
   }
 
+  // Left sidebar
   .page > #quartz-body .sidebar.left {
     grid-area: left !important;
     width: 420px !important;
@@ -285,6 +611,7 @@ footer { display: none !important; }
     }
   }
 
+  // Center content area
   .page > #quartz-body .center {
     grid-area: center !important;
     height: 100vh !important;
@@ -314,284 +641,31 @@ footer { display: none !important; }
     scrollbar-width: none !important;
     -ms-overflow-style: none !important;
   }
-}
+  
+  // Desktop image alignment
+  img[alt*="center"]:not(.gallery-artwork-image) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-// === MOBILE LAYOUT (800PX AND BELOW) ===
-@media (max-width: 800px) {
-  html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  img[alt*="right"]:not(.gallery-artwork-image) {
+    float: right;
+    clear: right;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    max-width: 50%;
+  }
+
+  img[alt*="left"]:not(.gallery-artwork-image) {
+    float: left;
+    clear: left;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    max-width: 50%;
   }
   
-  .page {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .page > #quartz-body {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .page > #quartz-body .sidebar.left {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    overflow: visible !important;
-    position: static !important;
-    
-    .page-title {
-      display: block !important;
-      margin: 1rem 0 0.5rem 0 !important;
-      padding: 0 1.5rem !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      overflow: visible !important;
-      text-align: left !important;
-      box-sizing: border-box !important;
-      
-      a {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow: visible !important;
-        text-align: left !important;
-        
-        &::after {
-          font-size: 3.5rem !important;
-          line-height: 1.1 !important;
-          position: static !important;
-          display: block !important;
-          width: 100% !important;
-          text-align: left !important;
-        }
-      }
-    }
-    
-    .flex,
-    .recent-notes,
-    ul.recent-ul,
-    .darkmode,
-    input,
-    .search,
-    nav,
-    .navigation {
-      display: none !important;
-    }
-  }
-  
-  .page > #quartz-body .center {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 1.5rem !important;
-    margin: 0 !important;
-    overflow: visible !important;
-    box-sizing: border-box !important;
-    
-    main {
-      display: block !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      padding: 0.5rem 0 !important;
-      margin: 0 !important;
-      box-sizing: border-box !important;
-      overflow: visible !important;
-      
-      article {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        box-sizing: border-box !important;
-        overflow: visible !important;
-        
-        h1, h2, h3, h4, h5, h6 {
-          width: 100% !important;
-          max-width: 100% !important;
-          font-size: 1.5rem !important;
-          line-height: 1.3 !important;
-          margin: 1rem 0 0.5rem 0 !important;
-          padding: 0 !important;
-          word-wrap: break-word !important;
-          overflow-wrap: break-word !important;
-        }
-        
-        p, div, span, li {
-          width: 100% !important;
-          max-width: 100% !important;
-          font-size: 1rem !important;
-          line-height: 1.5 !important;
-          margin: 0.5rem 0 !important;
-          padding: 0 !important;
-          word-wrap: break-word !important;
-          overflow-wrap: break-word !important;
-        }
-        
-        a, code, pre {
-          word-break: break-all !important;
-          overflow-wrap: break-word !important;
-        }
-        
-        // EXCLUDE GALLERY IMAGES FROM MOBILE OVERRIDES
-        img:not(.gallery-artwork-image), 
-        video, 
-        iframe {
-          max-width: 100% !important;
-          height: auto !important;
-        }
-        
-        ul, ol {
-          width: 100% !important;
-          max-width: 100% !important;
-          padding-left: 1.5rem !important;
-          margin: 0.5rem 0 !important;
-        }
-      }
-    }
-  }
-
-  // Make the existing darkmode button visible and position it nicely
-  .page > #quartz-body .sidebar.left .darkmode {
-    display: block !important;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-    margin: 0;
-    
-    button {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1px solid var(--lightgray);
-      background: var(--light);
-      color: var(--darkgray);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
-  }
-}
-
-// === CONTENT STYLES ===
-main article {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 72ch;
-  margin-inline: auto;
-  padding: 2rem 1rem;
-}
-
-h1.article-title {
-  line-height: 1.1;
-  font-weight: 600;
-  color: var(--darkgray);
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
-}
-
-.content-meta {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--lightgray);
-  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1);
-  
-  p {
-    margin: 0.25rem 0;
-    color: var(--gray);
-  }
-}
-
-.tag-container {
-  margin: 1rem 0;
-  
-  .tag {
-    display: inline-block;
-    padding: 0.35rem 0.7rem;
-    background: rgba(24, 94, 205, 0.1);
-    color: var(--tertiary);
-    border-radius: 4px;
-    text-decoration: none;
-    margin: 0 0.25rem 0.25rem 0;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    
-    &:hover {
-      background: rgba(24, 94, 205, 0.2);
-      transform: translateY(-1px);
-    }
-  }
-}
-
-article a {
-  color: var(--tertiary);
-  text-decoration: underline;
-  text-decoration-color: rgba(24, 94, 205, 0.3);
-  text-underline-offset: 2px;
-  transition: all 0.2s ease;
-  
-  &:hover {
-    text-decoration-color: var(--tertiary);
-  }
-}
-
-::selection {
-  background: color-mix(in srgb, var(--tertiary) 60%, #fff0);
-  color: var(--darkgray);
-}
-
-// === HIDE HOME PAGE ELEMENTS ===
-body[data-slug=""],
-body[data-slug="index"],
-.content[data-slug=""],
-.content[data-slug="index"],
-.page[data-slug=""],
-.page[data-slug="index"] {
-  h1.article-title {
-    display: none !important;
-  }
-  
-  .content-meta {
-    display: none !important;
-  }
-}
-
-// === DARK MODE ADJUSTMENTS ===
-:root[saved-theme="dark"] {
-  .page > #quartz-body .sidebar.left {
-    border-right-color: var(--gray) !important;
-  }
-  
-  .content-meta {
-    border-bottom-color: var(--gray);
-  }
-}
-
-// === DESKTOP LAYOUT REFINEMENTS ===
-@media (min-width: 801px) {
+  // Layout refinements
   .page > #quartz-body .center main,
   #quartz-body .center main,
   .center main,
@@ -716,44 +790,302 @@ body[data-slug="index"],
   }
 }
 
-// === GRAPH IN CENTER SECTION ===
-.graph-container {
-  width: 100% !important;
-  height: 600px !important;
-  margin: 2rem 0 !important;
-  border: 1px solid var(--lightgray) !important;
-  border-radius: 10px !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
-  transition: border-color 1.2s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
-  
-  canvas, svg {
+// ===================================================================
+// MOBILE LAYOUT (800PX AND BELOW)
+// ===================================================================
+@media (max-width: 800px) {
+  html, body {
     width: 100% !important;
-    height: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-}
-
-body[data-slug="graph"] .center {
-  max-width: none !important;
   
-  main {
-    max-width: none !important;
-    padding: 2rem !important;
+  .page {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .page > #quartz-body {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .page > #quartz-body .sidebar.left {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    position: static !important;
     
-    article {
-      max-width: none !important;
+    .page-title {
+      display: block !important;
+      margin: 1rem 0 0.5rem 0 !important;
+      padding: 0 1.5rem !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow: visible !important;
+      text-align: left !important;
+      box-sizing: border-box !important;
+      
+      a {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: visible !important;
+        text-align: left !important;
+        
+        &::after {
+          font-size: 3.5rem !important;
+          line-height: 1.1 !important;
+          position: static !important;
+          display: block !important;
+          width: 100% !important;
+          text-align: left !important;
+        }
+      }
+    }
+    
+    .flex,
+    .recent-notes,
+    ul.recent-ul,
+    input,
+    .search,
+    nav,
+    .navigation {
+      display: none !important;
+    }
+    
+    .darkmode {
+      display: block !important;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+      margin: 0;
+      
+      button {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid var(--lightgray);
+        background: var(--light);
+        color: var(--darkgray);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
     }
   }
-}
-
-:root[saved-theme="dark"] {
-  .graph-container {
-    border-color: var(--gray) !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  
+  .page > #quartz-body .center {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1.5rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    
+    main {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0.5rem 0 !important;
+      margin: 0 !important;
+      box-sizing: border-box !important;
+      overflow: visible !important;
+      
+      article {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        
+        h1, h2, h3, h4, h5, h6 {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 1.5rem !important;
+          line-height: 1.3 !important;
+          margin: 1rem 0 0.5rem 0 !important;
+          padding: 0 !important;
+          word-wrap: break-word !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        p, div, span, li {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 1rem !important;
+          line-height: 1.5 !important;
+          margin: 0.5rem 0 !important;
+          padding: 0 !important;
+          word-wrap: break-word !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        a, code, pre {
+          word-break: break-all !important;
+          overflow-wrap: break-word !important;
+        }
+        
+        ul, ol {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-left: 1.5rem !important;
+          margin: 0.5rem 0 !important;
+        }
+      }
+    }
   }
-}
-
-@media (max-width: 800px) {
+  
+  // ===================================================================
+  // MOBILE IMAGE STYLES - ORGANIZED BY PRIORITY
+  // ===================================================================
+  
+  // PRIORITY 1: Special alt-text styled images (these override everything)
+  
+  // DIVIDER: Ultra-thin decorative line (80px)
+  img[alt="divider"]:not(.gallery-artwork-image) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    object-fit: cover !important;
+    margin-left: calc(-1.5rem) !important;
+    margin-right: calc(-1.5rem) !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // ACCENT: Subtle accent (120px)
+  img[alt="accent"]:not(.gallery-artwork-image) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 120px !important;
+    min-height: 120px !important;
+    max-height: 120px !important;
+    object-fit: cover !important;
+    margin-left: calc(-1.5rem) !important;
+    margin-right: calc(-1.5rem) !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // BANNER: Medium banner (180px)
+  img[alt="banner"]:not(.gallery-artwork-image) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    margin-left: calc(-1.5rem) !important;
+    margin-right: calc(-1.5rem) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // HERO: Large hero (350px)
+  img[alt="hero"]:not(.gallery-artwork-image) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    object-fit: cover !important;
+    margin-left: calc(-1.5rem) !important;
+    margin-right: calc(-1.5rem) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // SMALL: Compact images
+  img[alt="small"]:not(.gallery-artwork-image) {
+    max-width: 200px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 1rem auto !important;
+    display: block !important;
+  }
+  
+  // MEDIUM: Standard contained size
+  img[alt="medium"]:not(.gallery-artwork-image) {
+    max-width: 400px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 1rem auto !important;
+    display: block !important;
+  }
+  
+  // ICON: Very small icons or logos
+  img[alt="icon"]:not(.gallery-artwork-image) {
+    max-width: 100px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0.5rem auto !important;
+    display: block !important;
+  }
+  
+  // FULL: Full width, natural height
+  img[alt="full"]:not(.gallery-artwork-image) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin-left: calc(-1.5rem) !important;
+    margin-right: calc(-1.5rem) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // PRIORITY 2: Default hero images (350px) - for first images WITHOUT special alt text
+  img[src*="myart-stiching"]:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  img[src*="attachments/myart"]:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  article img:first-of-type:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  .popover-hint img:not(.gallery-artwork-image):not(.gallery-art-preview img):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  .page-header img:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  main img:first-child:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]),
+  p img:first-of-type:not(.gallery-artwork-image):not([alt="divider"]):not([alt="accent"]):not([alt="banner"]):not([alt="small"]):not([alt="medium"]):not([alt="icon"]):not([alt="full"]):not([alt="hero"]) {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    object-fit: cover !important;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  // Graph adjustments
   .graph-container {
     height: 400px !important;
     margin: 1rem 0 !important;
@@ -764,248 +1096,104 @@ body[data-slug="graph"] .center {
   }
 }
 
-// === HIDE TAGS ONLY IN FOLDER LISTINGS (NOT INDIVIDUAL PAGES) ===
-body[data-slug="my-playlist"] {
-  .tag-container,
-  .tags,
-  .tag-list,
-  ul.tags,
-  .taglist,
-  .folder-content .tag-container,
-  .recent-notes .tag-container {
-    display: none !important;
-  }
-}
-
-.folder-listing,
-.recent-notes,
-.folder-content {
-  .tag-container,
-  .tags,
-  .tag-list,
-  ul.tags,
-  .taglist {
-    display: none !important;
-  }
-}
-
-body[data-slug^="my-playlist/"]:not([data-slug="my-playlist"]) {
-  .tag-container,
-  .tags,
-  .tag-list,
-  ul.tags,
-  .taglist {
-    display: block !important;
-  }
-}
-
-// === MORE AGGRESSIVE LINE BREAK FIX ===
-main article,
-.center main article,
-.page-content,
-.content,
-article {
-  
-  p,
-  div,
-  span,
-  blockquote,
-  li,
-  td,
-  th {
-    white-space: pre-wrap !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-  }
-  
-  blockquote {
-    white-space: pre-wrap !important;
-    
-    p {
-      white-space: pre-wrap !important;
-      margin: 0.3rem 0 !important;
-      line-height: 1.5 !important;
-    }
-    
-    * {
-      white-space: pre-wrap !important;
-    }
-  }
-}
-
-.markdown-content,
-.quartz-content,
-[data-content] {
-  
-  p, div, blockquote, li {
-    white-space: pre-wrap !important;
-  }
-  
-  br {
-    display: block !important;
-    content: "" !important;
-    margin-top: 0.5rem !important;
-  }
-}
-
-.center main article p,
-.page-content p,
-article p {
-  white-space: pre-line !important;
-}
-
-// === IMAGE ALIGNMENT BASED ON ALT TEXT (EXCLUDE GALLERY) ===
-img[alt*="center"]:not(.gallery-artwork-image) {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-img[alt*="right"]:not(.gallery-artwork-image) {
-  float: right !important;
-  clear: right !important;
-  margin-left: 1rem !important;
-  margin-bottom: 2px !important;
-  margin-top: 2px !important;
-  max-width: 50% !important;
-  height: auto !important;
-}
-
-img[alt*="left"]:not(.gallery-artwork-image) {
-  float: left !important;
-  clear: left !important;
-  margin-right: 1rem !important;
-  margin-bottom: 2px !important;
-  margin-top: 2px !important;
-  max-width: 50% !important;
-  height: auto !important;
-}
-
-// MAIN IMAGE STYLES - EXCLUDE GALLERY IMAGES
-main article img:not(.gallery-artwork-image),
-.center main img:not(.gallery-artwork-image),
-.content img:not(.gallery-artwork-image) {
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
-  
-  &[alt*="center"] {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    float: none !important;
-  }
-  
-  &[alt*="right"] {
-    float: right !important;
-    clear: right !important;
-    margin-left: 1rem !important;
-    margin-right: 0 !important;
-    margin-bottom: 2px !important;
-    margin-top: 2px !important;
-    max-width: 50% !important;
-  }
-  
-  &[alt*="left"] {
-    float: left !important;
-    clear: left !important;
-    margin-right: 1rem !important;
-    margin-left: 0 !important;
-    margin-bottom: 2px !important;
-    margin-top: 2px !important;
-    max-width: 50% !important;
-  }
-}
-
-:root[saved-theme="dark"] {
-  main article img:not(.gallery-artwork-image),
-  .center main img:not(.gallery-artwork-image),
-  .content img:not(.gallery-artwork-image) {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-  }
-}
-
-// === FULLY VERTICAL STACKED LAYOUT FOR MY ART AND MY PLAYLISTS ===
+// ===================================================================
+// FOLDER AND PLAYLIST LAYOUTS
+// ===================================================================
 body[data-slug="my-playlist"],
 body[data-slug^="my-playlist/"],
 body[data-slug="my-art"], 
 body[data-slug^="my-art/"] {
   
   .page-listing {
+    display: block !important;
     
-    .section-li {
+    .section-ul {
       display: block !important;
-      width: 100% !important;
-      margin: 2rem 0 !important;
-      padding: 1.5rem 0 !important;
-      border-bottom: 1px solid var(--lightgray) !important;
       
-      .desc {
+      .section-li {
         display: block !important;
         width: 100% !important;
-        margin-bottom: 1.5rem !important;
+        margin: 2rem 0 !important;
+        padding: 1.5rem 0 !important;
+        border-bottom: 1px solid var(--lightgray) !important;
+        float: none !important;
+        flex: none !important;
         
-        h3 {
+        * {
+          display: block !important;
+          float: none !important;
+          flex: none !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        
+        .desc {
           display: block !important;
           width: 100% !important;
-          font-size: 1.5rem !important;
-          line-height: 1.3 !important;
-          margin: 0 0 1rem 0 !important;
+          margin-bottom: 1.5rem !important;
+          flex: none !important;
+          float: none !important;
           
-          a {
+          h3 {
             display: block !important;
-            text-decoration: none !important;
-            color: var(--darkgray) !important;
+            width: 100% !important;
+            font-size: 1.5rem !important;
+            line-height: 1.3 !important;
+            margin: 0 0 1rem 0 !important;
+            
+            a {
+              display: block !important;
+              text-decoration: none !important;
+              color: var(--darkgray) !important;
+            }
+          }
+          
+          p {
+            display: block !important;
+            width: 100% !important;
+            font-size: 1.1rem !important;
+            line-height: 1.6 !important;
+            margin: 0.5rem 0 !important;
           }
         }
         
-        p {
+        .meta {
           display: block !important;
           width: 100% !important;
-          font-size: 1.1rem !important;
-          line-height: 1.6 !important;
-          margin: 0.5rem 0 !important;
-        }
-      }
-      
-      .meta {
-        display: block !important;
-        width: 100% !important;
-        margin: 1rem 0 !important;
-        
-        time {
-          display: block !important;
-          width: 100% !important;
-          font-size: 1rem !important;
-          color: var(--gray) !important;
-          margin-bottom: 1rem !important;
-          padding: 0.5rem 0 !important;
-        }
-      }
-      
-      .tags {
-        display: block !important;
-        width: 100% !important;
-        margin-top: 1rem !important;
-        
-        .tag {
-          display: block !important;
-          width: 100% !important;
-          max-width: none !important;
-          margin: 0.4rem 0 !important;
-          padding: 0.6rem !important;
-          font-size: 1rem !important;
-          text-align: left !important;
-          background: rgba(24, 94, 205, 0.1) !important;
-          border-radius: 6px !important;
-          text-decoration: none !important;
+          margin: 1rem 0 !important;
+          flex: none !important;
+          float: none !important;
           
-          &:hover {
-            background: rgba(24, 94, 205, 0.2) !important;
+          time {
+            display: block !important;
+            width: 100% !important;
+            font-size: 1rem !important;
+            color: var(--gray) !important;
+            margin-bottom: 1rem !important;
+            padding: 0.5rem 0 !important;
+          }
+        }
+        
+        .tags {
+          display: block !important;
+          width: 100% !important;
+          margin-top: 1rem !important;
+          
+          .tag {
+            display: block !important;
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0.4rem 0 !important;
+            padding: 0.6rem !important;
+            font-size: 1rem !important;
+            text-align: left !important;
+            background: rgba(24, 94, 205, 0.1) !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            
+            &:hover {
+              background: rgba(24, 94, 205, 0.2) !important;
+            }
           }
         }
       }
@@ -1065,111 +1253,9 @@ body[data-slug^="my-art/"] {
   }
 }
 
-body[data-slug="my-playlist"],
-body[data-slug^="my-playlist/"],
-body[data-slug="my-art"], 
-body[data-slug^="my-art/"] {
-  
-  .page-listing {
-    display: block !important;
-    
-    .section-ul {
-      display: block !important;
-      
-      .section-li {
-        display: block !important;
-        float: none !important;
-        flex: none !important;
-        
-        * {
-          display: block !important;
-          float: none !important;
-          flex: none !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-        
-        .desc,
-        .meta,
-        .tags {
-          display: block !important;
-          flex: none !important;
-          float: none !important;
-        }
-      }
-    }
-  }
-}
-
-// MOBILE IMAGE OVERRIDES - EXCLUDE GALLERY IMAGES  
-@media (max-width: 800px) {
-  img[src*="myart-stiching"]:not(.gallery-artwork-image),
-  img[src*="attachments/myart"]:not(.gallery-artwork-image),
-  article img:first-of-type:not(.gallery-artwork-image),
-  .popover-hint img:not(.gallery-artwork-image):not(.gallery-art-preview img),
-  .page-header img:not(.gallery-artwork-image),
-  main img:first-child:not(.gallery-artwork-image),
-  p img:first-of-type:not(.gallery-artwork-image) {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 350px !important;
-    min-height: 350px !important;
-    object-fit: cover !important;
-    margin-left: -1.5rem !important;
-    margin-right: -1.5rem !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-}
-
-/* === SINGLE IMAGE WITH CSS FILTER APPROACH === */
-/* This approach uses only the light image and applies CSS filters for dark mode */
-/* First, hide the second image completely since we only need one */
-body[data-slug=""] img:nth-of-type(2),
-body[data-slug="index"] img:nth-of-type(2) {
-  display: none !important;
-}
-
-/* Style the first (light) image consistently */
-body[data-slug=""] img:first-of-type,
-body[data-slug="index"] img:first-of-type {
-  display: block !important;
-  margin: 0 0 0.5rem 0 !important;
-  padding: 0 !important;
-  
-  /* SIZE CONTROLS - Adjust these values */
-  width: 100% !important;        /* Full width of container */
-  max-width: 600px !important;   /* Maximum width limit */
-  height: auto !important;       /* Maintains aspect ratio */
-  
-  /* VISUAL STYLING - Clean, no borders/shadows */
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  transition: filter 0.3s ease !important; /* Smooth transition between filters */
-  
-  /* Light mode - no filter */
-  filter: none !important;
-}
-
-/* Dark mode - apply filters to simulate dark version */
-:root[saved-theme="dark"] body[data-slug=""] img:first-of-type,
-:root[saved-theme="dark"] body[data-slug="index"] img:first-of-type {
-  /* Simple invert filter */
-  filter: invert(1) !important;
-  
-  /* Keep clean styling in dark mode too */
-  box-shadow: none !important;
-}
-
-/* Override the general image styles for homepage images specifically */
-body[data-slug=""] img:first-of-type,
-body[data-slug="index"] img:first-of-type {
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  transition: filter 0.3s ease !important;
-  margin: 0 0 0.25rem 0 !important; /* Even smaller gap */
-}
+// ===================================================================
+// SPECIAL CASES AND UTILITIES
+// ===================================================================
 
 // Custom styles for my-art folder
 .folder-container[data-slug*="my-art"] {
@@ -1188,14 +1274,42 @@ body[data-slug="index"] img:first-of-type {
   }
 }
 
-/* Obsidian Image Formatting - EXCLUDE GALLERY IMAGES */
+// 25on25 logo
+.logo-container {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  
+  img {
+    max-width: 200px !important;
+    width: 200px !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo-container {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    
+    img {
+      max-width: min(200px, calc(100vw - 4rem)) !important;
+      width: auto !important;
+    }
+  }
+}
+
+// Obsidian image formatting
 .obsidian-image:not(.gallery-artwork-image) {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-/* Alignment classes - EXCLUDE GALLERY IMAGES */
 .align-center:not(.gallery-artwork-image) {
   margin: 0 auto;
   display: block;
@@ -1213,7 +1327,14 @@ body[data-slug="index"] img:first-of-type {
   margin-bottom: 0.5rem;
 }
 
-/* Mobile responsiveness for Obsidian images - EXCLUDE GALLERY IMAGES */
+.obsidian-image:not(.gallery-artwork-image) + * {
+  clear: both;
+}
+
+.obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
+  max-width: 300px;
+}
+
 @media (max-width: 768px) {
   .obsidian-image:not(.gallery-artwork-image) {
     max-width: 100% !important;
@@ -1227,30 +1348,14 @@ body[data-slug="index"] img:first-of-type {
     display: block;
   }
   
-  /* Specific handling for images with width constraints */
   .obsidian-image[style*="max-width"]:not(.gallery-artwork-image) {
     max-width: min(100%, 400px) !important;
   }
-}
-
-/* Container clearfix for floated images */
-.obsidian-image:not(.gallery-artwork-image) + * {
-  clear: both;
-}
-
-// Special handling for your 25on25 logo case
-.obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
-  max-width: 300px;
-}
-
-@media (max-width: 480px) {
+  
   .obsidian-image[src*="25on25"]:not(.gallery-artwork-image) {
-    max-width: 200px;
+    max-width: 200px !important;
   }
-}
-
-// Mobile image fixes - EXCLUDE GALLERY IMAGES
-@media (max-width: 768px) {
+  
   article img:not(.gallery-artwork-image) {
     max-width: 100% !important;
     height: auto !important;
@@ -1258,105 +1363,35 @@ body[data-slug="index"] img:first-of-type {
   }
 }
 
-// === 25on25 LOGO MOBILE FIX ===
-.logo-container {
-  width: 100%;
-  max-width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  
-  @media (max-width: 800px) {
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-  }
-  
-  img {
-    max-width: 200px !important;
-    width: 200px !important;
-    height: auto !important;
-    display: inline-block !important;
-    margin: 0 auto !important;
-    
-    @media (max-width: 800px) {
-      max-width: min(200px, calc(100vw - 4rem)) !important;
-      width: auto !important;
-    }
-  }
-}
-// CTA Button Styling
-.button-container {
-  text-align: left;
-  margin: 2rem 0;
-}
-
-.clarity-call-button,
-a.clarity-call-button {
-  display: inline-block !important;
-  padding: 1rem 2rem !important;
-  background-color: #185ecd !important;
-  color: white !important;
-  text-decoration: none !important;
-  border-radius: 8px !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  transition: all 0.3s ease !important;
-  margin: 1rem 0 !important;
-  box-shadow: 0 4px 12px rgba(24, 94, 205, 0.2) !important;
-  border: none !important;
-  
-  &:hover {
-    background-color: #1450a3 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 16px rgba(24, 94, 205, 0.3) !important;
-    color: white !important;
-  }
-  
-  &:active {
-    transform: translateY(0) !important;
-  }
-}
-
-// Dark mode
+// ===================================================================
+// DARK MODE ADJUSTMENTS
+// ===================================================================
 :root[saved-theme="dark"] {
+  .page > #quartz-body .sidebar.left {
+    border-right-color: var(--gray) !important;
+  }
+  
+  .content-meta {
+    border-bottom-color: var(--gray);
+  }
+  
+  .graph-container {
+    border-color: var(--gray) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+  
+  main article img:not(.gallery-artwork-image),
+  .center main img:not(.gallery-artwork-image),
+  .content img:not(.gallery-artwork-image) {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+  
   .clarity-call-button,
   a.clarity-call-button {
     background-color: #6b8ce6 !important;
     
     &:hover {
       background-color: #7a9def !important;
-    }
-  }
-}
-.post-interactions {
-  margin: 3rem 0 2rem 0;
-  padding: 2rem;
-  background: var(--highlight);
-  border-radius: 12px;
-  
-  .interaction-prompt {
-    font-size: 1.05rem;
-    color: var(--darkgray);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-align: center;
-  }
-  
-  .email-reply {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--secondary);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    
-    &:hover {
-      background-color: var(--tertiary);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(24, 94, 205, 0.3);
-      color: white;
     }
   }
 }

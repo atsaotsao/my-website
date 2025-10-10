@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-07 17:51:50
+modified: 2025-10-09 23:47:21
 publish: true
 published: 2025-08-19
 socialImage: now-header.png

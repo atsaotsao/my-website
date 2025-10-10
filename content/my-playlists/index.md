@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-09 23:43:50
+modified: 2025-10-09 23:46:20
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -20,7 +20,7 @@ If this speaks to you, [reach out ](mailto:andrew@codelesscoach.com?subject=plea
 ----
 
 
-![medium](../attachments/25on25%20logo.gif)
+![small](../attachments/25on25%20logo.gif)
 
 Here was the original copy from the 25 on 25 website: 
 

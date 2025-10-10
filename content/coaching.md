@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-08 23:00:11
+modified: 2025-10-09 22:47:47
 publish: true
 published: 2025-08-19
 aliases:
@@ -7,7 +7,7 @@ aliases:
 ---
 Life is wavy and unpredictable. 
 
-![](attachments/wavyjourney.png)
+![](attachments/wavyjourney.png | nocrop)
 It’s full of suffering. 
 
 And many of us will hit these pivotal turning points in our lives where we feel like “enough is enough.” 
@@ -38,6 +38,7 @@ I help others just like you have more trust in the journey of their lives, in al
 **Reconcile with the world that shaped you**
 - Examine patterns of internalized oppression and how they mirror the systems we live within.
 - Honor who you are becoming while honoring those who came before you
+- Learn to choose sovereignty of our minds, bodies, and spirits in the face of settler colonialism 
 
 **Reimagine the worlds you want to build**
 - Dream new ways of living, creating, and leading that honor both your wholeness and our collective liberation

@@ -4,12 +4,12 @@ publish: true
 type: 🌳
 published: 2025-10-07
 creation date: 2025-10-07 13:33
-modified: 2025-10-07 15:07:28
+modified: 2025-10-10 00:06:57
 status: completed
 tags:
   - thought
 ---
-![](../attachments/IMG_4365.jpeg)
+![medium](../attachments/IMG_4365.jpeg)
 I've been dying a lot lately.
 At first slowly, then suddenly at increasingly and exponentially faster rates.
 

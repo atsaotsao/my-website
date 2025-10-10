@@ -20,7 +20,7 @@ If this speaks to you, [reach out ](mailto:andrew@codelesscoach.com?subject=plea
 ----
 
 
-![medium | center](../attachments/25on25%20logo.gif)
+![medium](../attachments/25on25%20logo.gif)
 
 Here was the original copy from the 25 on 25 website: 
 

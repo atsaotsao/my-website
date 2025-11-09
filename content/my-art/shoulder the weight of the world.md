@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-05 03:23:59
+modified: 2025-11-04 20:40:23
 published: 2024-10-16
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542514/IMG_5579_olgxrt.jpg
@@ -28,3 +28,4 @@ One thing that's hard to convey through this digital screen is just how TACTILE 
 #### Song inspiration for this piece: 
 [Unfold - Porter Robinson & TEED](https://open.spotify.com/track/36kCSJg8ZBwiSCUECFKGUy?si=9dea2eff3a254a8a)
 
+ 

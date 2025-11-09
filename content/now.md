@@ -1,11 +1,13 @@
 ---
-modified: 2025-10-10 00:18:21
+modified: 2025-11-09 17:11:22
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
 ---
 ![banner](attachments/now-header.png)
-- **Weaving** ancestry, artistry, and earth-based practices into a group coaching circle that helps people reconnect with their creative self, navigate crisis, and grow resilience (_in progress_—[email me](mailto:andrew@codelesscoach.com) if you’d like a sneak peek).
+
+- **Hosting** the [Creative Ceremony](https://luma.com/creativity-ceremony-upheaval) in December with my friend [Rishi](https://www.emergencewizard.com/)
+- **Exhibiting** my first body of work in a [solo art show](https://partiful.com/e/pWY1jjI1VetZvFDs1GrT) early next year
 - **Coaching** [1-on-1](coaching.md) with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Reawakening** [_The Art of Your Life_](https://open.spotify.com/show/5GSZxqie8yWDupBkTTMoSF?si=04653a28642642fe) podcast—breathing fresh life into it soon.
 - **Mentoring** as a part-time internship assessor for the [NUS Overseas program](https://enterprise.nus.edu.sg/education-programmes/nus-overseas-colleges/) in NYC.
@@ -25,17 +27,18 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - *How do we honor our multitudes, our woven artistry, and harness them to reimagine the world?*
 
 📚 Reading:
+- Emergent Strategy: Shaping Change, Changing Worlds - Adrienne Maree Brown
 - Kindred Creation: Parables and Paradigms for Freedom - Aida Mariam Davis
 - We Need Your Art - Aime McNee
 - The Wretched of the Earth - Franz Fanon
 
 🎧 Listening to: 
-- Precipice - Indigo De Souza
-- Joy Paradox - Cephas Azariah
-- Vespertine - Bjork
+- Sons of Spergy - Daniel Caesar
+- The Awakening - Ahmad Jamal Trio
+- EUSEXUA - FKA twigs
 
 ✨ MISC:
 - Repeatedly dying in the video game Hades 
-- Watching the last season of The Bear
+- Embracing the season of watching Halloweeny movies
 
-*(updated 2025-10-07 13:24)*
+*(updated 2025-11-09 16:34)*

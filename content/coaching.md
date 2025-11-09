@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-10 00:18:02
+modified: 2025-10-27 22:54:36
 publish: true
 published: 2025-08-19
 aliases:
@@ -69,6 +69,8 @@ I help others just like you have more trust in the journey of their lives, in al
 > Andrew will be your biggest champion until you learn how to be that for yourself! I think I've learned to be more kind to myself. I didn't actually realize I had a fear of failure before working with [him]. For me the biggest shift was being open minded about what "success" means, and not falling into the trap of feeling guilty about not "achieving" an external milestone. Andrew helped me uncover not only where I wanted to go but how I wanted to get there.
 > **Christine, General Manager**
 
+> Andrew is more than a coach; he deeply cares about you and meets you where you are. Very few people have that type of approach. He is consistent, and his belief is contagious. Working with him reminded me who I am and what I can become. If you are reading this and are undecided, sign up for this coaching. It is 110% worth it. I can vouch for him anytime.
+> **Sharath, Founder**
 
 > Working with you has shifted my perspective on coaching, I thought it was only career-related and goal-focused, but during our sessions we talked deeper, more than just goals and career. I laughed, cried, looked inward and outward, it was a humbling experience that brought me closer to myself.
 > **Pricillia, Artist**

@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2025-11-13
 creation date: 2025-11-13 13:05
-modified: 2025-08-11 12:55:17
+modified: 2025-11-13 13:50:41
 status: completed
 tags:
   - poem
@@ -28,7 +28,7 @@ Of the sacrifices, the blood sweat and tears it took to even get the first gener
 Not knowing that all that work left us, our lineage, feeling more disconnected from the Mother.
 
 After decades
-We still couldn’t run away from the nightmares that haunts our souls.
+We still couldn’t run away from the nightmares that haunt our souls.
 
 I’m still finding my way back. 
 For all of us 

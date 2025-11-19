@@ -1,9 +1,10 @@
 ---
-modified: 2025-09-29 15:06:51
+modified: 2025-11-14 23:56:21
 tags:
   - poem
 publish: true
 published: 2025-09-28
+status: completed
 ---
 
 

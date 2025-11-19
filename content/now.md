@@ -1,12 +1,12 @@
 ---
-modified: 2025-11-09 17:12:27
+modified: 2025-11-19 11:46:07
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
 ---
 ![banner](attachments/now-header.png)
 
-- **Hosting** the [Creative Ceremony](https://luma.com/creativity-ceremony-upheaval) in December with my friend [Rishi](https://www.emergencewizard.com/)
+- **Hosting** the [Creativity Ceremony](https://luma.com/creativity-ceremony-upheaval) in December with my friend [Rishi](https://www.emergencewizard.com/)
 - **Exhibiting** my first body of work in a [solo art show](https://partiful.com/e/pWY1jjI1VetZvFDs1GrT) early next year
 - **Coaching** [1-on-1](coaching.md) with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Reawakening** [_The Art of Your Life_](https://open.spotify.com/show/5GSZxqie8yWDupBkTTMoSF?si=04653a28642642fe) podcast—breathing fresh life into it soon.
@@ -27,6 +27,7 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - *How do we honor our multitudes, our woven artistry, and harness them to reimagine the world?*
 
 📚 Reading:
+- Free Play: Improvisation in Life and Art
 - Emergent Strategy: Shaping Change, Changing Worlds - Adrienne Maree Brown
 - Kindred Creation: Parables and Paradigms for Freedom - Aida Mariam Davis
 - We Need Your Art - Aime McNee
@@ -41,4 +42,4 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - Repeatedly dying in the video game Hades 
 - Embracing the season of watching Halloweeny movies
 
-*(updated 2025-11-09 16:34)*
+*(updated 2025-11-19 11:45)*

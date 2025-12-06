@@ -4,9 +4,10 @@ publish: true
 type: 🌳
 published: 2025-11-19
 creation date: 2025-11-19 19:41
-modified: 2025-11-19 19:41:49
+modified: 2025-11-30 12:49:58
 status: completed
 tags:
+  - social-media-post
 ---
 Do you feel your creative ember but struggle to feed it?
 Keep reading.
@@ -50,4 +51,5 @@ If you have been looking for a sign or permission slip, and have struggled to gi
 
 Let this be a collective invitation for us to feed that fire. 
 
+*This post was written to share on [IG](https://www.instagram.com/p/DRQftJNDN_o/?img_index=1) to promote my upcoming [Creativity Ceremony](https://luma.com/creativity-ceremony-upheaval)*
 

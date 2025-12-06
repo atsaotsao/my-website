@@ -635,21 +635,11 @@ main::after {
     }
     
     &::-webkit-scrollbar {
-  width: 12px !important;
-  background: var(--lightgray) !important;
-}
-
-&::-webkit-scrollbar-thumb {
-  background: var(--gray) !important;
-  border-radius: 6px !important;
-}
-
-&::-webkit-scrollbar-thumb:hover {
-  background: var(--darkgray) !important;
-}
-
-scrollbar-width: thin !important;
--ms-overflow-style: scrollbar !important;
+      width: 0px !important;
+      background: transparent !important;
+    }
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
   }
   
   // Desktop image alignment

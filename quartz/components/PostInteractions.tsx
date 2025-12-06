@@ -29,7 +29,7 @@ export default (() => {
       <div class="post-interactions">
         <p class="interaction-prompt" id="interaction-prompt"></p>
         <a 
-          href={`mailto:your-email@example.com?subject=${emailSubject}&body=${emailBody}`} 
+          href={`mailto:andrew@codelesscoach.com?subject=${emailSubject}&body=${emailBody}`} 
           class="email-reply"
           target="_blank"
           rel="noopener noreferrer"

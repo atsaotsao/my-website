@@ -52,10 +52,13 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: sharedSidebar,
-  right: [],
+  right: [
+    Component.TableOfContents(),
+    Component.Backlinks(),
+  ],
   afterBody: [
-    Component.ArtworkDetails(), // Add this line
-    Component.PostInteractions(),  // ← ADD THIS
+    Component.ArtworkDetails(),
+    Component.PostInteractions(),
   ],
 }
 

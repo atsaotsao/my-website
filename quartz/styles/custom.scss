@@ -639,6 +639,15 @@ main::after {
   background: var(--lightgray) !important;
 }
 
+&::-webkit-scrollbar-thumb {
+  background: var(--gray) !important;
+  border-radius: 6px !important;
+}
+
+&::-webkit-scrollbar-thumb:hover {
+  background: var(--darkgray) !important;
+}
+
 scrollbar-width: thin !important;
 -ms-overflow-style: scrollbar !important;
   }

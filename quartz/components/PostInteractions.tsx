@@ -124,12 +124,20 @@ export default (() => {
     /* Newsletter-specific styles */
     .post-interactions.newsletter-subscribe {
       padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .post-interactions.newsletter-subscribe .interaction-prompt {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       font-weight: 500;
+    }
+    
+    .post-interactions.newsletter-subscribe .beehiiv-embed {
+      display: block;
+      margin: 0 auto;
     }
     
     @media (max-width: 800px) {

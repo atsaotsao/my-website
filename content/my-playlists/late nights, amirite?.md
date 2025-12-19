@@ -1,8 +1,17 @@
 ---
-modified: 2025-12-18 21:39:13
+modified: 2025-12-18 23:34:02
 publish: true
 published: 2021-02-25
 tags:
+  - idm
+  - lo-fi_house
+  - melodic_house
+  - melodic_techno
+  - minimal_techno
+  - electro
+  - jazz_house
+  - ambient
+  - chillstep
 ---
 I would consider late nights and I very close friends. I discover a lot of appreciation for music after 1:00 am, when it’s just me and the eerie silence left by the void of conversation. In the absence of worldly distractions, I find myself drawn to the kind of music that is upbeat yet still contains the depth of emotional gravitas. It’s the kind of music, that despite my being stressed and stagnant in front of a screen on a Friday evening, makes me feel like I’m also dancing at a sweaty Brooklyn nightclub, or on a night drive in the windy paths of Beverly Hills, or floating amidst the starry night peering down at the lit windows of people who are still up. It’s the feeling of infinite possibility that makes me the most productive, focused, and alive.
 

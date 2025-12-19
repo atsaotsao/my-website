@@ -4,10 +4,10 @@ publish: true
 type: 🌳
 published: 2025-12-18
 creation date: 2025-12-18
-modified: 2025-12-18 20:50:31
+modified: 2025-12-18 20:56:11
 status: completed
 tags:
-  - thought
+  - newsletter
 ---
 I made a tiny promise to myself that I will send at least one issue by the end of this year. And in this issue, I want to be completely transparent about where I was, where I am now, and where I'm going.
 

@@ -9,8 +9,44 @@ export default (() => {
       return null
     }
     
+    // Check if post has newsletter tag
+    const tags = fileData.frontmatter?.tags || []
+    const isNewsletter = tags.includes("newsletter")
+    
     const title = fileData.frontmatter?.title || "this post"
     
+    // If it's a newsletter post, show Beehiiv embed
+    if (isNewsletter) {
+      return (
+        <div class="post-interactions newsletter-subscribe">
+          <p class="interaction-prompt">
+            ✉️ Want more like this in your inbox?
+          </p>
+          <script 
+            async 
+            src="https://subscribe-forms.beehiiv.com/embed.js"
+          />
+          <iframe 
+            src="https://subscribe-forms.beehiiv.com/4c13f124-3647-4694-b23d-2884f32513a0" 
+            class="beehiiv-embed"
+            data-test-id="beehiiv-embed" 
+            frameborder="0" 
+            scrolling="no" 
+            style={{
+              width: '100%',
+              maxWidth: '100%',
+              height: '315px',
+              margin: '0',
+              borderRadius: '0px',
+              backgroundColor: 'transparent',
+              boxShadow: 'none',
+            }}
+          />
+        </div>
+      )
+    }
+    
+    // Otherwise, show the regular interaction prompt
     // Encode title for email subject
     const emailSubject = encodeURIComponent(`Re: ${title}`)
     const emailBody = encodeURIComponent(`Hi Andrew, I just read "${title}" and wanted to share...`)
@@ -85,6 +121,17 @@ export default (() => {
       color: white;
     }
     
+    /* Newsletter-specific styles */
+    .post-interactions.newsletter-subscribe {
+      padding: 2.5rem 2rem;
+    }
+    
+    .post-interactions.newsletter-subscribe .interaction-prompt {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    
     @media (max-width: 800px) {
       .post-interactions {
         padding: 1.5rem;
@@ -97,6 +144,14 @@ export default (() => {
       .post-interactions .email-reply {
         padding: 0.6rem 1.2rem;
         font-size: 0.95rem;
+      }
+      
+      .post-interactions.newsletter-subscribe {
+        padding: 2rem 1.5rem;
+      }
+      
+      .post-interactions.newsletter-subscribe .interaction-prompt {
+        font-size: 1.1rem;
       }
     }
   `

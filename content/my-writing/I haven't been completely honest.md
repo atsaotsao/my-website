@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2025-12-18
 creation date: 2025-12-18
-modified: 2025-12-18 23:28:24
+modified: 2025-12-18 23:56:11
 status: completed
 tags:
   - newsletter
@@ -72,6 +72,7 @@ These days all I can really commit to is being fully honest with myself, with my
 If you’ve read this far, you are truly a real one. I don’t always read a newsletter to the end these days so I know, and it means a lot. 
 
 > What wins and moments do you want to take this moment to celebrate? What is also in the horizon for you?
+
 
 
   

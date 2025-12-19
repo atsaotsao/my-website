@@ -1,6 +1,6 @@
 ---
 title: my writing
-modified: 2025-09-15 00:24:09
+modified: 2025-12-19 09:56:27
 publish: true
 no_backlink: true
 exclude_from_backlink: true
@@ -9,11 +9,11 @@ aliases:
   - my writing
 ---
 
-I write to breath, to think, to dance, to move through complex gnarly emotions, and transmit my inner world.
+I write to breath, to think, to dance, to move through complicated all-encompassing outer world, and transmit my inner world.
 
-What lives here are my rawest parts of my words. Less manicured, polished, and conventional than anything I would share on a social media platform or share via a newsletter. 
+What lives here are a collection and archive of as much as words documented and recorded.
 
-They often come in a form a #thought with the intention of turning them into a #essay (still working on developing the muscles and courage of writing long-form).
+They often come in a form a #thought , or occasionally as a #newsletter 
 
 Or through more abstraction in a #poem.
 

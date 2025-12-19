@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2025-12-18
 creation date: 2025-12-18
-modified: 2025-12-18 20:56:11
+modified: 2025-12-18 20:58:29
 status: completed
 tags:
   - newsletter
@@ -29,7 +29,7 @@ And this newsletter can contribute to a flywheel of me creating a sustainable bu
 
 That model may work for others, but I just don't want to subscribe to that anymore. 
 
-![a piece i drew this summer called "be like water"](attachments/belikewater.png)
+![](attachments/belikewater.png)
 I've been spending the past year stepping back from the normalized ways of "building" that asks us to grow fast, convert, and perform expertise.
 
 I've seen that playbook time and time again and have thought that was the only way to do things. 
@@ -73,8 +73,6 @@ If you’ve read this far, you are truly a real one. I don’t always read a new
 
 What wins and moments do you want to take this moment to celebrate? What is also in the horizon for you?
 
-
-Subscribe here
 
   
 

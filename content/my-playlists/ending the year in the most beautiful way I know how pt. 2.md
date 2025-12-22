@@ -1,18 +1,18 @@
 ---
-modified: 2025-12-18 21:30:47
+modified: 2025-12-21 19:26:47
 publish: true
 published: 2020-12-25
 tags:
   - ambient
-  - bow-pop
-  - chamber-pop
-  - compositional-ambient
+  - bow_pop
+  - chamber_pop
+  - compositional_ambient
   - drone
   - electronica
   - focus
-  - icelandic-classical
-  - neo-classical
-  - post-minimalism
+  - icelandic_classical
+  - neo_classical
+  - post_minimalism
   - soundtrack
 ---
 For long-time listeners of my playlist, I’m sure many of you have wondered why I choose to end all of my playlists with a “classy” finale — the 25th and final song is always a classical or instrumental piece. The truth is, it was an attempt to bring more exposure to a genre that I feel has often been overlooked and misunderstood, or at the very least less widely appreciated by the average music listener today. Eventually, it became a ritual in the curation of my playlists; finding my way through 25 songs to a resolution that evokes as much of the beauty and optimism that is central to my vision as possible.

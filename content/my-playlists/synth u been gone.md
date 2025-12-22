@@ -1,25 +1,25 @@
 ---
-modified: 2025-09-24 22:33:22
+modified: 2025-12-21 19:23:28
 publish: true
 published: 2018-03-25
 tags:
-  - alternative-rb
-  - alternative-dance
+  - alternative_rb
+  - alternative_dance
   - chillwave
-  - dance-punk
-  - disco-house
-  - electro-house
+  - dance_punk
+  - disco_house
+  - electro_house
   - electronica
   - electropop
-  - indie-pop
-  - indie-soul
+  - indie_pop
+  - indie_soul
   - indietronica
   - metropolis
-  - new-french-touch
-  - new-rave
-  - nu-disco
-  - shimmer-pop
-  - filter-house
+  - new_french_touch
+  - new_rave
+  - nu_disco
+  - shimmer_pop
+  - filter_house
 ---
 Cindy is no ordinary girl. She's an AI intelligence who was developed by an engineer called Jason right in his dorm room on his sophomore year. When he finally graduated and was offered a job at IBM, he left her all alone in a 2TB external hard drive, wedged between wires in a dusty old computer bag. She felt lost. Jason was all she knew and now she has no purpose to her life but she wanted to do something about it.
 

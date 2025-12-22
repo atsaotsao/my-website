@@ -1,20 +1,20 @@
 ---
-modified: 2025-09-24 22:32:32
+modified: 2025-12-21 19:16:55
 publish: true
 published: 2020-07-25
 tags:
-  - alternative-rb
-  - alternative-dance
-  - deep-house
+  - alternative_rb
+  - alternative_dance
+  - deep_house
   - electronica
-  - indie-poptimism
-  - indie-soul
+  - indie_poptimism
+  - indie_soul
   - indietronica
-  - new-french-touch
-  - nu-disco
-  - shimmer-pop
-  - vapor-soul
-  - filter-house
+  - new_french_touch
+  - nu_disco
+  - shimmer_pop
+  - vapor_soul
+  - filter_house
 ---
 In the thick of the summer heat these days, I’m reminded of the best rooftop party I’ve ever been to. I still remember this party as if it were yesterday. The moment you arrived, it hit you that this wasn’t just your average shindig. This was the super-bowl performance of all rooftop parties.
 

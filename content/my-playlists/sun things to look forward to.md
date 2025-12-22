@@ -1,21 +1,21 @@
 ---
-modified: 2025-09-24 22:33:15
+modified: 2025-12-21 19:22:59
 publish: true
 published: 2020-04-25
 tags:
-  - alternative-rb
-  - alternative-dance
+  - alternative_rb
+  - alternative_dance
   - chillwave
   - electronica
   - electropop
-  - indie-pop
-  - indie-soul
+  - indie_pop
+  - indie_soul
   - indietronica
-  - modern-rock
-  - new-rave
-  - nu-disco
+  - modern_rock
+  - new_rave
+  - nu_disco
   - pop
-  - vapor-soul
+  - vapor_soul
 ---
 It's a weird time to be listening to music right now with all that's going on around us. In fact, all the data shows that the amount of music streaming activity has been declining since the pandemic started, but I'm still here with a list of hand-selected songs to remind you of the important things: to stay optimistic about what's ahead of us and hold on dear to all the warm and beautiful things we still look forward to.
 

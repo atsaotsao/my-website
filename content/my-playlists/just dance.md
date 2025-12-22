@@ -1,17 +1,17 @@
 ---
-modified: 2025-09-24 22:32:16
+modified: 2025-12-21 19:15:04
 publish: true
 published: 2017-07-25
 tags:
-  - alternative-dance
-  - indie-pop
-  - indie-poptimism
-  - indie-soul
+  - alternative_dance
+  - indie_pop
+  - indie_poptimism
+  - indie_soul
   - indietronica
-  - new-french-touch
-  - nu-disco
-  - pop-edm
-  - tropical-house
+  - new_french_touch
+  - nu_disco
+  - pop_edm
+  - tropical_house
 ---
 > Summer days far away
 > Can I make you stay?

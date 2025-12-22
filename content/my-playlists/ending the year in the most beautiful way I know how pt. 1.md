@@ -1,18 +1,18 @@
 ---
-modified: 2025-12-18 21:24:40
+modified: 2025-12-21 19:26:27
 publish: true
 published: 2018-12-25
 tags:
   - ambient
-  - bow-pop
-  - chamber-pop
-  - compositional-ambient
+  - bow_pop
+  - chamber_pop
+  - compositional_ambient
   - drone
   - electronica
   - focus
-  - icelandic-classical
-  - neo-classical
-  - post-minimalism
+  - icelandic_classical
+  - neo_classical
+  - post_minimalism
   - soundtrack
 ---
 

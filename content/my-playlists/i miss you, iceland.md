@@ -1,16 +1,16 @@
 ---
-modified: 2025-09-24 22:31:50
+modified: 2025-12-21 19:09:08
 publish: true
 published: 2017-10-25
 tags:
-  - bow-pop
-  - chamber-pop
-  - compositional-ambient
-  - icelandic-folk
-  - icelandic-indie
-  - icelandic-pop
-  - indie-folk
-  - stomp-and-holler
+  - bow_pop
+  - chamber_pop
+  - compositional_ambient
+  - icelandic_folk
+  - icelandic_indie
+  - icelandic_pop
+  - indie_folk
+  - stomp_and_holler
 ---
 Back I college, I used to spend a lot of time on music blogs and I often hear musicians talk a lot about Iceland as a huge inspiration to their music. When I finally got a chance to visit in 2015, I remember driving with 3 other friends and as we were making our way around the Snaefellsnes Peninsula, while listening to Sigur Ros' music played against the backdrop of magnificent mountains looming in the distance, it was at that moment I understood; I understood why being in the presence of such beauty can inspire one to create great music. I always hold dearly to me how being there made me felt, and this playlist is my attempt to capture that. In addition to featuring a selection of Icelandic musicians I've grown to love like Olafur Arnalds, Sigur Ros, Of Monsters and Men, Low Roar, Samaris and Asgeir, I wanted to include any music that conveys a sense of grand beauty. One one hand we have Josin singing solemnly to a slow piano tune, on the other we have Christian Loffler creating hypnotic beats to the enchanting words:
 

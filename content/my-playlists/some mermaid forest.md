@@ -1,21 +1,21 @@
 ---
-modified: 2025-09-24 22:32:51
+modified: 2025-12-21 19:20:29
 publish: true
 published: 2018-05-25
 tags:
-  - alternative-rb
-  - dance-pop
+  - alternative_rb
+  - dance_pop
   - electropop
-  - indie-pop
-  - indie-poptimism
-  - indie-rb
-  - indie-rock
-  - indie-soul
+  - indie_pop
+  - indie_poptimism
+  - indie_rb
+  - indie_rock
+  - indie_soul
   - indietronica
-  - modern-alternative-rock
-  - modern-rock
+  - modern_alternative_rock
+  - modern_rock
   - pop
-  - vapor-soul
+  - vapor_soul
 ---
 Summer made for us is made for all the summer lovers out there. 
 

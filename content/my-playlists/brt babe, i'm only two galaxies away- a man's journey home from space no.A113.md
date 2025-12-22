@@ -1,17 +1,17 @@
 ---
-modified: 2025-09-24 22:31:18
+modified: 2025-12-21 19:07:44
 publish: true
 published: 2018-07-25
 tags:
   - ambient
   - chillwave
-  - compositional-ambient
+  - compositional_ambient
   - electronica
-  - indie-soul
+  - indie_soul
   - indietronica
-  - intelligent-dance-music
+  - intelligent_dance_music
   - microhouse
-  - minimal-techno
+  - minimal_techno
 ---
 The commute home from work is the worst part of the job; sure it takes only an hour and a half each way but because of the speed of crossing through multiple asteroid belts, it isn't exactly the smoothest ride. I work at Space No. A113, whose name is composed of the first letter of the type of industry it's built for, in this case, "Arts", and the number indicates which version of space frontiers that came before it. Ever since they've developed self-guiding intergalactic shuttles, it's now common to work literally light years away from where you live. After spending the past 10 hours developing holographic content for a new startup trying to develop a new trivia-like game that's played through telepathic channels, all I want to do is head home the spend the rest of my evening with my wife. I strap into my pod, pointed my navigation at Earth B-2, and launched off. The journey takes me through oceans of stars and planets and right as I passed by a planet with multiple rings around it, I got a message on my console,
 

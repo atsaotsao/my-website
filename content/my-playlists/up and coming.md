@@ -1,17 +1,17 @@
 ---
-modified: 2025-09-24 22:33:34
+modified: 2025-12-21 19:24:22
 publish: true
 published: 2017-05-25
 tags:
-  - alternative-rb
-  - art-pop
-  - bedroom-pop
+  - alternative_rb
+  - art_pop
+  - bedroom_pop
   - electropop
-  - indie-pop
-  - indie-soul
+  - indie_pop
+  - indie_soul
   - indietronica
-  - lo-fi-beats
-  - vapor-soul
+  - lo-fi_beats
+  - vapor_soul
 ---
 New songs by artists I love, and new artists I like. 
 Decided to keep making these playlists because at the very least my girlfriend enjoys them.

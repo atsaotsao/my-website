@@ -1,13 +1,12 @@
 ---
-modified: 2025-09-24 22:36:06
+modified: 2025-12-21 19:24:44
 publish: true
 published: 2020-08-25
 tags:
-  - alternative-rb
-  - indie-soul
-  - neo-rb
+  - alternative_rb
+  - indie_soul
+  - neo_rb
   - pop
-  - unclassified
 ---
 My mom is a piano teacher and I feel like the foundation of my music taste has been shaped by the piano notes that came drifting through the wall during the music lessons she taught when I was growing up. One thing she always told me is that despite her all-encompassing love for music, jazz was something she never understood. She emphasized how the sporadic and random nature of it all had always confused her because it gave her trouble in trying to picture where the music would "lead" to.
 

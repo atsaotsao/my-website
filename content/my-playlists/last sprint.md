@@ -1,14 +1,13 @@
 ---
-modified: 2025-09-24 22:40:09
+modified: 2025-12-21 19:25:46
 publish: true
 published: 2020-10-25
 tags:
   - electronica
-  - new-french-touch
-  - tropical-house
-  - unclassified
-  - vapor-soul
-  - vapor-twitch
+  - new_french_touch
+  - tropical_house
+  - vapor_soul
+  - vapor_twitch
 ---
 I will always remember the last mile of my first half-marathon three years ago. After almost a full two hours of running non-stop, that final mile was one of the most difficult physical and mental challenges that I’ve endured. At this point, the soreness was so deeply entrenched in my calves and hamstrings that every additional step required the raw mental strength of perseverance and courage. But it was in completing that last mile that I understood the absolute euphoria of pushing our limits and coming out on the other side of the finish line, tired but very much alive — transcendent, even.
 

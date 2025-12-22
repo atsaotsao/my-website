@@ -1,16 +1,16 @@
 ---
-modified: 2025-09-24 22:32:26
+modified: 2025-12-21 19:16:23
 publish: true
 published: 2020-03-25
 tags:
-  - jazz-fusion
-  - alternative-rb
-  - funk-rock
+  - jazz_fusion
+  - alternative_rb
+  - funk_rock
   - funk
-  - retro-soul
-  - bedroom-pop
-  - lo-fi-beats
-  - math-rock
+  - retro_soul
+  - bedroom_pop
+  - lo-fi_beats
+  - math_rock
 ---
 This playlist is designed to get you out of your *funk.* This is the kind of music I listen to when I feel like I've sat in my chair for too long (from working at home) and want to just get up and start swaying. The soulful trumpets in Takuya Kurada's "Do They Know" and Mac Ayres' velvety voice in "Easy" can melt anyone's fatigue. At the heart of this playlist is Bruno Major's "Place We Won't Walk," a sad song I snuck in because I felt like the opening lyrics really resonate with what's happening to our lives in the midst of lockdown due to COVID-19:
 

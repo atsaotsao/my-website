@@ -1,20 +1,20 @@
 ---
-modified: 2025-09-24 22:33:03
+modified: 2025-12-21 19:22:00
 publish: true
 published: 2020-06-25
 tags:
-  - compositional-ambient
+  - compositional_ambient
   - electronica
-  - french-indie-pop
-  - french-indietronica
+  - french_indie_pop
+  - french_indietronica
   - indietronica
-  - intelligent-dance-music
+  - intelligent_dance_music
   - microhouse
-  - minimal-techno
-  - new-french-touch
-  - progressive-house
-  - tech-house
-  - tropical-house
+  - minimal_techno
+  - new_french_touch
+  - progressive_house
+  - tech_house
+  - tropical_house
 ---
 One of my favorite ways to listen to music is to picture myself in space, on a vessel flying around in a world so vast and beautiful. This month I've decided to bring you along for the ride.
 

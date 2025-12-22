@@ -1,21 +1,21 @@
 ---
-modified: 2025-09-24 22:32:11
+modified: 2025-12-21 19:14:10
 publish: true
 published: 2017-08-25
 tags:
-  - alternative-rb
+  - alternative_rb
   - funk
-  - indie-jazz
-  - indie-pop
-  - indie-rock
-  - indie-soul
+  - indie_jazz
+  - indie_pop
+  - indie_rock
+  - indie_soul
   - indietronica
-  - lo-fi-beats
-  - neo-rb
-  - neo-soul
+  - lo-fi_beats
+  - neo_rb
+  - neo_soul
   - soul
-  - vapor-soul
-  - vapor-twitch
+  - vapor_soul
+  - vapor_twitch
 ---
 This was my first love letter to my now girlfriend disguised as a playlist. The opening lyrics in the first song "your text" says it all.
 

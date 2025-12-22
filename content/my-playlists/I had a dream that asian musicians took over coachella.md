@@ -1,22 +1,22 @@
 ---
-modified: 2025-08-29 18:23:32
+modified: 2025-12-21 18:49:42
 publish: true
 published: 2018-11-25
 tags:
-  - alternative-rb
-  - art-pop
-  - chamber-pop
+  - alternative_rb
+  - art_pop
+  - chamber_pop
   - chillwave
-  - chinese-hip-hop
+  - chinese_hip_hop
   - edm
   - electropop
-  - indie-electropop
-  - indie-pop
-  - indie-rb
-  - indie-rock
+  - indie_electropop
+  - indie_pop
+  - indie_rb
+  - indie_rock
   - indietronica
-  - vapor-soul
-  - vapor-twitch
+  - vapor_soul
+  - vapor_twitch
   - wonky
 ---
 

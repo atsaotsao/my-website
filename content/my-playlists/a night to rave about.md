@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-20 20:44:16
+modified: 2025-12-21 21:08:47
 publish: true
 published: 2022-03-25
 tags:
@@ -13,7 +13,7 @@ tags:
   - stutter_house
   - house
 ---
-![](../attachments/a%20night%20to%20rave%20about.png)
+
 This month, you are all invited to my exclusive, extravagant music party playlist where I feature an assortment of music that will make you want to dance your socks off. First, I have a confession: I love the kind of electronic music that gets played in large music festivals, trendy concert venues, and even dark, gritty nightclubs, but I often hate being there. I live in New York City which means that at a lot of these events and venues, I have to deal with shirtless bros yelling every time the drop comes or being squished to the point where dancing isn’t even possible (looking at you @ [Terminal 5](https://www.instagram.com/terminal5nyc/?hl=en)). 
 
 This is why it’s so deeply important to me that the set and setting of this particular night is perfectly curated. In this party that I am hosting, please imagine a multi-floored space, each floor the size of a tennis court, outfitted with its own state-of-the-art surround-sound speaker system. Every sustenance and substance need will be taken care of, free of charge. Everyone in attendance is someone you feel seen by, safe with, and comfortable to be around. It’s a Saturday night, and everyone is there for a shared intention: to dance to their heart's content. 

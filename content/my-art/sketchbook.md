@@ -6,6 +6,7 @@ socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758662488/
 ---
 **Ongoing** collection of sketches from my life: 
 
+![](../attachments/IMG_6344.jpeg)
 ![](../attachments/IMG_3763.jpeg)
 ![](../attachments/IMG_3435.jpeg)
 I co-created this with a 3 year old on a flight to London. Every time i look at it I remember the pure JOY the kid was transmitting.

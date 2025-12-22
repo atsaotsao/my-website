@@ -22,26 +22,29 @@ export default (() => {
           <p class="interaction-prompt">
             ✉️ Want more like this in your inbox?
           </p>
-          <script 
-            async 
-            src="https://subscribe-forms.beehiiv.com/embed.js"
-          />
-          <iframe 
-            src="https://subscribe-forms.beehiiv.com/4c13f124-3647-4694-b23d-2884f32513a0" 
-            class="beehiiv-embed"
-            data-test-id="beehiiv-embed" 
-            frameborder="0" 
-            scrolling="no" 
-            style={{
-              width: '100%',
-              maxWidth: '100%',
-              height: '315px',
-              margin: '0',
-              borderRadius: '0px',
-              backgroundColor: 'transparent',
-              boxShadow: 'none',
-            }}
-          />
+          <div class="beehiiv-wrapper">
+            <script 
+              async 
+              src="https://subscribe-forms.beehiiv.com/embed.js"
+            />
+            <iframe 
+              src="https://subscribe-forms.beehiiv.com/4c13f124-3647-4694-b23d-2884f32513a0" 
+              class="beehiiv-embed"
+              data-test-id="beehiiv-embed" 
+              frameborder="0" 
+              scrolling="no" 
+              style={{
+                width: '100%',
+                maxWidth: '600px',
+                height: '315px',
+                margin: '0 auto',
+                display: 'block',
+                borderRadius: '0px',
+                backgroundColor: 'transparent',
+                boxShadow: 'none',
+              }}
+            />
+          </div>
         </div>
       )
     }
@@ -133,11 +136,19 @@ export default (() => {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       font-weight: 500;
+      text-align: center;
+    }
+    
+    .post-interactions.newsletter-subscribe .beehiiv-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     .post-interactions.newsletter-subscribe .beehiiv-embed {
-      display: block;
-      margin: 0 auto;
+      display: block !important;
+      margin: 0 auto !important;
     }
     
     @media (max-width: 800px) {

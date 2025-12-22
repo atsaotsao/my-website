@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-05 04:08:04
+modified: 2025-12-22 13:27:36
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -17,12 +17,10 @@ surface: Mixed media paper
 buylink: https://ko-fi.com/s/0da7edc7bb
 ---
 ![](../attachments/theknotinmychest.png)
-I drew this piece in a blind fury of intense grief and rage. There was this knot in my chest that I was trying to process and it was suffocating me. In my journal I wrote: 
+I drew this piece in a blind fury of intense grief and rage..There was this knot in my chest that I was trying to process and it was suffocating me. In my journal I wrote: 
 *"It makes me want to scream punch the wall. It makes me want to launch myself at structures and people like I'm a catapult shooting rocks at walls and castles during medieval times."*
 
-*I Grieve Different* is an attempt to capture the full intensity around the weight in the chest, the rage, the mourning, and the strange companionship of what refuses to leave. It’s lesson around not pushing grief away but letting it move through, about feeling last drop of it and through it. I want it to be reminder for anyone going through something to know that they're not alone. 
-
-And to keep going.
+This piece is one of my first attempts to capture the full intensity around the weight in the chest, the rage, the mourning, and the strange companionship of what refuses to leave. Looking at it again, it felt like a lesson and reminder to myself around not pushing grief away but moving through it. What also moved me was when I shared this as an IG story, I was so surprised at how many people said to me that they resonate or felt seen in this piece.
 
 
 Here is the full excerpt of what I wrote in my journal:
@@ -56,6 +54,10 @@ Here is the full excerpt of what I wrote in my journal:
 
 *O knot, O knot*
 *What do you need from me?*
+
+
+I hope this can be reminder for anyone going through something to know that they're not alone. 
+And to keep going.
 
 ![](../attachments/ChatGPT%20Image%20Sep%2024,%202025,%2011_13_57%20PM.png)
 For transparency: Room mockups are created using AI to help you envision the artwork in different settings.

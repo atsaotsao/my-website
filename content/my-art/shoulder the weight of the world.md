@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-18 21:17:24
+modified: 2025-12-22 13:13:44
 published: 2024-10-16
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542514/IMG_5579_olgxrt.jpg
@@ -16,7 +16,7 @@ isCommission:
 surface: found object
 buylink: https://ko-fi.com/s/f6b4901448
 ---
-
+![](../attachments/IMG_5579.jpeg)
 
 There's something inexplicably magical about taking found objects from the streets of Brooklyn and creating something with it. As someone who's lived here for 12 years, I've gotten so many books, furnitures, and have also put out things for others to take. It's like an ongoing dialogue and relationship I have with the city. The give and take is part of enjoying the pulse of the invisible yet reciprocal ecosystem. So when I found this piece of glossy white refurbished wood (which I'm pretty sure is a part of a dresser) I knew I was going to make the most of it. 
 

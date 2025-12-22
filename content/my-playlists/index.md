@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-20 22:11:32
+modified: 2025-12-21 21:22:02
 publish: true
 published: 2025-08-25
 title: my playlists
@@ -38,6 +38,6 @@ I send the newsletter on the 25th of every month at 13:00 EST
 #### Who's writing & curating music?
 I'm Andrew, a maker who likes to spend his time listening to music and creating stuff. I'm "that" guy that all my friends come to for new music. I listen to 10+ hours of new music each week so you don't have to.
 
-**All my playlist are below (will upload more as I go). Enjoy!**
 
-*updated 2025-12-20 20:36*
+
+*updated 2025-12-21 21:21*

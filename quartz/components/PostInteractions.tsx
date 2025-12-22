@@ -91,59 +91,60 @@ export default (() => {
 
   PostInteractions.css = `
     .post-interactions {
-      margin: 3rem 0 2rem 0;
-      padding: 2rem;
-      background: var(--highlight);
-      border-radius: 12px;
-      text-align: center;
+      margin: 3rem 0 2rem 0 !important;
+      padding: 2rem !important;
+      background: var(--highlight) !important;
+      border-radius: 12px !important;
+      text-align: center !important;
     }
     
     .post-interactions .interaction-prompt {
-      font-size: 1.05rem;
-      color: var(--darkgray);
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-      min-height: 1.6em;
+      font-size: 1.05rem !important;
+      color: var(--darkgray) !important;
+      margin-bottom: 1.5rem !important;
+      line-height: 1.6 !important;
+      min-height: 1.6em !important;
     }
     
     .post-interactions .email-reply {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: var(--secondary);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: all 0.3s ease;
+      display: inline-block !important;
+      padding: 0.75rem 1.5rem !important;
+      background-color: var(--secondary) !important;
+      color: white !important;
+      text-decoration: none !important;
+      border-radius: 6px !important;
+      font-weight: 500 !important;
+      transition: all 0.3s ease !important;
     }
     
     .post-interactions .email-reply:hover {
-      background-color: var(--tertiary);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(24, 94, 205, 0.3);
-      color: white;
+      background-color: var(--tertiary) !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 4px 12px rgba(24, 94, 205, 0.3) !important;
+      color: white !important;
     }
     
     /* Newsletter-specific styles */
     .post-interactions.newsletter-subscribe {
-      padding: 2.5rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 2.5rem 2rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
     }
     
     .post-interactions.newsletter-subscribe .interaction-prompt {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      font-weight: 500;
-      text-align: center;
+      font-size: 1.2rem !important;
+      margin-bottom: 1.5rem !important;
+      font-weight: 500 !important;
+      text-align: center !important;
     }
     
     .post-interactions.newsletter-subscribe .beehiiv-wrapper {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100% !important;
+      max-width: 600px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
     }
     
     .post-interactions.newsletter-subscribe .beehiiv-embed {
@@ -153,24 +154,28 @@ export default (() => {
     
     @media (max-width: 800px) {
       .post-interactions {
-        padding: 1.5rem;
+        padding: 1.5rem !important;
       }
       
       .post-interactions .interaction-prompt {
-        font-size: 1rem;
+        font-size: 1rem !important;
       }
       
       .post-interactions .email-reply {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.95rem !important;
       }
       
       .post-interactions.newsletter-subscribe {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem !important;
       }
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-wrapper {
+        max-width: 100% !important;
       }
     }
   `

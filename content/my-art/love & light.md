@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-30 15:25:40
+modified: 2025-12-23 00:11:48
 published: 2025-03-22
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067157/IMG_1189_ibyqrt.jpg
@@ -18,7 +18,7 @@ buylink: https://ko-fi.com/s/5388380fc6
 ---
 ![](../attachments/IMG_1189.jpeg)
 
-You know that feeling where it's in the middle of the day and suddenly you find yourself thinking of someone? And even though you know it passes, you wish you can just send them some of that magic, wherever they are. These two paintings came from that intention. I wanted to send some love 愛 & light 光 to friends (past, present, and even future) and this felt like the best way to convey the shapes and full extent of my affection.
+You know that feeling where it's in the middle of the day and suddenly you find yourself thinking of someone? And even though you know it passes, you wish you can just send them some of that magic, wherever they are. These two paintings came from that intention. I wanted to send some love 愛 & light 光 to friends (past, present, and even future) and this felt like the best way to con vey the shapes and full extent of my affection.
 
 I wrote the characters from the center out to capture also the fading of the ink, to mimic the effects of a glowing ball. It was also my first time of using mandarin character to convey literal and abstract themes. My wish is for these two pieces to bring in all the love & light I have in my body and heart to your home, to bless it, to guide you through wherever you're heading in your journeys.
 

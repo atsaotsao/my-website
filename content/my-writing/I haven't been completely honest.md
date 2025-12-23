@@ -73,7 +73,7 @@ If you’ve read this far, you are truly a real one. I don’t always read a new
 
 > What wins and moments do you want to take this moment to celebrate? What is also in the horizon for you?
 
-
+*This was originally published on [Beehiiv](https://write.andrew-tsao.com/p/2025-issue)*
 
   
 

@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-30 00:47:59
+modified: 2025-12-30 01:21:07
 published: 2025-12-24
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767070827/IMG_6397_fluket.jpg
@@ -14,7 +14,7 @@ price: "333"
 "exhibitions:":
 isCommission:
 surface: Mixed media paper
-buylink:
+buylink: https://ko-fi.com/s/cbf41ca731
 ---
 ![](../attachments/IMG_6397.jpeg)
 I drew this piece on the night of Christmas Eve because I was feeling this duality of feeling lonely and isolated, yet at the same time also feeling energized, loved, and interconnected with the world around me. 

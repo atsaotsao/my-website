@@ -1,8 +1,8 @@
 ---
-modified: 2025-12-25 00:19:25
+modified: 2025-12-30 00:01:32
 published: 2025-01-13
 publish: true
-socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1766637125/IMG_0706_ykevo0.heic
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767070856/IMG_0706_ykevo0_xhwawe.jpg
 tags:
   - for-sale
 medium: Collage on paper

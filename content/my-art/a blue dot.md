@@ -1,19 +1,19 @@
 ---
-modified: 2025-12-29 20:57:39
+modified: 2025-12-29 23:03:07
 published: 2025-12-24
 publish: true
-socialImage:
+socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767067349/IMG_6397_khwjxc.heic
 tags:
   - for-sale
-medium:
-dimensions:
-year:
-price:
+medium: Mixed media on paper
+dimensions: 23" x 35.5"
+year: 2025
+price: "333"
 "soldDate:":
-"location:":
+"location:": studio
 "exhibitions:":
 isCommission:
-surface:
+surface: Mixed media paper
 buylink:
 ---
 ![](../attachments/IMG_6397.jpeg)

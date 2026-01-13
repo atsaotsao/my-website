@@ -1,5 +1,5 @@
 ---
-modified: 2026-01-13 14:08:40
+modified: 2026-01-13 14:27:00
 publish: true
 published: 2026-01-13
 ---
@@ -11,7 +11,7 @@ My practice is deeply informed by lineage and self-directed study. While I am se
 
 While ink serves as a foundation, my practice often expands into mixed media. Cutting, layering, and introducing color has been emergent ways of responding to moments of fragmentation, upheavals, or repair. These material shifts mirror the tension between containment and release that runs throughout my work.
 
-The work invites viewers to slow down—perhaps noticing the imperfections of ink brush trails, or observing what arises in the body when witnessing unexplainable shapes and forms. Ultimately, I hope the viewer experiences a deeper connection to their inner ember, where love, light, and intuition feel most present.
+The work invites viewers to slow down—perhaps noticing the imperfections of ink brush trails, or observing what arises in the body when witnessing unexplainable shapes and forms. I’m interested in whether the work can bring someone back to that inner ember, where love, light, and intuition feels more present, however briefly.
 
 
 

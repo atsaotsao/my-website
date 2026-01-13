@@ -1,6 +1,5 @@
 ---
 modified: 2026-01-13 13:44:29
-defaultTemplate:
 publish: true
 published: 2026-01-13
 ---

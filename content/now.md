@@ -1,5 +1,5 @@
 ---
-modified: 2025-11-19 11:46:07
+modified: 2026-01-10 01:16:00
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -40,6 +40,6 @@ I am interested in creating and joining spaces, projects, and movements that **h
 
 ✨ MISC:
 - Repeatedly dying in the video game Hades 
-- Embracing the season of watching Halloweeny movies
+- Watching Barry on HBO Max
 
 *(updated 2025-11-19 11:45)*

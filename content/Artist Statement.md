@@ -1,5 +1,5 @@
 ---
-modified: 2026-01-13 14:27:00
+modified: 2026-01-13 14:31:51
 publish: true
 published: 2026-01-13
 ---
@@ -9,7 +9,7 @@ My work also responds to experiences of displacement and to the lingering coloni
 
 My practice is deeply informed by lineage and self-directed study. While I am self-taught, my work draws from Buddhist and Zen philosophies, East Asian ink practices, earth-based wisdom, alongside somatic and mindfulness-based approaches to creating and being. It is also constantly informed by the coaching and group facilitation work I do, as well as my own ongoing experiments in embracing surrender in my day-to-day life.
 
-While ink serves as a foundation, my practice often expands into mixed media. Cutting, layering, and introducing color has been emergent ways of responding to moments of fragmentation, upheavals, or repair. These material shifts mirror the tension between containment and release that runs throughout my work.
+While ink serves as a foundation, my practice often expands into mixed media. Cutting, layering, and introducing color has been emergent ways of responding to moments of disintegration, fragmentation, or return. These material shifts mirror the tension between containment and release that runs throughout my work.
 
 The work invites viewers to slow down—perhaps noticing the imperfections of ink brush trails, or observing what arises in the body when witnessing unexplainable shapes and forms. I’m interested in whether the work can bring someone back to that inner ember, where love, light, and intuition feels more present, however briefly.
 

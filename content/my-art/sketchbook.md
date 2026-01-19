@@ -6,6 +6,8 @@ socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758662488/
 ---
 **Ongoing** collection of sketches from my life: 
 
+![](../attachments/IMG_6503.jpeg)
+
 ![](../attachments/IMG_6344.jpeg)
 ![](../attachments/IMG_3763.jpeg)
 ![](../attachments/IMG_3435.jpeg)

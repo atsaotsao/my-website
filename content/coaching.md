@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-27 22:54:36
+modified: 2026-01-18 20:59:41
 publish: true
 published: 2025-08-19
 aliases:
@@ -43,8 +43,16 @@ I help others just like you have more trust in the journey of their lives, in al
 
 **Reimagine the worlds you want to build**
 - Dream new ways of living, creating, and leading that honor both your wholeness and our collective liberation
-- Practice building worlds through the everyday — in how you speak, rest, create, and tend to others.
+- Practice building worlds through the everyday. In how you speak, rest, create, and tend to others. 
 
+There's a quote from James Baldwin echoes my ethos in my coaching container:
+
+> Many people have suffered before you, many people are suffering around you and always will, and all you can do is bring, hopefully, a little light into that suffering. enough light so that the person who is suffering can begin to comprehend his suffering and begin to live with it and begin to change it, change the situation. We don't change anything; all we can do is invest people with the morale to change it for themselves.
+
+I am not here to change you.
+But when you work with me, I will always & unconditionally invest in you with light, love, and a full-bodied trust in your innate abilities to change for yourself.
+
+If that sounds like your cup of tea, then keep reading...
 
 #### Here's what people have said when they came to me: 
 

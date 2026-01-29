@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2026-01-29
 creation date: 2026-01-29 01:14
-modified: 2026-01-29 01:25:56
+modified: 2026-01-29 13:02:22
 status: completed
 tags:
   - poem
@@ -23,7 +23,7 @@ They can be my friends
 the way they hug each other, like this
 they can be intimately close jumbled up
 they can also be...quite far
-even                           farther
+even--------------------farther
 
 
 They can even stop conforming to spelling

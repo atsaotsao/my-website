@@ -4,12 +4,19 @@ publish: true
 type: 🌳
 published: 2026-01-29
 creation date: 2026-01-29 01:14
-modified: 2026-01-29 13:02:22
+modified: 2026-01-29 13:04:08
 status: completed
 tags:
   - poem
 ---
-I never realize how much of a privilege it is to express myself freely and openly. 
+I seldom
+pause
+to think
+how privilege I am
+to get to this place
+where I can express
+what my heart
+desires
 
 The way I can just type
 these words

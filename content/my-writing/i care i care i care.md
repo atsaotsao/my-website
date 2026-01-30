@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2026-01-29
 creation date: 2026-01-29 01:14
-modified: 2026-01-29 13:04:08
+modified: 2026-01-29 13:20:26
 status: completed
 tags:
   - poem
@@ -23,7 +23,7 @@ these words
 one 
 at
 a
-time.
+time
 
 I can have them ramble on and on and on and on
 They can be my friends
@@ -39,7 +39,7 @@ or just typeai jand let mw fingap9ere  kidnda just ruanp freeaw
 
 Sometimes we focus on the rules
 the way things should be
-like how maybe grammatically I should be finally adding a period.
+like how maybe grammatically I should be finally add a period.
 
 Because its proper.
 They don't like long or run-on sentences. 

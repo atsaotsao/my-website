@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2026-02-03
 creation date: 2026-02-02 23:03
-modified: 2026-02-03 17:00:59
+modified: 2026-02-07 04:15:08
 status: completed
 tags:
   - newsletter
@@ -65,6 +65,6 @@ Instead, I'm miles in the distance running barefoot in the unkempt overgrown wee
 I'm okay.
 And I'll be okay.
 
-
+*This issue was originally published on [my newsletter](https://write.andrew-tsao.com/p/dark-night-of-the-soul)*
 
 

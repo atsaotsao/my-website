@@ -22,10 +22,13 @@ export default (() => {
           <p class="interaction-prompt">
             ✉️ Want more like this in your inbox?
           </p>
-          <div class="beehiiv-wrapper">
+          <div class="beehiiv-container">
+            <script 
+              async 
+              src="https://subscribe-forms.beehiiv.com/embed.js"
+            />
             <iframe 
               src="https://subscribe-forms.beehiiv.com/4c13f124-3647-4694-b23d-2884f32513a0" 
-              class="beehiiv-embed"
               data-test-id="beehiiv-embed" 
               frameborder="0" 
               scrolling="no"
@@ -36,11 +39,9 @@ export default (() => {
     }
     
     // Otherwise, show the regular interaction prompt
-    // Encode title for email subject
     const emailSubject = encodeURIComponent(`Re: ${title}`)
     const emailBody = encodeURIComponent(`Hi Andrew, I just read "${title}" and wanted to share...`)
     
-    // Array of rotating prompts
     const prompts = [
       "💭 What's alive in you after reading this?",
       "🌱 Does this spark something for you?",
@@ -113,34 +114,35 @@ export default (() => {
     /* Newsletter-specific styles */
     .post-interactions.newsletter-subscribe {
       padding: 2rem 1.5rem !important;
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
     }
     
     .post-interactions.newsletter-subscribe .interaction-prompt {
       font-size: 1.15rem !important;
-      margin-bottom: 1.25rem !important;
+      margin-bottom: 1.5rem !important;
       font-weight: 500 !important;
-      text-align: center !important;
     }
     
-    .post-interactions.newsletter-subscribe .beehiiv-wrapper {
+    /* Beehiiv container - FORCE responsive */
+    .post-interactions.newsletter-subscribe .beehiiv-container {
       width: 100% !important;
-      max-width: 600px !important;
+      max-width: 560px !important;
+      margin: 0 auto !important;
+      position: relative !important;
       overflow: hidden !important;
-      border-radius: 8px !important;
     }
     
-    .post-interactions.newsletter-subscribe .beehiiv-embed {
+    /* Override Beehiiv's fixed width */
+    .post-interactions.newsletter-subscribe .beehiiv-container iframe {
       width: 100% !important;
-      height: 320px !important;
+      max-width: 100% !important;
+      height: 339px !important;
       border: none !important;
       display: block !important;
       margin: 0 !important;
+      background: transparent !important;
     }
     
-    /* Mobile styles */
+    /* Mobile tablets */
     @media (max-width: 800px) {
       .post-interactions {
         padding: 1.5rem 1rem !important;
@@ -157,31 +159,42 @@ export default (() => {
       }
       
       .post-interactions.newsletter-subscribe {
-        padding: 1.5rem 0.75rem !important;
+        padding: 1.5rem 1rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .interaction-prompt {
+        font-size: 1.05rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
+        height: 320px !important;
+      }
+    }
+    
+    /* Mobile phones */
+    @media (max-width: 480px) {
+      .post-interactions.newsletter-subscribe {
+        padding: 1.25rem 0.75rem !important;
       }
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
         font-size: 1rem !important;
-        margin-bottom: 1rem !important;
       }
       
-      .post-interactions.newsletter-subscribe .beehiiv-embed {
-        height: 280px !important;
+      .post-interactions.newsletter-subscribe .beehiiv-container {
+        max-width: 100% !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
+        height: 340px !important;
       }
     }
     
-    /* Extra small mobile */
-    @media (max-width: 480px) {
-      .post-interactions.newsletter-subscribe {
-        padding: 1.25rem 0.5rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 0.95rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-embed {
-        height: 300px !important;
+    /* Very small screens */
+    @media (max-width: 380px) {
+      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
+        height: 360px !important;
       }
     }
   `

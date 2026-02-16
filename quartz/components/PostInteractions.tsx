@@ -23,26 +23,12 @@ export default (() => {
             ✉️ Want more like this in your inbox?
           </p>
           <div class="beehiiv-wrapper">
-            <script 
-              async 
-              src="https://subscribe-forms.beehiiv.com/embed.js"
-            />
             <iframe 
               src="https://subscribe-forms.beehiiv.com/4c13f124-3647-4694-b23d-2884f32513a0" 
               class="beehiiv-embed"
               data-test-id="beehiiv-embed" 
               frameborder="0" 
-              scrolling="no" 
-              style={{
-                width: '100%',
-                maxWidth: '600px',
-                height: '315px',
-                margin: '0 auto',
-                display: 'block',
-                borderRadius: '0px',
-                backgroundColor: 'transparent',
-                boxShadow: 'none',
-              }}
+              scrolling="no"
             />
           </div>
         </div>
@@ -126,15 +112,15 @@ export default (() => {
     
     /* Newsletter-specific styles */
     .post-interactions.newsletter-subscribe {
-      padding: 2.5rem 2rem !important;
+      padding: 2rem 1.5rem !important;
       display: flex !important;
       flex-direction: column !important;
       align-items: center !important;
     }
     
     .post-interactions.newsletter-subscribe .interaction-prompt {
-      font-size: 1.2rem !important;
-      margin-bottom: 1.5rem !important;
+      font-size: 1.15rem !important;
+      margin-bottom: 1.25rem !important;
       font-weight: 500 !important;
       text-align: center !important;
     }
@@ -142,20 +128,22 @@ export default (() => {
     .post-interactions.newsletter-subscribe .beehiiv-wrapper {
       width: 100% !important;
       max-width: 600px !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
+      overflow: hidden !important;
+      border-radius: 8px !important;
     }
     
     .post-interactions.newsletter-subscribe .beehiiv-embed {
+      width: 100% !important;
+      height: 320px !important;
+      border: none !important;
       display: block !important;
-      margin: 0 auto !important;
-      min-height: 280px !important;
+      margin: 0 !important;
     }
     
+    /* Mobile styles */
     @media (max-width: 800px) {
       .post-interactions {
-        padding: 1.5rem !important;
+        padding: 1.5rem 1rem !important;
         margin: 2rem 0 1.5rem 0 !important;
       }
       
@@ -169,32 +157,31 @@ export default (() => {
       }
       
       .post-interactions.newsletter-subscribe {
-        padding: 1.5rem 1rem !important;
+        padding: 1.5rem 0.75rem !important;
       }
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1.05rem !important;
+        font-size: 1rem !important;
         margin-bottom: 1rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-wrapper {
-        max-width: 100% !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-embed {
         height: 280px !important;
-        min-height: 280px !important;
       }
     }
     
+    /* Extra small mobile */
     @media (max-width: 480px) {
       .post-interactions.newsletter-subscribe {
-        padding: 1.25rem 0.75rem !important;
+        padding: 1.25rem 0.5rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .interaction-prompt {
+        font-size: 0.95rem !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-embed {
         height: 300px !important;
-        min-height: 300px !important;
       }
     }
   `

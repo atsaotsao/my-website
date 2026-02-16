@@ -37,7 +37,7 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - [Cabin in The Sky - De La Soul](https://open.spotify.com/album/0yBlUg27MbywASeGd1uNIA?si=1aedb176b33f48f4)
 
 ✨ MISC:
-- Repeatedly dying in the video game Hades 
+- Repeatedly dying in the video game Hades 2
 - Watching the cartoon series Samurai Jack
 
-*(updated 2026-01-26 20:42)*
+*(updated 2026-02-15 23:59)*

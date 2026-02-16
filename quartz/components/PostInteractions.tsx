@@ -150,11 +150,13 @@ export default (() => {
     .post-interactions.newsletter-subscribe .beehiiv-embed {
       display: block !important;
       margin: 0 auto !important;
+      min-height: 280px !important;
     }
     
     @media (max-width: 800px) {
       .post-interactions {
         padding: 1.5rem !important;
+        margin: 2rem 0 1.5rem 0 !important;
       }
       
       .post-interactions .interaction-prompt {
@@ -167,15 +169,32 @@ export default (() => {
       }
       
       .post-interactions.newsletter-subscribe {
-        padding: 2rem 1.5rem !important;
+        padding: 1.5rem 1rem !important;
       }
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1.1rem !important;
+        font-size: 1.05rem !important;
+        margin-bottom: 1rem !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-wrapper {
         max-width: 100% !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-embed {
+        height: 280px !important;
+        min-height: 280px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .post-interactions.newsletter-subscribe {
+        padding: 1.25rem 0.75rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-embed {
+        height: 300px !important;
+        min-height: 300px !important;
       }
     }
   `

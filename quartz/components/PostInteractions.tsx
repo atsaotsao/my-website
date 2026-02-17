@@ -141,39 +141,54 @@ export default (() => {
       transform-origin: top center !important;
     }
     
-    /* Mobile tablets - scale down to 90% */
-    @media (max-width: 600px) {
+    /* Tablets */
+    @media (max-width: 768px) {
       .post-interactions {
         padding: 1.5rem 1rem !important;
-        margin: 2rem 0 1.5rem 0 !important;
       }
       
       .post-interactions.newsletter-subscribe {
-        padding: 1.5rem 1rem !important;
+        padding: 1.75rem 1.25rem !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container {
-        width: 100% !important;
         height: 305px !important; /* 339 * 0.9 */
         overflow: hidden !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container iframe {
         transform: scale(0.9) !important;
-        width: 560px !important;
-        height: 339px !important;
       }
     }
     
-    /* Mobile phones - scale down to 70% */
+    /* Large phones */
     @media (max-width: 480px) {
+      .post-interactions.newsletter-subscribe {
+        padding: 1.5rem 1rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .interaction-prompt {
+        font-size: 1.05rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-container {
+        height: 254px !important; /* 339 * 0.75 */
+      }
+      
+      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
+        transform: scale(0.75) !important;
+      }
+    }
+    
+    /* Small phones */
+    @media (max-width: 400px) {
       .post-interactions.newsletter-subscribe {
         padding: 1.25rem 0.75rem !important;
       }
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
         font-size: 1rem !important;
-        margin-bottom: 1.25rem !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container {
@@ -185,14 +200,14 @@ export default (() => {
       }
     }
     
-    /* Very small screens - scale down to 60% */
-    @media (max-width: 380px) {
+    /* Very small phones */
+    @media (max-width: 360px) {
       .post-interactions.newsletter-subscribe .beehiiv-container {
-        height: 203px !important; /* 339 * 0.6 */
+        height: 220px !important; /* 339 * 0.65 */
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        transform: scale(0.6) !important;
+        transform: scale(0.65) !important;
       }
     }
   `

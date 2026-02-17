@@ -122,57 +122,50 @@ export default (() => {
       font-weight: 500 !important;
     }
     
-    /* Beehiiv container - FORCE responsive */
+    /* Beehiiv container */
     .post-interactions.newsletter-subscribe .beehiiv-container {
       width: 100% !important;
       max-width: 560px !important;
       margin: 0 auto !important;
-      position: relative !important;
-      overflow: hidden !important;
+      overflow: visible !important;
     }
     
-    /* Override Beehiiv's fixed width */
+    /* Desktop iframe */
     .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-      width: 100% !important;
-      max-width: 100% !important;
+      width: 560px !important;
       height: 339px !important;
       border: none !important;
       display: block !important;
-      margin: 0 !important;
+      margin: 0 auto !important;
       background: transparent !important;
+      transform-origin: top center !important;
     }
     
-    /* Mobile tablets */
-    @media (max-width: 800px) {
+    /* Mobile tablets - scale down to 90% */
+    @media (max-width: 600px) {
       .post-interactions {
         padding: 1.5rem 1rem !important;
         margin: 2rem 0 1.5rem 0 !important;
-      }
-      
-      .post-interactions .interaction-prompt {
-        font-size: 1rem !important;
-      }
-      
-      .post-interactions .email-reply {
-        padding: 0.6rem 1.2rem !important;
-        font-size: 0.95rem !important;
       }
       
       .post-interactions.newsletter-subscribe {
         padding: 1.5rem 1rem !important;
       }
       
-      .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1.05rem !important;
-        margin-bottom: 1.25rem !important;
+      .post-interactions.newsletter-subscribe .beehiiv-container {
+        width: 100% !important;
+        height: 305px !important; /* 339 * 0.9 */
+        overflow: hidden !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        height: 320px !important;
+        transform: scale(0.9) !important;
+        width: 560px !important;
+        height: 339px !important;
       }
     }
     
-    /* Mobile phones */
+    /* Mobile phones - scale down to 70% */
     @media (max-width: 480px) {
       .post-interactions.newsletter-subscribe {
         padding: 1.25rem 0.75rem !important;
@@ -180,21 +173,26 @@ export default (() => {
       
       .post-interactions.newsletter-subscribe .interaction-prompt {
         font-size: 1rem !important;
+        margin-bottom: 1.25rem !important;
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container {
-        max-width: 100% !important;
+        height: 237px !important; /* 339 * 0.7 */
       }
       
       .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        height: 340px !important;
+        transform: scale(0.7) !important;
       }
     }
     
-    /* Very small screens */
+    /* Very small screens - scale down to 60% */
     @media (max-width: 380px) {
+      .post-interactions.newsletter-subscribe .beehiiv-container {
+        height: 203px !important; /* 339 * 0.6 */
+      }
+      
       .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        height: 360px !important;
+        transform: scale(0.6) !important;
       }
     }
   `

@@ -30,7 +30,7 @@ They can be my friends
 the way they hug each other, like this
 they can be intimately close jumbled up
 they can also be...quite far
-even--------------------farther
+even                            farther
 
 
 They can even stop conforming to spelling

@@ -215,6 +215,9 @@ article {
 article p {
   white-space: pre-line !important;
 }
+article.tags-poem p {
+  white-space: pre-wrap !important;
+}
 
 // ===================================================================
 // TAGS

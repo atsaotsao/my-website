@@ -4,18 +4,18 @@ publish: true
 type: 🌳
 published: 2026-03-26
 creation date: 2026-03-26 23:29
-modified: 2026-03-26 23:43:02
+modified: 2026-03-26 23:59:24
 status: completed
 tags:
   - poem
 ---
 Yesterday afternoon I tasted the oak-smoked honey.
-tender tunes of bird song,
+Tender tunes of bird song,
 hummed me into a slumber, lazy I feel. 
 
 Time dripped by like sun-soaked ice cream.
 I am thirsty for what I yearn,
-ice cold coconut water of desires I only dreamt.
+ice-cold coconut water of desires, I only dreamt.
 
 Temper of winter lays by the wayside,
 hard to release where I once nested.

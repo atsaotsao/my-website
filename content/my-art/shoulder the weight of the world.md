@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-22 13:13:44
+modified: 2026-03-17 23:26:50
 published: 2024-10-16
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542514/IMG_5579_olgxrt.jpg
@@ -16,7 +16,7 @@ isCommission:
 surface: found object
 buylink: https://ko-fi.com/s/f6b4901448
 ---
-![](../attachments/IMG_5579.jpeg)
+![](../attachments/art/20260317_03.jpg)
 
 There's something inexplicably magical about taking found objects from the streets of Brooklyn and creating something with it. As someone who's lived here for 12 years, I've gotten so many books, furnitures, and have also put out things for others to take. It's like an ongoing dialogue and relationship I have with the city. The give and take is part of enjoying the pulse of the invisible yet reciprocal ecosystem. So when I found this piece of glossy white refurbished wood (which I'm pretty sure is a part of a dresser) I knew I was going to make the most of it. 
 
@@ -24,7 +24,8 @@ My first thought in working on an object like this is that it felt sturdy. It co
 
 One thing that's hard to convey through this digital screen is just how TACTILE this piece is. I always imagined created art pieces where it's not just pieces where you hang and enjoy looking it. But something you can also run your hands all over as part of the experience. I hope each cut and ridge you feel reminds you that you're not alone in the hurt you feel; how human it all is. And at the end of the day, something I'm returning to time after time is that there absolutely is a light at the end of the tunnel. I hope this piece helps remind you of that.
 
-![](../attachments/ChatGPT%20Image%20Oct%205,%202025,%2003_11_02%20AM.png)
+![697](../attachments/ChatGPT%20Image%20Oct%205,%202025,%2003_11_02%20AM.png)
+🖼️ Room mockups are created using AI to help you envision the artwork in different settings. Please note that colors, textures, and proportions may not be fully accurate since the mockups are generated through AI.
 #### Song inspiration for this piece: 
 [Unfold - Porter Robinson & TEED](https://open.spotify.com/track/36kCSJg8ZBwiSCUECFKGUy?si=9dea2eff3a254a8a)
 

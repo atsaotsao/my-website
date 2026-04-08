@@ -4,14 +4,14 @@ publish: true
 type: 🌳
 published: 2026-03-10
 creation date: 2026-03-27 01:15
-modified: 2026-03-27 01:27:59
+modified: 2026-04-08 18:03:12
 status: completed
 tags:
   - poem
 ---
 Hand me the rope
 and let me hang.
-hang free hands free,
+hang free, hands free,
 At least I get to choose.
 
 Go ahead and tighten the noose,

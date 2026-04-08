@@ -26,12 +26,11 @@ on the playground one two three.
 
 Tie me up,
 but don't tie me down.
-I need to know Im' safe,
+I need to know I’m safe,
 even when I'm all wrapped up.
 
 You can even tie my hands behind me,
-and call me all the names you want.
+and do what you want with me, I won’t put up a fight.
 As long as when it ends,
-you cuddle me and tell me "it's all going to be okay."
-
+you cuddle me and tell me "it's all going to be alright."
 

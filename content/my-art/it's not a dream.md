@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-30 20:59:40
+modified: 2026-05-14 14:59:07
 published: 2025-08-31
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067730/IMG_4873_libc8l.jpg
@@ -16,8 +16,7 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/463fa2c02f
 ---
-
-![](../attachments/IMG_4873.jpeg)
+![](../attachments/art/20260317_06.jpg)
 
 Recently a friend lent me a pack of alcohol markers and I felt inspired to use it. Sometimes when I find when I pick up a marker, a brush, a color pencil, I like to ask it what he or she wants to draw. And this time around, I heard almost a chorus of voices from the entire container with 30+ colors and in that moment I realized that every color had something to say. And that's what inspired an intention: I wanted to create a piece where no color feels neglected and left behind.
 

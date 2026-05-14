@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-28 10:02:05
+modified: 2026-05-14 15:00:33
 published: 2024-09-08
 publish: true
 tags:
@@ -7,7 +7,8 @@ socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661677/
 medium: Mixed media on found object
 "location:": Brother's backyard
 ---
-![](../attachments/breakfree_main.png)
+![](../attachments/art/20250901_13.png)
+
 The month of December has recently been my favorite time of the year. 
 I used the opportunity of having some down time while traveling my brother and his wife in California to enjoy a bit of sun, grass, and art. 
 I've been using the downtime I have this month to pause, breathe, think, and be.

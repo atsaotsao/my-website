@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-29 21:04:40
+modified: 2026-05-14 14:57:00
 published: 2025-12-05
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1766808625/IMG_6282_1_b1th5m.jpg
@@ -16,7 +16,8 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/63a655a384
 ---
-![](../../attachments/IMG_6282%201.jpeg)
+![](../attachments/art/20260317_02.jpg)
+
 I really did break one of my calligraphy brushes for this. 
 
 I've been learning to trust that the canvas and my art can hold the full weight, volume, and intensity of my anger, this large tangled up knot of anger that is passed down from both sides of my family. I've been a student of this rage for a long long time and it took years of therapy sessions and self work to differentiate between what it feels like to be *in* the state of rage vs be *with* the state of rage. 

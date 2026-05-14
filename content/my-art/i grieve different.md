@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-22 20:20:52
+modified: 2026-05-14 14:57:37
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -16,8 +16,9 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/0da7edc7bb
 ---
-![](../attachments/theknotinmychest.png)
-I drew this piece in a blind fury of intense grief and rage..There was this knot in my chest that I was trying to process and it was suffocating me. In my journal I wrote: 
+![](../attachments/art/20260317_11.jpg)
+
+I drew this piece in a blind fury of intense grief and rage. There was this knot in my chest that I was trying to process and it was suffocating me. In my journal I wrote: 
 *"It makes me want to scream punch the wall. It makes me want to launch myself at structures and people like I'm a catapult shooting rocks at walls and castles during medieval times."*
 
 This piece is one of my first attempts to capture the full intensity around the weight in the chest, the rage, the mourning, and the strange companionship of what refuses to leave. Looking at it again, it felt like a lesson and reminder to myself around not pushing grief away but moving through it. What also moved me was when I shared this as an IG story, I was so surprised at how many people said to me that they resonate or felt seen in this piece.

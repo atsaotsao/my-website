@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-23 00:11:48
+modified: 2026-05-14 14:55:56
 published: 2025-03-22
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067157/IMG_1189_ibyqrt.jpg
@@ -16,7 +16,8 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/5388380fc6
 ---
-![](../attachments/IMG_1189.jpeg)
+![](../attachments/art/20260317_05.jpg)
+![](../attachments/art/20260317_04.jpg)
 
 You know that feeling where it's in the middle of the day and suddenly you find yourself thinking of someone? And even though you know it passes, you wish you can just send them some of that magic, wherever they are. These two paintings came from that intention. I wanted to send some love 愛 & light 光 to friends (past, present, and even future) and this felt like the best way to con vey the shapes and full extent of my affection.
 

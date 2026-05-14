@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-30 01:21:07
+modified: 2026-05-14 14:52:49
 published: 2025-12-24
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767070827/IMG_6397_fluket.jpg
@@ -16,7 +16,7 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/cbf41ca731
 ---
-![](../attachments/IMG_6397.jpeg)
+![](../attachments/art/20260317_14.jpg)
 I drew this piece on the night of Christmas Eve because I was feeling this duality of feeling lonely and isolated, yet at the same time also feeling energized, loved, and interconnected with the world around me. 
 
 This piece reminded me of the famous photo taken by NASA's Voyager 1 spacecraft in 1989. The story goes that they were on a mission to take atmospheric readings from space but the late astronomer Carl Sagan asked for the camera to be turned backwards to capture one last snapshot of earth. The result of it was the first portrait of our planet from the edge of the solar system 3.7 billion miles away, with an image of the earth measuring  0.12 pixels in size.

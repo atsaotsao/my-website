@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-29 00:49:10
+modified: 2026-05-14 15:01:27
 published: 2025-01-29
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759066919/IMG_0710_1_fnkqzy.jpg
@@ -16,7 +16,8 @@ isCommission:
 surface: canvas
 buylink: https://ko-fi.com/s/276635f0af
 ---
-![](../attachments/IMG_0710.jpeg)
+![](../attachments/art/20250901_10.jpeg)
+
 If you've seen some of my work you'll know that I'm obsessed with circles. I encountered that shape on my first ever psychedelic trip and haven't been able to shake off it's shape and what it represents since. I've always referenced this circle as "orb of goodness" and it continues to be a recurring motif in my work (my LLC is literally call OOG Solutions INC). 
 
 I see the orb as love itself: the source of everything, warmth we deserve, that thing we keep yearning for to fill the void we have. Surrounding it, pulsating oval forms in red, violet, and lilac ripple outward like waves reminds us to move toward this love. 

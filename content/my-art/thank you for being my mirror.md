@@ -1,5 +1,5 @@
 ---
-modified: 2025-12-22 23:26:38
+modified: 2026-05-14 14:53:30
 published: 2025-11-12
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1766455567/IMG_5697_gdol4c.jpg
@@ -16,7 +16,7 @@ isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/ba16ccfebe
 ---
-![](attachments/IMG_5697.jpeg)
+![](../attachments/art/20260317_09.jpg)
 
 I spent a huge part of my life not noticing the sharp shapes and edges around me. 
 

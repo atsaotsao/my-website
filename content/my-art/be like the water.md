@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-28 10:02:24
+modified: 2026-05-14 15:00:18
 published: 2025-09-20
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661588/IMG_4954_1_gtwijn.jpg
@@ -16,7 +16,8 @@ isCommission:
 surface: Mixed media paper
 ---
 
-![](../attachments/IMG_4954.jpeg)
+![](../attachments/art/20250901_12.jpeg)
+
 I created this piece as a housewarming gift to friends who enjoy surfing the warm California waters. 
 
 I always love seeing how imperfectly ink flows across a page, for me illustrating the inexplicable, unpredictable yet magical tendency that life likes to flow; whether we like it or not. The biggest lessons I have learned so far is the art of flowing with it, and not against it. 

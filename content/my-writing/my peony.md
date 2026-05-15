@@ -4,7 +4,7 @@ publish: true
 type: 🌳
 published: 2026-05-14
 creation date: 2026-04-18
-modified: 2026-05-14 15:04:15
+modified: 2026-05-15 16:54:00
 status: completed
 tags:
   - poem
@@ -41,7 +41,7 @@ I fear the violent Man and his power to pull you from the ground,
 and cast you into storm,
 and I won’t be able to find you. 
 
-I have never looked at a flower the way I look at you.
+	I have never looked at a flower the way I look at you.
 And there may come a day where I may not be able to. 
 But for now, I will enjoy the bloom. 
 

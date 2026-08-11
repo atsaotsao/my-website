@@ -194,11 +194,22 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   )
 
   // calculate color
+  const folderColors: Record<string, string> = {
+    "my-art": "#ec4899",
+    "my-writing": "#f59e0b",
+    "my-playlists": "#22d3ee",
+  }
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (d.id.startsWith("tags/")) {
+      return computedStyleMap["--tertiary"]
+    }
+    const folder = d.id.split("/")[0]
+    if (folderColors[folder]) {
+      return folderColors[folder]
+    } else if (visited.has(d.id)) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]
@@ -378,7 +389,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       interactive: false,
       eventMode: "none",
       text: n.text,
-      alpha: 0,
+      alpha: 0.75 * opacityScale,
       anchor: { x: 0.5, y: 1.2 },
       style: {
         fontSize: fontSize * 15,
@@ -503,7 +514,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
           [0, 0],
           [width, height],
         ])
-        .scaleExtent([0.25, 4])
+        .scaleExtent([0.05, 4])
         .on("zoom", ({ transform }) => {
           currentTransform = transform
           stage.scale.set(transform.k, transform.k)
@@ -550,6 +561,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   requestAnimationFrame(animate)
+
   return () => {
     stopAnimation = true
     app.destroy()

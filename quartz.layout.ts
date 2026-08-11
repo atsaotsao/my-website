@@ -58,6 +58,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArtworkDetails(), // Add this line
     Component.PostInteractions(),  // ← ADD THIS
     Component.AdjacentPosts(),
+    Component.ExploreGraph(),
   ],
 }
 

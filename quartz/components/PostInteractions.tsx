@@ -75,8 +75,8 @@ export default (() => {
       </div>
     )
   }
-
-  PostInteractions.css = `
+  
+PostInteractions.css = `
     .post-interactions {
       margin: 3rem 0 2rem 0 !important;
       padding: 2rem !important;
@@ -111,7 +111,7 @@ export default (() => {
       color: white !important;
     }
     
-    /* Newsletter-specific styles */
+    /* Newsletter styles */
     .post-interactions.newsletter-subscribe {
       padding: 2rem 1.5rem !important;
     }
@@ -122,95 +122,42 @@ export default (() => {
       font-weight: 500 !important;
     }
     
-    /* Beehiiv container */
-    .post-interactions.newsletter-subscribe .beehiiv-container {
+    /* Beehiiv container - responsive wrapper */
+    .beehiiv-container {
       width: 100% !important;
       max-width: 560px !important;
       margin: 0 auto !important;
-      overflow: visible !important;
+      overflow: hidden !important;
     }
     
-    /* Desktop iframe */
-    .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-      width: 560px !important;
-      height: 339px !important;
+    /* Iframe fills container, NO fixed width, NO scaling */
+    .beehiiv-container iframe {
+      width: 100% !important;
+      min-height: 320px !important;
+      height: 320px !important;
       border: none !important;
       display: block !important;
-      margin: 0 auto !important;
       background: transparent !important;
-      transform-origin: top center !important;
     }
     
-    /* Tablets */
-    @media (max-width: 768px) {
-      .post-interactions {
-        padding: 1.5rem 1rem !important;
-      }
-      
+    @media (max-width: 800px) {
       .post-interactions.newsletter-subscribe {
-        padding: 1.75rem 1.25rem !important;
+        padding: 1.5rem 0.75rem !important;
+        margin: 2rem -0.75rem !important;
+        border-radius: 8px !important;
       }
       
-      .post-interactions.newsletter-subscribe .beehiiv-container {
-        height: 305px !important; /* 339 * 0.9 */
-        overflow: hidden !important;
+      .beehiiv-container {
+        max-width: 100% !important;
       }
       
-      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        transform: scale(0.9) !important;
-      }
-    }
-    
-    /* Large phones */
-    @media (max-width: 480px) {
-      .post-interactions.newsletter-subscribe {
-        padding: 1.5rem 1rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1.05rem !important;
-        margin-bottom: 1.25rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-container {
-        height: 254px !important; /* 339 * 0.75 */
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        transform: scale(0.75) !important;
-      }
-    }
-    
-    /* Small phones */
-    @media (max-width: 400px) {
-      .post-interactions.newsletter-subscribe {
-        padding: 1.25rem 0.75rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .interaction-prompt {
-        font-size: 1rem !important;
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-container {
-        height: 237px !important; /* 339 * 0.7 */
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        transform: scale(0.7) !important;
-      }
-    }
-    
-    /* Very small phones */
-    @media (max-width: 360px) {
-      .post-interactions.newsletter-subscribe .beehiiv-container {
-        height: 220px !important; /* 339 * 0.65 */
-      }
-      
-      .post-interactions.newsletter-subscribe .beehiiv-container iframe {
-        transform: scale(0.65) !important;
+      .beehiiv-container iframe {
+        min-height: 280px !important;
+        height: 280px !important;
       }
     }
   `
+  
 
   return PostInteractions
 }) satisfies QuartzComponentConstructor

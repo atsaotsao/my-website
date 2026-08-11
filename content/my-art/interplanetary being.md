@@ -1,19 +1,22 @@
 ---
-modified: 2025-10-05 03:44:53
+modified: 2026-07-07 17:07:44
 published: 2022-05-21
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542495/IMG_5577_vqzspv.jpg
 tags:
 medium: Mixed media on paper
-dimensions: 18" x 24"
+dimensions: 24" x 18"
 year: 2022
 price: "333"
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
 buylink:
+title: keep on loving 'til your love is gone
+aliases:
+  - keep on loving 'til your love is gone
 ---
 
 ![](../attachments/IMG_5577.jpeg)
@@ -23,11 +26,11 @@ One of my earlier ink art pieces and whenever I see this piece I think about the
 
 It's rooted in the idea that we do not exist independently. Take a flower for example, when we look at flower we aren't looking just at the flower. It doesn't exist as itself. We are also seeing the sun, the soil, the photosynthesis and how they are all present in what we are seeing. 
 
-And when I see this painting I see myself, my partner, and my cat. The three planets orbiting with and around each other. These three planets showcase the love that have taught me what life is worth living for.
+And when I see this painting I see my physical body, my emotional body, and my spiritual body. The three planets orbiting with and around each other. 
 
 I hope you enjoy!
 
 
 #### Song inspiration for this piece: 
-[undir - Olafur Arnalds](https://open.spotify.com/track/3u2R3fpfSNwvEWDzSVcXVS?si=d387a68f5c904c1a)
+[Small Hours - John Martyn](https://open.spotify.com/album/78WlsSQKrX4suYf909Fcrm?si=eH_R7MrtQ5mAWNmnT931yA)
 

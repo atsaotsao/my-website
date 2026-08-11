@@ -1,17 +1,17 @@
 ---
-modified: 2026-05-14 14:55:56
+modified: 2026-07-04 21:16:54
 published: 2025-03-22
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067157/IMG_1189_ibyqrt.jpg
 tags:
   - for-sale
 medium: Ink on paper
-dimensions: 18" x 24"
+dimensions: 24" x 18"
 year: 2025
-price: "666"
+price: 250 - 550
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/5388380fc6
@@ -25,9 +25,6 @@ I wrote the characters from the center out to capture also the fading of the ink
 
 Nothing will make me happier than that.
 
-![](../attachments/lightlove%20mockup.png)
-
-🖼️ Room mockups are created using AI to help you envision the artwork in different settings. Please note that colors, textures, and proportions may not be fully accurate since the mockups are generated through AI.
 #### Song inspiration for this piece: 
 [Feel First Life - Jon Hopkins](https://open.spotify.com/track/4esxro8J1rbsalCPb0yrgC?si=404d7887c9c04a7c)
 

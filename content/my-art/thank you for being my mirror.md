@@ -1,17 +1,17 @@
 ---
-modified: 2026-05-14 14:53:30
+modified: 2026-07-04 21:39:29
 published: 2025-11-12
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1766455567/IMG_5697_gdol4c.jpg
 tags:
   - for-sale
 medium: Ink on paper
-dimensions: 16.5" x 11.5"
+dimensions: 11.5" x 16.5"
 year: 2025
-price: "222"
+price: 150 - 450
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/ba16ccfebe

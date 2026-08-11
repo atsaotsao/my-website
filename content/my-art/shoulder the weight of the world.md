@@ -1,5 +1,5 @@
 ---
-modified: 2026-03-17 23:26:50
+modified: 2026-07-04 21:25:42
 published: 2024-10-16
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542514/IMG_5579_olgxrt.jpg
@@ -8,10 +8,10 @@ tags:
 medium: Mixed media on found object
 dimensions: 23" x 35.5"
 year: 2024
-price: "888"
+price: 400 - 800
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: found object
 buylink: https://ko-fi.com/s/f6b4901448
@@ -23,9 +23,6 @@ There's something inexplicably magical about taking found objects from the stree
 My first thought in working on an object like this is that it felt sturdy. It could hold the emotions, however heavy, I can pour onto it. I had wanted a piece where I can use as a vessel to shape the rage I was feeling. I started by laying down the colors in gouache; a sun in the middle and with expanding hues of melancholic blue and fiery red. Then I ripped apart a stack of A4 papers on which I had practiced creating random ink pattern to displays the "rays" all around it. Then I took the utility knife to just went ham with it. It was as if the first time ever the parts of me that have violent tendencies had a safe space to thrash and slash. I can't explain how when the steam has settled, I felt the sense of peace wash over me. And I mirrored that in this piece by putting a layer of modge podge all over it. Smoothing the hard cuts while layering a glossy layer.
 
 One thing that's hard to convey through this digital screen is just how TACTILE this piece is. I always imagined created art pieces where it's not just pieces where you hang and enjoy looking it. But something you can also run your hands all over as part of the experience. I hope each cut and ridge you feel reminds you that you're not alone in the hurt you feel; how human it all is. And at the end of the day, something I'm returning to time after time is that there absolutely is a light at the end of the tunnel. I hope this piece helps remind you of that.
-
-![697](../attachments/ChatGPT%20Image%20Oct%205,%202025,%2003_11_02%20AM.png)
-🖼️ Room mockups are created using AI to help you envision the artwork in different settings. Please note that colors, textures, and proportions may not be fully accurate since the mockups are generated through AI.
 #### Song inspiration for this piece: 
 [Unfold - Porter Robinson & TEED](https://open.spotify.com/track/36kCSJg8ZBwiSCUECFKGUy?si=9dea2eff3a254a8a)
 

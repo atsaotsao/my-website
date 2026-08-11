@@ -1,17 +1,17 @@
 ---
-modified: 2026-05-14 14:57:00
+modified: 2026-07-04 22:13:53
 published: 2025-12-05
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1766808625/IMG_6282_1_b1th5m.jpg
 tags:
   - for-sale
 medium: Mixed media on paper
-dimensions: 23" x 35.5"
+dimensions: 24" x 18"
 year: 2025
-price: "333"
+price: 250 - 650
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/63a655a384
@@ -27,7 +27,6 @@ And for the longest time, I struggle to actually draw when I'm in it. When I fee
 This painting felt like a breakthrough and half. It was the first time I felt the shift from *in* to *with*, and I felt the impulse to finally draw those shapes so that it can be witnessed by me and now by you. Part of my ancestral assignment that I feel deep in my bones is for the anger in this lineage to be witnessed, transformed, and alchemized into something for positive changes in the world. 
 
 Thank you for being here to witness my anger with me
-![](../../attachments/ibrokemybrushforthis.png)
 
 #### Song inspiration for this piece: 
 [Let You Down - NF](https://open.spotify.com/track/52okn5MNA47tk87PeZJLEL?si=db931ec489b64288)

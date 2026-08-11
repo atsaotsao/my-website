@@ -1,5 +1,5 @@
 ---
-modified: 2026-05-14 14:57:37
+modified: 2026-07-04 22:15:41
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -8,10 +8,10 @@ tags:
 medium: Mixed media on paper
 dimensions: 18" x 24"
 year: 2025
-price: "222"
+price: 250 - 550
 "soldDate:":
 "location:": studio
-"exhibitions:":
+"exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
 buylink: https://ko-fi.com/s/0da7edc7bb
@@ -59,9 +59,6 @@ Here is the full excerpt of what I wrote in my journal:
 
 I hope this can be reminder for anyone going through something to know that they're not alone. 
 And to keep going.
-
-![](../attachments/ChatGPT%20Image%20Sep%2024,%202025,%2011_13_57%20PM.png)
-For transparency: Room mockups are created using AI to help you envision the artwork in different settings.
 #### Song inspiration for this piece: 
 [United in Grief - Kendrick Lamar](https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL?si=842f823dfc964efa)
 

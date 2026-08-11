@@ -1,12 +1,12 @@
 ---
-modified: 2026-05-14 14:59:07
+modified: 2026-07-07 17:19:55
 published: 2025-08-31
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067730/IMG_4873_libc8l.jpg
 tags:
   - for-sale
 medium: Alcohol marker on paper
-dimensions: 18" x 24"
+dimensions: 24" x 18"
 year: 2025
 price: "333"
 "soldDate:":
@@ -24,10 +24,6 @@ I started with the greens, laying down the curvy grass fields for the other colo
 
 I hope this piece brings you more meaningful connection with others and with yourself.
 
-
-![](../attachments/ChatGPT%20Image%20Sep%2026,%202025,%2012_53_04%20AM.png)
-
-🖼️ Room mockups are created using AI to help you envision the artwork in different settings. Please note that colors, textures, and proportions may not be fully accurate since the mockups are generated through AI.
 #### Song inspiration for this piece: 
 [Love Flows Over Us in Prismatic Waves - Jon Hopkins](https://open.spotify.com/track/3G13xOZCkA74whPRazHnrF?si=5b8a45db6b574708)
 

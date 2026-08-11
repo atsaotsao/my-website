@@ -152,8 +152,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
             <a
               href="#"
               className="buy-button purchase-button js-email-link"
-              data-email-user="atsaotsao"
-              data-email-domain="gmail.com"
+              data-email-to="atsaotsao@gmail.com"
               data-email-subject={emailSubject}
             >
               <svg className="purchase-icon" viewBox="0 0 24 24" width="20" height="20">
@@ -180,7 +179,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
               document.querySelectorAll('.js-email-link').forEach(function(el) {
                 el.addEventListener('click', function(e) {
                   e.preventDefault();
-                  var addr = el.getAttribute('data-email-user') + '@' + el.getAttribute('data-email-domain');
+                  var addr = el.getAttribute('data-email-to');
                   var subject = el.getAttribute('data-email-subject') || '';
                   window.location.href = 'mailto:' + addr + (subject ? '?subject=' + encodeURIComponent(subject) : '');
                 });

@@ -57,8 +57,7 @@ export default (() => {
         <a
           href="#"
           class="email-reply js-email-link"
-          data-email-user="andrew"
-          data-email-domain="codelesscoach.com"
+          data-email-to="andrew@codelesscoach.com,atsaotsao@gmail.com"
           data-email-subject={emailSubject}
           data-email-body={emailBody}
         >
@@ -75,7 +74,7 @@ export default (() => {
             document.querySelectorAll('.js-email-link').forEach(function(el) {
               el.addEventListener('click', function(e) {
                 e.preventDefault();
-                var addr = el.getAttribute('data-email-user') + '@' + el.getAttribute('data-email-domain');
+                var addr = el.getAttribute('data-email-to');
                 var subject = el.getAttribute('data-email-subject') || '';
                 var body = el.getAttribute('data-email-body') || '';
                 var params = [];

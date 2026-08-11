@@ -90,25 +90,26 @@ MobileNavToggle.css = `
     }
 
     .sidebar.left .custom-nav {
-      display: none;
-      position: fixed;
-      top: 4rem;
-      left: 1rem;
-      z-index: 99;
-      background: var(--light);
-      border: 1px solid var(--lightgray);
-      border-radius: 10px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-      padding: 0.5rem;
-      min-width: 200px;
-      max-width: calc(100vw - 2rem);
-      max-height: calc(100vh - 5rem);
-      overflow-y: auto;
-      margin-top: 0;
+      display: none !important;
+      position: fixed !important;
+      top: 4rem !important;
+      left: 1rem !important;
+      z-index: 99 !important;
+      background: var(--light) !important;
+      border: 1px solid var(--lightgray) !important;
+      border-radius: 10px !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+      padding: 0.5rem !important;
+      min-width: 200px !important;
+      max-width: calc(100vw - 2rem) !important;
+      max-height: calc(100vh - 5rem) !important;
+      overflow-y: auto !important;
+      margin-top: 0 !important;
+      width: auto !important;
     }
 
     .sidebar.left .custom-nav.mobile-nav-open {
-      display: block;
+      display: block !important;
     }
   }
 `

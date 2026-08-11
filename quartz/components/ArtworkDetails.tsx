@@ -177,12 +177,9 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
           dangerouslySetInnerHTML={{
             __html: `
               document.querySelectorAll('.js-email-link').forEach(function(el) {
-                el.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  var addr = el.getAttribute('data-email-to');
-                  var subject = el.getAttribute('data-email-subject') || '';
-                  window.location.href = 'mailto:' + addr + (subject ? '?subject=' + encodeURIComponent(subject) : '');
-                });
+                var addr = el.getAttribute('data-email-to');
+                var subject = el.getAttribute('data-email-subject') || '';
+                el.href = 'mailto:' + addr + (subject ? '?subject=' + encodeURIComponent(subject) : '');
               });
             `,
           }}

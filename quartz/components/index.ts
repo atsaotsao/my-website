@@ -57,3 +57,4 @@ export {
 }
 export { default as CustomNav } from "./CustomNav"
 export { default as PostInteractions } from "./PostInteractions"
+export { default as AdjacentPosts } from "./AdjacentPosts"

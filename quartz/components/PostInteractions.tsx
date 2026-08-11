@@ -69,19 +69,17 @@ export default (() => {
             (function() {
               const prompts = ${JSON.stringify(prompts)};
               const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
-              document.getElementById('interaction-prompt').innerText = randomPrompt;
+              const promptEl = document.getElementById('interaction-prompt');
+              if (promptEl) promptEl.innerText = randomPrompt;
             })();
             document.querySelectorAll('.js-email-link').forEach(function(el) {
-              el.addEventListener('click', function(e) {
-                e.preventDefault();
-                var addr = el.getAttribute('data-email-to');
-                var subject = el.getAttribute('data-email-subject') || '';
-                var body = el.getAttribute('data-email-body') || '';
-                var params = [];
-                if (subject) params.push('subject=' + encodeURIComponent(subject));
-                if (body) params.push('body=' + encodeURIComponent(body));
-                window.location.href = 'mailto:' + addr + (params.length ? '?' + params.join('&') : '');
-              });
+              var addr = el.getAttribute('data-email-to');
+              var subject = el.getAttribute('data-email-subject') || '';
+              var body = el.getAttribute('data-email-body') || '';
+              var params = [];
+              if (subject) params.push('subject=' + encodeURIComponent(subject));
+              if (body) params.push('body=' + encodeURIComponent(body));
+              el.href = 'mailto:' + addr + (params.length ? '?' + params.join('&') : '');
             });
           `
         }} />

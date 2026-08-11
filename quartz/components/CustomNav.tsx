@@ -21,21 +21,19 @@ export default ((userOpts?: Partial<Options>) => {
   const CustomNav: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     return (
       <div class={`custom-nav ${displayClass ?? ""}`}>
-        <nav>
-          <ul style="list-style: none; margin: 0; padding: 0;">
-            {opts.links.map((link) => (
-              <li style="margin-bottom: 2px;">
-                <a 
-                  href={link.url}
-                  class="custom-nav-link"
-                  style="display: block; padding: 0.7rem 0.75rem; border-radius: 10px; text-decoration: none; color: var(--darkgray); transition: all 0.2s ease; font-weight: 400; background: none; font-size: 1rem; line-height: 1.5;"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          {opts.links.map((link) => (
+            <li style="margin-bottom: 2px;">
+              <a
+                href={link.url}
+                class="custom-nav-link"
+                style="display: block; padding: 0.7rem 0.75rem; border-radius: 10px; text-decoration: none; color: var(--darkgray); transition: all 0.2s ease; font-weight: 400; background: none; font-size: 1rem; line-height: 1.5;"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     )
   }

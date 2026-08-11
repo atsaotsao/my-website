@@ -14,6 +14,7 @@ export const sharedPageComponents: SharedLayout = {
 }
 
 const sharedSidebar = [
+  Component.MobileNavToggle(),
   Component.PageTitle(),
   Component.MobileOnly(Component.Spacer()),
   Component.Flex({

@@ -32,6 +32,7 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
   const tags = frontmatter?.tags || []
   const isSold = tags.includes('sold') || soldDate
   const isForSale = tags.includes('for-sale') && !isSold
+  const isGift = tags.includes('gift') && !isSold && !isForSale
 
   // Create email subject
   const emailSubject = `I'm interested in buying "${title}"`
@@ -116,6 +117,11 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
             <div className="status-display available-status">
               <span className="status-label">Status</span>
               <span className="status-value available">Available for Purchase</span>
+            </div>
+          ) : isGift ? (
+            <div className="status-display gift-status">
+              <span className="status-label">Status</span>
+              <span className="status-value gift">Gifted</span>
             </div>
           ) : (
             <div className="status-display display-only">
@@ -313,7 +319,11 @@ export default (() => {
     .status-value.sold {
       color: #6b7280;
     }
-    
+
+    .status-value.gift {
+      color: #ec4899;
+    }
+
     .sold-date {
       font-size: 0.9rem;
       color: var(--gray);

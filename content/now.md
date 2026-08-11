@@ -1,12 +1,12 @@
 ---
-modified: 2026-05-16 08:00:02
+modified: 2026-08-11 16:11:19
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
 ---
 ![banner](attachments/now-header.png)
 
-- **Preparing** my move back to Taiwan at the end of July after spending 12 years in nyc
+- **Starting** my Taiwanese military conscription starting on August 27, 2026 and it will end on August 26, 2027
 - **Planning** my first body of work in a [solo art show](https://partiful.com/e/pWY1jjI1VetZvFDs1GrT) in the upcoming summer.
 - **Coaching** [1-on-1](coaching.md) with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Building** websites slowly, patiently, inclusively, for aligned collaborators—like [this one](https://www.mainlanderstl.com/) for a chef in St. Louis.
@@ -33,4 +33,4 @@ I am interested in creating and joining spaces, projects, and movements that **h
 ✨ MISC:
 - Started eating meat again after being pescatarian for 4 years
 
-*(updated 2026-05-16 07:57)*
+*(updated 2026-08-11 16:11)*

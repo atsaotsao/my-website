@@ -39,9 +39,9 @@ export default (() => {
     }
     
     // Otherwise, show the regular interaction prompt
-    const emailSubject = encodeURIComponent(`Re: ${title}`)
-    const emailBody = encodeURIComponent(`Hi Andrew, I just read "${title}" and wanted to share...`)
-    
+    const emailSubject = `Re: ${title}`
+    const emailBody = `Hi Andrew, I just read "${title}" and wanted to share...`
+
     const prompts = [
       "💭 What's alive in you after reading this?",
       "🌱 Does this spark something for you?",
@@ -50,19 +50,21 @@ export default (() => {
       "💫 What's stirring in you?",
       "🌿 Does this touch something you're navigating?",
     ]
-    
+
     return (
       <div class="post-interactions">
         <p class="interaction-prompt" id="interaction-prompt"></p>
-        <a 
-          href={`mailto:andrew@codelesscoach.com?subject=${emailSubject}&body=${emailBody}`} 
-          class="email-reply"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a
+          href="#"
+          class="email-reply js-email-link"
+          data-email-user="andrew"
+          data-email-domain="codelesscoach.com"
+          data-email-subject={emailSubject}
+          data-email-body={emailBody}
         >
           Let's talk about it →
         </a>
-        
+
         <script dangerouslySetInnerHTML={{
           __html: `
             (function() {
@@ -70,6 +72,18 @@ export default (() => {
               const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
               document.getElementById('interaction-prompt').innerText = randomPrompt;
             })();
+            document.querySelectorAll('.js-email-link').forEach(function(el) {
+              el.addEventListener('click', function(e) {
+                e.preventDefault();
+                var addr = el.getAttribute('data-email-user') + '@' + el.getAttribute('data-email-domain');
+                var subject = el.getAttribute('data-email-subject') || '';
+                var body = el.getAttribute('data-email-body') || '';
+                var params = [];
+                if (subject) params.push('subject=' + encodeURIComponent(subject));
+                if (body) params.push('body=' + encodeURIComponent(body));
+                window.location.href = 'mailto:' + addr + (params.length ? '?' + params.join('&') : '');
+              });
+            });
           `
         }} />
       </div>

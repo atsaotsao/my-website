@@ -35,7 +35,6 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
 
   // Create email subject
   const emailSubject = `I'm interested in buying "${title}"`
-  const purchaseMailto = `mailto:atsaotsao@gmail.com?subject=${encodeURIComponent(emailSubject)}`
   
   return (
     <div className="artwork-details">
@@ -151,8 +150,11 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
 
           <div className="purchase-actions">
             <a
-              href={purchaseMailto}
-              className="buy-button purchase-button"
+              href="#"
+              className="buy-button purchase-button js-email-link"
+              data-email-user="atsaotsao"
+              data-email-domain="gmail.com"
+              data-email-subject={emailSubject}
             >
               <svg className="purchase-icon" viewBox="0 0 24 24" width="20" height="20">
                 <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -169,6 +171,23 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
             </div>
           </div>
         </div>
+      )}
+
+      {isForSale && (
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.querySelectorAll('.js-email-link').forEach(function(el) {
+                el.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  var addr = el.getAttribute('data-email-user') + '@' + el.getAttribute('data-email-domain');
+                  var subject = el.getAttribute('data-email-subject') || '';
+                  window.location.href = 'mailto:' + addr + (subject ? '?subject=' + encodeURIComponent(subject) : '');
+                });
+              });
+            `,
+          }}
+        />
       )}
     </div>
   )

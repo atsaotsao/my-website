@@ -35,22 +35,18 @@ const AdjacentPosts: QuartzComponent = ({ fileData, allFiles, cfg }: QuartzCompo
 
   return (
     <div class="adjacent-posts">
-      <div class="adjacent-post adjacent-newer">
-        {newer && (
-          <a href={resolveRelative(fileData.slug!, newer.slug!)} class="internal">
-            <span class="adjacent-label">← Newer</span>
-            <span class="adjacent-title">{newer.frontmatter?.title}</span>
-          </a>
-        )}
-      </div>
-      <div class="adjacent-post adjacent-older">
-        {older && (
-          <a href={resolveRelative(fileData.slug!, older.slug!)} class="internal">
-            <span class="adjacent-label">Older →</span>
-            <span class="adjacent-title">{older.frontmatter?.title}</span>
-          </a>
-        )}
-      </div>
+      {newer && (
+        <a href={resolveRelative(fileData.slug!, newer.slug!)} class="internal adjacent-post">
+          <span class="adjacent-arrow">←</span>
+          <span class="adjacent-title">{newer.frontmatter?.title}</span>
+        </a>
+      )}
+      {older && (
+        <a href={resolveRelative(fileData.slug!, older.slug!)} class="internal adjacent-post">
+          <span class="adjacent-title">{older.frontmatter?.title}</span>
+          <span class="adjacent-arrow">→</span>
+        </a>
+      )}
     </div>
   )
 }
@@ -58,52 +54,34 @@ const AdjacentPosts: QuartzComponent = ({ fileData, allFiles, cfg }: QuartzCompo
 AdjacentPosts.css = `
   .adjacent-posts {
     display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin: 2.5rem 0 1.5rem 0;
     padding-top: 1.5rem;
     border-top: 1px solid var(--lightgray);
+    text-align: center;
   }
 
   .adjacent-post {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
-  .adjacent-post.adjacent-older {
-    text-align: right;
-  }
-
-  .adjacent-post a {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
     text-decoration: none;
-    color: var(--dark);
-  }
-
-  .adjacent-post.adjacent-older a {
-    align-items: flex-end;
-  }
-
-  .adjacent-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--gray);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: var(--secondary);
+    font-weight: 500;
+    max-width: 100%;
   }
 
   .adjacent-title {
-    font-weight: 500;
-    color: var(--secondary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
   }
 
-  .adjacent-post a:hover .adjacent-title {
+  .adjacent-post:hover .adjacent-title {
     text-decoration: underline;
   }
 

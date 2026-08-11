@@ -79,7 +79,18 @@ export default (() => {
               var params = [];
               if (subject) params.push('subject=' + encodeURIComponent(subject));
               if (body) params.push('body=' + encodeURIComponent(body));
+              // real mailto: href as a fallback (right-click "copy email address", no-JS)
               el.href = 'mailto:' + addr + (params.length ? '?' + params.join('&') : '');
+              // primary click behavior: open Gmail compose directly, since mailto: handoff
+              // is unreliable unless the visitor has registered a mail app with their browser
+              el.addEventListener('click', function(e) {
+                e.preventDefault();
+                var gmailParams = ['to=' + encodeURIComponent(addr)];
+                if (subject) gmailParams.push('su=' + encodeURIComponent(subject));
+                if (body) gmailParams.push('body=' + encodeURIComponent(body));
+                var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&' + gmailParams.join('&');
+                window.open(gmailUrl, '_blank', 'noopener');
+              });
             });
           `
         }} />

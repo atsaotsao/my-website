@@ -179,7 +179,16 @@ const ArtworkDetails: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
               document.querySelectorAll('.js-email-link').forEach(function(el) {
                 var addr = el.getAttribute('data-email-to');
                 var subject = el.getAttribute('data-email-subject') || '';
+                // real mailto: href as a fallback (right-click "copy email address", no-JS)
                 el.href = 'mailto:' + addr + (subject ? '?subject=' + encodeURIComponent(subject) : '');
+                // primary click behavior: open Gmail compose directly, since mailto: handoff
+                // is unreliable unless the visitor has registered a mail app with their browser
+                el.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(addr) +
+                    (subject ? '&su=' + encodeURIComponent(subject) : '');
+                  window.open(gmailUrl, '_blank', 'noopener');
+                });
               });
             `,
           }}

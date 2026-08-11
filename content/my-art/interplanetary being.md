@@ -1,5 +1,5 @@
 ---
-modified: 2026-07-07 17:07:44
+modified: 2026-08-11 15:30:12
 published: 2022-05-21
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542495/IMG_5577_vqzspv.jpg
@@ -9,7 +9,7 @@ dimensions: 24" x 18"
 year: 2022
 price: "333"
 "soldDate:":
-"location:": studio
+"location:": friend's home
 "exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper

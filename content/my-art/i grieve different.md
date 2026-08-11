@@ -1,16 +1,16 @@
 ---
-modified: 2026-07-04 22:15:41
+modified: 2026-08-11 15:35:10
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
 tags:
-  - for-sale
+  - gift
 medium: Mixed media on paper
 dimensions: 18" x 24"
 year: 2025
 price: 250 - 550
 "soldDate:":
-"location:": studio
+"location:": sold
 "exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper
@@ -31,7 +31,6 @@ Here is the full excerpt of what I wrote in my journal:
 *I've raged.*
 *I've screamed.*
 *I've distracted.*
-*I've smoked.*
 *I've danced.*
 *I've drew.*
 *I've mourned.*

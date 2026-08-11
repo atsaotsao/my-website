@@ -1,5 +1,5 @@
 ---
-modified: 2026-07-07 17:19:55
+modified: 2026-08-11 15:32:22
 published: 2025-08-31
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067730/IMG_4873_libc8l.jpg
@@ -8,7 +8,7 @@ tags:
 medium: Alcohol marker on paper
 dimensions: 24" x 18"
 year: 2025
-price: "333"
+price: 250 - 550
 "soldDate:":
 "location:": studio
 "exhibitions:":

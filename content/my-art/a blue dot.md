@@ -1,16 +1,16 @@
 ---
-modified: 2026-05-14 14:52:49
+modified: 2026-08-11 15:34:58
 published: 2025-12-24
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767070827/IMG_6397_fluket.jpg
 tags:
-  - for-sale
+  - gift
 medium: Mixed media on paper
 dimensions: 23" x 35.5"
 year: 2025
 price: "333"
 "soldDate:":
-"location:": studio
+"location:": sold
 "exhibitions:":
 isCommission:
 surface: Mixed media paper

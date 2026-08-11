@@ -57,7 +57,7 @@ export default (() => {
         <a
           href="#"
           class="email-reply js-email-link"
-          data-email-to="andrew@codelesscoach.com,atsaotsao@gmail.com"
+          data-email-to="atsaotsao@gmail.com"
           data-email-subject={emailSubject}
           data-email-body={emailBody}
         >

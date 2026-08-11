@@ -88,6 +88,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           // Check for sale status with case-insensitive matching
           const isForSale = tagsArray.includes('for-sale') || tagsArray.includes('forsale')
           const isSold = tagsArray.includes('sold')
+          const isGift = tagsArray.includes('gift') && !isSold && !isForSale
           
           let imageSrc = null
 if (socialImage) {
@@ -99,7 +100,7 @@ if (socialImage) {
 }
           
           return (
-            <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''}`}>
+            <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''} ${isGift ? 'gift' : ''}`}>
               {imageSrc && (
                 <div className="gallery-art-preview">
                   <a href={`/${file.slug}`} className="internal">
@@ -112,6 +113,11 @@ if (socialImage) {
                     {isForSale && !isSold && (
                       <div className="gallery-sale-badge">
                         For Sale
+                      </div>
+                    )}
+                    {isGift && (
+                      <div className="gallery-sale-badge gallery-gift-badge">
+                        Gift
                       </div>
                     )}
                   </a>
@@ -134,6 +140,11 @@ if (socialImage) {
                 {isForSale && !isSold && (
                   <div className="gallery-sale-info">
                     <span className="gallery-availability">Available</span>
+                  </div>
+                )}
+                {isGift && (
+                  <div className="gallery-sale-info">
+                    <span className="gallery-gift-status">Gifted</span>
                   </div>
                 )}
               </div>
@@ -313,7 +324,17 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       border-color: #4b5563;
       box-shadow: 0 8px 25px rgba(107, 114, 128, 0.3);
     }
-    
+
+    .gallery-art-item.gift {
+      border-color: #ec4899;
+      box-shadow: 0 2px 8px rgba(236, 72, 153, 0.2);
+    }
+
+    .gallery-art-item.gift:hover {
+      border-color: #db2777;
+      box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+    }
+
     .gallery-art-preview {
       width: 100%;
       height: 220px;
@@ -350,7 +371,12 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       background: #6b7280 !important;
       color: white;
     }
-    
+
+    .gallery-gift-badge {
+      background: #ec4899 !important;
+      color: white;
+    }
+
     .gallery-art-details {
       padding: 1.25rem;
     }
@@ -423,7 +449,16 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       padding: 2px 6px;
       border-radius: 4px;
     }
-    
+
+    .gallery-gift-status {
+      font-size: 0.8rem;
+      color: #ec4899;
+      font-weight: 500;
+      background: rgba(236, 72, 153, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
     @media (max-width: 600px) {
       .art-gallery-container {
         grid-template-columns: 1fr;

@@ -41,6 +41,7 @@ const ExploreGraph: QuartzComponent = (props: QuartzComponentProps) => {
   return (
     <>
       <GraphInstance {...props} />
+      <div class="explore-graph-hint">drag &middot; scroll to zoom &middot; click a node to visit</div>
       {/*
         The global graph only ever renders when someone clicks the (now-hidden)
         toggle icon - graph.inline.ts wires that up on the "nav" event, and
@@ -113,6 +114,34 @@ ExploreGraph.css = `
     width: 100% !important;
     height: 100% !important;
     border-radius: 8px !important;
+  }
+
+  .explore-graph-hint {
+    display: none;
+  }
+
+  body[data-slug="explore"] .explore-graph-hint {
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 11;
+    font-size: 0.75rem;
+    color: var(--gray);
+    opacity: 0.6;
+    pointer-events: none;
+    background: var(--light);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 800px) {
+    body[data-slug="explore"] .explore-graph-hint {
+      left: 1rem;
+      right: 1rem;
+      bottom: 0.5rem;
+      text-align: center;
+    }
   }
 `
 

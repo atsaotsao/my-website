@@ -51,6 +51,7 @@ export const defaultContentPageLayout: PageLayout = {
       showComma: false,
     }),
     Component.TagList(),
+    Component.PhotoCarousel(),
   ],
   left: sharedSidebar,
   right: [],

@@ -1,6 +1,6 @@
 ---
 title: my writing
-modified: 2025-12-19 09:56:27
+modified: 2026-08-11 21:25:01
 publish: true
 no_backlink: true
 exclude_from_backlink: true

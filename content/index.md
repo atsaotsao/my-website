@@ -26,8 +26,5 @@ Here are some places you may want to start:
 And if you want to find me in the usual channels, you’ll sometimes catch me on [Instagram](https://www.instagram.com/atsaotsao/) (most active), [TikTok](https://www.tiktok.com/@atsaotsao?lang=en), [YouTube](https://www.youtube.com/@atsaotsao), or [LinkedIn](https://www.linkedin.com/in/andrew-tsao/). 
 
 ---
-
-*feeling adventurous?* :)
-
-[come wander →](explore)
+<div class="graph-center-container" id="graph-container"></div>
 

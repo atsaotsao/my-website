@@ -1,5 +1,5 @@
 ---
-modified: 2026-08-11 16:11:19
+modified: 2026-08-13 12:54:11
 publish: true
 published: 2025-08-19
 socialImage: now-header.png
@@ -7,7 +7,6 @@ socialImage: now-header.png
 ![banner](attachments/now-header.png)
 
 - **Starting** my Taiwanese military conscription starting on August 27, 2026 and it will end on August 26, 2027
-- **Planning** my first body of work in a [solo art show](https://partiful.com/e/pWY1jjI1VetZvFDs1GrT) in the upcoming summer.
 - **Coaching** [1-on-1](coaching.md) with soul-led professionals, deep feelers, artists, and creative entrepreneurs.
 - **Building** websites slowly, patiently, inclusively, for aligned collaborators—like [this one](https://www.mainlanderstl.com/) for a chef in St. Louis.
 - **Painting** [abstract works](my%20art/index.md) as a liberatory practice.
@@ -24,13 +23,12 @@ I am interested in creating and joining spaces, projects, and movements that **h
 - *How do we honor our multitudes, our woven artistry, and harness them to reimagine the world?*
 
 📚 Reading:
-- Parable of the Talents - Octavia Butler
+- The Wild Edge of Sorrow - Francis Weller
 
 🎧 Listening to: 
-- [Romeo - Sega Bodega](https://open.spotify.com/album/0dXxoVKkKfIFVgGO2FUu2u?si=n-SXOXB8SSacu48SvQc8Jw)
-- [Trying Times - James Blake](https://open.spotify.com/album/16tV8wTfqPyA6Cu5dwJJPc?si=Kvho5okVQxmrUJAPtBMEZQ)
+- Music offline lately via a CD player
 
 ✨ MISC:
-- Started eating meat again after being pescatarian for 4 years
+- learning to converse with tree and nature by playing my instruments outside
 
-*(updated 2026-08-11 16:11)*
+*(updated 2026-08-13 12:55)*

@@ -1,8 +1,6 @@
 ---
 title: the art of surrender
 publish: true
-exclude_from_backlink: true
-no_backlink: true
 tags:
   - slideshow
 images:
@@ -65,7 +63,7 @@ images:
   - artshow-andrewtsao-tolk-09145.jpg
   - artshow-andrewtsao-tolk-09148.jpg
   - artshow-andrewtsao-tolk-3983.jpg
-modified: 2026-08-14 00:16:57
+modified: 2026-08-14 00:36:48
 ---
 
 _The Art of Surrender is an exhibition, a gathering, and a send-off._

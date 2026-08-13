@@ -46,6 +46,7 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.Spacer(),
+    Component.SlideshowEyebrow(),
     Component.ArticleTitle(),
     Component.ContentMeta({
       showReadingTime: false,

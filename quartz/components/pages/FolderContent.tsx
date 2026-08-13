@@ -89,9 +89,14 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           const isForSale = tagsArray.includes('for-sale') || tagsArray.includes('forsale')
           const isSold = tagsArray.includes('sold')
           const isGift = tagsArray.includes('gift') && !isSold && !isForSale
-          
+          const isSlideshow = tagsArray.includes('slideshow')
+          const slideshowImages: string[] = file.frontmatter?.images ?? []
+
           let imageSrc = null
-if (socialImage) {
+if (isSlideshow && slideshowImages.length > 0) {
+  const firstImage = slideshowImages[0]
+  imageSrc = firstImage.startsWith('http') ? firstImage : `/attachments/${firstImage}`
+} else if (socialImage) {
   if (socialImage.startsWith('http')) {
     imageSrc = socialImage  // Direct URL - works for Cloudinary
   } else {
@@ -100,7 +105,7 @@ if (socialImage) {
 }
           
           return (
-            <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''} ${isGift ? 'gift' : ''}`}>
+            <div key={file.slug} className={`gallery-art-item ${isForSale ? 'for-sale' : ''} ${isSold ? 'sold' : ''} ${isGift ? 'gift' : ''} ${isSlideshow ? 'slideshow' : ''}`}>
               {imageSrc && (
                 <div className="gallery-art-preview">
                   <a href={`/${file.slug}`} className="internal">
@@ -120,6 +125,11 @@ if (socialImage) {
                         Gift
                       </div>
                     )}
+                    {isSlideshow && (
+                      <div className="gallery-sale-badge gallery-slideshow-badge">
+                        Slideshow
+                      </div>
+                    )}
                   </a>
                 </div>
               )}
@@ -129,7 +139,7 @@ if (socialImage) {
                     {title}
                   </a>
                 </h3>
-                {description && (
+                {description && !isSlideshow && (
                   <p className="gallery-art-description">{description}</p>
                 )}
                 {isSold && (
@@ -335,6 +345,16 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
     }
 
+    .gallery-art-item.slideshow {
+      border-color: #8b5cf6;
+      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+    }
+
+    .gallery-art-item.slideshow:hover {
+      border-color: #7c3aed;
+      box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+    }
+
     .gallery-art-preview {
       width: 100%;
       height: 220px;
@@ -374,6 +394,11 @@ export default ((opts?: Partial<FolderContentOptions>) => {
 
     .gallery-gift-badge {
       background: #ec4899 !important;
+      color: white;
+    }
+
+    .gallery-slideshow-badge {
+      background: #8b5cf6 !important;
       color: white;
     }
 

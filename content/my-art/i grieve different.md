@@ -1,5 +1,5 @@
 ---
-modified: 2026-08-11 15:35:10
+modified: 2026-08-13 23:03:00
 published: 2025-06-27
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661587/IMG_3979_2_ypjuwe.jpg
@@ -10,7 +10,7 @@ dimensions: 18" x 24"
 year: 2025
 price: 250 - 550
 "soldDate:":
-"location:": sold
+"location:": gift
 "exhibitions:": The Art of Surrender
 isCommission:
 surface: Mixed media paper

@@ -1,16 +1,16 @@
 ---
-modified: 2025-09-29 15:23:07
+modified: 2026-08-13 22:59:37
 published: 2025-05-25
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759066884/IMG_2888_r41rlz.jpg
 tags:
-  - for-sale
+  - gift
 medium: Acrylic marker on canvas
 dimensions: 9" x 12"
 year: 2025
 price: "111"
 "soldDate:":
-"location:": studio
+"location:": gift
 "exhibitions:":
 isCommission:
 surface: canvas

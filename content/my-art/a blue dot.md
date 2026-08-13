@@ -1,5 +1,5 @@
 ---
-modified: 2026-08-11 15:34:58
+modified: 2026-08-13 23:02:55
 published: 2025-12-24
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1767070827/IMG_6397_fluket.jpg
@@ -10,7 +10,7 @@ dimensions: 23" x 35.5"
 year: 2025
 price: "333"
 "soldDate:":
-"location:": sold
+"location:": gift
 "exhibitions:":
 isCommission:
 surface: Mixed media paper

@@ -1,11 +1,13 @@
 ---
-modified: 2026-05-14 15:00:33
+modified: 2026-08-13 23:01:57
 published: 2024-09-08
 publish: true
 tags:
+  - for-sale
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661677/IMG_2650_qoqzqj.jpg
 medium: Mixed media on found object
 "location:": Brother's backyard
+price: "5000"
 ---
 ![](../attachments/art/20250901_13.png)
 

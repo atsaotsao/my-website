@@ -1,5 +1,5 @@
 ---
-modified: 2026-07-04 21:25:42
+modified: 2026-08-13 23:02:18
 published: 2024-10-16
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759542514/IMG_5579_olgxrt.jpg
@@ -10,7 +10,7 @@ dimensions: 23" x 35.5"
 year: 2024
 price: 400 - 800
 "soldDate:":
-"location:": studio
+"location:": Pink Frog Cafe
 "exhibitions:": The Art of Surrender
 isCommission:
 surface: found object

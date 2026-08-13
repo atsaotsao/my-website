@@ -1,16 +1,16 @@
 ---
-modified: 2025-10-03 16:55:18
+modified: 2026-08-13 23:01:21
 published: 2021-01-23
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759067828/IMG_0540_wzetjl.jpg
 tags:
-  - for-sale
+  - gift
 medium: Acrylic marker on canvas
 dimensions: 4" x 4"
 year: 2021
 price: "33"
 "soldDate:":
-"location:": studio
+"location:": gift
 "exhibitions:":
 isCommission:
 surface: canvas

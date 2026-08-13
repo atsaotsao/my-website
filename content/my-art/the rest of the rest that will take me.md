@@ -1,16 +1,16 @@
 ---
-modified: 2025-10-02 22:56:33
+modified: 2026-08-13 23:01:05
 published: 2025-01-23
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759460173/IMG_0661_scgukf.jpg
 tags:
-  - for-sale
+  - gift
 medium: Mixed media on canvas
 dimensions: 9" x 12"
 year: 2025
 price: "111"
 "soldDate:":
-"location:": studio
+"location:": gift
 "exhibitions:":
 isCommission:
 surface: canvas

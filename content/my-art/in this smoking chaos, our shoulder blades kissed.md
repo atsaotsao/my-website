@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-30 21:51:01
+modified: 2026-08-13 23:00:28
 published: 2021-09-22
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1758661588/IMG_0852_fniglj.jpg
@@ -10,7 +10,7 @@ dimensions: 18" x 24"
 year: 2022
 price: "444"
 "soldDate:":
-"location:": studio
+"location:": friend's home
 "exhibitions:":
 isCommission:
 surface: Mixed media paper

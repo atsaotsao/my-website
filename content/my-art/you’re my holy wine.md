@@ -1,5 +1,5 @@
 ---
-modified: 2025-10-04 03:22:11
+modified: 2026-08-13 23:01:29
 published: 2022-02-13
 publish: true
 socialImage: https://res.cloudinary.com/codeless-coach/image/upload/v1759529025/IMG_5552_euubrr.jpg
@@ -10,7 +10,7 @@ dimensions: 9" x 12"
 year: 2022
 price:
 "soldDate:":
-"location:": studio
+"location:": gift
 "exhibitions:":
 isCommission:
 surface: canvas

@@ -8,6 +8,7 @@ import { QuartzPluginData } from "../../plugins/vfile"
 import { ComponentChildren } from "preact"
 import { concatenateResources } from "../../util/resources"
 import { trieFromAllFiles } from "../../util/ctx"
+import { getSlideshowImages } from "../../util/slideshowImages"
 
 interface FolderContentOptions {
   showFolderCount: false
@@ -41,7 +42,7 @@ const getTagsArray = (frontmatter: any): string[] => {
 }
 
 // Custom Art Gallery Component with Date Sorting, For-Sale, and Sold Functionality
-const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: QuartzComponentProps) => {
+const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx, forceNoDescription }: QuartzComponentProps) => {
   const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
   const folder = trie.findNode(fileData.slug!.split("/"))
   
@@ -90,7 +91,9 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx }: Qua
           const isSold = tagsArray.includes('sold')
           const isGift = tagsArray.includes('gift') && !isSold && !isForSale
           const isSlideshow = tagsArray.includes('slideshow')
-          const slideshowImages: string[] = file.frontmatter?.images ?? []
+          const slideshowImages = isSlideshow
+            ? getSlideshowImages(ctx, file.slug ?? '', file.frontmatter?.images)
+            : []
 
           let imageSrc = null
 if (isSlideshow && slideshowImages.length > 0) {
@@ -139,7 +142,7 @@ if (isSlideshow && slideshowImages.length > 0) {
                     {title}
                   </a>
                 </h3>
-                {description && !isSlideshow && (
+                {description && !isSlideshow && !forceNoDescription && (
                   <p className="gallery-art-description">{description}</p>
                 )}
                 {isSold && (
@@ -254,11 +257,14 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     const { fileData } = props
     const slug = fileData.slug!
     
-    // Use ArtGallery for my-art folder, default for others
+    // Use ArtGallery for my-art and my-photos folders, default for others
     if (slug === "my-art" || slug.startsWith("my-art/")) {
       return <ArtGallery {...props} />
     }
-    
+    if (slug === "my-photos" || slug.startsWith("my-photos/")) {
+      return <ArtGallery {...props} forceNoDescription />
+    }
+
     return <DefaultFolderContent {...props} />
   }
   

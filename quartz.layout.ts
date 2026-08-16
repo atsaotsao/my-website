@@ -33,6 +33,7 @@ const sharedSidebar = [
       { name: "coaching", url: "/coaching" },
       { name: "my writing", url: "/my-writing" },
       { name: "my art", url: "/my-art" },
+      { name: "my photos", url: "/my-photos" },
       { name: "my playlists", url: "/my-playlists" },
       { name: "wander", url: "/explore" },
     ]

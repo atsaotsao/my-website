@@ -1,7 +1,8 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { getSlideshowImages } from "../util/slideshowImages"
 
-const PhotoCarousel: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-  const images: string[] = fileData.frontmatter?.images ?? []
+const PhotoCarousel: QuartzComponent = ({ fileData, ctx }: QuartzComponentProps) => {
+  const images = getSlideshowImages(ctx, fileData.slug ?? "", fileData.frontmatter?.images)
   if (images.length === 0) {
     return null
   }

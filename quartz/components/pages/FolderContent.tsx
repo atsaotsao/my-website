@@ -92,7 +92,7 @@ const ArtGallery: QuartzComponent = ({ tree, fileData, allFiles, cfg, ctx, force
           const isGift = tagsArray.includes('gift') && !isSold && !isForSale
           const isSlideshow = tagsArray.includes('slideshow')
           const slideshowImages = isSlideshow
-            ? getSlideshowImages(ctx, file.slug ?? '', file.frontmatter?.images)
+            ? getSlideshowImages(ctx, file.slug ?? '', file.frontmatter?.title, file.frontmatter?.images)
             : []
 
           let imageSrc = null

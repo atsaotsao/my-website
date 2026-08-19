@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { getSlideshowImages } from "../util/slideshowImages"
 
 const PhotoCarousel: QuartzComponent = ({ fileData, ctx }: QuartzComponentProps) => {
-  const images = getSlideshowImages(ctx, fileData.slug ?? "", fileData.frontmatter?.images)
+  const images = getSlideshowImages(ctx, fileData.slug ?? "", fileData.frontmatter?.title, fileData.frontmatter?.images)
   if (images.length === 0) {
     return null
   }

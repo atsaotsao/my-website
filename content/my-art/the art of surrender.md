@@ -3,7 +3,8 @@ title: the art of surrender
 publish: true
 tags:
   - slideshow
-modified: 2026-08-14 00:36:48
+  - exhibition
+modified: 2026-08-19 19:27:52
 ---
 
 _The Art of Surrender is an exhibition, a gathering, and a send-off._

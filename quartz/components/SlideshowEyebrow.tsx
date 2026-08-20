@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const SlideshowEyebrow: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const tags: string[] = fileData.frontmatter?.tags ?? []
-  if (!tags.includes("slideshow")) {
+  if (!tags.includes("exhibition")) {
     return null
   }
   return <p class="slideshow-eyebrow">Exhibition</p>

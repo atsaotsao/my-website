@@ -1,5 +1,5 @@
 ---
-modified: 2025-09-22 05:42:49
+modified: 2026-08-21 19:53:26
 aliases:
   - Here
 publish: true
@@ -8,7 +8,6 @@ published: 2025-09-21
 
 If my work has touched you in any way, here are some ways you can support me and help keep this journey going:
 
-- **Buy me something from my [wish list](https://www.amazon.com/hz/wishlist/ls/1VC26UE9S7JV2?ref_=wl_share)** (a little joy goes a long way!)
 - **Make a one-time donation / contribution** through [Venmo](https://account.venmo.com/u/Andrew-Tsao)
 - **Join as a monthly supporter** on [Ko-fi](https://ko-fi.com/atsaotsao)
 - **Hire me** for coaching, consulting, or workshops (let's [chat](https://cal.com/codelesscoach/30min) virtually)

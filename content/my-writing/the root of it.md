@@ -9,7 +9,6 @@ status: completed
 tags:
   - social-media-post
 ---
-
 I’ve been having more time to think about my art practice and how it mirrors and responds to the systems I grew up in, the survival strategies me, my family, and my ancestors adopted and what was left stuck, unmoved, unprocessed, suppressed, compressed, and ignored. 
 
 I’ve spent a lifetime examining what happens when whats left behind start to metastasize, clutter, clog, and even rot. And what the flying fantastic F to do about all of it. 

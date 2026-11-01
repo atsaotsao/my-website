@@ -30,5 +30,6 @@ I am interested in creating and joining spaces, projects, and movements that **h
 
 ✨ MISC:
 - learning to converse with tree and nature by playing my instruments outside
+- Started to learn DJing! Envisioning playing for community under banyan trees
 
 *(updated 2026-08-13 12:55)*
